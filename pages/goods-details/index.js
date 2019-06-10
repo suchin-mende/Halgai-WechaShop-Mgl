@@ -1,5 +1,5 @@
 const HalgaiAPI = require('../../halgaiApi/main')
-const HalgaiI18 = require('../../language/zh-cn')
+const HalgaiI18 = require('../../language/mn')
 //获取应用实例
 var app = getApp();
 var WxParse = require('../../wxParse/wxParse.js');
@@ -330,7 +330,7 @@ Page({
     shopCarMap.goodsId = this.data.goodsDetail.basicInfo.id;
     shopCarMap.pic = this.data.goodsDetail.basicInfo.pic;
     shopCarMap.name = this.data.goodsDetail.basicInfo.name;
-    // shopCarMap.label=this.data.goodsDetail.basicInfo.id; 规格尺寸 
+    // shopCarMap.label=this.data.goodsDetail.basicInfo.id; 规格尺寸
     shopCarMap.propertyChildIds = this.data.propertyChildIds;
     shopCarMap.label = this.data.propertyChildNames;
     shopCarMap.price = this.data.selectSizePrice;
@@ -376,7 +376,7 @@ Page({
     shopCarMap.goodsId = this.data.goodsDetail.basicInfo.id;
     shopCarMap.pic = this.data.goodsDetail.basicInfo.pic;
     shopCarMap.name = this.data.goodsDetail.basicInfo.name;
-    // shopCarMap.label=this.data.goodsDetail.basicInfo.id; 规格尺寸 
+    // shopCarMap.label=this.data.goodsDetail.basicInfo.id; 规格尺寸
     shopCarMap.propertyChildIds = this.data.propertyChildIds;
     shopCarMap.label = this.data.propertyChildNames;
     shopCarMap.price = this.data.selectSizePrice;

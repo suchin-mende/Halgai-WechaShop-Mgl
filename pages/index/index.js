@@ -1,7 +1,7 @@
 
 const HalgaiAPI = require('../../halgaiApi/main')
 const CONFIG = require('../../config.js')
-const HalgaiI18 = require('../../language/zh-cn')
+const HalgaiI18 = require('../../language/mn')
 //応用実例を取得
 var app = getApp()
 Page({
@@ -77,7 +77,7 @@ Page({
     })
     /**
      * 表示例：
-     * 
+     *
      */
     HalgaiAPI.banners({
       type: 'index'

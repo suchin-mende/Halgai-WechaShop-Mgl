@@ -1,7 +1,7 @@
 const app = getApp();
 const CONFIG = require('../../config.js')
 const HalgaiAPI = require('../../halgaiApi/main')
-const HalgaiI18 = require('../../language/zh-cn')
+const HalgaiI18 = require('../../language/mn')
 Page({
     data:{
       orderId:0,
@@ -17,7 +17,7 @@ Page({
         orderId: orderId,
         ordmls: HalgaiI18.ordmls,
       });
-     
+
     },
     onShow : function () {
       var that = this;

@@ -2,7 +2,7 @@ const wxpay = require('../../utils/pay.js')
 const HalgaiAPI = require('../../halgaiApi/main')
 import drawQrcode from '../../utils/weapp.qrcode.min.js'
 const app = getApp()
-const HalgaiI18 = require('../../language/zh-cn')
+const HalgaiI18 = require('../../language/mn')
 Page({
 
   /**

@@ -1,6 +1,6 @@
 const regeneratorRuntime = require('../../utils/runtime')
 const HalgaiAPI = require('../../halgaiApi/main')
-const HalgaiI18 = require('../../language/zh-cn')
+const HalgaiI18 = require('../../language/mn')
 const wxpay = require('../../utils/pay.js')
 
 Page({
@@ -106,18 +106,18 @@ Page({
     let needPayAmount = amount*1
     if (rechargeSendRule) {
       needPayAmount -= rechargeSendRule.discounts
-      _msg += HalgaiI18.majs0004 + rechargeSendRule.discounts + HalgaiI18.majs0003 
+      _msg += HalgaiI18.majs0004 + rechargeSendRule.discounts + HalgaiI18.majs0003
     }
     if (userMoney.data.balance*1 > 0) {
-      _msg += HalgaiI18.majs0005 + userMoney.data.balance + HalgaiI18.majs0009 
+      _msg += HalgaiI18.majs0005 + userMoney.data.balance + HalgaiI18.majs0009
     }
     needPayAmount = needPayAmount.toFixed(2) // 需要买单支付的金额
     const wxpayAmount = (needPayAmount - userMoney.data.balance).toFixed(2) // 需要额外微信支付的金额
     console.log(needPayAmount)
     console.log(wxpayAmount)
-    
+
     if (wxpayAmount > 0) {
-      _msg += HalgaiI18.majs0008 + wxpayAmount + HalgaiI18.majs0009 
+      _msg += HalgaiI18.majs0008 + wxpayAmount + HalgaiI18.majs0009
     }
     wx.showModal({
       title: HalgaiI18.majs0010 ,
@@ -153,7 +153,7 @@ Page({
             content: res.msg,
             showCancel: false
           })
-        }        
+        }
       })
     }
   }

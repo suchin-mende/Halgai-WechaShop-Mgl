@@ -1,6 +1,6 @@
 const HalgaiAPI = require('../../halgaiApi/main')
 const regeneratorRuntime = require('../../utils/runtime')
-const HalgaiI18 = require('../../language/zh-cn')
+const HalgaiI18 = require('../../language/mn')
 //获取应用实例
 var app = getApp()
 Page({
@@ -36,7 +36,7 @@ Page({
         this.data.pickerSelect[0] = index
         pObject = this.data.pickerRegionRange[0][index]
       }
-    }    
+    }
     if (!pObject) {
       return
     }
@@ -52,7 +52,7 @@ Page({
           cObject = this.data.pickerRegionRange[1][index]
         }
       }
-    }    
+    }
     if (!cObject) {
       return
     }
@@ -115,7 +115,7 @@ Page({
     // 追加后面的一级数组
     HalgaiAPI.nextRegion(regionObject.id).then(res => {
       if (res.code === 0) {
-        this.data.pickerRegionRange[column + 1] = res.data     
+        this.data.pickerRegionRange[column + 1] = res.data
       }
       this.bindcolumnchange({ detail: { column: column + 1, value: 0 } })
     })
@@ -200,7 +200,7 @@ Page({
     }
     apiResult.then(function (res) {
       if (res.code != 0) {
-        // 登录错误 
+        // 登录错误
         wx.hideLoading();
         wx.showModal({
           title: HalgaiI18.adjs0008,

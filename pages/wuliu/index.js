@@ -1,6 +1,6 @@
 const HalgaiAPI = require('../../halgaiApi/main')
 const app = getApp()
-const HalgaiI18 = require('../../language/zh-cn')
+const HalgaiI18 = require('../../language/mn')
 Page({
   data: {
     wumls: HalgaiI18.wumls

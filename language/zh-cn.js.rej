@@ -1,7 +1,7 @@
-diff a/language/zh-cn.js b/language/zh-cn.js	(rejected hunks)
+diff a/language/mn.js b/language/mn.js	(rejected hunks)
 @@ -14,24 +14,184 @@
    //fx(fxs:apply-status,fxa:apply,fxc:commisionLog,fxm:members)
- 
+
    //goods-details(go)
 +  //goods-details/index/js/
 +  gojs00001:"选择：",
@@ -54,9 +54,9 @@ diff a/language/zh-cn.js b/language/zh-cn.js	(rejected hunks)
 +    goml024: "发起拼团",
 +    goml025: "购买数量",
 +  }
-+  
 +
- 
++
+
    //index(in)
 -  injs0001:"Halgai-Zhy",
 +  //index/index/js/
@@ -83,12 +83,12 @@ diff a/language/zh-cn.js b/language/zh-cn.js	(rejected hunks)
 +    inml0008: "领取",
 +    inml0009: "天内有效",
 +    inml0010: "没有更多啦",
- 
+
 -  inmls:{
 -    inml0001:"搜索",
 -    inml0002:"请输入搜索内容"
    },
- 
+
    //kanjia(ka)
 -
 +  //kanjia/index/
@@ -113,7 +113,7 @@ diff a/language/zh-cn.js b/language/zh-cn.js	(rejected hunks)
 +    kaml010: "元",
 +    kaml011: "以当前价购买",
 +  }
-+  
++
    //maidan(ma)
 +  //maidan/index/js/
 +  majs001 : "请填写正确的消费金额" ,
@@ -130,7 +130,7 @@ diff a/language/zh-cn.js b/language/zh-cn.js	(rejected hunks)
 +  majs013 : "成功",
 +  majs014 : "买单成功，欢迎下次光临 ！",
 +  majs015 : "失败",
-+   
++
 +  //maidan/index/html/
 +  maml{
 +    maml0001: "消费金额" ,
@@ -138,10 +138,10 @@ diff a/language/zh-cn.js b/language/zh-cn.js	(rejected hunks)
 +    maml0003: "消费满" ,
 +    maml0004: "元" ,
 +    maml0005: "确认支付" ,
-+    maml0006: "减" 
++    maml0006: "减"
 +  }
-+  
- 
++
+
    //my(my)
 +  //my/index/js
 +  myjs0001: "关于我们",
@@ -166,7 +166,7 @@ diff a/language/zh-cn.js b/language/zh-cn.js	(rejected hunks)
 +
 +
 +
- 
+
    //mycoupons(myc)
 +  //mycoupons/index/json/
 +  mycjson: "我的优惠劵"
@@ -181,11 +181,11 @@ diff a/language/zh-cn.js b/language/zh-cn.js	(rejected hunks)
 +  }
 +
 +
- 
+
    //notice(no)
 +  //notice/index/json/
 +  nojson : "公告详情",
-+  
- 
++
+
    //order-details(ord)
- 
+

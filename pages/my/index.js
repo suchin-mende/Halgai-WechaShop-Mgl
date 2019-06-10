@@ -1,7 +1,7 @@
 const app = getApp()
 const CONFIG = require('../../config.js')
 const HalgaiAPI = require('../../halgaiApi/main')
-const HalgaiI18 = require('../../language/zh-cn')
+const HalgaiI18 = require('../../language/mn')
 Page({
 	data: {
     balance:0.00,
@@ -11,8 +11,8 @@ Page({
     mymls: HalgaiI18.mymls
   },
 	onLoad() {
-    
-	},	
+
+	},
   onShow() {
     let that = this;
     let userInfo = wx.getStorageSync('userInfo')

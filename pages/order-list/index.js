@@ -1,7 +1,7 @@
 const wxpay = require('../../utils/pay.js')
 const app = getApp()
 const HalgaiAPI = require('../../halgaiApi/main')
-const HalgaiI18 = require('../../language/zh-cn')
+const HalgaiI18 = require('../../language/mn')
 Page({
   data: {
     orlmls: HalgaiI18.orlmls,
@@ -60,10 +60,10 @@ Page({
           _msg += HalgaiI18.orljs0006 + res.data.balance + HalgaiI18.orljs0005
           if (money - res.data.balance > 0) {
             _msg += HalgaiI18.orljs0008 + (money - res.data.balance) + HalgaiI18.orljs0005
-          }          
+          }
         }
         if (needScore > 0) {
-          _msg += HalgaiI18.orljs0010 + money + HalgaiI18.orljs0011 
+          _msg += HalgaiI18.orljs0010 + money + HalgaiI18.orljs0011
         }
         money = money - res.data.balance
         wx.showModal({

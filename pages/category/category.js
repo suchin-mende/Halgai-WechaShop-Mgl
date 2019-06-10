@@ -1,7 +1,7 @@
 // pages/category/category.js
 
 const HalgaiAPI = require('../../halgaiApi/main')
-const HalgaiI18 = require('../../language/zh-cn')
+const HalgaiI18 = require('../../language/mn')
 Page({
 
   /**
@@ -182,6 +182,6 @@ Page({
 
     }
 
-  
+
   }
 })

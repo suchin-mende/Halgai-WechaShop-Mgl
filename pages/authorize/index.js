@@ -1,6 +1,6 @@
 const HalgaiAPI = require('../../halgaiApi/main')
 var app = getApp();
-const HalgaiI18 = require('../../language/zh-cn')
+const HalgaiI18 = require('../../language/mn')
 Page({
 
   /**

@@ -1,7 +1,7 @@
 import initCalendar from '../../template/calendar/index';
 import { setTodoLabels } from '../../template/calendar/index';
 const HalgaiAPI = require('../../halgaiApi/main')
-const HalgaiI18 = require('../../language/zh-cn')
+const HalgaiI18 = require('../../language/mn')
 Page({
 
   /**
@@ -31,7 +31,7 @@ Page({
   onShow: function () {
     initCalendar({
       afterTapDay: (currentSelect, allSelectedDays) => {
-        // 不是今天，直接 return 
+        // 不是今天，直接 return
         const myDate = new Date();
         // console.log('y:', myDate.getFullYear())
         // console.log('m:', myDate.getMonth() + 1)
@@ -84,7 +84,7 @@ Page({
           });
         })
       }
-    })    
+    })
   },
 
   /**

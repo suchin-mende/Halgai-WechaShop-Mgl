@@ -1,6 +1,6 @@
 const app = getApp()
 const HalgaiAPI = require('../../halgaiApi/main')
-const HalgaiI18 = require('../../language/zh-cn')
+const HalgaiI18 = require('../../language/mn')
 var sliderWidth = 96;
 Page({
 

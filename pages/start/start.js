@@ -1,6 +1,6 @@
 const HalgaiAPI = require('../../halgaiApi/main')
 const CONFIG = require('../../config.js')
-const HalgaiI18 = require('../../language/zh-cn')
+const HalgaiI18 = require('../../language/mn')
 //获取应用实例
 var app = getApp();
 Page({
@@ -43,7 +43,7 @@ Page({
     }
   },
   onShow:function(){
-    
+
   },
   swiperchange: function (e) {
     //console.log(e.detail.current)
