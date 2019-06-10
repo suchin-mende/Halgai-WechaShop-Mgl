@@ -1,0 +1,38 @@
+<form bindsubmit="bindSave" report-submit="true">
+  <image class="logo" src="/images/fxad.jpeg" mode="widthFix" />
+  <view class="weui-cells__title title">{{fxamls.fxaml0001}}</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">{{fxamls.fxaml0002}}</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" value="{{fxamls.fxaml0003}}" disabled style='color:red;' />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">{{fxamls.fxaml0004}}
+          <text style='color:red;'>*</text>
+        </view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="name" class="weui-input" placeholder="{{fxamls.fxaml0005}}" />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">{{fxamls.fxaml0006}}
+          <text style='color:red;'>*</text>
+        </view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="mobile" class="weui-input" placeholder="{{fxamls.fxaml0007}}" />
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells__tips">{{fxamls.fxaml0008}}</view>
+  <view class="weui-btn-area">
+    <button class="weui-btn" type="primary" formType="submit">{{fxamls.fxaml0009}}</button>
+  </view>
+</form>

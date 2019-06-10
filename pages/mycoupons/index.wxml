@@ -1,0 +1,15 @@
+<view class="container">
+    <view class="coupons-list">
+      <view class="coupons-item" wx:for-items="{{coupons}}" wx:for-index="idx"  bindtap="gitCoupon" data-id="{{item.id}}">
+        <view style="font-size: 50rpx"> ￥ {{item.money}}{{mycmls.mycml0002}} </view>
+        <view> {{item.name}} </view>
+        <view> {{mycmls.mycml0001}} {{item.moneyHreshold}} {{mycmls.mycml0004}} </view>
+        <view> {{item.dateEnd}} {{mycmls.mycml0005}} </view>
+      </view>
+    </view>
+    <view style="height:100rpx;background-color:#fff;width:100%;"></view>
+    <view class="bottom-box">
+        <view class="add-btn" bindtap="goBuy">{{mycmls.mycml0006}}</view>
+    </view>
+
+</view>

@@ -1,0 +1,39 @@
+<view class="container">
+  <button wx:if="{{!addressData}}" type="primary" class="save-btn" bindtap="readFromWx">{{admls.adml0001}}</button>
+    <form bindsubmit="bindSave" report-submit="true">
+    <view class="form-box">
+        <view class="row-wrap">
+            <view class="label">{{admls.adml0002}}</view>
+            <view class="label-right">
+                <input name="linkMan" class="input" type="text" placeholder="{{admls.adml0009}}"value="{{addressData.linkMan}}{{wxaddress.userName}}"/>
+            </view>
+        </view>
+        <view class="row-wrap">
+            <view class="label">{{admls.adml0003}}</view>
+            <view class="label-right">
+                <input name="mobile" class="input" maxlength="11" type="number" placeholder="{{admls.adml0010}}" value="{{addressData.mobile}}{{wxaddress.telNumber}}"/>
+            </view>
+        </view>
+        <view class="row-wrap" bindtap="selectCity">
+            <view class="label">{{admls.adml0004}}</view>
+            <picker mode="multiSelector" range="{{pickerRegionRange}}" range-key="name" value="{{pickerSelect}}" bindchange="bindchange" bindcolumnchange="bindcolumnchange">
+              {{showRegionStr}}
+            </picker>
+        </view>
+        <view class="addr-details">
+            <view class="label">{{admls.adml0005}}</view>
+            <view class="label-right">
+                <textarea name="address" auto-height placeholder= "{{admls.adml0011}}" value="{{addressData.address}}{{wxaddress.detailInfo}}"/>
+            </view>
+        </view>
+        <view class="row-wrap">
+            <view class="label">{{admls.adml0006}}</view>
+            <view class="label-right">
+                <input name="code" class="input" type="text" value="{{addressData.code}}{{wxaddress.postalCode}}"/>
+            </view>
+        </view>
+    </view>
+    <button type="warn" class="save-btn" formType="submit">{{admls.adml0007}}</button>    
+    <button type="default" class="save-btn" bindtap="deleteAddress" data-id="{{addressData.id}}" wx:if="{{addressData}}">{{admls.adml0008}}</button>
+    </form>
+</view>

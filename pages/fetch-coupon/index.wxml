@@ -1,0 +1,13 @@
+<view class="container">
+    <form bindsubmit="bindSave" report-submit="true">
+    <view class="form-box">
+        <view class="row-wrap">
+            <view class="label">{{femls.feml0001}}</view>
+            <view class="label-right">
+                <input name="pwd" class="input" type="text" placeholder="{{femls.feml0002}}"/>
+            </view>
+        </view>
+    </view>
+    <button type="warn" class="save-btn" formType="submit">{{femls.feml0003}}</button>
+    </form>
+</view>

@@ -1,0 +1,191 @@
+diff a/language/zh-cn.js b/language/zh-cn.js	(rejected hunks)
+@@ -14,24 +14,184 @@
+   //fx(fxs:apply-status,fxa:apply,fxc:commisionLog,fxm:members)
+ 
+   //goods-details(go)
++  //goods-details/index/js/
++  gojs00001:"选择：",
++  gojs00002:"选中规格尺寸时候是否允许加入购物车",
++  gojs00002:"购物类型，加入购物车或立即购买，默认为加入购物车",
++  gojs003: "规格选择弹出框",
++  gojs004: "规格选择弹出框隐藏",
++  gojs005: "选择商品规格",
++  gojs006: "取消该分类下的子栏目所有的选中状态",
++  gojs007: "设置当前选中状态",
++  gojs008: "获取所有的选中规格尺寸数据",
++  gojs009: "计算当前价格",
++  gojs010: "加入购物车",
++  gojs011: "提示",
++  gojs012: "请选择商品规格！",
++  gojs013: "购买数量不能为0！",
++  gojs014: "加入购物车成功",
++  gojs015: "立即购买",
++  gojs016: "请先选择规格尺寸哦",
++  gojs017: "转发成功",
++  gojs018: "转发失败",
++  gojs019: "错误",
++  //goods-details/json/
++  gojson001:"商品详情"
++  //goods-details/index/html/
++  goml{
++    goml001: "分享有赏，好友下单后可获得",
++    goml002: "积分奖励",
++    goml003: "元 现金奖励",
++    goml004: "购买",
++    goml005: "共收到",
++    goml006: "次好评",
++    goml007: "分享",
++    goml008: "分享有赏",
++    goml009: "邀请好友帮忙砍价",
++    goml010: "底价",
++    goml011: "人在拼单，可直接参与",
++    goml012: "已有",
++    goml013: "人参与",
++    goml014: "截止:",
++    goml015: "元",
++    goml016: "商品介绍",
++    goml017: "去拼单",
++    goml018: "大家评论",
++    goml019: "客服",
++    goml020: "购物车",
++    goml021: "加入购物车",
++    goml022: "立即购买",
++    goml023: "单独购买",
++    goml024: "发起拼团",
++    goml025: "购买数量",
++  }
++  
++
+ 
+   //index(in)
+-  injs0001:"Halgai-Zhy",
++  //index/index/js/
++
++  injs001 : "Halgai-Zhy",
++  injs002: "全部",
++  injs003: "错误",
++  injs004: "来晚了",
++  injs005: "你领过了，别贪心哦~",
++  injs006: "您的积分不足",
++  injs007: "已过期",
++  injs008: "领取成功，赶紧去下单吧~",
++  injs009: "転送成功",
++  injs010: "転送失敗",
++  //index/index/html/
++    inml:{
++    inml0001 : "搜索",
++    inml0002: "公告：",
++    inml0003: "店舗広告",
++    inml0004: "元使用",
++    inml0005: "￥",
++    inml0006: "前有效",
++    inml0007: "元使用",
++    inml0008: "领取",
++    inml0009: "天内有效",
++    inml0010: "没有更多啦",
+ 
+-  inmls:{
+-    inml0001:"搜索",
+-    inml0002:"请输入搜索内容"
+   },
+ 
+   //kanjia(ka)
+-
++  //kanjia/index/
++  kajs001: "帮我来砍价",
++  kajs002: "转发成功",
++  kajs003: "转发失败",
++  kajs004: "成功",
++  kajs005: "成功帮好友砍掉",
++  kajs006: " 元",
++  kajs007: "错误",
++  //kanjia/index/html/
++  kaml:{
++    kaml001: "当前价格: ¥",
++    kaml002: " 底价 ¥ ",
++    kaml003: "转发帮 ",
++    kaml004: "砍价",
++    kaml005: "商品介绍",
++    kaml006: "砍价记录",
++    kaml007: "帮忙砍掉",
++    kaml008: "帮忙砍掉",
++    kaml009: "帮忙砍掉",
++    kaml010: "元",
++    kaml011: "以当前价购买",
++  }
++  
+   //maidan(ma)
++  //maidan/index/js/
++  majs001 : "请填写正确的消费金额" ,
++  majs002 : "您本次消费" ,
++  majs003 : "元" ,
++  majs004 : "优惠" ,
++  majs005 : "当前账户可用余额",
++  masj006 : "需要额外微信支付的金额",
++  majs008 : "仍需微信支付",
++  majs009 : "元",
++  majs010 : "请确认消费金额",
++  majs011 : "确认支付" ,
++  majs012 : "取消支付",
++  majs013 : "成功",
++  majs014 : "买单成功，欢迎下次光临 ！",
++  majs015 : "失败",
++   
++  //maidan/index/html/
++  maml{
++    maml0001: "消费金额" ,
++    maml0002: "请询问服务员后输入" ,
++    maml0003: "消费满" ,
++    maml0004: "元" ,
++    maml0005: "确认支付" ,
++    maml0006: "减" 
++  }
++  
+ 
+   //my(my)
++  //my/index/js
++  myjs0001: "关于我们",
++  myjs0002: "本系统基于开源小程序商城系统 https://github.com/EastWorld/wechat-app-mall 搭建，祝大家使用愉快！",
++  myjs0003: "提示",
++  myjs0004: "无法获取手机号码",
++  myjs0005: "绑定成功",
++  myjs0006: "提示",
++  myjs0007: "绑定失败",
++
++  //my/index/html/
++  myml{
++    myml0001: "可用余额",
++    myml0002: "剩余积分",
++    myml0003: "我的订单",
++    myml0004: "待付款",
++    myml0005: "代发货",
++    myml0006: "待评价",
++  }
++  //my/index/json/
++  myjson:"个人中心"
++
++
++
+ 
+   //mycoupons(myc)
++  //mycoupons/index/json/
++  mycjson: "我的优惠劵"
++  //mycoupons/index/html/
++  mycml{
++    mycml0001: "满",
++    mycml0002:"元",
++    mycml0003:"￥",
++    mycml0004:"元使用",
++    mycml0005:"前有效",
++    mycml0006:"立即前往下单"
++  }
++
++
+ 
+   //notice(no)
++  //notice/index/json/
++  nojson : "公告详情",
++  
+ 
+   //order-details(ord)
+ 

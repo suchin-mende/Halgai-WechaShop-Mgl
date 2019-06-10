@@ -1,0 +1,15 @@
+diff --git a/project.config.json b/project.config.json
+index f5b2b7b..8b04b44 100644
+--- a/project.config.json
++++ b/project.config.json
+@@ -10,8 +10,8 @@
+ 	},
+ 	"compileType": "miniprogram",
+ 	"libVersion": "2.4.3",
+-	"appid": "wx6fdd862cd7965ae7",
+-	"projectname": "halgai-zhy",
++	"appid": "wx1cbc8f236aeda528",
++	"projectname": "src",
+ 	"scripts": {},
+ 	"condition": {
+ 		"search": {

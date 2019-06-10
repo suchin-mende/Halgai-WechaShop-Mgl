@@ -1,0 +1,46 @@
+<view class="asset">
+  <view class='item'>    
+    <view>{{asmls.asml0001}}</view>
+    <view>{{balance}}</view>
+  </view>
+  <view class='item'>    
+    <view>{{asmls.asml0002}}</view>
+    <view>{{freeze}}</view>
+  </view>
+  <view class='item right'>    
+    <view>{{asmls.asml0003}}</view>
+    <view>{{totleConsumed}}</view>
+  </view>
+</view>
+<view class='btn-view'>
+  <form bindsubmit="recharge" report-submit="true">
+    <button
+      class="btn"
+      type="default"
+      size="mini"
+      form-type="submit"
+      hover-class="btn-hover"
+      plain="true" >
+      {{asmls.asml0004}}
+    </button>
+  </form>
+  <form bindsubmit="withdraw" report-submit="true">
+    <button
+      class='btn bth-right'
+      type="default"
+      size="mini"
+      form-type="submit"
+      hover-class="btn-hover"
+      plain="true" >
+      {{asmls.asml0005}}
+    </button>
+  </form>
+</view>
+<view class='no-data' wx:if="{{!cashlogs}}">{{asmls.asml0006}}</view>
+<view class='cashlogs' wx:if="{{cashlogs}}" wx:for-items="{{cashlogs}}" wx:key="{{index}}">
+  <view class='profile'>
+    <view class='typeStr'>{{ item.typeStr }}</view>
+    <view class='dateAdd'>{{ item.dateAdd }}</view>
+  </view>
+  <view class='amount' style="color: {{ (item.behavior ==0 ) ? 'red' : 'green' }}"> {{ (item.behavior ==0 ) ? '+' : '-' }} {{ item.amount }} </view>
+</view>

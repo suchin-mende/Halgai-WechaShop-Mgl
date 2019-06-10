@@ -1,0 +1,18 @@
+<image class="logo" src="/images/fxad.jpeg" mode="widthFix" />
+<view class="weui-cells__title title">{{fxcmls.fxcml0001}}</view>
+<view wx:if="{{commisionLog.length <= 0}}" class="weui-loadmore weui-loadmore_line" style='margin-top:200rpx;'>
+  <view class="weui-loadmore__tips weui-loadmore__tips_in-line">{{fxcmls.fxcml0002}}</view>
+</view>
+<view wx:if="{{commisionLog.length > 0}}" class="weui-panel weui-panel_access">
+  <view class="weui-panel__bd">
+    <view wx:for="{{commisionLog}}" wx:key="*this" class="weui-media-box weui-media-box_text">
+      <view class="weui-media-box__title weui-media-box__title_in-text">
+        <text style='color:red'>{{ item.money }} {{item.unit==0?'{{fxcmls.fxcml0003}}':'{{fxcmls.fxcml0004}}'}}</text>
+        <view class="weui-badge" style="margin-left: 5px;">{{item.level}} {{fxcmls.fxcml0005}} {{ item.bili }}%</view>
+        <text wx:if="{{item.isSettlement}}" style='color:green;margin-left:10px;font-size:14px;'>{{fxcmls.fxcml0006}}</text>
+        <text wx:else style='color:gray;margin-left:10px;font-size:14px;'>fxcml0007</text>
+      </view>
+      <view class="weui-media-box__desc">{{ item.nicks }} {{fxcmls.fxcml0008}} {{ item.dateAdd }} {{fxcmls.fxcml0009}}</view>
+    </view>
+  </view>
+</view>

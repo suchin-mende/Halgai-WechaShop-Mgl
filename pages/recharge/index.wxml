@@ -1,0 +1,56 @@
+<view class="container">
+    <form bindsubmit="bindSave" report-submit="true">
+    <view class="form-box">
+        <view class="row-wrap">
+            <view class="label"> {{remls.reml0001}}</view>
+            <view class="label-right">
+                <input name="amount" class="input" type="digit" value="{{amount}}" placeholder=" {{remls.reml0002}} {{recharge_amount_min}}  {{remls.reml0003}}"/>
+            </view>
+        </view>
+    </view>
+    <view class="form-box">
+      <view class="row-wrap">
+        <radio-group name="type" class="radio-group">
+          <label class="radio">
+            <radio value="wx" checked />  {{remls.reml0004}}
+          </label>
+          <label class="radio" style='margin-left:20rpx;'>
+            <radio value="alipay" />  {{remls.reml0005}}
+          </label>
+        </radio-group>
+      </view>
+    </view>
+    
+
+   <block wx:if='{{rechargeSendRules}}'>
+      <view class="charge-rule-wrap">
+            <block  wx:for='{{rechargeSendRules}}' wx:for-item="item">
+            
+                <!-- <button  class='font charge-detail' bindtap="rechargeAmount" data-confine="{{item.confine}}" data-send="{{item.send}}">
+                  <text>充{{item.confine}}送{{item.send}}</text>
+                </button> -->
+                  <view class="btn charge-detail" bindtap="rechargeAmount" data-confine="{{item.confine}}" data-send="{{item.send}}">
+                      <text> {{remls.reml0006}}{{item.confine}}</text>
+                      <text> {{remls.reml0007}}{{item.send}}</text>
+                  </view>
+            </block>
+             
+      </view>
+    </block>
+
+    <button type="warn" class="save-btn" formType="submit"> {{remls.reml0008}}</button>
+    </form>
+    <view wx:if="{{showalipay}}" style='width:100%;font-size: 30rpx;margin-top:30rpx;color:red;text-align:center;margin-bottom:30rpx;'> {{remls.reml0009}}</view>
+    <canvas wx:if="{{showalipay}}" style="width: 200px; height: 200px;text-align:center;" canvas-id="myQrcode"></canvas>
+    <button wx:if="{{showalipay}}" type="primary" class="save-btn" bindtap="saveToMobile"> {{rremls.reml0010}}</button>
+  <view wx:if="{{rechargeSendRules}}" class="weui-panel weui-panel_access">
+      <view class="weui-panel__hd">{{remls.reml0011}}：</view>
+      <view class="weui-panel__bd">
+          <view wx:for="{{rechargeSendRules}}" wx:key="id" class="weui-media-box weui-media-box_text">
+              <view class="weui-media-box__title weui-media-box__title_in-text">{{remls.reml0012}} {{ item.confine }} {{remls.reml0013}} {{ item.send }} {{remls.reml0014}}</view>
+              <view class="weui-media-box__desc">{{remls.reml0015}} {{ item.confine }}{{remls.reml0016}}。</view>
+              <view wx-if="{{item.loop}}" class="weui-media-box__desc">{{remls.reml0017}}。</view>
+          </view>
+      </view>
+  </view>
+</view>

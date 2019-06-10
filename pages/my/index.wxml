@@ -1,0 +1,90 @@
+<view class="container">
+	<view class="userinfo">
+		<image wx:if="{{userInfo && userInfo.avatarUrl}}" class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" background-size="cover"></image>
+		<text class="userinfo-nickname">{{ userInfo.nickName }}</text>
+	</view>
+  <view class="asset">
+    <view class='item' bindtap='goAsset'>
+      <view>{{balance}}</view>
+      <view>{{mymls.myml0001}}</view>
+    </view>
+    <view class='item right' bindtap='goScore'>
+      <view>{{score}}</view>
+      <view>{{mymls.myml0002}}</view>
+    </view>
+  </view>
+  <view style="height:10rpx;background: #eee;width:100%;"></view>
+  <view class="my-item">
+    <navigator url="/pages/order-list/index" hover-class="navigator-hover">{{mymls.myml0003}}</navigator>
+  </view>
+  <view class='order-shortcut'>
+    <view class='item' bindtap='goOrder' data-type="0">
+      <image class="icon" src="/images/order/topay.png" background-size="cover"></image>
+      <view class='text'>{{mymls.myml0004}}</view>
+    </view>
+    <view class='item' bindtap='goOrder' data-type="1">
+      <image class="icon" src="/images/order/fahuo.png" background-size="cover"></image>
+      <view class='text'>{{mymls.myml0005}}</view>
+    </view>
+    <view class='item' bindtap='goOrder' data-type="2">
+      <image class="icon" src="/images/order/shouhuo.png" background-size="cover"></image>
+      <view class='text'>{{mymls.myml0018}}</view>
+    </view>
+    <view class='item' bindtap='goOrder' data-type="3">
+      <image class="icon" src="/images/order/pj.png" background-size="cover"></image>
+      <view class='text'>{{mymls.myml0006}}</view>
+    </view>
+  </view>
+
+  <block wx:if="{{vipLevel > 0}}">
+  <view style="height:10rpx;background: #eee;width:100%;"></view>
+  <view class="my-item" wx:if="{{!apiUserInfoMap.base.isSeller}}">
+    <navigator url="/pages/fx/apply-status" hover-class="navigator-hover">{{mymls.myml0007}}</navigator>
+  </view>
+  <view class="my-item" wx:if="{{apiUserInfoMap.base.isSeller}}">
+    <navigator url="/pages/fx/members" hover-class="navigator-hover">{{mymls.myml0008}}</navigator>
+  </view>
+  <view class="my-item" wx:if="{{apiUserInfoMap.base.isSeller}}">
+    <navigator url="/pages/fx/commisionLog" hover-class="navigator-hover">{{mymls.myml0009}}</navigator>
+  </view>
+  </block>
+
+  <view style="height:10rpx;background: #eee;width:100%;"></view>
+  <view class="my-item" wx:if="{{vipLevel > 0}}">
+    <navigator url="/pages/maidan/index" hover-class="navigator-hover">{{mymls.myml0010}}</navigator>
+  </view>
+  <view class="my-item">
+    <navigator url="/pages/asset/index" hover-class="navigator-hover">{{mymls.myml0011}}</navigator>
+  </view>
+  <view class="my-item">
+    <navigator url="/pages/sign/index" hover-class="navigator-hover">{{mymls.myml0012}}</navigator>
+  </view>
+  <view class="my-item">
+    <navigator url="/pages/score-excharge/index" hover-class="navigator-hover">{{mymls.myml0013}}</navigator>
+  </view>  
+  <view class="my-item">
+    <navigator url="/pages/select-address/index" hover-class="navigator-hover">{{mymls.myml0014}}</navigator>
+  </view>
+  <view class="my-item">
+    <navigator url="/pages/mycoupons/index" hover-class="navigator-hover">{{mymls.myml0015}}</navigator>
+  </view>
+  <view wx:if="{{userMobile}}" class="my-item" style="border:none;padding-right:150rpx;width:auto;">
+    {{userMobile}}
+  </view>
+  <view style="height:20rpx;background: #eee;width:100%;"></view>
+  <view class="about" bindtap="aboutUs">
+    {{mymls.myml0019}}
+  </view>
+
+  <view style="height:20rpx;background: #eee;width:100%;"></view>
+  <view wx:if="{{!userMobile}}" class="bind-phone-number">
+    <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">{{mymls.myml0016}}</button>
+  </view>
+  <view class="my-item to-authorize">
+    <button type="warn" bindtap="relogin">{{mymls.myml0017}}</button>
+  </view>
+  
+  <view style="height:20rpx;background: #eee;width:100%;"></view>
+  <view class="version">Powered by HALGAI v {{version}}</view>
+  <view style="height:20rpx;background: #eee;width:100%;"></view>
+</view>
