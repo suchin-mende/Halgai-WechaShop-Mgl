@@ -1,10 +1,12 @@
 <template name="no-goods">
+<view class='cart-box'>
     <view class="title-box">
         {{temls.teml0001}}
     </view>
     <view class="to-index-btn" bindtap="toIndexPage">
              {{temls.teml0002}}
     </view>
+</view>
 </template>
 
 <template name="cart-goods-list">

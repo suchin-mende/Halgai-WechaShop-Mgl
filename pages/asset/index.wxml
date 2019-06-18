@@ -1,15 +1,27 @@
+<view class='page'>
 <view class="asset">
-  <view class='item'>    
-    <view>{{asmls.asml0001}}</view>
-    <view>{{balance}}</view>
+  <view class='item'>
+
+  <view>
+    <view class='text'>{{asmls.asml0001}}</view>
+    <view class='text' style='transform: rotate(90deg)'>{{balance}}</view>
+    </view>
+
   </view>
-  <view class='item'>    
-    <view>{{asmls.asml0002}}</view>
-    <view>{{freeze}}</view>
+  <view class='item'>  
+
+<view>
+    <view class='text'>{{asmls.asml0002}}</view>
+    <view class='text' style='transform: rotate(90deg)'>{{freeze}}</view>
+</view>
+
   </view>
-  <view class='item right'>    
-    <view>{{asmls.asml0003}}</view>
-    <view>{{totleConsumed}}</view>
+
+  <view class='item right'>   
+  <view>
+    <view class='text'>{{asmls.asml0003}}</view>
+    <view class='text' style='transform: rotate(90deg)'>{{totleConsumed}}</view>
+    </view> 
   </view>
 </view>
 <view class='btn-view'>
@@ -43,4 +55,5 @@
     <view class='dateAdd'>{{ item.dateAdd }}</view>
   </view>
   <view class='amount' style="color: {{ (item.behavior ==0 ) ? 'red' : 'green' }}"> {{ (item.behavior ==0 ) ? '+' : '-' }} {{ item.amount }} </view>
+</view>
 </view>
