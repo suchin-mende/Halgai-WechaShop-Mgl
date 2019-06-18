@@ -9,7 +9,8 @@
     </view>
     <view style="height:100rpx;background-color:#fff;width:100%;"></view>
     <view class="bottom-box">
-        <view class="add-btn" bindtap="goBuy">{{mycmls.mycml0006}}</view>
+        <view class="add-btn" bindtap="goBuy"></view>
+        <view style='writing-mode:vertical-lr; margin-top:20rpx;'>{{mycmls.mycml0006}}</view>
     </view>
 
 </view>
