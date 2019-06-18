@@ -11,6 +11,3 @@
 .wxParse-img {
   display: block !important;
 }
-button[type='warn']{
-  background: #009f3c;
-}
