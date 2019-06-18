@@ -6,15 +6,14 @@ page{
     justify-content: initial;
 }
 .form-box{
-    width:100rpx;
-    height: 1205rpx;
+    width:750rpx;
+    height: 120rpx;
     /* right: 300rpx; */
-    margin-right: 324px;
+    margin-right: 5rpx;
     position: relative;
     background-color: #fff;
 }
 .row-wrap{
-    width: 300rpx;
     height: 120rpx;
     line-height: 88rpx;
     margin-left: 30rpx;
@@ -25,10 +24,10 @@ page{
 .row-wrap .label{
     width: 160rpx;
     height: 160rpx;
-    font-size: 40rpx;
+    font-size: 45rpx;
     writing-mode: vertical-lr;
-    position:absolute;
     margin-left: 5rpx;
+    padding-top: 25rpx;
     color: #000
     
 }
@@ -39,12 +38,13 @@ page{
      
 }
 .row-wrap .label-right input{
-    height: 200rpx;
-    width: 300rpx;
-    font-size: 25rpx; 
-    /* margin-left: 30px; */
-    margin-top: 6px;
-    writing-mode: vertical-lr; 
+    /* height: 80rpx; */
+    width: 500rpx;
+    font-size: 30rpx; 
+    /* padding-top: 15rpx; */
+    border: 1rpx solid #9d9d9d;
+    margin-top: 40rpx;
+    /* writing-mode: vertical-lr;  */
 }
 .row-wrap .right-box{
     margin-right: 30rpx; 
@@ -66,14 +66,12 @@ page{
 .save-btn{
     background-color: #cdcdcd;
     color:#fff;
-    width: 100rpx;
-    height: 150rpx;
-    float: left;
-    text-align: center;
-    line-height: 19px;
-    font-size: 36rpx;
-    margin-top: 936rpx;
+    width: 30%;
+    height: 100rpx;
+    font-size: 40rpx;   
+    line-height: 86rpx;
     writing-mode: vertical-lr;
+    
 }
 button[type="default"]{
     background-color: #ffffff;

@@ -97,26 +97,26 @@ swiper-item image {
    height: 339rpx;
 }
 .goods-box .goods-title{
-  width: 280rpx;
+  /* width: 280rpx; */
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   font-size: 25rpx;
-  padding: 24rpx 0 0rpx 0;
+  padding-top: 24rpx;
   color:#000;
-  /* margin-left: 15rpx;
+  word-break: break-all;
+  float: right;
+  writing-mode: vertical-lr;
+  height: 300rpx;
+  /* line-height: 470rpx; */
   position: relative;
-  left: 140px;
-  bottom: 170px;
-  float: 10px;
-  writing-mode: vertical-lr; */
-
+  top: -340rpx;
 }
 .goods-box .goods-price{
   width: 280rpx;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-size: 24rpx;
-  padding: 24rpx 0;
+  padding: 15rpx;
   color:#009f3c;
   margin-left: 24rpx;
 }
@@ -144,8 +144,8 @@ swiper-item image {
   line-height: 80rpx;
   width: 80rpx;
   /* margin-top: 1rpx; */
-  margin-left: 670rpx;
-  margin-top: 30px;
+  left: 670rpx;
+  top: 30px;
   background-color: rgba(241, 236, 236, 0.678);
   position: absolute;
   z-index: 2;

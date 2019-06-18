@@ -62,7 +62,7 @@ module.exports = {
 
   femls: {
     feml0001: "ᠳᠤᠬᠢᠶ᠎ᠠ",
-    feml0002: "ᠤᠷᠠᠮᠰᠢᠭᠤᠯᠤᠯ ᠤᠨ ᠳᠤᠬᠢᠶ᠎ᠠ",
+    feml0002: "",
     feml0003: "ᠤᠳᠤ ᠠᠪᠬᠤ",
   },
   //fx(fxs:apply-status,fxa:apply,fxc:commisionLog,fxm:members)
