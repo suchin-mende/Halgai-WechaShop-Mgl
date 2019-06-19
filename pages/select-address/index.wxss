@@ -43,19 +43,18 @@
 }
 .bottom-box{
     position: fixed;
-    width: 100%;
-    bottom: 0;
+    top: 20rpx;
+    left: 0;
     font-size:28rpx;
     color:#000000;
-    border-top: 1rpx solid #eee;
-    height:100rpx;
+    height:100%;
     line-height: 100rpx;
-    background: #fff url(https://cdn.it120.cc/images/weappshop/arrow-right.png) no-repeat 705rpx center;
-    background-size: 15rpx auto;
+    background: #fff url(../../images/arrow-down.png) no-repeat 30rpx;
 }
 .bottom-box .add-btn{
+    margin-top: 30rpx;
     margin-left: 30rpx;
-    padding-left: 70rpx;
+    padding-top: 70rpx;
     background: url(https://cdn.it120.cc/images/weappshop/add-addr.png) no-repeat left center;
     background-size: 40rpx auto;
 }

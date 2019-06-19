@@ -1,28 +1,31 @@
-page{
-    /*height: 100%;*/
-}
 .container{
     justify-content:initial;
 }
 .title-box{
-    width: 100%;
-    padding-top: 330rpx;
+  writing-mode: vertical-lr;
+    width: 15%;
+    padding-top: 300rpx;
     text-align: center;
-    font-size:28rpx;
+    font-size:30rpx;
     color:#999;
     background: url(https://cdn.it120.cc/images/weappshop/icon-cart.png) no-repeat center 205rpx;
-    background-size: 100rpx auto;
+    background-size: 80rpx auto;
     margin-bottom: 50rpx;
+    line-height: 110rpx;
+    margin-left: 300rpx;
 }
 .to-index-btn{
+  writing-mode: vertical-lr;
     color:#fff;
     background:#009f3c;
     border-radius:6px;
-    width:300rpx;
-    height:70rpx;
-    line-height: 70rpx;
+    height:300rpx;
+    line-height: 75rpx;
     text-align: center;
     font-size:28rpx;
+    position: relative;
+    left: 195rpx;
+    top: 800rpx;
 }
 .list-top{
     width: 100%;
@@ -215,4 +218,9 @@ page{
 }
 .jiesuan-box .total{
     color: #009f3c;
+}
+
+.cart-box {
+  display: flex;
+  width: 95%;
 }
