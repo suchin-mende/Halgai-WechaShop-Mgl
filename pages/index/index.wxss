@@ -44,7 +44,7 @@ swiper-item image {
 
 .type-navbar{
   white-space: nowrap;
-  height: rpx;
+  height: 320rpx;
   width: 100%;
   background-color: #fff;
 }
@@ -56,23 +56,23 @@ swiper-item image {
 .type-box{
   width:160rpx;
   box-sizing: content-box;
-  font-size: 28rpx;
+  font-size: 35rpx;
   line-height: 50rpx;
   text-align: center;
   display: inline-block;
   overflow: hidden;
-  vertical-align:middle;
+  /* vertical-align:middle; */
   /* margin-top:8px; */
   writing-mode: vertical-lr;
 }
 .type-navbar-item{
   border-bottom: 4rpx solid #fff;
-  padding-top: 10px;
+  padding-right: 20rpx;
+  /* padding-top: 10px; */
 }
 .type-item-on{
   border-bottom: 2rpx solid #009f3c;
 }
-
 .goods-container{
   display: flex;
   justify-content: space-between;  
@@ -103,34 +103,37 @@ swiper-item image {
   overflow: hidden;
   font-size: 25rpx;
   padding-top: 24rpx;
-  color:#000;
+  color:#fff;
   word-break: break-all;
   float: right;
   writing-mode: vertical-lr;
-  height: 300rpx;
+  height: 317rpx;
   /* line-height: 470rpx; */
   position: relative;
   top: -340rpx;
+  background-color:rgba(0,0,0,0.4);
 }
 .goods-box .goods-price{
   width: 280rpx;
   /* overflow: hidden; */
-  font-size: 24rpx;
-  padding: 15rpx;
+  font-size: 30rpx;
+  /* padding: 15rpx; */
   color:#009f3c;
-  margin-left: 24rpx;
+  margin-left: 15rpx;
 }
 .no-more-goods{
   text-align: center;
-  font-size: 24rpx;
-  padding-bottom:48rpx; 
+  font-size: 35rpx;
+  /* padding-bottom:48rpx;  */
   color: #000000;
   writing-mode: vertical-lr;
-  padding-left: 50%;
+  padding-left: 38%;
+  height: 100rpx;
+  line-height: 60rpx;
 }
 .type-container{
   width: 100%;
-  height: 180rpx;
+  height: 300rpx;
   background-color: #fff;
   overflow: hidden;
 }
@@ -151,7 +154,7 @@ swiper-item image {
   z-index: 2;
 }
 .notice_swiper{
-  padding-top: 15rpx;
+  padding-top: 50rpx;
   padding-bottom: 15rpx;
   height: 400rpx;
   line-height: 50rpx;
@@ -161,7 +164,7 @@ swiper-item image {
   padding-left: 18rpx;
   padding-top: 10rpx;
   /* padding-bottom: 10rpx; */
-  font-size: 45rpx;
+  font-size: 36rpx;
   width: 80rpx;
   height: 10rpx;
   line-height: 50rpx;
@@ -193,7 +196,6 @@ swiper-item image {
 .coupons-scroll{
   white-space: nowrap;
   width: 100%;
-  background-color: #fff;
 }
 .coupons-item{
   width:260rpx;
@@ -239,7 +241,7 @@ swiper-item image {
 .search-icon{
   width: 40rpx;
   height: 40rpx;
-  margin-right: 20rpx;
+  /* margin-right: 20rpx; */
 }
 .search-input{
   width: 500rpx;
@@ -265,4 +267,13 @@ swiper-item image {
   /* filter: drop-shadow(1px 1px 2px #7cc623); */
   /* position: absolute;
   z-index: 2; */
+}
+.text {
+  vertical-align: middle;
+  display: inline-block;
+  padding-bottom: 10rpx;
+  padding-left: 23rpx;
+  padding-top: 10rpx;
+
+
 }

@@ -5,9 +5,10 @@
   padding: 15rpx;
   font-size: 18px;
   writing-mode: vertical-lr;
+  overflow-y: hidden;
 }
 .title {
-  color:chocolate;
+  color:#009f3c;
   margin-bottom: 30rpx;
   font-size: 20px;
   /* text-align: center; */
