@@ -11,20 +11,20 @@
 }
 .swiper_box {
   width: 100%;
-  height:562.5rpx;
+  height:500rpx;
 }
 
 swiper-item image {
   width: 100%;
   display: inline-block;
   overflow: hidden;
-  height:562.5rpx;
+  height:500rpx;
 }
 .swiper-container .dots{  
   position: absolute;  
   left: 0;  
   right: 0;  
-  bottom: 20rpx;  
+  bottom: 20px;  
   display: flex;  
   justify-content: center;  
 }  
@@ -44,7 +44,7 @@ swiper-item image {
 
 .type-navbar{
   white-space: nowrap;
-  height: 88rpx;
+  height: rpx;
   width: 100%;
   background-color: #fff;
 }
@@ -56,17 +56,21 @@ swiper-item image {
 .type-box{
   width:160rpx;
   box-sizing: content-box;
-  font-size: 24rpx;
-  line-height: 84rpx;
+  font-size: 28rpx;
+  line-height: 50rpx;
   text-align: center;
   display: inline-block;
   overflow: hidden;
+  vertical-align:middle;
+  /* margin-top:8px; */
+  writing-mode: vertical-lr;
 }
 .type-navbar-item{
   border-bottom: 4rpx solid #fff;
+  padding-top: 10px;
 }
 .type-item-on{
-  border-bottom: 4rpx solid #009f3c;
+  border-bottom: 2rpx solid #009f3c;
 }
 
 .goods-container{
@@ -93,20 +97,26 @@ swiper-item image {
    height: 339rpx;
 }
 .goods-box .goods-title{
-  width: 280rpx;
+  /* width: 280rpx; */
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  font-size: 24rpx;
-  padding: 24rpx 0 0rpx 0;
+  font-size: 25rpx;
+  padding-top: 24rpx;
   color:#000;
-  margin-left: 24rpx;
+  word-break: break-all;
+  float: right;
+  writing-mode: vertical-lr;
+  height: 300rpx;
+  /* line-height: 470rpx; */
+  position: relative;
+  top: -340rpx;
 }
 .goods-box .goods-price{
   width: 280rpx;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-size: 24rpx;
-  padding: 24rpx 0;
+  padding: 15rpx;
   color:#009f3c;
   margin-left: 24rpx;
 }
@@ -115,48 +125,59 @@ swiper-item image {
   font-size: 24rpx;
   padding-bottom:48rpx; 
   color: #000000;
+  writing-mode: vertical-lr;
+  padding-left: 50%;
 }
 .type-container{
   width: 100%;
-  height: 88rpx;
+  height: 180rpx;
   background-color: #fff;
   overflow: hidden;
 }
+
 .notice{
+  /* position: fixed; */
   display: flex;
   justify-content: space-between;  
   flex-wrap:wrap;
-  height: 80rpx;
+  height: 500rpx;
   line-height: 80rpx;
-  width: 750rpx;
-  margin-top: 10rpx;
-  background-color: #fff;
+  width: 80rpx;
+  /* margin-top: 1rpx; */
+  left: 670rpx;
+  top: 30px;
+  background-color: rgba(241, 236, 236, 0.678);
+  position: absolute;
+  z-index: 2;
 }
 .notice_swiper{
   padding-top: 15rpx;
   padding-bottom: 15rpx;
-  height: 50rpx;
+  height: 400rpx;
   line-height: 50rpx;
   width: 635rpx;
 }
 .notice_iteml {
-  padding-left: 25rpx;
-  padding-top: 15rpx;
-  padding-bottom: 15rpx;
-  font-size: 26rpx;
+  padding-left: 18rpx;
+  padding-top: 10rpx;
+  /* padding-bottom: 10rpx; */
+  font-size: 45rpx;
   width: 80rpx;
-  height: 50rpx;
+  height: 10rpx;
   line-height: 50rpx;
   color: #000000;
+  writing-mode: vertical-lr;
 }
 .notice_itemr {
-  padding-left: 10rpx;
+  padding-left: 15rpx;
   font-size: 24rpx;
   overflow: hidden;
   color: #009f3c;
-  width: 635rpx;
-  height: 50rpx;
-  line-height: 50rpx;
+  width: 50rpx;
+  height: 430rpx;
+  line-height: 58rpx;
+  margin-top: 15px;
+  writing-mode: vertical-lr;
 }
 .pos-fiexd{
   position: fixed;
@@ -164,30 +185,30 @@ swiper-item image {
   left: 0;
 }
 .coupons{
-  margin-top:10rpx;
+  /* margin-top:5rpx; */
   width: 100%;
-  height: 180rpx;
   overflow: hidden;
+  /* height: 210rpx; */
 }
 .coupons-scroll{
   white-space: nowrap;
-  height: 180rpx;
   width: 100%;
   background-color: #fff;
 }
 .coupons-item{
-  width:300rpx;
-  height: 180rpx;
+  width:260rpx;
+  height: 210rpx;
   margin: 10rpx;
-  padding-top: 20rpx;
-  padding-left: 15rpx;
+  padding-top: 8rpx;
+  /* padding-left: 15rpx; */
   background-color: #009f3c;
   box-sizing: content-box;
-  font-size: 20rpx;
-  line-height: 35rpx;
+  font-size: 25rpx;
+  line-height: 65rpx;
   overflow: hidden;
   color: #fff;
   display: inline-block;
+  writing-mode: vertical-lr;
 }
 
 .search-view{
@@ -236,4 +257,12 @@ swiper-item image {
   color:#fff;
   border:none;
   position: relative;
+}
+.img {
+  width: 154rpx;
+  height: 35rpx;
+  filter: drop-shadow(2px 2px 2px #398865);
+  /* filter: drop-shadow(1px 1px 2px #7cc623); */
+  /* position: absolute;
+  z-index: 2; */
 }

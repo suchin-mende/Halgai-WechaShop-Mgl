@@ -3,7 +3,7 @@
 <!-- バナー -->
 <view class="container">
 <view wx:if="{{noticeList}}" class="notice">
-      <view class="notice_iteml">{{inmls.inml0002}}</view>
+    <view class="notice_iteml">{{inmls.inml0002}}</view>
       <swiper wx:if="{{noticeList}}" class="notice_swiper" vertical="true" autoplay="true" circular="true" interval="3000">
         <navigator wx:for-items="{{noticeList.dataList}}" wx:key="id" url="/pages/notice/show?id={{item.id}}" open-type="navigate">
           <swiper-item >
@@ -12,6 +12,7 @@
         </navigator>
       </swiper>
     </view>
+    <image src='../../../images/logo.jpg' class='img' > </image>
    <view class="swiper-container">
         <swiper class="swiper_box" 
                     autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
@@ -46,12 +47,13 @@
     <view class="coupons" hidden="{{hasNoCoupons}}">
         <scroll-view class="coupons-scroll" scroll-x="true">
             <view class="coupons-item" wx:for-items="{{coupons}}" wx:for-index="idx" wx:key="id"  bindtap="gitCoupon" data-id="{{item.id}}" data-pwd="{{item.pwd}}">
-               <view style="font-size: 35rpx" wx:if="{{item.moneyMin == item.moneyMax}}"> ￥ {{item.moneyMax}} </view>
-               <view style="font-size: 35rpx" wx:else> ￥ {{item.moneyMin}} - {{item.moneyMax}} </view>
+               <view style="font-size: 25rpx" wx:if="{{item.moneyMin == item.moneyMax}}"> ￥ {{item.moneyMax}} </view>
+               <view style="font-size: 25rpx" wx:else> ￥ {{item.moneyMin}} - {{item.moneyMax}} </view>
                <view> {{item.name}} </view>
                <view> {{inmls.inml0003}} {{item.moneyHreshold}} {{inmls.inml0004}} </view>
                <view wx:if="{{item.dateEndType == 0}}"> {{item.dateEnd}} {{inmls.inml0006}} </view>
-               <view wx:if="{{item.dateEndType == 1}}"> {{inmls.inml0008}} {{item.dateEndDays}} {{inmls.inml0009}} </view>
+               <view wx:if="{{item.dateEndType == 1}}"> {{inmls.inml0008}} {{item.dateEndDays}} {{inmls.inml0009}} 
+               </view>
             </view>
         </scroll-view>
     </view>
@@ -79,3 +81,4 @@
     </view>
     <view hidden="{{loadingMoreHidden ? true : false}}" class="no-more-goods">{{inmls.inml0010}}</view>
 </view>
+

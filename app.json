@@ -45,27 +45,27 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "images/nav/home-off.png",
-        "selectedIconPath": "images/nav/home-on.png",
-        "text": "首页"
+        "iconPath": "images/nav/Logo-2.png",
+        "selectedIconPath": "images/nav/Logo-2.png",
+        "text": ""
       },
       {
         "pagePath": "pages/search/index",
         "iconPath": "images/nav/search-off.png",
         "selectedIconPath": "images/nav/search-on.png",
-        "text": "搜索"
+        "text": ""
       },
       {
         "pagePath": "pages/shop-cart/index",
         "iconPath": "images/nav/cart-off.png",
         "selectedIconPath": "images/nav/cart-on.png",
-        "text": "购物车"
+        "text": ""
       },
       {
         "pagePath": "pages/my/index",
         "iconPath": "images/nav/my-off.png",
         "selectedIconPath": "images/nav/my-on.png",
-        "text": "个人中心"
+        "text": ""
       }
     ]
   },

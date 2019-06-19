@@ -3,12 +3,15 @@
 .notice {
   width: 720rpx;
   padding: 15rpx;
-  font-size: 14px;
+  font-size: 18px;
+  writing-mode: vertical-lr;
 }
 .title {
   color:chocolate;
   margin-bottom: 30rpx;
-  text-align: center;
+  font-size: 20px;
+  /* text-align: center; */
+  /* writing-mode: vertical-lr; */
 }
 .text {
   line-height: 30px;
