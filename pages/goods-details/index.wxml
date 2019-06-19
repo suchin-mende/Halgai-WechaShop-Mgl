@@ -17,26 +17,27 @@
         <view class="swiper-container" wx:if="{{goodsDetail.basicInfo.videoId}}">
           <video src="{{videoMp4Src}}" autoplay="true" loop="true" style='width:100%'></video>
         </view>
-        <view class="goods-title" style=" writing-mode: vertical-lr; font-size: 14px;margin:0px 10px 0px auto;padding:8px; border-radius: 8px; background-color: rgba(0,0,0,0.2);">{{goodsDetail.basicInfo.name}}</view>
+        <view class="goods-title-a">{{goodsDetail.basicInfo.name}}</view>
    </view>
   <view class="goods-info">
         <view class="goods-share" wx:if="{{goodsDetail.basicInfo.commissionType == 1}}">{{gomls.goml0001}} ( {{goodsDetail.basicInfo.commission}}{{ gomls.goml0002}} ) </view>
     <view wx:if="{{hasMoreSelect}}" class="row-arrow" style="margin-bottom:18rpx;background-size:0rpx auto;color:#009f3c;width:120rpx;height:80rpx;" >
-     ¥ {{selectSizePrice}}
+     ¥ {{selectSizePrice}}   
+
    </view>
     <!-- <view class="goods-price" style="padding-left:0rpx;">¥ {{selectSizePrice}}</view> -->
-        <view class="goods-price" style="font-size:36rpx; writing-mode: vertical-lr;width:80rpx;height:580rpx;"> {{gomls.goml0003}} ( {{goodsDetail.basicInfo.numberOrders}} {{gomls.goml0004}} ) </view>
-        <view class="goods-price" style="font-size:36rpx; writing-mode: vertical-lr;width:80rpx;height:580rpx;"> {{gomls.goml0005}} ( {{goodsDetail.basicInfo.numberGoodReputation}} {{gomls.goml0006}} ) </view>
+        <view class="goods-price-b"> {{gomls.goml0003}} ( {{goodsDetail.basicInfo.numberOrders}} {{gomls.goml0004}} ) </view>
+        <view class="goods-price-c"> {{gomls.goml0005}} ( {{goodsDetail.basicInfo.numberGoodReputation}} {{gomls.goml0006}} ) </view>
    
-     <view class="goods-price" style="padding-left:0rpx; writing-mode: vertical-lr;width:80rpx;height:580rpx;"> {{gomls.goml0007}} ( <text style='color:#009f3c'>{{gomls.goml0008}} {{curGoodsKanjia.minPrice}} {{gomls.goml0009}} </text> ) </view>
+     <view class="goods-price-d"> {{gomls.goml0007}} ( <text style='color:#009f3c'>{{gomls.goml0008}} {{curGoodsKanjia.minPrice}} {{gomls.goml0009}} </text> ) </view>
 
-     <view class="goods-price" style="padding-left:0rpx; writing-mode: vertical-lr;width:80rpx;height:580rpx;"> {{selectSize}}</view>
+     <!-- <view class="goods-price-a" style="writing-mode: vertical-lr;"> {{selectSize}}</view> -->
      
       <view class="goods-share" wx:if="{{goodsDetail.basicInfo.commissionType == 2}}"> {{gomls.goml0001}}{{goodsDetail.basicInfo.commission}} {{gomls.goml0010}}</view>
         <view class="goods-info-fx"><image src='../../images/qd.png' />
           <button open-type="share"> {{gomls.goml0011}}</button>
         </view>
-         <text style="writing-mode: vertical-lr;padding-left:348rpx;">{{gomls.goml0012}}</text>
+         <text style="writing-mode: vertical-lr;margin-left:184px;">{{gomls.goml0012}}</text>
    </view>
    <view wx:if="{{curGoodsKanjia}}" class="row-arrow" bindtap="goKanjia">
        {{gomls.goml0007}} ( <text style='color:#009f3c'>{{gomls.goml0008}}{{curGoodsKanjia.minPrice}} {{gomls.goml0009}}</text> )
@@ -91,8 +92,7 @@
             <view  class="shop-num">  {{gomls.goml0021}}</view>
         </view>
         <view wx:if="{{!goodsDetail.basicInfo.pingtuan}}" class="join-shop-cart" bindtap="toAddShopCar"> {{gomls.goml0022}}</view>
-       <view class="goods-info-fx"><image src='../../images/qd.png' />    
-        </view>
+      
         <view wx:if="{{!goodsDetail.basicInfo.pingtuan}}" class="now-buy"  bindtap="tobuy"> {{gomls.goml0023}}</view>        
         <view wx:if="{{goodsDetail.basicInfo.pingtuan}}" class="join-shop-cart" bindtap="tobuy">{{gomls.goml0024}}</view>
         <view wx:if="{{goodsDetail.basicInfo.pingtuan}}" class="now-buy" bindtap="toPingtuan">{{gomls.goml0025}}</view>
@@ -106,7 +106,6 @@
                 </view>
                 <view class="pop-goods-des">
                     <view class="pop-goods-title">{{goodsDetail.basicInfo.name}}</view>
-                    <view class="pop-goods-price">¥ {{selectSizePrice}}</view>
                 </view>
                 <view class="pop-goods-close" bindtap="closePopupTap"></view>
              </view>
@@ -121,7 +120,7 @@
                 </block>
              </view> 
              <view class="buy-num-box">
-                <view class="num-label">{{gomls.goml0026}}</view>
+                <!-- <view class="num-label">{{gomls.goml0026}}</view> -->
                 <view class="num-box">
                     <view class="num-jian {{buyNumber == buyNumMin ? 'hui': ''}}" bindtap="numJianTap">-</view>
                     <view class="num-input">
@@ -133,9 +132,12 @@
              <view class="popup-join-btn" wx:if="{{shopType =='addShopCar'}}" bindtap="addShopCar">
                 {{gomls.goml0022}}
              </view>
+             <view class="pop-goods-price">¥ {{selectSizePrice}}</view>
+
+
              <view class="popup-join-btn" data-shopType="{{shopType}}" wx:if="{{shopType =='tobuy' || shopType =='toPingtuan'}}" bindtap="buyNow">
                 {{gomls.goml0023}}
-             </view>                      
+             </view>
         </view>
     </view>
 </view>
