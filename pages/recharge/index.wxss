@@ -23,6 +23,8 @@ page{
     font-size: 28rpx;
     /*justify-content: space-between;*/
     writing-mode: vertical-lr;
+    text-orientation: sideways-right;
+  white-space: nowrap;
 }
 .row-wrap .label{
     color: #000;
@@ -35,12 +37,20 @@ page{
 .row-wrap .label-right input{
     height: 60rpx;
     font-size: 28rpx;
-    transform: rotate(90deg);
-    position: relative;
-    left: -121rpx;
     width: 320rpx;
-    top: 180rpx;
     border: 1px solid #eee;
+    float: left;
+ line-height: normal;
+-ms-transform: rotate(90deg) translate(0, -100%);
+-ms-transform-origin: 0% 0%;
+-webkit-transform: rotate(90deg) translate(0, -100%);
+-webkit-transform-origin: 0% 0%;
+-moz-transform: rotate(90deg) translate(0,-100%);
+-moz-transform-origin: 0% 0%;
+-o-transform: rotate(90deg) translate(0,-100%);
+-o-transform-origin: 0% 0%;
+white-space: nowrap;
+margin-left: 8rpx;
 }
 .row-wrap .right-box{
     margin-right: 30rpx;
@@ -52,6 +62,8 @@ page{
 
 .b-save-btn {
   writing-mode:vertical-lr;
+  text-orientation: sideways-right;
+  white-space: nowrap;
 color:#fff;
 background:#009f3c;
 border-radius:6px;
