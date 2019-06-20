@@ -1,5 +1,5 @@
 <view class="score">
-  <view> {{scmls.scml0001}}</view>
+  <view class='text'> {{scmls.scml0001}}</view>
   <view>{{score}}</view>
 </view>
 <view class='no-data' wx:if="{{!cashlogs}}"> {{scmls.scml0002}}~</view>

@@ -3,13 +3,16 @@
     background-color: #F2f2f2;
 }
 .status-box{
-    width:100%;
-    height: 88rpx;
-    line-height: 88rpx;
+    width:30rpx;
+    height: 100%;
+    line-height: 200rpx;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
+    writing-mode: vertical-lr;
+    position: absolute;
+    top: 0;
 }
 .status-box .status-label{
     width: 150rpx;
@@ -22,7 +25,7 @@
 }
 .status-box .status-label.active{
     color:#009f3c;
-    border-bottom: 6rpx solid #009f3c;
+    border-right: 6rpx solid #009f3c;
 }
 .status-box .status-label .red-dot{
     width: 16rpx;
@@ -37,12 +40,15 @@
     width: 100%;
     position: absolute;
     bottom: 0;
-    top: 88rpx;
-    left: 0;
+    top: 0;
+    left: 90rpx;
     right: 0;
     text-align: center;
-    padding-top: 203rpx;
+    padding-top: 300rpx;
+    padding-left: 280rpx;
     background-color: #F2f2f2;
+    display: flex;
+    writing-mode: vertical-lr;
 }
 .no-order-img{
     width: 81rpx;
@@ -52,7 +58,8 @@
 .no-order .text{
     font-size:28rpx;
     color:#999999;
-    text-align: center
+    text-align: center;
+    margin-left: 15rpx;
 }
 .order-list{
     width: 100%;

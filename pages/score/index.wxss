@@ -14,8 +14,15 @@
 .no-data {
   margin-top: 100rpx;
   text-align: center;
-  font-size: 13px;
+  font-size: 20px;
   color:#ccc;
+  writing-mode: vertical-lr;
+  margin-left: 45%;
+}
+
+.text {
+  writing-mode: vertical-lr;
+  margin-left: 42%;
 }
 
 .cashlogs {

@@ -62,7 +62,7 @@ module.exports = {
 
   femls: {
     feml0001: "ᠳᠤᠬᠢᠶ᠎ᠠ",
-    feml0002: "ᠤᠷᠠᠮᠰᠢᠭᠤᠯᠤᠯ ᠤᠨ  ᠳᠤᠬᠢᠶ᠎ᠠ",
+    feml0002: "",
     feml0003: "ᠤᠳᠤ ᠠᠪᠬᠤ",
   },
   //fx(fxs:apply-status,fxa:apply,fxc:commisionLog,fxm:members)
@@ -165,12 +165,12 @@ module.exports = {
   //index/index/html/
   inmls: {
     inml0001: " ᠬᠠᠢᠬᠤ",
-    inml0002: " ᠮᠡᠳᠡᠭᠡ：",
+    inml0002: " ᠮᠡᠳᠡᠭᠡ",
     inml0003: " ᠲᠡᠯᠭᠡᠭᠦᠷ ᠤ᠋ᠨ  ᠮᠡᠳᠡᠭᠡᠯᠡᠯ",
     inml0005: "￥",
     inml0006: " ᠡᠮᠦᠨ᠎ᠡ ᠬᠦᠴᠦᠨ ᠲᠠᠢ",
     inml0007: " ᠲᠥᠭᠦᠷᠢᠭ ᠵᠠᠷᠤᠭᠰᠠᠨ",
-    inml0008: " ᠠᠪᠬᠤ",
+    // inml0008: " ᠠᠪᠬᠤ",
     inml0009: " ᠡᠳᠦᠷ ᠲᠤᠲᠤᠷ᠎ᠠ ᠬᠦᠴᠦᠨ ᠳᠠᠢ",
     inml0010: " ᠥᠭᠡᠷ᠎ᠡ ᠶᠠᠭᠤᠮ᠎ᠠ ᠦᠭᠡᠢ",
 

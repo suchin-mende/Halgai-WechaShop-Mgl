@@ -13,7 +13,8 @@
         </view>
     </view>
     <view class="bottom-box">
-        <view class="add-btn" bindtap="addAddess">{{semls.seml0001}}</view>
+        <view class="add-btn" bindtap="addAddess"></view>
+        <view style='writing-mode: vertical-lr; margin-top: 20rpx;'>{{semls.seml0001}}</view>
     </view>
 
 </view>

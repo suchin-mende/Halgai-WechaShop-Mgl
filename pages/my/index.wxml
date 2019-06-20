@@ -1,22 +1,27 @@
 <view class="container">
+<view class='head-menu'>
 	<view class="userinfo">
 		<image wx:if="{{userInfo && userInfo.avatarUrl}}" class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" background-size="cover"></image>
 		<text class="userinfo-nickname">{{ userInfo.nickName }}</text>
-	</view>
-  <view class="asset">
+
+    <view class="asset">
     <view class='item' bindtap='goAsset'>
+      <view class='text'>{{mymls.myml0001}}</view>
       <view>{{balance}}</view>
-      <view>{{mymls.myml0001}}</view>
     </view>
     <view class='item right' bindtap='goScore'>
+      <view class='text'>{{mymls.myml0002}}</view>
       <view>{{score}}</view>
-      <view>{{mymls.myml0002}}</view>
     </view>
   </view>
-  <view style="height:10rpx;background: #eee;width:100%;"></view>
-  <view class="my-item">
+
+	</view>
+
+  <!-- <view style="height:10rpx;background: #eee;width:100%;"></view> -->
+  <view class="my-item-total">
     <navigator url="/pages/order-list/index" hover-class="navigator-hover">{{mymls.myml0003}}</navigator>
   </view>
+  <view class='t-order'>
   <view class='order-shortcut'>
     <view class='item' bindtap='goOrder' data-type="0">
       <image class="icon" src="/images/order/topay.png" background-size="cover"></image>
@@ -26,6 +31,9 @@
       <image class="icon" src="/images/order/fahuo.png" background-size="cover"></image>
       <view class='text'>{{mymls.myml0005}}</view>
     </view>
+  </view>
+
+  <view class='order-shortcut'>
     <view class='item' bindtap='goOrder' data-type="2">
       <image class="icon" src="/images/order/shouhuo.png" background-size="cover"></image>
       <view class='text'>{{mymls.myml0018}}</view>
@@ -35,9 +43,14 @@
       <view class='text'>{{mymls.myml0006}}</view>
     </view>
   </view>
+</view>
+</view>
+
+<view class='t-item'>
 
   <block wx:if="{{vipLevel > 0}}">
-  <view style="height:10rpx;background: #eee;width:100%;"></view>
+  <!-- <view style="height:10rpx;background: #eee;width:100%;"></view> -->
+
   <view class="my-item" wx:if="{{!apiUserInfoMap.base.isSeller}}">
     <navigator url="/pages/fx/apply-status" hover-class="navigator-hover">{{mymls.myml0007}}</navigator>
   </view>
@@ -49,10 +62,13 @@
   </view>
   </block>
 
-  <view style="height:10rpx;background: #eee;width:100%;"></view>
+  <!-- <view style="height:10rpx;background: #eee;width:100%;"></view> -->
   <view class="my-item" wx:if="{{vipLevel > 0}}">
     <navigator url="/pages/maidan/index" hover-class="navigator-hover">{{mymls.myml0010}}</navigator>
   </view>
+
+
+
   <view class="my-item">
     <navigator url="/pages/asset/index" hover-class="navigator-hover">{{mymls.myml0011}}</navigator>
   </view>
@@ -68,23 +84,25 @@
   <view class="my-item">
     <navigator url="/pages/mycoupons/index" hover-class="navigator-hover">{{mymls.myml0015}}</navigator>
   </view>
+
   <view wx:if="{{userMobile}}" class="my-item" style="border:none;padding-right:150rpx;width:auto;">
     {{userMobile}}
   </view>
-  <view style="height:20rpx;background: #eee;width:100%;"></view>
-  <view class="about" bindtap="aboutUs">
+  <!-- <view style="height:20rpx;background: #eee;width:100%;"></view> -->
+  <!-- <view class="about" bindtap="aboutUs">
     {{mymls.myml0019}}
+  </view> -->
+
+  <!-- <view style="height:20rpx;background: #eee;width:100%;"></view> -->
+
+  <button wx:if="{{!userMobile}}" class='btn' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">{{mymls.myml0016}}</button>
+  
+ 
+  <button class='btn' bindtap="relogin">{{mymls.myml0017}}</button>
+
   </view>
 
-  <view style="height:20rpx;background: #eee;width:100%;"></view>
-  <view wx:if="{{!userMobile}}" class="bind-phone-number">
-    <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">{{mymls.myml0016}}</button>
-  </view>
-  <view class="my-item to-authorize">
-    <button type="warn" bindtap="relogin">{{mymls.myml0017}}</button>
-  </view>
-  
-  <view style="height:20rpx;background: #eee;width:100%;"></view>
+  <!-- <view style="height:20rpx;background: #eee;width:100%;"></view>
   <view class="version">Powered by HALGAI v {{version}}</view>
-  <view style="height:20rpx;background: #eee;width:100%;"></view>
+  <view style="height:20rpx;background: #eee;width:100%;"></view> -->
 </view>
