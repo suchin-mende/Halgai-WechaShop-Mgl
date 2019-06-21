@@ -49,8 +49,8 @@
             <view class="coupons-item" wx:for-items="{{coupons}}" wx:for-index="idx" wx:key="id"  bindtap="gitCoupon" data-id="{{item.id}}" data-pwd="{{item.pwd}}">
                <view style="font-size: 25rpx" wx:if="{{item.moneyMin == item.moneyMax}}"> ￥ {{item.moneyMax}} </view>
                <view style="font-size: 25rpx" wx:else> ￥ {{item.moneyMin}} - {{item.moneyMax}} </view>
-               <view> {{item.name}} </view>
-               <view> {{inmls.inml0003}} {{item.moneyHreshold}} {{inmls.inml0004}} </view>
+               <view> {{ite0m.name}} </view>
+               <view class='mxboos'> {{inmls.inml0003}} {{item.moneyHreshold}} {{inmls.inml0004}}</view>     
                <view wx:if="{{item.dateEndType == 0}}"> {{item.dateEnd}} {{inmls.inml0006}} </view>
                <view wx:if="{{item.dateEndType == 1}}"> {{inmls.inml0008}} {{item.dateEndDays}} {{inmls.inml0009}} 
                </view>
@@ -61,8 +61,9 @@
         <scroll-view class="type-navbar" scroll-x="true" scroll-left="{{cateScrollTop}}">
             <view class="type-box" wx:for-items="{{categories}}" wx:key="id">
                 <view id="{{item.id}}" class="type-navbar-item {{activeCategoryId == item.id ? 'type-item-on' : ''}}" bindtap="tabClick">
-                <view class='text'>{{item.name}}</view>
-                    <image src="{{item.icon}}" class="search-icon"/>
+                
+                <view class="category-icon"><image src="{{item.icon}}" class="search-icon"/></view>
+                <view class='category-text'>{{item.name}}</view>
                     
                 </view>
             </view>

@@ -54,7 +54,7 @@ swiper-item image {
   color: transparent;
 }
 .type-box{
-  width:160rpx;
+  width:100rpx;
   box-sizing: content-box;
   font-size: 35rpx;
   line-height: 50rpx;
@@ -67,7 +67,7 @@ swiper-item image {
 }
 .type-navbar-item{
   border-bottom: 4rpx solid #fff;
-  padding-right: 20rpx;
+  padding-right: 48rpx;
   /* padding-top: 10px; */
 }
 .type-item-on{
@@ -174,13 +174,16 @@ swiper-item image {
 .notice_itemr {
   padding-left: 15rpx;
   font-size: 24rpx;
-  overflow: hidden;
   color: #009f3c;
   width: 50rpx;
-  height: 430rpx;
+  height: 300rpx;
   line-height: 58rpx;
   margin-top: 15px;
   writing-mode: vertical-lr;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+ 
 }
 .pos-fiexd{
   position: fixed;
@@ -207,13 +210,19 @@ swiper-item image {
   box-sizing: content-box;
   font-size: 22rpx;
   line-height: 65rpx;
-  overflow: hidden;
   color: #fff;
   display: inline-block;
   writing-mode: vertical-lr;
   border-radius: 20rpx;
-}
+  overflow: hidden;
 
+}
+.mxboos{
+  overflow: hidden;
+  text-overflow: ellipsis;
+   white-space: nowrap; 
+   height:160rpx;
+}
 .search-view{
   /* position:fixed; */
   left:0;
@@ -242,6 +251,10 @@ swiper-item image {
 .search-icon{
   width: 40rpx;
   height: 40rpx;
+  display: block;
+  padding-left: 5rpx;
+  padding-top: 5rpx;
+
   /* margin-right: 20rpx; */
 }
 .search-input{
@@ -269,12 +282,18 @@ swiper-item image {
   /* position: absolute;
   z-index: 2; */
 }
-.text {
+.category-icon {
+  float: left
+}
+.category-text {
   vertical-align: middle;
-  display: inline-block;
-  padding-bottom: 10rpx;
-  padding-left: 23rpx;
-  padding-top: 10rpx;
+  float: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 190rpx;
+  padding-top: 20rpx;
+
 
 
 }

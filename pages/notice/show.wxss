@@ -17,6 +17,10 @@
   background-color: #dddddd;
   padding-top: 10rpx;
   padding-left: 10rpx;
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 400rpx; */
   /* text-align: center; */
   /* writing-mode: vertical-lr; */
 }
