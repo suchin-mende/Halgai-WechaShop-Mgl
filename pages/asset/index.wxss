@@ -32,10 +32,10 @@
 .btn-view .btn {
   border-color: #fff !important;
   color:#fff !important;
-  width: 10%;
   height: 15%;
+  margin-left: 1%;
   margin-bottom: 5%;
-  line-height: 10%;
+  line-height: 0%;
 }
 .btn-view .bth-right {
 
