@@ -12,9 +12,9 @@ page{
 }
 .row-wrap{
     width: 720rpx;
-    height: 88rpx;
+    height: 120rpx;
     line-height: 88rpx;
-    margin-left: 30rpx;
+    padding-top: 20rpx;
     border-bottom: 1rpx solid #eee;
     display: flex;
     font-size: 28rpx;
@@ -22,12 +22,15 @@ page{
 }
 .row-wrap .label{
     width: 160rpx;
-    color: #000
+    color: #000;
+    writing-mode: vertical-lr;
 }
 .row-wrap .label-right{
     flex: 1;
-    height: 88rpx;
+    height: 90rpx;
     line-height: 88rpx;
+    padding-top: 10rpx;
+    margin-left: 30rpx;
 }
 .row-wrap .label-right input{
     height: 100%;
@@ -45,7 +48,6 @@ page{
 .cancel-btn{
     width: 690rpx;
     height: 80rpx;
-    line-height: 80rpx;
     text-align: center;
     margin-top:30rpx; 
     border-radius: 6rpx;
@@ -54,10 +56,26 @@ page{
 .save-btn{
     background-color: #009f3c;
     color:#fff;
+    writing-mode: vertical-lr;
+    padding-left: 0;
+    padding-right: 0;
+    height: 300rpx;
+    width: 90rpx;
+    position: fixed;
+    right: 180rpx;
+    bottom: 60rpx;
 }
 button[type="default"]{
     background-color: #ffffff;
     color:#000;
+    writing-mode: vertical-lr;
+    height: 300rpx;
+    width: 90rpx;
+    padding-left: 0;
+    padding-right: 0;
+    position: fixed;
+    right: 60rpx;
+    bottom: 60rpx;
 }
 .addr-details{
     height: auto;
