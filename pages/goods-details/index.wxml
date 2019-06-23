@@ -23,13 +23,14 @@
           <view class="goods-title-a">{{goodsDetail.basicInfo.name}}</view>
         </view>
   <view class="goods-info">
+    <view class="godds-info-left">
         <view class="goods-share" wx:if="{{goodsDetail.basicInfo.commissionType == 1}}">
           {{gomls.goml0001}} ( {{goodsDetail.basicInfo.commission}}{{ gomls.goml0002}} )
         </view>
-    <view wx:if="{{hasMoreSelect}}" class="row-arrow" 
-     style="margin-bottom:18rpx;background-size:0rpx auto;width:120rpx;height:80rpx;" >
-     ¥ {{selectSizePrice}}   
-   </view>
+        <view wx:if="{{hasMoreSelect}}" class="row-arrow" 
+          style="margin-bottom:18rpx;background-size:0rpx auto;width:120rpx;height:80rpx;" >
+          ¥ {{selectSizePrice}}   
+        </view>
     <!-- <view class="goods-price" style="padding-left:0rpx;">¥ {{selectSizePrice}}</view> -->
         <view class="goods-price-b"> {{gomls.goml0003}}
           ( {{goodsDetail.basicInfo.numberOrders}} {{gomls.goml0004}} )
@@ -38,20 +39,25 @@
           ( {{goodsDetail.basicInfo.numberGoodReputation}} {{gomls.goml0006}} )
         </view>
    
-     <view class="goods-price-d"> {{gomls.goml0007}} ( <text style='color:#009f3c'>
-       {{gomls.goml0008}} {{curGoodsKanjia.minPrice}} {{gomls.goml0009}} </text> )
-     </view>
+        <view class="goods-price-d"> {{gomls.goml0007}} ( <text style='color:#009f3c'>
+          {{gomls.goml0008}} {{curGoodsKanjia.minPrice}} {{gomls.goml0009}} </text> )
+        </view>
 
-     <!-- <view class="goods-price-a" style="writing-mode: vertical-lr;"> {{selectSize}}</view>
-      -->
-      <view class="goods-share" wx:if="{{goodsDetail.basicInfo.commissionType == 2}}">
-         {{gomls.goml0001}}{{goodsDetail.basicInfo.commission}} {{gomls.goml0010}}
+        <!-- <view class="goods-price-a" style="writing-mode: vertical-lr;"> {{selectSize}}</view>
+          -->
+        <view class="goods-share" wx:if="{{goodsDetail.basicInfo.commissionType == 2}}">
+          {{gomls.goml0001}}{{goodsDetail.basicInfo.commission}} {{gomls.goml0010}}
+        </view>
       </view>
+      <view class="goods-info-right">
         <view class="goods-info-fx"><image src='../../images/qd.png' />
           <button open-type="share"> {{gomls.goml0011}}</button>
+          <text>{{gomls.goml0012}}</text>
         </view>
-         <text style="writing-mode: vertical-lr;margin-left:216px;">{{gomls.goml0012}}</text>
+         
+        <view wx:if="{{hasMoreSelect}}" class="row-arrow-a" bindtap="bindGuiGeTap"> {{selectSize}} </view>
       </view>
+    </view>
    <!-- <view wx:if="{{curGoodsKanjia}}" class="row-arrow" bindtap="goKanjia">
        {{gomls.goml0007}} ( <text style='color:#009f3c'>{{gomls.goml0008}}
        {{curGoodsKanjia.minPrice}} {{gomls.goml0009}}</text> )
@@ -78,8 +84,6 @@
           </view>
         </view>
      </view>
- <view wx:if="{{hasMoreSelect}}" class="row-arrow-a" 
-    bindtap="bindGuiGeTap"> {{selectSize}} </view>
    
     <view class="goods-des-info">
         <view class="label-title"> {{gomls.goml0018}}</view>
@@ -88,19 +92,19 @@
         </view>
     </view>
     <view class="goods-des-info" style="margin-top:35rpx;" wx:if="{{reputation}}">
-        <view class="label-title" style="border-bottom:1px solid #eee;"> {{gomls.goml0019}}<text style="color:#009f3c">（{{reputation.length}}）</text></view>
+        <view class="label-title-a" style="border-bottom:1px solid #eee;"> {{gomls.goml0019}}<text style="color:#009f3c">（{{reputation.length}}）</text></view>
         <view class="goods-text" style="margin-top:15rpx;" wx:for="{{reputation}}" wx:key="id">
           <view style="width:100rpx;float:left;">
             <image style="width: 100rpx; height: 100rpx;" src="{{item.user.avatarUrl}}"></image>
             <view style="text-align:center;width:100rpx;writing-mode:vertical-lr">
             {{item.goods.goodReputationStr}}</view>
           </view>
-          <view style="width:550rpx;float:left;margin-left:35rpx;border-bottom:1px solid #eee;">
-            <view style="writing-mode:vertical-lr;">{{item.goods.goodReputationRemark}}</view>
-            
-             <view style="color: #B0B0B0;font-size:24rpx;writing-mode:vertical-lr;margin:-150px                   auto 0px 195px;"> {{item.goods.property}}</view>
-             <view style="color: #B0B0B0;font-size:24rpx;padding-left:150px;">
+           <view style="color: #B0B0B0;font-size:24rpx;"> {{item.goods.property}} </view>
+             <view style="color: #B0B0B0;font-size:24rpx;">
                   {{item.goods.dateReputation}}</view>
+          <view style="width:550rpx;float:left;margin-left:35rpx;border-bottom:1px solid #eee;">
+            <view style="writing-mode:vertical-lr;margin:-70px 0px 0px auto;">
+            {{item.goods.goodReputationRemark}}</view>
           </view>
         </view>
     </view>
