@@ -1,0 +1,13 @@
+<!--componets/showModal/modal.wxml-->
+<view class='mask' wx:if='{{params.isShow}}' bindtap='clickMask'>
+  <view class='modal-content' style='height:{{height}}'>
+    <view class='main-content'>
+    <view class='s-title'> ᠬᠠᠯᠭᠠᠢ</view>
+    <view class='s-text'> ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ</view>
+    </view>
+    <view class='modal-btn-wrapper'>
+      <view class='cancel-btn' bindtap='cancel'>ᠬᠠᠯᠭᠠᠢ</view>
+      <view class='confirm-btn' bindtap='confirm'>ᠬᠠᠯᠭᠠᠢ</view>
+    </view>
+  </view>
+</view>

@@ -132,5 +132,11 @@ App({
     isConnected: true,
     launchOption: undefined,
     vipLevel: 0
+  },
+  showModal(caller,o){
+    o.isShow=true;
+    caller.setData({
+      modalParams: o
+    })
   }
 })

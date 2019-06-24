@@ -1,3 +1,4 @@
+
 <view class="container">
     <form bindsubmit="bindSave" report-submit="true">
     <view class='t-box'>
@@ -57,4 +58,5 @@
           </view>
       </view>
   </view>
+  <showMask params="{{modalParams}}"></showMask>
 </view>
