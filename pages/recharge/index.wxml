@@ -58,5 +58,5 @@
           </view>
       </view>
   </view>
-  <showMask params="{{modalParams}}"></showMask>
+  <showMask id='modalComponent'></showMask>
 </view>

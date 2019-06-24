@@ -134,9 +134,7 @@ App({
     vipLevel: 0
   },
   showModal(caller,o){
-    o.isShow=true;
-    caller.setData({
-      modalParams: o
-    })
+    var component = caller.selectComponent('#modalComponent');
+    component.showModal(o);
   }
 })

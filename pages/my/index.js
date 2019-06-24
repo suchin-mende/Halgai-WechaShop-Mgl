@@ -29,7 +29,7 @@ Page({
     this.getUserAmount();
   },
   aboutUs : function () {
-    wx.showModal({
+    getApp().showModal(this, {
       title: HalgaiI18.myjs0001,
       content: HalgaiI18.myjs0002,
       showCancel:false
@@ -37,7 +37,7 @@ Page({
   },
   getPhoneNumber: function(e) {
     if (!e.detail.errMsg || e.detail.errMsg != "getPhoneNumber:ok") {
-      wx.showModal({
+      getApp().showModal(this, {
         title: HalgaiI18.myjs0003,
         content: HalgaiI18.myjs0004 + e.detail.errMsg,
         showCancel: false
@@ -62,7 +62,7 @@ Page({
         })
         that.getUserApiInfo();
       } else {
-        wx.showModal({
+        getApp().showModal(this, {
           title: HalgaiI18.myjs0006,
           content: HalgaiI18.myjs0007,
           showCancel: false

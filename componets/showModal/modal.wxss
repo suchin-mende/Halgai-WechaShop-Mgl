@@ -37,6 +37,8 @@
   font-size: 32rpx;
   color: #009f3c;
   writing-mode: vertical-lr;
+  text-orientation: sideways-right;
+  white-space: nowrap;
 }
 
 .cancel-btn{
@@ -51,6 +53,8 @@
 }
 .s-title{
   writing-mode: vertical-lr;
+  text-orientation: sideways-right;
+  white-space: nowrap;
   width: 100rpx;
   height: 100%;
   line-height: 100rpx;

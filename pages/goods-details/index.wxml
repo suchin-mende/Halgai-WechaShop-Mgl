@@ -128,4 +128,5 @@
 </view>
 <view wx:if="{{currentPages.length == 1}}" class='goIndex' bindtap="goIndex">
   <image class="goIndex-icon" src="/images/nav/home-on.png"></image>
+  <showMask id='modalComponent'></showMask>
 </view>

@@ -106,7 +106,7 @@ Page({
           if (res.code != 0) {
             // 登录错误
             wx.hideLoading();
-            wx.showModal({
+            getApp().showModal(this, {
               title: HalgaiI18.aujs0002,
               content: HalgaiI18.aujs0003,
               showCancel: false

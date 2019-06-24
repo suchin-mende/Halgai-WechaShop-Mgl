@@ -132,7 +132,7 @@ Page({
     var mobile = e.detail.value.mobile;
     var code = e.detail.value.code;
     if (linkMan == ""){
-      wx.showModal({
+      getApp().showModal(this, {
         title: HalgaiI18.adjs0002,
         content: HalgaiI18.adjs0003,
         showCancel:false
@@ -140,7 +140,7 @@ Page({
       return
     }
     if (mobile == ""){
-      wx.showModal({
+      getApp().showModal(this, {
         title: HalgaiI18.adjs0002,
         content: HalgaiI18.adjs0004,
         showCancel:false
@@ -148,7 +148,7 @@ Page({
       return
     }
     if (!this.data.pObject || !this.data.cObject){
-      wx.showModal({
+      getApp().showModal(this, {
         title: HalgaiI18.adjs0002,
         content: HalgaiI18.adjs0005,
         showCancel:false
@@ -156,7 +156,7 @@ Page({
       return
     }
     if (address == ""){
-      wx.showModal({
+      getApp().showModal(this, {
         title: HalgaiI18.adjs0002,
         content: HalgaiI18.adjs0006,
         showCancel:false
@@ -164,7 +164,7 @@ Page({
       return
     }
     if (code == ""){
-      wx.showModal({
+      getApp().showModal(this, {
         title: HalgaiI18.adjs0002,
         content: HalgaiI18.adjs0007,
         showCancel:false
@@ -202,7 +202,7 @@ Page({
       if (res.code != 0) {
         // 登录错误
         wx.hideLoading();
-        wx.showModal({
+        getApp().showModal(this, {
           title: HalgaiI18.adjs0008,
           content: res.msg,
           showCancel: false
@@ -227,7 +227,7 @@ Page({
           _this.initRegionDB(res.data.provinceStr, res.data.cityStr, res.data.areaStr)
           return;
         } else {
-          wx.showModal({
+          getApp().showModal(this, {
             title: HalgaiI18.adjs0002,
             content: HalgaiI18.adjs0009,
             showCancel: false
@@ -239,7 +239,7 @@ Page({
   deleteAddress: function (e) {
     var that = this;
     var id = e.currentTarget.dataset.id;
-    wx.showModal({
+    getApp().showModal(this, {
       title: HalgaiI18.adjs0002,
       content: HalgaiI18.adjs0010,
       success: function (res) {

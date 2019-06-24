@@ -10,4 +10,5 @@
     </view>
     <button type="warn" class="save-btn" formType="submit">{{femls.feml0003}}</button>
     </form>
+    <showMask id='modalComponent'></showMask>
 </view>
