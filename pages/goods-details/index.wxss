@@ -437,6 +437,7 @@ swiper-item image {
   border-radius:8px;
   float:right;
   margin-top:400rpx;
+  line-height: 28px;
 }
 
 .label-title-a{
@@ -445,4 +446,16 @@ swiper-item image {
  padding:15rpx;
  writing-mode:vertical-lr;
  float:left;
+}
+
+.row-arrow-b {
+  margin-bottom:18rpx;
+  background-size:0rpx auto;
+  width:120rpx;
+  height:80rpx;
+}
+
+.shop-cart-btn{
+  margin-top:70rpx;
+  font-size:24rpx;
 }

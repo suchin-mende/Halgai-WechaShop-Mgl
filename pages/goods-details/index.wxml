@@ -27,9 +27,7 @@
         <view class="goods-share" wx:if="{{goodsDetail.basicInfo.commissionType == 1}}">
           {{gomls.goml0001}} ( {{goodsDetail.basicInfo.commission}}{{ gomls.goml0002}} )
         </view>
-        <view wx:if="{{hasMoreSelect}}" class="row-arrow" 
-          style="margin-bottom:18rpx;background-size:0rpx auto;width:120rpx;height:80rpx;" >
-          ¥ {{selectSizePrice}}   
+        <view wx:if="{{hasMoreSelect}}" class="row-arrow-b"> ¥ {{selectSizePrice}}   
         </view>
     <!-- <view class="goods-price" style="padding-left:0rpx;">¥ {{selectSizePrice}}</view> -->
         <view class="goods-price-b"> {{gomls.goml0003}}
@@ -116,12 +114,10 @@
         </view>
        
    <view class="shop-cart-btn" bindtap="goShopCar">
-            <view style="margin-top:70rpx;font-size:24rpx;"> ({{shopNum}})</view>
+            <view> ({{shopNum}})</view>
             <view  class="shop-num">  {{gomls.goml0021}}</view>
         </view>
         <view wx:if="{{!goodsDetail.basicInfo.pingtuan}}" class="join-shop-cart" bindtap="toAddShopCar"> {{gomls.goml0022}}</view>
-      <view class="goods-info-fx"><image src='../../images/qd.png' />
-        </view>
         <view wx:if="{{!goodsDetail.basicInfo.pingtuan}}" class="now-buy"  bindtap="tobuy"> {{gomls.goml0023}}</view>        
         <view wx:if="{{goodsDetail.basicInfo.pingtuan}}" class="join-shop-cart" bindtap="tobuy">{{gomls.goml0024}}</view>
         <view wx:if="{{goodsDetail.basicInfo.pingtuan}}" class="now-buy" bindtap="toPingtuan">{{gomls.goml0025}}</view>
