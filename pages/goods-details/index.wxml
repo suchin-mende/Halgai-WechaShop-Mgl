@@ -33,20 +33,20 @@
         </view>
     <!-- <view class="goods-price" style="padding-left:0rpx;">¥ {{selectSizePrice}}</view> -->
         <view class="goods-price-b"> {{gomls.goml0003}}
-          ( {{goodsDetail.basicInfo.numberOrders}} {{gomls.goml0004}} )
+          : {{goodsDetail.basicInfo.numberOrders}} {{gomls.goml0004}} 
         </view>
         <view class="goods-price-c"> {{gomls.goml0005}} 
-          ( {{goodsDetail.basicInfo.numberGoodReputation}} {{gomls.goml0006}} )
+          : {{goodsDetail.basicInfo.numberGoodReputation}} {{gomls.goml0006}} 
         </view>
    
-        <view class="goods-price-d"> {{gomls.goml0007}} ( <text style='color:#009f3c'>
-          {{gomls.goml0008}} {{curGoodsKanjia.minPrice}} {{gomls.goml0009}} </text> )
+        <view class="goods-price-d"> {{gomls.goml0007}} : {{gomls.goml0008}} 
+        {{curGoodsKanjia.minPrice}} {{gomls.goml0009}} 
         </view>
 
         <!-- <view class="goods-price-a" style="writing-mode: vertical-lr;"> {{selectSize}}</view>
           -->
         <view class="goods-share" wx:if="{{goodsDetail.basicInfo.commissionType == 2}}">
-          {{gomls.goml0001}}{{goodsDetail.basicInfo.commission}} {{gomls.goml0010}}
+          {{gomls.goml0001}} : {{goodsDetail.basicInfo.commission}} {{gomls.goml0010}}
         </view>
       </view>
       <view class="goods-info-right">
@@ -120,8 +120,6 @@
             <view  class="shop-num">  {{gomls.goml0021}}</view>
         </view>
         <view wx:if="{{!goodsDetail.basicInfo.pingtuan}}" class="join-shop-cart" bindtap="toAddShopCar"> {{gomls.goml0022}}</view>
-      <view class="goods-info-fx"><image src='../../images/qd.png' />
-        </view>
         <view wx:if="{{!goodsDetail.basicInfo.pingtuan}}" class="now-buy"  bindtap="tobuy"> {{gomls.goml0023}}</view>        
         <view wx:if="{{goodsDetail.basicInfo.pingtuan}}" class="join-shop-cart" bindtap="tobuy">{{gomls.goml0024}}</view>
         <view wx:if="{{goodsDetail.basicInfo.pingtuan}}" class="now-buy" bindtap="toPingtuan">{{gomls.goml0025}}</view>
