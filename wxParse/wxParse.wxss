@@ -18,12 +18,16 @@
     line-height: 1.8;
 }
 view{
-    word-break:break-all; overflow:auto;
+    word-break:break-all;
 }
 .wxParse-inline{
-    display: inline;
+    /* display: inline; */
     margin: 0;
     padding: 0;
+    /* transform:rotate(90deg); */
+    height: 410px;
+    padding-left:60rpx;
+    writing-mode: vertical-lr;
 }
 /*//标题 */
 .wxParse-div{margin: 0;padding: 0;}
@@ -70,6 +74,7 @@ view{
 .wxParse-i,.wxParse-cite,.wxParse-em,.wxParse-var,.wxParse-address{font-style:italic}
 .wxParse-pre,.wxParse-tt,.wxParse-code,.wxParse-kbd,.wxParse-samp{font-family:monospace}
 .wxParse-pre{white-space:pre}
+.wxParse-p{float: left}
 .wxParse-big{font-size:1.17em}
 .wxParse-small,.wxParse-sub,.wxParse-sup{font-size:.83em}
 .wxParse-sub{vertical-align:sub}
@@ -172,6 +177,7 @@ view{
 }
 .WxEmojiView{
     align-items: center;
+    padding:40px 0px 0px 0px;
 }
 .wxEmoji{
     width: 16px;
