@@ -2,14 +2,29 @@
 
 .notice {
   width: 720rpx;
-  padding: 15rpx;
-  font-size: 14px;
+  padding: 2rpx;
+  font-size: 18px;
+  writing-mode: vertical-lr;
+  overflow-y: hidden;
 }
 .title {
-  color:chocolate;
+  color:#009f3c;
   margin-bottom: 30rpx;
-  text-align: center;
+  font-size: 35rpx;
+  position: absolute;
+  width: 70rpx;
+  /* height: 550rpx; */
+  background-color: #dddddd;
+  padding-top: 10rpx;
+  padding-left: 10rpx;
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 400rpx; */
+  /* text-align: center; */
+  /* writing-mode: vertical-lr; */
 }
-.text {
+.slick {
   line-height: 30px;
+  padding-left: 80rpx;
 }

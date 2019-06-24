@@ -11,20 +11,20 @@
 }
 .swiper_box {
   width: 100%;
-  height:562.5rpx;
+  height:500rpx;
 }
 
 swiper-item image {
   width: 100%;
   display: inline-block;
   overflow: hidden;
-  height:562.5rpx;
+  height:500rpx;
 }
 .swiper-container .dots{  
   position: absolute;  
   left: 0;  
   right: 0;  
-  bottom: 20rpx;  
+  bottom: 20px;  
   display: flex;  
   justify-content: center;  
 }  
@@ -44,7 +44,7 @@ swiper-item image {
 
 .type-navbar{
   white-space: nowrap;
-  height: 88rpx;
+  height: 320rpx;
   width: 100%;
   background-color: #fff;
 }
@@ -54,21 +54,25 @@ swiper-item image {
   color: transparent;
 }
 .type-box{
-  width:160rpx;
+  width:100rpx;
   box-sizing: content-box;
-  font-size: 24rpx;
-  line-height: 84rpx;
+  font-size: 35rpx;
+  line-height: 50rpx;
   text-align: center;
   display: inline-block;
   overflow: hidden;
+  /* vertical-align:middle; */
+  /* margin-top:8px; */
+  writing-mode: vertical-lr;
 }
 .type-navbar-item{
   border-bottom: 4rpx solid #fff;
+  padding-right: 48rpx;
+  /* padding-top: 10px; */
 }
 .type-item-on{
-  border-bottom: 4rpx solid #009f3c;
+  border-bottom: 2rpx solid #009f3c;
 }
-
 .goods-container{
   display: flex;
   justify-content: space-between;  
@@ -93,70 +97,93 @@ swiper-item image {
    height: 339rpx;
 }
 .goods-box .goods-title{
-  width: 280rpx;
+  /* width: 280rpx; */
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  font-size: 24rpx;
-  padding: 24rpx 0 0rpx 0;
-  color:#000;
-  margin-left: 24rpx;
+  font-size: 25rpx;
+  padding-top: 24rpx;
+  color:#fff;
+  word-break: break-all;
+  float: right;
+  writing-mode: vertical-lr;
+  height: 317rpx;
+  /* line-height: 470rpx; */
+  position: relative;
+  top: -340rpx;
+  background-color:rgba(0,0,0,0.4);
 }
 .goods-box .goods-price{
   width: 280rpx;
-  overflow: hidden;
-  font-size: 24rpx;
-  padding: 24rpx 0;
+  /* overflow: hidden; */
+  font-size: 30rpx;
+  /* padding: 15rpx; */
   color:#009f3c;
-  margin-left: 24rpx;
+  margin-left: 15rpx;
 }
 .no-more-goods{
-  text-align: center;
-  font-size: 24rpx;
-  padding-bottom:48rpx; 
+  /* text-align: center; */
+  font-size: 35rpx;
+  /* padding-bottom:48rpx;  */
   color: #000000;
+  writing-mode: vertical-lr;
+  padding-left: 38%;
+  height: 100rpx;
+  line-height: 60rpx;
 }
 .type-container{
   width: 100%;
-  height: 88rpx;
+  /* height: 300rpx; */
   background-color: #fff;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
+
 .notice{
+  /* position: fixed; */
   display: flex;
   justify-content: space-between;  
   flex-wrap:wrap;
-  height: 80rpx;
+  height: 500rpx;
   line-height: 80rpx;
-  width: 750rpx;
-  margin-top: 10rpx;
-  background-color: #fff;
+  width: 80rpx;
+  /* margin-top: 1rpx; */
+  left: 670rpx;
+  top: 30px;
+  background-color: rgba(241, 236, 236, 0.678);
+  position: absolute;
+  z-index: 2;
 }
 .notice_swiper{
-  padding-top: 15rpx;
+  padding-top: 50rpx;
   padding-bottom: 15rpx;
-  height: 50rpx;
+  height: 400rpx;
   line-height: 50rpx;
   width: 635rpx;
 }
 .notice_iteml {
-  padding-left: 25rpx;
-  padding-top: 15rpx;
-  padding-bottom: 15rpx;
-  font-size: 26rpx;
+  padding-left: 18rpx;
+  padding-top: 10rpx;
+  /* padding-bottom: 10rpx; */
+  font-size: 36rpx;
   width: 80rpx;
-  height: 50rpx;
+  height: 10rpx;
   line-height: 50rpx;
   color: #000000;
+  writing-mode: vertical-lr;
 }
 .notice_itemr {
-  padding-left: 10rpx;
+  padding-left: 15rpx;
   font-size: 24rpx;
-  overflow: hidden;
   color: #009f3c;
-  width: 635rpx;
-  height: 50rpx;
-  line-height: 50rpx;
+  width: 50rpx;
+  height: 300rpx;
+  line-height: 58rpx;
+  margin-top: 15px;
+  writing-mode: vertical-lr;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+ 
 }
 .pos-fiexd{
   position: fixed;
@@ -164,32 +191,38 @@ swiper-item image {
   left: 0;
 }
 .coupons{
-  margin-top:10rpx;
+  /* margin-top:5rpx; */
   width: 100%;
-  height: 180rpx;
   overflow: hidden;
+  /* height: 210rpx; */
 }
 .coupons-scroll{
   white-space: nowrap;
-  height: 180rpx;
   width: 100%;
-  background-color: #fff;
 }
 .coupons-item{
-  width:300rpx;
-  height: 180rpx;
+  width:260rpx;
+  height: 210rpx;
   margin: 10rpx;
-  padding-top: 20rpx;
-  padding-left: 15rpx;
+  padding-top: 8rpx;
+  /* padding-left: 15rpx; */
   background-color: #009f3c;
   box-sizing: content-box;
-  font-size: 20rpx;
-  line-height: 35rpx;
-  overflow: hidden;
+  font-size: 22rpx;
+  line-height: 65rpx;
   color: #fff;
   display: inline-block;
-}
+  writing-mode: vertical-lr;
+  border-radius: 20rpx;
+  overflow: hidden;
 
+}
+.mxboos{
+  overflow: hidden;
+  text-overflow: ellipsis;
+   white-space: nowrap; 
+   height:160rpx;
+}
 .search-view{
   /* position:fixed; */
   left:0;
@@ -218,7 +251,11 @@ swiper-item image {
 .search-icon{
   width: 40rpx;
   height: 40rpx;
-  margin-right: 20rpx;
+  display: block;
+  padding-left: 5rpx;
+  padding-top: 5rpx;
+
+  /* margin-right: 20rpx; */
 }
 .search-input{
   width: 500rpx;
@@ -236,4 +273,27 @@ swiper-item image {
   color:#fff;
   border:none;
   position: relative;
+}
+.img {
+  width: 154rpx;
+  height: 35rpx;
+  filter: drop-shadow(2px 2px 2px #398865);
+  /* filter: drop-shadow(1px 1px 2px #7cc623); */
+  /* position: absolute;
+  z-index: 2; */
+}
+.category-icon {
+  float: left
+}
+.category-text {
+  vertical-align: middle;
+  float: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 190rpx;
+  padding-top: 20rpx;
+
+
+
 }
