@@ -279,5 +279,4 @@ Page({
     });
     this.getGoodsList(this.data.activeCategoryId)
   }
-  
 })

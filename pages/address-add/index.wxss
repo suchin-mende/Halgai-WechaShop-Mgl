@@ -12,9 +12,8 @@ page{
 }
 .row-wrap{
     width: 720rpx;
-    height: 88rpx;
+    height: 120rpx;
     line-height: 88rpx;
-    margin-left: 30rpx;
     border-bottom: 1rpx solid #eee;
     display: flex;
     font-size: 28rpx;
@@ -22,12 +21,16 @@ page{
 }
 .row-wrap .label{
     width: 160rpx;
-    color: #000
+    color: #000;
+    writing-mode: vertical-lr;
+    padding-top: 20rpx;
 }
 .row-wrap .label-right{
     flex: 1;
-    height: 88rpx;
+    height: 80rpx;
     line-height: 88rpx;
+    margin-left: 30rpx;
+    padding-top: 20rpx;
 }
 .row-wrap .label-right input{
     height: 100%;
@@ -59,6 +62,16 @@ button[type="default"]{
     background-color: #ffffff;
     color:#000;
 }
+button[type="warn"] {
+  writing-mode: vertical-lr;
+  width: 90rpx;
+  height: 300rpx;
+  padding-left: 0;
+  padding-right: 0;
+  position: fixed;
+  bottom: 60rpx;
+  right: 80rpx;
+}
 .addr-details{
     height: auto;
     padding: 30rpx 0;
@@ -68,9 +81,10 @@ button[type="default"]{
     font-size: 28rpx;
 }
 .addr-details .label{
-    margin:auto 0 auto 0;
     width: 160rpx;
-    color: #000
+    height: 60rpx;
+    color: #000;
+    writing-mode: vertical-lr;
 }
 .addr-details textarea{
     box-sizing: border-box;
