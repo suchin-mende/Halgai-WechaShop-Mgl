@@ -46,11 +46,12 @@ swiper-item image {
   margin-bottom: 24rpx;
   width: 100%;
   position: relative;
+  height: 550rpx;
 }
 
 .goods-info-fx {
   position: absolute;
-  width: 35px;
+  width: 45px;
   height: 400rpx;
   right: 0;
   top: 0;
@@ -99,15 +100,14 @@ swiper-item image {
 }
 .goods-info .goods-share{
   box-sizing: border-box;
-  padding: 0 35rpx;
   font-size: 36rpx;
-  line-height: 1.4;
-  /* color: #009f3c;
-  margin-bottom: 28rpx; */
   writing-mode: vertical-lr;
-  height:422px;
+  height:280px;
   float:left;
+  width:43px;
+  line-height-step:24px;
 }
+
 .goods-info .goods-price{
    box-sizing:border-box;
    /* color:#009f3c; */
@@ -144,7 +144,9 @@ swiper-item image {
   float: left;
   background-color:rgba(0,0,0,0.2);
   border-radius:8px;
+  margin:10px 0px 0px 8px;
 }
+
 .goods-text{
   padding: 0 10rpx;
   font-size:36rpx;
@@ -215,6 +217,8 @@ swiper-item image {
   color:#fff;
   font-size: 40rpx;
   writing-mode: vertical-lr;
+  display:flex;
+  align-items:center;
 }
 .footer-box .now-buy{
   text-align: center;
@@ -225,6 +229,8 @@ swiper-item image {
   color:#fff;
   font-size: 40rpx;
   writing-mode: vertical-lr;
+  display:flex;
+  align-items:center;
 }
 .show-popup{
   position: fixed;
@@ -411,23 +417,28 @@ swiper-item image {
   font-size:36rpx;
   writing-mode: vertical-lr;
   width:80rpx;
-  height:340rpx;
+  height:160px;
   float:left;
+  line-height-step:24px;
 }
 
 .goods-price-c{
   font-size:36rpx;
    writing-mode: vertical-lr;
    width:80rpx;
-   height:450rpx;
+   height:180px;
    float:left;
+   line-height-step:24px
 }
 
 .goods-price-d{
   padding-left:0rpx;
   writing-mode: vertical-lr;
-  height:550rpx;
+  height:270px;
   float:left;
+  line-height-step:24px;
+  font-size:36rpx;
+  width:43px;
 }
 
 .row-arrow-a{
@@ -437,6 +448,9 @@ swiper-item image {
   border-radius:8px;
   float:right;
   margin-top:400rpx;
+  width:38px;
+  margin:206px 8px 0px 0px;
+  line-height:42px;
 }
 
 .label-title-a{
@@ -446,3 +460,4 @@ swiper-item image {
  writing-mode:vertical-lr;
  float:left;
 }
+
