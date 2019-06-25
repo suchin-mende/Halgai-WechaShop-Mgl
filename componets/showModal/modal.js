@@ -1,4 +1,6 @@
 // componets/showModal/modal.js
+const HalgaiI18 = require('../../language/mn')
+
 Component({
 
   /**
@@ -30,6 +32,7 @@ Component({
    * 组件的初始数据
    */
   data: {
+    smmls: HalgaiI18.smmls
 
   },
 
