@@ -49,7 +49,7 @@
             <view class="coupons-item" wx:for-items="{{coupons}}" wx:for-index="idx" wx:key="id"  bindtap="gitCoupon" data-id="{{item.id}}" data-pwd="{{item.pwd}}">
                <view style="font-size: 25rpx" wx:if="{{item.moneyMin == item.moneyMax}}"> ￥ {{item.moneyMax}} </view>
                <view style="font-size: 25rpx" wx:else> ￥ {{item.moneyMin}} - {{item.moneyMax}} </view>
-               <view> {{ite0m.name}} </view>
+               <view> {{item.name}} </view>
                <view class='mxboos'> {{inmls.inml0003}} {{item.moneyHreshold}} {{inmls.inml0004}}</view>     
                <view wx:if="{{item.dateEndType == 0}}"> {{item.dateEnd}} {{inmls.inml0006}} </view>
                <view wx:if="{{item.dateEndType == 1}}"> {{inmls.inml0008}} {{item.dateEndDays}} {{inmls.inml0009}} 
