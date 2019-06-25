@@ -6,33 +6,46 @@ page{
     justify-content: initial;
 }
 .form-box{
-    width:100%;
-    background-color: #fff;
-    margin-top: 20rpx;
+    width:750rpx;
+    height: 136rpx;
+    /* right: 300rpx; */
+    /* margin-right: 5rpx; */
+    position: relative;
+    background-color: #009f3c;
 }
 .row-wrap{
-    width: 720rpx;
-    height: 88rpx;
+    /* height: 120rpx; */
     line-height: 88rpx;
-    margin-left: 30rpx;
-    border-bottom: 1rpx solid #eee;
     display: flex;
     font-size: 28rpx;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
 }
 .row-wrap .label{
-    width: 160rpx;
-    color: #000
+    width: 165rpx;
+    height: 160rpx;
+    font-size: 45rpx;
+    writing-mode: vertical-lr;
+    margin-left: 5rpx;
+    padding-top: 25rpx;
+    color: #333;
+    
 }
 .row-wrap .label-right{
     flex: 1;
     height: 88rpx;
     line-height: 88rpx;
+    /* writing-mode: vertical-lr; */
+     
 }
 .row-wrap .label-right input{
-    height: 100%;
-    font-size: 28rpx;
-    padding-right: 30rpx;
+    /* height: 80rpx; */
+    width: 375rpx;
+    font-size: 30rpx; 
+    /* padding-top: 15rpx; */
+    margin-top: 34rpx;
+    background-color: #fff;
+    padding: 10rpx 0rpx 10rpx 0rpx;
+    /* writing-mode: vertical-lr;  */
 }
 .row-wrap .right-box{
     margin-right: 30rpx; 
@@ -47,13 +60,22 @@ page{
     height: 80rpx;
     line-height: 80rpx;
     text-align: center;
-    margin-top:30rpx; 
+    margin-top:25rpx; 
     border-radius: 6rpx;
     box-sizing: border-box;
 }
 .save-btn{
-    background-color: #009f3c;
+    background-color: #fff;
     color:#fff;
+    width: 19%;
+    height: 89rpx;
+    font-size: 40rpx;   
+    line-height: 48rpx;
+    writing-mode: vertical-lr;
+    position: absolute;
+    margin-left: 450rpx;
+
+
 }
 button[type="default"]{
     background-color: #ffffff;

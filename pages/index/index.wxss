@@ -58,7 +58,6 @@ swiper-item image {
   box-sizing: content-box;
   font-size: 35rpx;
   line-height: 50rpx;
-  text-align: center;
   display: inline-block;
   overflow: hidden;
   /* vertical-align:middle; */
@@ -208,16 +207,22 @@ swiper-item image {
   /* padding-left: 15rpx; */
   background-color: #009f3c;
   box-sizing: content-box;
-  font-size: 22rpx;
-  line-height: 65rpx;
+  font-size: 25rpx;
+  line-height: 40rpx;
   color: #fff;
   display: inline-block;
   writing-mode: vertical-lr;
-  border-radius: 20rpx;
+  border-radius: 12rpx;
   overflow: hidden;
 
 }
 .mxboos{
+  overflow: hidden;
+  text-overflow: ellipsis;
+   white-space: nowrap; 
+   height:160rpx;
+}
+.item.dateEndType{
   overflow: hidden;
   text-overflow: ellipsis;
    white-space: nowrap; 

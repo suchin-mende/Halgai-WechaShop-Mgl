@@ -52,8 +52,8 @@
                <view> {{item.name}} </view>
                <view class='mxboos'> {{inmls.inml0003}} {{item.moneyHreshold}} {{inmls.inml0004}}</view>     
                <view wx:if="{{item.dateEndType == 0}}"> {{item.dateEnd}} {{inmls.inml0006}} </view>
-               <view wx:if="{{item.dateEndType == 1}}"> {{inmls.inml0008}} {{item.dateEndDays}} {{inmls.inml0009}} 
-               </view>
+               <view class="item.dateEndType"> {{inmls.inml0008}} {{item.dateEndDays}} {{inmls.inml0009}} 
+               </view> 
             </view>
         </scroll-view>
     </view>

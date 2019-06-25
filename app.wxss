@@ -11,3 +11,8 @@
 .wxParse-img {
   display: block !important;
 }
+button[type=warn] {
+color:#333;
+background-color:#eee;
+
+}
