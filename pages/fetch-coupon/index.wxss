@@ -39,12 +39,14 @@ page{
 }
 .row-wrap .label-right input{
     /* height: 80rpx; */
-    width: 375rpx;
+    width: 400rpx;
     font-size: 30rpx; 
     /* padding-top: 15rpx; */
     margin-top: 34rpx;
     background-color: #fff;
-    padding: 10rpx 0rpx 10rpx 0rpx;
+    padding: 10rpx 0rpx 10rpx 20rpx;
+    border-radius:10rpx;
+
     /* writing-mode: vertical-lr;  */
 }
 .row-wrap .right-box{
@@ -60,20 +62,21 @@ page{
     height: 80rpx;
     line-height: 80rpx;
     text-align: center;
-    margin-top:25rpx; 
-    border-radius: 6rpx;
+    margin-top:32rpx; 
+    border-radius: 10rpx;
     box-sizing: border-box;
 }
 .save-btn{
     background-color: #fff;
     color:#fff;
-    width: 19%;
-    height: 89rpx;
-    font-size: 40rpx;   
-    line-height: 48rpx;
+    width: 17%;
+    height: 75rpx;
+    font-size: 38rpx;   
+    line-height: 52rpx;
     writing-mode: vertical-lr;
     position: absolute;
-    margin-left: 450rpx;
+    margin-left: 470rpx;
+    padding-left:13rpx; 
 
 
 }

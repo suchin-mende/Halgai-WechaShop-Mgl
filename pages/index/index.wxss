@@ -145,9 +145,9 @@ swiper-item image {
   height: 500rpx;
   line-height: 80rpx;
   width: 80rpx;
+  top: 60rpx;
   /* margin-top: 1rpx; */
   left: 670rpx;
-  top: 30px;
   background-color: rgba(241, 236, 236, 0.678);
   position: absolute;
   z-index: 2;
@@ -155,13 +155,13 @@ swiper-item image {
 .notice_swiper{
   padding-top: 50rpx;
   padding-bottom: 15rpx;
-  height: 400rpx;
+  height: 380rpx;
   line-height: 50rpx;
   width: 635rpx;
 }
 .notice_iteml {
-  padding-left: 18rpx;
-  padding-top: 10rpx;
+  padding-left: 19rpx;
+  padding-top: 20rpx;
   /* padding-bottom: 10rpx; */
   font-size: 36rpx;
   width: 80rpx;
@@ -208,7 +208,7 @@ swiper-item image {
   background-color: #009f3c;
   box-sizing: content-box;
   font-size: 25rpx;
-  line-height: 40rpx;
+  line-height: 66rpx;
   color: #fff;
   display: inline-block;
   writing-mode: vertical-lr;
