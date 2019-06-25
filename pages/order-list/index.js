@@ -26,7 +26,7 @@ Page({
   cancelOrderTap: function(e) {
     var that = this;
     var orderId = e.currentTarget.dataset.id;
-    wx.showModal({
+    getApp().showModal(this, {
     title: HalgaiI18.orljs0002,
     content: '',
     success: function(res) {
@@ -66,7 +66,7 @@ Page({
           _msg += HalgaiI18.orljs0010 + money + HalgaiI18.orljs0011
         }
         money = money - res.data.balance
-        wx.showModal({
+        getApp().showModal(this, {
           title: HalgaiI18.orljs0012,
           content: _msg,
           confirmText: HalgaiI18.orljs0013,
@@ -81,7 +81,7 @@ Page({
           }
         });
       } else {
-        wx.showModal({
+        getApp().showModal(this, {
           title: HalgaiI18.orljs0016,
           content: HalgaiI18.orljs0017,
           showCancel: false

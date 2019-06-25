@@ -119,7 +119,7 @@ Page({
     if (wxpayAmount > 0) {
       _msg += HalgaiI18.majs0008 + wxpayAmount + HalgaiI18.majs0009
     }
-    wx.showModal({
+    getApp().showModal(this, {
       title: HalgaiI18.majs0010 ,
       content: _msg,
       confirmText: HalgaiI18.majs0011 ,
@@ -142,13 +142,13 @@ Page({
         money: amount
       }).then(function (res) {
         if (res.code == 0) {
-          wx.showModal({
+          getApp().showModal(this, {
             title: HalgaiI18.majs0013 ,
             content: HalgaiI18.majs0014 ,
             showCancel: false
           })
         } else {
-          wx.showModal({
+          getApp().showModal(this, {
             title: HalgaiI18.majs0015,
             content: res.msg,
             showCancel: false

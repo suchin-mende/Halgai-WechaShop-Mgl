@@ -1,13 +1,13 @@
 <!--componets/showModal/modal.wxml-->
-<view class='mask' wx:if='{{params.isShow}}' bindtap='clickMask'>
+<view class='mask' wx:if='{{isShow}}' bindtap='clickMask'>
   <view class='modal-content' style='height:{{height}}'>
     <view class='main-content'>
-    <view class='s-title'> ᠬᠠᠯᠭᠠᠢ</view>
-    <view class='s-text'> ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ ᠬᠠᠯᠭᠠᠢ</view>
+    <view class='s-title'>{{title}}</view>
+    <view class='s-text'>{{content}}</view>
     </view>
     <view class='modal-btn-wrapper'>
-      <view class='cancel-btn' bindtap='cancel'>ᠬᠠᠯᠭᠠᠢ</view>
-      <view class='confirm-btn' bindtap='confirm'>ᠬᠠᠯᠭᠠᠢ</view>
+      <view wx:if="{{showCancel !=false}}" class='cancel-btn' bindtap='cancel'>{{cancelText!=null?cancelText:'取消'}}</view>
+      <view wx:if="{{showConfirm !=false}}" class='confirm-btn' bindtap='confirm'>{{confirmText!=null?confirmText:'确定'}}</view>
     </view>
   </view>
 </view>

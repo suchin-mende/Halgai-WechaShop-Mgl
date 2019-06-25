@@ -215,7 +215,7 @@ Page({
   addShopCar: function () {
     if (this.data.goodsDetail.properties && !this.data.canSubmit) {
       if (!this.data.canSubmit) {
-        wx.showModal({
+        getApp().showModal(this, {
           title: HalgaiI18.gojs0001,
           content: HalgaiI18.gojs0004,
           showCancel: false
@@ -225,7 +225,7 @@ Page({
       return;
     }
     if (this.data.buyNumber < 1) {
-      wx.showModal({
+      getApp().showModal(this, {
         title: HalgaiI18.gojs0001,
         content: HalgaiI18.gojs0005,
         showCancel: false
@@ -264,14 +264,14 @@ Page({
     console.log(shoptype)
     if (this.data.goodsDetail.properties && !this.data.canSubmit) {
       if (!this.data.canSubmit) {
-        wx.showModal({
+        getApp().showModal(this, {
           title: HalgaiI18.gojs0001,
           content: HalgaiI18.gojs0004,
           showCancel: false
         })
       }
       this.bindGuiGeTap();
-      wx.showModal({
+      getApp().showModal(this, {
         title: HalgaiI18.gojs0001,
         content: HalgaiI18.gojs0006,
         showCancel: false
@@ -279,7 +279,7 @@ Page({
       return;
     }
     if (this.data.buyNumber < 1) {
-      wx.showModal({
+      getApp().showModal(this, {
         title: HalgaiI18.gojs0001,
         content: HalgaiI18.gojs0005,
         showCancel: false
@@ -494,7 +494,7 @@ Page({
           url: "/pages/kanjia/index?kjId=" + res.data.kjId + "&joiner=" + res.data.uid + "&id=" + res.data.goodsId
         })
       } else {
-        wx.showModal({
+        getApp().showModal(this, {
           title: HalgaiI18.gojs0003,
           content: res.msg,
           showCancel: false

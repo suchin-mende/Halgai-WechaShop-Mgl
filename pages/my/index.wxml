@@ -101,7 +101,7 @@
   <button class='btn' bindtap="relogin">{{mymls.myml0017}}</button>
 
   </view>
-
+<showMask id='modalComponent'></showMask>
   <!-- <view style="height:20rpx;background: #eee;width:100%;"></view>
   <view class="version">Powered by HALGAI v {{version}}</view>
   <view style="height:20rpx;background: #eee;width:100%;"></view> -->

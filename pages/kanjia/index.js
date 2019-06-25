@@ -69,7 +69,7 @@ Page({
     var that = this;
     HalgaiAPI.kanjiaDetail(kjid, joiner).then(function(res) {
       if (res.code != 0) {
-        wx.showModal({
+        getApp().showModal(this, {
           title: HalgaiI18.kajs0007,
           content: res.msg,
           showCancel: false
@@ -96,7 +96,7 @@ Page({
     var that = this;
     HalgaiAPI.kanjiaHelp(that.data.kjId, that.data.joiner, wx.getStorageSync('token'), '').then(function(res) {
       if (res.code != 0) {
-        wx.showModal({
+        getApp().showModal(this, {
           title: HalgaiI18.kajs0007,
           content: res.msg,
           showCancel: false
@@ -106,7 +106,7 @@ Page({
       that.setData({
         mykanjiaInfo: res.data
       });
-      wx.showModal({
+      getApp().showModal(this, {
         title: HalgaiI18.kajs0004,
         content: HalgaiI18.kajs0005 + res.data.cutPrice + HalgaiI18.kajs0006,
         showCancel: false

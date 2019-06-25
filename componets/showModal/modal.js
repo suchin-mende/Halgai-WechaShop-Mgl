@@ -6,17 +6,23 @@ Component({
    */
   properties: {
     //是否显示modal
-    show: {
-      type: Boolean,
-      value: false
-    },
+    
     //modal的高度
     height: {
       type: String,
       value: '80%'
     },
-    params: {
-      type:Object
+    isShow : {
+      type: Boolean,
+      value: false
+    },
+    title: {
+      type: String,
+      value: ''
+    },
+    content: {
+      type: String,
+      value: ''
     }
   },
 
@@ -36,16 +42,20 @@ Component({
     },
 
     cancel() {
-      this.setData({ show: false })
+      this.setData({ isShow: false })
       this.triggerEvent('cancel')
     },
 
     confirm() {
-      this.setData({ show: false })
+      this.setData({ isShow: false })
       this.triggerEvent('confirm')
     },
     show() {
-      this.setData({ show: false})
+      this.setData({ isShow: false})
+    },
+    showModal(o) {
+      o.isShow = true;
+      this.setData(o);
     }
   }
 })

@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "Login"
+  "navigationBarTitleText": "Login",
+  "usingComponents": {
+    "showMask": "../../componets/showModal/modal"
+  }
 }

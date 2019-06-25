@@ -37,4 +37,5 @@
         </view>
 
     </view>
+    <showMask id='modalComponent'></showMask>
 </view>

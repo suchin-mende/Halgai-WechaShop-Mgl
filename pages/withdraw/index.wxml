@@ -11,4 +11,5 @@
     <button type="warn" class="save-btn" formType="submit">{{wimls.wiml0003}}</button>
     <button type="default" class="cancel-btn" bindtap="bindCancel">{{wimls.wiml0004}}</button>
     </form>
+    <showMask id='modalComponent'></showMask>
 </view>

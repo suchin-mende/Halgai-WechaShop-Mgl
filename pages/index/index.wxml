@@ -78,4 +78,5 @@
         </view>
     </view>
     <view hidden="{{loadingMoreHidden ? true : false}}" class="no-more-goods">{{inmls.inml0010}}</view>
+    <showMask id='modalComponent'></showMask>
 </view>

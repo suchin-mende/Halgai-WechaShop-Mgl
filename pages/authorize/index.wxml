@@ -5,4 +5,5 @@
     <view class="profile">{{aumls.auml0002}}</view>
     <button type="primary" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class="weui-btn mini-btn">{{aumls.auml0003}}</button>
     </form>
+    <showMask id='modalComponent'></showMask>
 </view>

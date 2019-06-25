@@ -36,4 +36,5 @@
     <button type="warn" class="save-btn" formType="submit">{{admls.adml0007}}</button>    
     <button type="default" class="save-btn" bindtap="deleteAddress" data-id="{{addressData.id}}" wx:if="{{addressData}}">{{admls.adml0008}}</button>
     </form>
+    <showMask id='modalComponent'></showMask>
 </view>
