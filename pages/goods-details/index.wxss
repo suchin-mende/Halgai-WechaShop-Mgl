@@ -269,15 +269,15 @@ swiper-item image {
 .pop-img-box{
   width: 120rpx;
   height: 120rpx;
-  overflow: hidden;
-  margin-right: 26rpx;
+  /* overflow: hidden; */
+  margin-right: 20rpx;
 }
 .pop-img-box .goods-thumbnail{
   width: 120rpx;
   height: 120rpx;
 }
 .pop-goods-title{
-  width: 30px;
+  width: 20px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -288,7 +288,7 @@ swiper-item image {
  
 }
 .pop-goods-des{
-  width:50%;
+  /* width:30%; */
   float:left;
 }
 .pop-goods-price{
@@ -297,13 +297,14 @@ swiper-item image {
   margin-top:-10px; 
   width: 60px;
   padding: 18px;
+  margin-top:0rpx
 }
 .pop-goods-close{
-  width: 102rpx;
+  width: 80rpx;
   height: 90rpx;
   flex: 1;
   background:url("https://cdn.it120.cc/images/weappshop/popup-close.png") no-repeat center center;
-  background-size: 36rpx auto;
+  background-size: 46rpx auto;
   align-self: flex-start;
   margin-left: auto;
 }
@@ -323,12 +324,12 @@ swiper-item image {
   writing-mode:vertical-lr;
 }
 .size-label-box .label-item{
-  font-size:26rpx;
+  font-size:20rpx;
   color:#000;
-  padding: 14rpx 20rpx;
+  padding: 8rpx 23rpx;
   border: 1px solid #ddd;
   border-radius: 6rpx;
-  margin: 0 20rpx 20rpx 0;
+  margin: 0 20rpx 5rpx 0;
 }
 .size-label-box .label-item.active{
   color: #009f3c;
@@ -343,13 +344,16 @@ swiper-item image {
    /* margin-top: 30rpx; */
    align-items: center;
    writing-mode:vertical-lr;
+   padding-left: 34px;
 }
 .num-label{
-  font-size:38rpx;
+  font-size:36rpx;
   color:#000000;
   writing-mode: vertical-lr;
-  width:60px;
-  height:100rpx;
+  width:136px;
+  height:40px;
+  text-align:center;
+  margin-top:12px;
 }
 /* .buy-num-box .num-box{
      display: flex;
@@ -373,15 +377,18 @@ swiper-item image {
   /* width: 100%; */
   /* height: 89rpx; */
   text-align: center;
-  line-height: 94rpx;
-  font-size:40rpx;
+  line-height: 60rpx;
+  font-size:45rpx;
   color:#ffffff;
   background-color: #009f3c;
   writing-mode: vertical-lr;
   padding-left:0px;
   float:right; 
   border-radius: 8px;  
-  margin:6px 0px 0px 65px                              
+  margin:40px 0px 0px 318px;
+  position:absolute;
+  display:flex;
+  z-index:2;
 }
 .buy-num-box .num-box .hui{
   background-color: #f5f5f9;
@@ -473,4 +480,7 @@ swiper-item image {
  float:left;
 }
 
+.num-box{
+ margin-top:12px;
+}
 

@@ -25,7 +25,7 @@ view{
     margin: 0;
     padding: 0;
     /* transform:rotate(90deg); */
-    height: 410px;
+    height: 390px;
     padding-left:60rpx;
     writing-mode: vertical-lr;
 }
