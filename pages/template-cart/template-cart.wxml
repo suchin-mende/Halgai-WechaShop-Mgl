@@ -3,9 +3,9 @@
     <view class="title-box">
         {{temls.teml0001}}
     </view>
-    <view class="to-index-btn" bindtap="toIndexPage">
+     <button class="to-index-btn" bindtap="toIndexPage" type="warn">
              {{temls.teml0002}}
-    </view>
+    </button>
 </view>
 </template>
 

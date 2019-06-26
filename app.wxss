@@ -11,3 +11,26 @@
 .wxParse-img {
   display: block !important;
 }
+button[type="warn"]{
+  background-color: #009f3c;
+}
+
+.button-hover[type="warn"]{
+  background-color: #333;
+}
+
+button[type="primary"]{
+  background-color: #009f3c;
+}
+
+.button-hover[type="primary"]{
+  background-color: #333;
+}
+
+button[type=":default"]{
+  background-color: #009f3c;
+}
+
+.button-hover[type=":default"]{
+  background-color: #333;
+}

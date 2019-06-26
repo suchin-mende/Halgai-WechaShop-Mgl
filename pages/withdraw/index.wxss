@@ -57,7 +57,7 @@ page{
     padding-left: 0;
     padding-right: 0;
     height: 300rpx;
-    width: 90rpx;
+    width: 80rpx;
     position: fixed;
     right: 180rpx;
     bottom: 60rpx;
@@ -67,7 +67,7 @@ button[type="default"]{
     color:#000;
     writing-mode: vertical-lr;
     height: 300rpx;
-    width: 90rpx;
+    width: 80rpx;
     padding-left: 0;
     padding-right: 0;
     position: fixed;

@@ -20,10 +20,10 @@
               {{showRegionStr}}
             </picker>
         </view>
-        <view class="addr-details">
+        <view class="row-wrap">
             <view class="label">{{admls.adml0005}}</view>
             <view class="label-right">
-                <textarea name="address" auto-height placeholder= "{{admls.adml0011}}" value="{{addressData.address}}{{wxaddress.detailInfo}}"/>
+                <textarea name="address" class='textarea' placeholder= "{{admls.adml0011}}" value="{{addressData.address}}{{wxaddress.detailInfo}}"/>
             </view>
         </view>
         <view class="row-wrap">
@@ -32,10 +32,13 @@
                 <input name="code" class="input" type="text" value="{{addressData.code}}{{wxaddress.postalCode}}"/>
             </view>
         </view>
-    </view>
-    <button wx:if="{{!addressData}}" type="primary" class="save-btn" bindtap="readFromWx">{{admls.adml0001}}</button>
+        <view class='t-button' style='margin:500rpx 20rpx 0 20rpx;'>
+        <button wx:if="{{!addressData}}" type="primary" class="save-btn" bindtap="readFromWx">{{admls.adml0001}}</button>
     <button type="warn" class="save-btn" formType="submit">{{admls.adml0007}}</button>    
     <button type="default" class="save-btn" bindtap="deleteAddress" data-id="{{addressData.id}}" wx:if="{{addressData}}">{{admls.adml0008}}</button>
+    </view>
+    </view>
+    
     </form>
     <showMask id='modalComponent'></showMask>
 </view>
