@@ -32,7 +32,7 @@
                 <input name="code" class="input" type="text" value="{{addressData.code}}{{wxaddress.postalCode}}"/>
             </view>
         </view>
-        <view class='t-button' style='margin:500rpx 20rpx 0 20rpx;'>
+        <view class='t-button' style='margin:500rpx 10rpx 0 10rpx;'>
         <button wx:if="{{!addressData}}" type="primary" class="save-btn" bindtap="readFromWx">{{admls.adml0001}}</button>
     <button type="warn" class="save-btn" formType="submit">{{admls.adml0007}}</button>    
     <button type="default" class="save-btn" bindtap="deleteAddress" data-id="{{addressData.id}}" wx:if="{{addressData}}">{{admls.adml0008}}</button>

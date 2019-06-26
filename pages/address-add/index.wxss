@@ -4,6 +4,8 @@ page{
 .container{
     background-color: #f5f5f9;
     justify-content: initial;
+    display: flex;
+    align-items: flex-start;
 }
 .form-box{
     /* width:100%; */
@@ -19,6 +21,7 @@ page{
     font-size: 28rpx;
     writing-mode: vertical-lr;
     padding: 0 20rpx;
+    border-right: 30rpx solid #f5f5f9;
 }
 .row-wrap .label{
     /* width: 160rpx; */

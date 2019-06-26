@@ -1,7 +1,7 @@
 
 <view class="container">
     <form bindsubmit="bindSave" report-submit="true">
-    <view class='t-box'>
+  
     <view class="form-box">
         <view class="row-wrap">
             <view class="label"> {{remls.reml0001}}</view>
@@ -9,23 +9,23 @@
                 <input name="amount" class="input" type="digit" value="{{amount}}" placeholder=" {{remls.reml0002}} {{recharge_amount_min}}  {{remls.reml0003}}" />
             </view>
         </view>
-    </view>
-    <view class="form-box">
-      <view class="row-wrap">
+
+        <view class="row-wrap">
         <radio-group name="type" class="radio-group">
           <label class="radio">
             <radio value="wx" checked style='padding-top:30rpx;'>
             <view style='margin-top:30rpx;'>{{remls.reml0004}}</view>
             </radio>
           </label>
-          <!-- <label class="radio" style='margin-left:20rpx;'>
+          <label class="radio" style='margin-left:20rpx;'>
             <radio value="alipay" />  {{remls.reml0005}}
-          </label> -->
+          </label>
         </radio-group>
       </view>
     </view>
+    
     <button type="warn" class="b-save-btn" formType="submit"> {{remls.reml0008}}</button>
-    </view>
+  
 
    <block wx:if='{{rechargeSendRules}}'>
       <view class="charge-rule-wrap">
