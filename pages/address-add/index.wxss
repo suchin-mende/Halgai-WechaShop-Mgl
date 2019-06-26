@@ -9,18 +9,20 @@ page{
     width:100%;
     background-color: #fff;
     margin-top: 20rpx;
+    display: flex;
 }
 .row-wrap{
-    width: 720rpx;
-    height: 120rpx;
-    line-height: 88rpx;
-    border-bottom: 1rpx solid #eee;
+    width: 100rpx;
+    height: 100%;
+    /* line-height: 88rpx; */
+    border-right: 1rpx solid #eee;
     display: flex;
     font-size: 28rpx;
+    writing-mode: vertical-lr;
     /*justify-content: space-between;*/
 }
 .row-wrap .label{
-    width: 160rpx;
+    /* width: 160rpx; */
     color: #000;
     writing-mode: vertical-lr;
     padding-top: 20rpx;
@@ -28,14 +30,15 @@ page{
 .row-wrap .label-right{
     flex: 1;
     height: 80rpx;
+    width: 60rpx;
     line-height: 88rpx;
-    margin-left: 30rpx;
+    /* margin-left: 30rpx; */
     padding-top: 20rpx;
+    border: 1rpx solid;
 }
 .row-wrap .label-right input{
     height: 100%;
     font-size: 28rpx;
-    padding-right: 30rpx;
 }
 .row-wrap .right-box{
     margin-right: 30rpx; 
@@ -73,9 +76,9 @@ button[type="warn"] {
   right: 80rpx;
 }
 .addr-details{
-    height: auto;
+    height: 100%;
+    width: 100rpx;
     padding: 30rpx 0;
-    margin-left:30rpx;
     border-bottom: 1rpx solid #eee;
     display: flex;
     font-size: 28rpx;
@@ -93,8 +96,8 @@ button[type="warn"] {
 }
 picker {
     min-width: 20rpx;
-    height: 100%;
-    margin-right: 20rpx;
+    height: 80%;
+    margin-top: 20rpx;
 }
 .hui{
     color: #777;

@@ -1,5 +1,5 @@
 <view class="container">
-    <form bindsubmit="bindSave" report-submit="true">
+    <form bindsubmit="bindSave" report-submit="true" style='height: 100%;border: 1px solid;position: fixed;left: 0;' >
     <view class="form-box">
         <view class="row-wrap">
             <view class="label">{{wimls.wiml0001}}</view>

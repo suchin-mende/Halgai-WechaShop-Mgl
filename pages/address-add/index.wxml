@@ -1,5 +1,5 @@
 <view class="container">
-  <button wx:if="{{!addressData}}" type="primary" class="save-btn" bindtap="readFromWx">{{admls.adml0001}}</button>
+  
     <form bindsubmit="bindSave" report-submit="true">
     <view class="form-box">
         <view class="row-wrap">
@@ -33,6 +33,7 @@
             </view>
         </view>
     </view>
+    <button wx:if="{{!addressData}}" type="primary" class="save-btn" bindtap="readFromWx">{{admls.adml0001}}</button>
     <button type="warn" class="save-btn" formType="submit">{{admls.adml0007}}</button>    
     <button type="default" class="save-btn" bindtap="deleteAddress" data-id="{{addressData.id}}" wx:if="{{addressData}}">{{admls.adml0008}}</button>
     </form>
