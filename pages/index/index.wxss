@@ -285,9 +285,10 @@ swiper-item image {
   position: relative;
 }
 .img {
-  width: 154rpx;
-  height: 35rpx;
+  width: 230rpx;
+  height: 55rpx;
   filter: drop-shadow(2px 2px 2px #398865);
+  padding-top: 54rpx;
   /* filter: drop-shadow(1px 1px 2px #7cc623); */
   /* position: absolute;
   z-index: 2; */
@@ -306,19 +307,35 @@ margin-left:470rpx;
 padding-left:13rpx;
 
 } */
-.btn1{
+.board{
   width: 19%;
   height: 100rpx;
-  background-color:#009f3c;
-  color: #fff;
-  font-size: 20rpx;
+  color: #000000;
+  font-size: 27rpx;
   /* padding-left: 161rpx; */
   writing-mode:vertical-lr;
+  margin-right: 1rpx;
+  padding-top:25rpx;
+
+}
+.board-item {
+height:75rpx;
+line-height:40rpx;
+padding-right:69rpx;
+padding-left:-34rpx;
+float:left;
+margin-right:28rpx;
+padding-top:30rpx;
+
 
 }
 .btnImg {
-  width: 50rpx;
-  height: 50rpx;
+  width: 55rpx;
+  height: 55rpx;
+  float:left;
+  padding-left: 380rpx;
+  padding-top:16px;
+
 }
 .category-icon {
   float: left

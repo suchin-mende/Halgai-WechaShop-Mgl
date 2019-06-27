@@ -5,11 +5,15 @@
 <view class="container">
 <view class='head-menu'>
 <image src='../../images/logo.jpg' class='img' > </image>
-<button class='btn1' open-type='contact'>
-    <view><image class='btnImg' src='../../images/jaja-lo.png'></image></view>
-    <view>我要开店</view>
- </button>
+
+<view class='board'>
+<navigator url='/pages/board/board' hover-class="navigator-hover">{{inmls.inml0011}}</navigator>
+    <button><image class='btnImg' src='../../images/jaja-lo.png'></image>
+ <view class='board-item'> {{inmls.inml0011}}</view></button>
+
+ </view> 
  </view>
+ 
 <view wx:if="{{noticeList}}" class="notice">
     <view class="notice_iteml">{{inmls.inml0002}}</view>
       <swiper wx:if="{{noticeList}}" class="notice_swiper" vertical="true" autoplay="true" circular="true" interval="3000">
