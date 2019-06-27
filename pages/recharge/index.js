@@ -108,11 +108,6 @@ Page({
     const amount = e.detail.value.amount;
 
     if (amount == "" || amount * 1 < 0) {
-      // showMask.show({
-      //   title: HalgaiI18.rejs0001,
-      //   content: HalgaiI18.rejs0002,
-      //   showCancel: false
-      // })
       getApp().showModal(this,{
         title: HalgaiI18.rejs0001,
         content: HalgaiI18.rejs0002,

@@ -30,9 +30,19 @@ page{
 .row-wrap .label-right input{
     border: 1px solid #eee;
     font-size: 28rpx;
-    width: 80rpx;
-    height: 750rpx;
-    margin: 0 8rpx;
+    width: 350rpx;
+    margin: 0 20rpx;
+    float: left;
+    line-height: normal;
+    -ms-transform: rotate(90deg) translate(0, -100%);
+    -ms-transform-origin: 0% 0%;
+    -webkit-transform: rotate(90deg) translate(0, -100%);
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform: rotate(90deg) translate(0,-100%);
+    -moz-transform-origin: 0% 0%;
+    -o-transform: rotate(90deg) translate(0,-100%);
+    -o-transform-origin: 0% 0%;
+    white-space: nowrap;
 }
 .row-wrap .right-box{
     margin-right: 30rpx; 
