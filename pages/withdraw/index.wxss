@@ -6,36 +6,33 @@ page{
     justify-content: initial;
 }
 .form-box{
-    width:100%;
+    width:100rpx;
+    height: 100%;
     background-color: #fff;
-    margin-top: 20rpx;
-}
-.row-wrap{
-    width: 720rpx;
-    height: 120rpx;
-    line-height: 88rpx;
-    padding-top: 20rpx;
-    border-bottom: 1rpx solid #eee;
-    display: flex;
-    font-size: 28rpx;
-    /*justify-content: space-between;*/
-}
-.row-wrap .label{
-    width: 160rpx;
-    color: #000;
     writing-mode: vertical-lr;
 }
+.row-wrap{
+    display: flex;
+    font-size: 28rpx;
+}
+.row-wrap .label{
+    line-height: 115rpx;
+    padding: 50rpx 0;
+    color: #000;
+}
 .row-wrap .label-right{
-    flex: 1;
+    /* flex: 1;
     height: 90rpx;
     line-height: 88rpx;
     padding-top: 10rpx;
-    margin-left: 30rpx;
+    margin-left: 30rpx; */
 }
 .row-wrap .label-right input{
-    height: 100%;
+    border: 1px solid #eee;
     font-size: 28rpx;
-    padding-right: 30rpx;
+    width: 80rpx;
+    height: 750rpx;
+    margin: 0 8rpx;
 }
 .row-wrap .right-box{
     margin-right: 30rpx; 
@@ -60,7 +57,7 @@ page{
     padding-left: 0;
     padding-right: 0;
     height: 300rpx;
-    width: 90rpx;
+    width: 80rpx;
     position: fixed;
     right: 180rpx;
     bottom: 60rpx;
@@ -70,7 +67,7 @@ button[type="default"]{
     color:#000;
     writing-mode: vertical-lr;
     height: 300rpx;
-    width: 90rpx;
+    width: 80rpx;
     padding-left: 0;
     padding-right: 0;
     position: fixed;

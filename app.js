@@ -132,5 +132,9 @@ App({
     isConnected: true,
     launchOption: undefined,
     vipLevel: 0
+  },
+  showModal(caller,o){
+    var component = caller.selectComponent('#modalComponent');
+    component.showModal(o);
   }
 })

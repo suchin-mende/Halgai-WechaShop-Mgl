@@ -108,15 +108,21 @@ Page({
     const amount = e.detail.value.amount;
 
     if (amount == "" || amount * 1 < 0) {
-      wx.showModal({
+      // showMask.show({
+      //   title: HalgaiI18.rejs0001,
+      //   content: HalgaiI18.rejs0002,
+      //   showCancel: false
+      // })
+      getApp().showModal(this,{
         title: HalgaiI18.rejs0001,
         content: HalgaiI18.rejs0002,
         showCancel: false
-      })
+      });
+    
       return
     }
     if (amount * 1 < that.data.recharge_amount_min * 1) {
-      wx.showModal({
+      getApp().showModal(this,{
         title: HalgaiI18.rejs0001,
         content: HalgaiI18.rejs0004 + that.data.recharge_amount_min + HalgaiI18.rejs0005,
         showCancel: false
@@ -136,7 +142,7 @@ Page({
         money: amount
       }, 'post').then(res => {
         if (res.code != 0) {
-          wx.showModal({
+          getApp().showModal(this, {
             title: HalgaiI18.rejs0001,
             content: res.msg,
             showCancel: false
@@ -161,7 +167,7 @@ Page({
         wx.saveImageToPhotosAlbum({
           filePath: tempFilePath,
           success: (res) => {
-            wx.showModal({
+            getApp().showModal(this, {
               content: HalgaiI18.rejs0007,
               showCancel: false,
               confirmText: HalgaiI18.rejs0008,

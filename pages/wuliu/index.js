@@ -13,7 +13,7 @@ Page({
     var that = this;
     HalgaiAPI.orderDetail(that.data.orderId, wx.getStorageSync('token')).then(function (res) {
       if (res.code != 0) {
-        wx.showModal({
+        getApp().showModal(this, {
           title: HalgaiI18.wujs0001,
           content: res.msg,
           showCancel: false

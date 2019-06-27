@@ -20,12 +20,15 @@
     background:#009f3c;
     border-radius:6px;
     height:300rpx;
+    width: 80rpx;
     line-height: 75rpx;
     text-align: center;
     font-size:28rpx;
     position: relative;
-    left: 195rpx;
+    left: 80rpx;
     top: 800rpx;
+    padding-left: 0;
+    padding-right: 0;
 }
 .list-top{
     width: 100%;

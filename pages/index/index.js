@@ -83,7 +83,7 @@ Page({
       type: 'index'
     }).then(function(res) {
       if (res.code == 700) {
-        wx.showModal({
+        getApp().showModal(this, {
           title: HalgaiI18.injs0002,
           content: HalgaiI18.injs0003,
           showCancel: false
@@ -187,7 +187,7 @@ Page({
       token: wx.getStorageSync('token')
     }).then(function (res) {
       if (res.code == 20001 || res.code == 20002) {
-        wx.showModal({
+        getApp().showModal(this, {
           title: HalgaiI18.injs0003,
           content: HalgaiI18.injs0004,
           showCancel: false
@@ -195,7 +195,7 @@ Page({
         return;
       }
       if (res.code == 20003) {
-        wx.showModal({
+        getApp().showModal(this, {
           title: HalgaiI18.injs0003,
           content: HalgaiI18.injs0005,
           showCancel: false
@@ -203,7 +203,7 @@ Page({
         return;
       }
       if (res.code == 30001) {
-        wx.showModal({
+        getApp().showModal(this, {
           title: HalgaiI18.injs0003,
           content: HalgaiI18.injs0006,
           showCancel: false
@@ -211,7 +211,7 @@ Page({
         return;
       }
       if (res.code == 20004) {
-        wx.showModal({
+        getApp().showModal(this, {
           title: HalgaiI18.injs0003,
           content: HalgaiI18.injs0007,
           showCancel: false
@@ -225,7 +225,7 @@ Page({
           duration: 2000
         })
       } else {
-        wx.showModal({
+        getApp().showModal(this, {
           title: HalgaiI18.injs0003,
           content: res.msg,
           showCancel: false

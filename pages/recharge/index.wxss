@@ -4,19 +4,17 @@ page{
 .container{
     background-color: #f5f5f9;
     justify-content: initial;
+    display: flex;
+    align-items: flex-start;
 }
 
-.t-box {
-  display: flex;
-  position: fixed;
-  left: 30rpx;
-}
 .form-box{
     background-color: #fff;
     margin-right: 30rpx;
+    display: flex;
 }
 .row-wrap{
-    width: 80rpx;
+    width: 100rpx;
     height: 100%;
     line-height: 88rpx;
     display: flex;
@@ -24,7 +22,8 @@ page{
     /*justify-content: space-between;*/
     writing-mode: vertical-lr;
     text-orientation: sideways-right;
-  white-space: nowrap;
+    white-space: nowrap;
+    border-right: 30rpx solid #f5f5f9;
 }
 .row-wrap .label{
     color: #000;
@@ -64,18 +63,17 @@ margin-left: 8rpx;
   writing-mode:vertical-lr;
   text-orientation: sideways-right;
   white-space: nowrap;
-color:#fff;
-background:#009f3c;
-border-radius:6px;
-height:300rpx;
-line-height:75rpx;
-text-align:center;
-font-size:28rpx;
-position:relative;
-left:350rpx;
-top:800rpx;
-padding-left: 0;
-padding-right: 0;
+  color:#fff;
+  border-radius:6px;
+  height:300rpx;
+  line-height:75rpx;
+  text-align:center;
+  font-size:28rpx;
+  position:fixed;
+  right:60rpx;
+  top:800rpx;
+  padding-left: 0;
+  padding-right: 0;
 
 }
 
@@ -97,6 +95,15 @@ button[type="default"]{
     background-color: #ffffff;
     color:#000;
 }
+
+button[type="warn"]{
+  background-color: #009f3c;
+}
+
+.button-hover[type="warn"]{
+  background-color: #333;
+}
+
 .addr-details{
     height: auto;
     padding: 30rpx 0;

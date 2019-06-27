@@ -78,7 +78,7 @@ Page({
     var amount = e.detail.value.amount;
 
     if (amount == "" || amount * 1 < 100) {
-      wx.showModal({
+      getApp().showModal(this, {
         title: HalgaiI18.wijs0001,
         content: HalgaiI18.wijs0002,
         showCancel: false
@@ -87,7 +87,7 @@ Page({
     }
     HalgaiAPI.withDrawApply(amount, wx.getStorageSync('token')).then(function(res) {
       if (res.code == 0) {
-        wx.showModal({
+        getApp().showModal(this, {
           title: HalgaiI18.wijs0003,
           content: HalgaiI18.wijs0004,
           showCancel: false,
@@ -98,7 +98,7 @@ Page({
           }
         })
       } else {
-        wx.showModal({
+        getApp().showModal(this, {
           title: HalgaiI18.wijs0001,
           content: res.msg,
           showCancel: false

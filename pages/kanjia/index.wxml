@@ -49,4 +49,5 @@
           <view class="now-buy" bindtap="tobuy" style='margin-left:0;width:750rpx;'>{{kamls.kaml0011}}</view>
         </view>
    </view>
+   <showMask id='modalComponent'></showMask>
 </view>

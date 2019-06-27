@@ -3,4 +3,5 @@
 
 <view class="container">
      <template is="{{goodsList.list.length > 0 ? 'cart-goods-list' : 'no-goods'}}" data="{{...goodsList,temls}}"></template>
+     <showMask id='modalComponent'></showMask>
 </view>

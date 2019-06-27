@@ -24,4 +24,5 @@
     </view>
     </form>
   </view>
+  <showMask id='modalComponent'></showMask>
 </view>

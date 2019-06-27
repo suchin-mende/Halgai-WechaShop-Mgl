@@ -89,7 +89,7 @@ Page({
     if (that.data.isNeedLogistics > 0) {
       if (!that.data.curAddressData) {
         wx.hideLoading();
-        wx.showModal({
+        getApp().showModal(this, {
           title: HalgaiI18.tojs0001,
           content: HalgaiI18.tojs0002,
           showCancel: false
@@ -115,7 +115,7 @@ Page({
 
     HalgaiAPI.orderCreate(postData).then(function (res) {
       if (res.code != 0) {
-        wx.showModal({
+        getApp().showModal(this, {
           title: HalgaiI18.tojs0001,
           content: res.msg,
           showCancel: false

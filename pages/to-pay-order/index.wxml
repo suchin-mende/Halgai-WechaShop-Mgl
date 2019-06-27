@@ -77,4 +77,5 @@
         <button class="to-pay-btn" formType="submit"> {{tomls.toml0016}}</button>
     </view>
     </form>
+    <showMask id='modalComponent'></showMask>
 </view>

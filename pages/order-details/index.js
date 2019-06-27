@@ -23,7 +23,7 @@ Page({
       var that = this;
       HalgaiAPI.orderDetail(that.data.orderId, wx.getStorageSync('token')).then(function (res) {
         if (res.code != 0) {
-          wx.showModal({
+          getApp().showModal(this, {
             title: HalgaiI18.ordjs0001,
             content: HalgaiI18.res.msg,
             showCancel: false
@@ -59,7 +59,7 @@ Page({
         type: 'form',
         formId: e.detail.formId
       })
-      wx.showModal({
+      getApp().showModal(this, {
         title: HalgaiI18.ordjs0002,
           content: '',
           success: function(res) {

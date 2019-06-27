@@ -302,7 +302,7 @@ Page({
         HalgaiAPI.goodsDetail(carShopBean.goodsId).then(function(res) {
           doneNumber++;
           if (res.data.properties) {
-            wx.showModal({
+            getApp().showModal(this, {
               title: HalgaiI18.shjs0001,
               content: res.data.basicInfo.name + HalgaiI18.shjs0002,
             showCancel: false
@@ -312,7 +312,7 @@ Page({
             return;
           }
           if (res.data.basicInfo.stores < carShopBean.number) {
-            wx.showModal({
+            getApp().showModal(this, {
             title: HalgaiI18.shjs0001,
             content: res.data.basicInfo.name + HalgaiI18. shjs0003,
             showCancel: false
@@ -322,7 +322,7 @@ Page({
             return;
           }
           if (res.data.basicInfo.minPrice != carShopBean.price) {
-            wx.showModal({
+            getApp().showModal(this, {
               title: HalgaiI18.shjs0001,
               content: res.data.basicInfo.name + HalgaiI18.shjs0004,
             showCancel: false
@@ -342,7 +342,7 @@ Page({
         }).then(function(res) {
           doneNumber++;
           if (res.data.stores < carShopBean.number) {
-            wx.showModal({
+            getApp().showModal(this, {
               title: HalgaiI18.shjs0001,
               content: carShopBean.name + HalgaiI18.shjs0003,
             showCancel: false
@@ -352,7 +352,7 @@ Page({
             return;
           }
           if (res.data.price != carShopBean.price) {
-            wx.showModal({
+            getApp().showModal(this, {
               title: HalgaiI18.shjs0001,
               content: carShopBean.name + HalgaiI18.shjs0004,
             showCancel: false

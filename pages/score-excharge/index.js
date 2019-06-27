@@ -71,7 +71,7 @@ Page({
     var amount = e.detail.value.amount;
 
     if (amount == "") {
-       wx.showModal({
+       getApp().showModal(this, {
        title: HalgaiI18.scejs0001,
        content: HalgaiI18.scejs0002,
        showCancel: false
@@ -80,7 +80,7 @@ Page({
     }
   HalgaiAPI.scoreExchange(amount, wx.getStorageSync('token')).then(function(res) {
     if (res.code == 700) {
-       wx.showModal({
+       getApp().showModal(this, {
          title: HalgaiI18.scejs0001,
          content: HalgaiI18.scejs0004,
        showCancel: false
@@ -88,7 +88,7 @@ Page({
         return
       }
     if (res.code == 0) {
-        wx.showModal({
+        getApp().showModal(this, {
           title: HalgaiI18.scejs0005,
           content: HalgaiI18.scejs0006 + res.data.score + HalgaiI18.scejs0007,
         showCancel: false,
@@ -99,7 +99,7 @@ Page({
           }
         })
       } else {
-        wx.showModal({
+        getApp().showModal(this, {
           title: HalgaiI18.scejs0001,
         content: res.data.msg,
         showCancel: false

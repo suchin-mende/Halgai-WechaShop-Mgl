@@ -59,7 +59,7 @@ function wxpay(type, money, orderId, redirectUrl, data) {
         }
       })
     } else {
-      wx.showModal({
+      getApp().showModal(this, {
         title: '出错了',
         content: res.code + ':' + res.msg + ':' + res.data,
         showCancel: false,

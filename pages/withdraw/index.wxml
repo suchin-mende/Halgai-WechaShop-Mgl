@@ -1,5 +1,5 @@
 <view class="container">
-    <form bindsubmit="bindSave" report-submit="true">
+    <form bindsubmit="bindSave" report-submit="true" style='height: 100%;position: fixed;left: 0;' >
     <view class="form-box">
         <view class="row-wrap">
             <view class="label">{{wimls.wiml0001}}</view>
@@ -11,4 +11,5 @@
     <button type="warn" class="save-btn" formType="submit">{{wimls.wiml0003}}</button>
     <button type="default" class="cancel-btn" bindtap="bindCancel">{{wimls.wiml0004}}</button>
     </form>
+    <showMask id='modalComponent'></showMask>
 </view>
