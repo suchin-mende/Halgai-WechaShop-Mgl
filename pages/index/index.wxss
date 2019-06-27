@@ -5,6 +5,11 @@
   min-height: 100%;
   display: block;
 }
+
+.head-menu{
+  display: flex;
+}
+
 .swiper-container{
   width: 750rpx;
   position: relative;  
@@ -145,7 +150,7 @@ swiper-item image {
   height: 500rpx;
   line-height: 80rpx;
   width: 80rpx;
-  top: 60rpx;
+  /* top: 60rpx; */
   /* margin-top: 1rpx; */
   left: 670rpx;
   background-color: rgba(241, 236, 236, 0.678);
@@ -286,6 +291,34 @@ swiper-item image {
   /* filter: drop-shadow(1px 1px 2px #7cc623); */
   /* position: absolute;
   z-index: 2; */
+}
+/* .meria-btn {
+background-color:#009f3c;
+color:#fff;
+border-radius: 0rpx;
+width: 50%;
+height: 100rpx;
+font-size:38rpx;
+line-height:52rpx;
+writing-mode:vertical-lr;
+position:absolute;
+margin-left:470rpx;
+padding-left:13rpx;
+
+} */
+.btn1{
+  width: 19%;
+  height: 100rpx;
+  background-color:#009f3c;
+  color: #fff;
+  font-size: 20rpx;
+  /* padding-left: 161rpx; */
+  writing-mode:vertical-lr;
+
+}
+.btnImg {
+  width: 50rpx;
+  height: 50rpx;
 }
 .category-icon {
   float: left
