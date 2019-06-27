@@ -10,10 +10,7 @@ Component({
     //是否显示modal
     
     //modal的高度
-    height: {
-      type: String,
-      value: '80%'
-    },
+    
     isShow : {
       type: Boolean,
       value: false

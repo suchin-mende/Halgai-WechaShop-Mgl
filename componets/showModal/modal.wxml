@@ -1,6 +1,6 @@
 <!--componets/showModal/modal.wxml-->
 <view class='mask' wx:if='{{isShow}}' bindtap='clickMask'>
-  <view class='modal-content' style='height:{{height}}'>
+  <view class='modal-content'>
     <view class='main-content'>
     <view class='s-title'>{{title}}</view>
     <view class='s-text'>{{content}}</view>
