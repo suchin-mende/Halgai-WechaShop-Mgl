@@ -303,7 +303,7 @@ swiper-item image {
   height: 90rpx;
   flex: 1;
   background:url("https://cdn.it120.cc/images/weappshop/popup-close.png") no-repeat center center;
-  background-size: 46rpx auto;
+  background-size: 48rpx auto;
   align-self: flex-start;
   margin-left: auto;
 }
@@ -311,16 +311,17 @@ swiper-item image {
   font-size:26rpx;
   color:#000;
   padding-left: 30rpx;
-  padding: 30rpx 0 20rpx 30rpx;
+  padding: 10rpx 0 20rpx 30rpx;
   writing-mode:vertical-lr;
   float:left;
 }
 .size-label-box .label-item-box{
   display: flex;
-  margin-left: 30rpx;
+  /* margin-left: 30rpx; */
   flex-direction: row;
   flex-wrap:wrap;
   writing-mode:vertical-lr;
+  float: left;
 }
 .size-label-box .label-item{
   font-size:20rpx;
@@ -384,7 +385,7 @@ swiper-item image {
   padding-left:0px;
   float:right; 
   border-radius: 8px;  
-  margin:40px 0px 0px 318px;
+  margin:38px 0px 0px 315px;
   position:absolute;
   display:flex;
   z-index:2;
@@ -480,7 +481,7 @@ swiper-item image {
 }
 
 .num-box{
-  margin-top:9px;
+  margin-top:6px;
 }
 
  .buy-num-box .num-box .num-jia{
