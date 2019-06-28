@@ -1,1 +1,43 @@
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  border: 0.5rpx solid;
+  border-color: #999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.title-container {
+  height: 240rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.capsule > view {
+  width: 45px;
+  height: 60%;
+  position: relative;
+}
+.capsule > view:nth-child(2) {
+  border-left: 1px solid #fff;  
+}
+.back{
+  width: 50rpx;
+  height: 50rpx
+}
+.title{
+  vertical-align:middle;
+  float:left;
+  /* height:190rpx; */
+  padding-top:20rpx;
+  writing-mode: vertical-lr;
+  padding-left: 338rpx;
+  color: #009f3c;
 
+}
+.maitlue{
+  width: 50px;
+  height: 50PX;
+  margin: 0 auto;
+}

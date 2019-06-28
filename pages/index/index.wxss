@@ -8,6 +8,8 @@
 
 .head-menu{
   display: flex;
+  height:84rpx;
+
 }
 
 .swiper-container{
@@ -224,14 +226,14 @@ swiper-item image {
 .mxboos{
   overflow: hidden;
   text-overflow: ellipsis;
-   white-space: nowrap; 
-   height:160rpx;
+  white-space: nowrap; 
+  height:160rpx;
 }
 .item.dateEndType{
   overflow: hidden;
   text-overflow: ellipsis;
-   white-space: nowrap; 
-   height:160rpx;
+  white-space: nowrap; 
+  height:160rpx;
 }
 .search-view{
   /* position:fixed; */
@@ -246,17 +248,17 @@ swiper-item image {
   flex-direction: column;
 }
 .search-content{
-   background: white;
-   width:650rpx;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   padding-top: auto;
-   padding-left: 20rpx;
-   padding-bottom: auto;
-   margin: auto;
-   height: 65rpx;
-   border-radius:5px 5px;
+  background: white;
+  width:650rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: auto;
+  padding-left: 20rpx;
+  padding-bottom: auto;
+  margin: auto;
+  height: 65rpx;
+  border-radius:5px 5px;
 }
 .search-icon{
   width: 40rpx;
@@ -288,25 +290,8 @@ swiper-item image {
   width: 230rpx;
   height: 55rpx;
   filter: drop-shadow(2px 2px 2px #398865);
-  padding-top: 54rpx;
-  /* filter: drop-shadow(1px 1px 2px #7cc623); */
-  /* position: absolute;
-  z-index: 2; */
+  padding-top: 22rpx;
 }
-/* .meria-btn {
-background-color:#009f3c;
-color:#fff;
-border-radius: 0rpx;
-width: 50%;
-height: 100rpx;
-font-size:38rpx;
-line-height:52rpx;
-writing-mode:vertical-lr;
-position:absolute;
-margin-left:470rpx;
-padding-left:13rpx;
-
-} */
 .board{
   width: 19%;
   height: 100rpx;
@@ -319,22 +304,18 @@ padding-left:13rpx;
 
 }
 .board-item {
-height:75rpx;
-line-height:40rpx;
-padding-right:69rpx;
-padding-left:-34rpx;
-float:left;
-margin-right:28rpx;
-padding-top:30rpx;
-
-
+  height:75rpx;
+  line-height:40rpx;
+  padding-right:69rpx;
+  padding-left:-34rpx;
+  float:left;
+  margin-right:28rpx;
 }
 .btnImg {
   width: 55rpx;
   height: 55rpx;
   float:left;
   padding-left: 380rpx;
-  padding-top:16px;
 
 }
 .category-icon {
