@@ -26,7 +26,6 @@
     
     <button type="warn" class="b-save-btn" formType="submit"> {{remls.reml0008}}</button>
   
-
    <block wx:if='{{rechargeSendRules}}'>
       <view class="charge-rule-wrap">
             <block  wx:for='{{rechargeSendRules}}' wx:for-item="item">
@@ -34,6 +33,7 @@
                 <!-- <button  class='font charge-detail' bindtap="rechargeAmount" data-confine="{{item.confine}}" data-send="{{item.send}}">
                   <text>充{{item.confine}}送{{item.send}}</text>
                 </button> -->
+                
                   <view class="btn charge-detail" bindtap="rechargeAmount" data-confine="{{item.confine}}" data-send="{{item.send}}">
                       <text> {{remls.reml0006}}{{item.confine}}</text>
                       <text> {{remls.reml0007}}{{item.send}}</text>

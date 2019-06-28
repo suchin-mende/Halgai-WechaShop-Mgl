@@ -172,6 +172,3 @@ picker {
   align-items: center;
   margin-top:12rpx;
 }
-.button-hover{
-  background-color:grey;
-}
