@@ -13,17 +13,10 @@
   font-size: 35rpx;
   position: absolute;
   width: 70rpx;
-  /* height: 550rpx; */
   background-color: #dddddd;
   padding-top: 10rpx;
   padding-left: 10rpx;
   border-radius: 10rpx;
-  /* overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  height: 400rpx; */
-  /* text-align: center; */
-  /* writing-mode: vertical-lr; */
 }
 .slick {
   line-height: 30px;

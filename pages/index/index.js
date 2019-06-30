@@ -278,5 +278,7 @@ Page({
       curPage: 1
     });
     this.getGoodsList(this.data.activeCategoryId)
-  }
+  },
+  
 })
+

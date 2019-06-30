@@ -49,7 +49,11 @@ module.exports = {
     auml0003: "ᠵᠥᠪᠰᠢᠨ ᠨᠡᠪᠲᠡᠷᠡᠬᠦ",
   },
   //category(ca)
-
+  //board(ba)
+  bojs0001: "ᠳᠡᠯᠭᠡᠭᠦᠷ ᠨᠡᠭᠡᠭᠡᠬᠦ ᠭᠤᠶᠤᠴᠢᠯᠠᠯ",
+  bomls: {
+    boml0001: "ᠳᠡᠯᠭᠡᠭᠦᠷ ᠨᠡᠭᠡᠭᠡᠬᠦ ᠭᠤᠶᠤᠴᠢᠯᠠᠯ",
+  },
   //fetch-coupon(fe)
   fejs0001: "ᠪᠤᠷᠤᠭᠤ",
   fejs0002: "ᠳᠤᠬᠢᠶ᠎᠎ᠠ ᠪᠠᠨ ᠪᠢᠴᠢ",
@@ -62,7 +66,7 @@ module.exports = {
 
   femls: {
     feml0001: "ᠳᠤᠬᠢᠶ᠎ᠠ",
-    feml0002: "",
+    // feml0002: "ᠳᠤᠬᠢᠶ᠎ᠠ ᠶᠢᠨ ᠲᠣᠭ᠎ᠠ",
     feml0003: "ᠤᠳᠤ ᠠᠪᠬᠤ",
   },
   //fx(fxs:apply-status,fxa:apply,fxc:commisionLog,fxm:members)
@@ -173,6 +177,7 @@ module.exports = {
     // inml0008: " ᠠᠪᠬᠤ",
     inml0009: " ᠡᠳᠦᠷ ᠲᠤᠲᠤᠷ᠎ᠠ ᠬᠦᠴᠦᠨ ᠳᠠᠢ",
     inml0010: " ᠥᠭᠡᠷ᠎ᠡ ᠶᠠᠭᠤᠮ᠎ᠠ ᠦᠭᠡᠢ",
+    inml0011: " ᠳᠡᠯᠭᠡᠭᠦᠷ ᠨᠡᠭᠡᠭᠡᠬᠦ",
 
   },
 

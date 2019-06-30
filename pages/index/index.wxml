@@ -5,11 +5,14 @@
 <view class="container">
 <view class='head-menu'>
 <image src='../../images/logo.jpg' class='img' > </image>
-<button class='btn1' open-type='contact'>
-    <view><image class='btnImg' src='../../images/jaja-lo.png'></image></view>
-    <view>我要开店</view>
- </button>
+
+<view class='board'>
+<navigator url='/pages/board/board' hover-class="navigator-hover"><image class='btnImg' src='../../images/jaja-lo.png'></image></navigator>   
+ <view class='board-item'> {{inmls.inml0011}}</view>
+
+ </view> 
  </view>
+ 
 <view wx:if="{{noticeList}}" class="notice">
     <view class="notice_iteml">{{inmls.inml0002}}</view>
       <swiper wx:if="{{noticeList}}" class="notice_swiper" vertical="true" autoplay="true" circular="true" interval="3000">
@@ -83,12 +86,12 @@
     <view class="goods-container">
         <view class="goods-box" wx:for-items="{{goods}}" wx:key="{{index}}" bindtap="toDetailsTap" data-id="{{item.id}}">
            <view class="img-box">
-              <image src="{{item.pic}}_m" class="image" mode="aspectFill" lazy-load="true"/>
+           <image src="{{item.pic}}_m" class="image" mode="aspectFill" lazy-load="true"/>
            </view>
            <view class="goods-title">{{item.name}}</view>
            <view style='display:flex;'>
-            <view class="goods-price">¥ {{item.minPrice}}</view>
-            <view wx:if="{{item.originalPrice && item.originalPrice > 0}}" class="goods-price" style='color:#aaa;text-decoration:line-through'>¥ {{item.originalPrice}}</view>
+           <view class="goods-price">¥ {{item.minPrice}}</view>
+           <view wx:if="{{item.originalPrice && item.originalPrice > 0}}" class="goods-price" style='color:#aaa;text-decoration:line-through'>¥ {{item.originalPrice}}</view>
            </view>           
         </view>
     </view>
