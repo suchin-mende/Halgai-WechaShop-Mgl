@@ -81,10 +81,12 @@
             <image style="width: 100rpx; height: 100rpx;" src="{{item.user.avatarUrl}}"></image>
             <view style="text-align:center;width:100rpx;writing-mode:vertical-lr"> {{item.goods.goodReputationStr}}</view>
           </view>
-           <view style="color: #B0B0B0;font-size:24rpx;"> {{item.goods.property}} </view>
-             <view style="color: #B0B0B0;font-size:24rpx;"> {{item.goods.dateReputation}}</view>
+           <view style="color: #B0B0B0;font-size:24rpx;writing-mode:vertical-lr;float:left;"> 
+           {{item.goods.property}} </view>
+             <view style="color: #B0B0B0;font-size:24rpx;writing-mode:vertical-lr;"> 
+             {{item.goods.dateReputation}}</view>
           <view style="width:550rpx;float:left;margin-left:35rpx;border-bottom:1px solid #eee;">
-            <view style="writing-mode:vertical-lr;margin:-70px 0px 0px auto;">
+            <view style="writing-mode:vertical-lr;margin:-120px 120px 20px 0px;float:right;">
             {{item.goods.goodReputationRemark}}
           </view>
          </view>
@@ -116,7 +118,7 @@
                   <view class="pop-goods-title">{{goodsDetail.basicInfo.name}}
                 </view>
               </view>
-              <view class="size-label-box">
+              <view class="size-label-box" style="margin-left:20px">
                 <block wx:for="{{goodsDetail.properties}}" wx:for-item="property" wx:for-index="idx" wx:key="id">
                   <view class="label">{{property.name}}</view> 
                   <view class="label-item-box">
