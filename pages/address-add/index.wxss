@@ -39,8 +39,19 @@ page{
     padding-top: 20rpx;
 }
 .row-wrap .label-right input{
-    height: 100%;
+    width: 350rpx;
     font-size: 28rpx;
+    float: left;
+    line-height: normal;
+    -ms-transform: rotate(90deg) translate(0, -100%);
+    -ms-transform-origin: 0% 0%;
+    -webkit-transform: rotate(90deg) translate(0, -100%);
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform: rotate(90deg) translate(0,-100%);
+    -moz-transform-origin: 0% 0%;
+    -o-transform: rotate(90deg) translate(0,-100%);
+    -o-transform-origin: 0% 0%;
+    white-space: nowrap;
 }
 .row-wrap .right-box{
     margin-right: 30rpx; 
@@ -126,7 +137,18 @@ picker {
     color: #777;
 }
 .textarea{
-  height: 100%;
-  width: 60rpx;
-  padding-left: 15rpx;
+      height: 60rpx;
+      width: 350rpx;
+      padding-left: 15rpx;
+      float: left;
+      line-height: normal;
+      -ms-transform: rotate(90deg) translate(0, -100%);
+      -ms-transform-origin: 0% 0%;
+      -webkit-transform: rotate(90deg) translate(0, -100%);
+      -webkit-transform-origin: 0% 0%;
+      -moz-transform: rotate(90deg) translate(0,-100%);
+      -moz-transform-origin: 0% 0%;
+      -o-transform: rotate(90deg) translate(0,-100%);
+      -o-transform-origin: 0% 0%;
+      white-space: nowrap;
 }

@@ -1,0 +1,4 @@
+<!--componets/vertical-input/input.wxml-->
+<view class="input-class">
+  <input placeholder=""></input>
+</view>

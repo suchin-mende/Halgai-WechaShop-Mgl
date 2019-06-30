@@ -39,17 +39,17 @@ page{
     width: 320rpx;
     border: 1px solid #eee;
     float: left;
- line-height: normal;
--ms-transform: rotate(90deg) translate(0, -100%);
--ms-transform-origin: 0% 0%;
--webkit-transform: rotate(90deg) translate(0, -100%);
--webkit-transform-origin: 0% 0%;
--moz-transform: rotate(90deg) translate(0,-100%);
--moz-transform-origin: 0% 0%;
--o-transform: rotate(90deg) translate(0,-100%);
--o-transform-origin: 0% 0%;
-white-space: nowrap;
-margin-left: 8rpx;
+    line-height: normal;
+    -ms-transform: rotate(90deg) translate(0, -100%);
+    -ms-transform-origin: 0% 0%;
+    -webkit-transform: rotate(90deg) translate(0, -100%);
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform: rotate(90deg) translate(0,-100%);
+    -moz-transform-origin: 0% 0%;
+    -o-transform: rotate(90deg) translate(0,-100%);
+    -o-transform-origin: 0% 0%;
+    white-space: nowrap;
+    margin-left: 8rpx;
 }
 .row-wrap .right-box{
     margin-right: 30rpx;
@@ -171,7 +171,4 @@ picker {
   justify-content: center;
   align-items: center;
   margin-top:12rpx;
-}
-.button-hover{
-  background-color:grey;
 }
