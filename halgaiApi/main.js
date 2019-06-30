@@ -3,13 +3,19 @@ const API_BASE_URL = 'https://halgai.com/api/index.php'
 
 const request = (url, needSubDomain, method, data) => {
   let _url = API_BASE_URL + (needSubDomain ? '/' + CONFIG.subDomain : '') + url + '?app_id=' + CONFIG.appid
+  let _dataToken = '' 
+  if (url == '/user/check-token') { _dataToken = data.token}
   return new Promise((resolve, reject) => {
     wx.request({
       url: _url,
       method: method,
       data: data,
       header: {
-        'Content-Type': 'application/x-www-form-urlencoded'
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'HALGAI-API-KEY':CONFIG.appid,
+        'HalgaiAPIToken': wx.getStorageSync('token'),
+        'APP_LANG':CONFIG.lang
+        
       },
       success(request) {
         resolve(request.data)

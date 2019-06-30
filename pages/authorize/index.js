@@ -100,7 +100,7 @@ Page({
         HalgaiAPI.login(res.code).then(function(res) {
           if (res.code == 10000) {
             // 去注册
-            that.registerUser();
+            that.registerUser(res.session_key);
             return;
           }
           if (res.code != 0) {
@@ -122,7 +122,7 @@ Page({
       }
     })
   },
-  registerUser: function() {
+  registerUser: function (session_key) {
     let that = this;
     wx.login({
       success: function(res) {
@@ -141,7 +141,8 @@ Page({
               code: code,
               encryptedData: encryptedData,
               iv: iv,
-              referrer: referrer
+              referrer: referrer,
+              session_key: session_key
             }).then(function(res) {
               wx.hideLoading();
               that.login();
