@@ -2,7 +2,7 @@ page{
   height: 100%;
 }
 .container{
-  ackground-color: #f5f5f9;
+  background-color: #f5f5f9;
   justify-content: initial;
 }
 .form-box{
@@ -12,7 +12,7 @@ page{
   background-color: #009f3c;
 }
 .row-wrap{
-  ine-height: 88rpx;
+  line-height: 88rpx;
   display: flex;
   font-size: 28rpx;
   justify-content: space-between;
