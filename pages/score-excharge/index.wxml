@@ -4,7 +4,7 @@
         <view class="row-wrap">
             <view class="label">{{scemls.sceml0001}}</view>
             <view class="label-right">
-                <input name="amount" class="input" type="text" placeholder="{{scemls.sceml0002}}"/>
+                <input name="amount" class="input" type="text" placeholder-style="transform:rotate(270deg);" placeholder="{{scemls.sceml0002}}"/>
             </view>
         </view>
     </view>
