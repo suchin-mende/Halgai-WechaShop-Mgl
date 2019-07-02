@@ -86,7 +86,7 @@
              <view style="color: #B0B0B0;font-size:24rpx;writing-mode:vertical-lr;"> 
              {{item.goods.dateReputation}}</view>
           <view style="width:550rpx;float:left;margin-left:35rpx;border-bottom:1px solid #eee;">
-            <view style="writing-mode:vertical-lr;margin:-120px 120px 20px 0px;float:right;">
+            <view style="writing-mode:vertical-lr;float:right;margin-top:-112px;">
             {{item.goods.goodReputationRemark}}
           </view>
          </view>
@@ -110,9 +110,13 @@
             <view class="popup-mask" bindtap="closePopupTap"></view>
             <view class="popup-contents">   
               <view class="pop-goods-close" bindtap="closePopupTap"></view>
+               <view class="popup-join-btn" data-shopType="{{shopType}}" wx:if="{{shopType =='tobuy' || shopType =='toPingtuan'}}" bindtap="buyNow"> 
+                {{gomls.goml0023}}
+              </view>
               <view class="pop-goods-info">
                 <view class="pop-img-box">
                   <image src="{{goodsDetail.basicInfo.pic}}" class="goods-thumbnail"/>
+                  
                 </view>
                 <view class="pop-goods-des">
                   <view class="pop-goods-title">{{goodsDetail.basicInfo.name}}
@@ -132,9 +136,6 @@
               </view>
               <view class="popup-join-btn" wx:if="{{shopType =='addShopCar'}}"  bindtap="addShopCar"> 
                 {{gomls.goml0022}}
-              </view>
-              <view class="popup-join-btn" data-shopType="{{shopType}}" wx:if="{{shopType =='tobuy' || shopType =='toPingtuan'}}" bindtap="buyNow"> 
-                {{gomls.goml0023}}
               </view>
             </view>
             <view class="pop-goods-des">                   

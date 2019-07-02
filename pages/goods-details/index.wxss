@@ -253,15 +253,15 @@ swiper-item image {
   width:100%;
   background-color: #fff;
   z-index: 6;
-  height:400px;
+
 }
 .pop-goods-info{
   display: flex;
   flex-direction: row;
-  align-items: center;
   margin-left: 30rpx;
-  padding: 30rpx 0;
   border-bottom: 1px solid #eee;
+  padding-bottom: 30px;
+
 }
 .pop-img-box{
   width: 120rpx;
@@ -289,19 +289,16 @@ swiper-item image {
   float:left;
 }
 .pop-goods-price{
-  font-size:38rpx;
   color:#009f3c;
-  margin-top:-10px; 
-  width: 60px;
-  padding: 18px;
-  margin-top:0rpx
+  margin-top:0rpx;
+  margin: 15px;
 }
 .pop-goods-close{
-  width: 80rpx;
-  height: 90rpx;
+  width: 60rpx;
+  height: 66rpx;
   flex: 1;
   background:url("https://cdn.it120.cc/images/weappshop/popup-close.png") no-repeat center center;
-  background-size: 48rpx auto;
+  background-size: 46rpx auto;
   align-self: flex-start;
   margin-left: auto;
 }
@@ -342,16 +339,15 @@ swiper-item image {
    /* margin-top: 30rpx; */
    align-items: center;
    writing-mode:vertical-lr;
-   padding-left: 34px;
 }
-.num-label{
-  font-size:36rpx;
-  color:#000000;
-  writing-mode: vertical-lr;
-  width:136px;
-  height:40px;
-  text-align:center;
-  margin-top:9px;
+.num-label{ 
+ font-size:40rpx;
+color:#000000;
+writing-mode:vertical-lr;
+padding-left:70%;
+height:100rpx;
+line-height:100rpx;
+margin-top: 6px;
 }
 /* .buy-num-box .num-box{
      display: flex;
@@ -376,18 +372,13 @@ swiper-item image {
   /* height: 89rpx; */
   text-align: center;
   line-height: 60rpx;
-  font-size:45rpx;
   color:#ffffff;
   background-color: #009f3c;
   writing-mode: vertical-lr;
-  padding-left:0px;
-  float:right; 
   border-radius: 8px;  
-  margin:38px 0px 0px 280px;
-  position:absolute;
-  display:flex;
-  z-index:2;
+  float: right;
 }
+
 .buy-num-box .num-box .hui{
   background-color: #f5f5f9;
 }
