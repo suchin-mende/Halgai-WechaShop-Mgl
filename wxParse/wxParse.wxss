@@ -177,7 +177,7 @@ view{
 }
 .WxEmojiView{
     align-items: center;
-    padding:40px 0px 0px 0px;
+    padding:40px 0px 0px 10px;
 }
 .wxEmoji{
     width: 16px;
