@@ -13,10 +13,13 @@
   font-size: 35rpx;
   position: absolute;
   width: 70rpx;
-  background-color: #dddddd;
-  padding-top: 10rpx;
+  /* background-color: #dddddd; */
+  padding-top: 20rpx;
   padding-left: 10rpx;
   border-radius: 10rpx;
+  margin-top: 30rpx;
+  height: 76%;
+  border: 1rpx solid;
 }
 .slick {
   line-height: 30px;

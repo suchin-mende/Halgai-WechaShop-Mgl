@@ -7,7 +7,7 @@
 <image src='../../images/logo.jpg' class='img' > </image>
 
 <view class='board'>
-<navigator url='/pages/board/board' hover-class="navigator-hover"><image class='btnImg' src='../../images/jaja-lo.png'></image></navigator>   
+<navigator url='/pages/board/board' hover-class="none"><image class='btnImg' src='../../images/jaja-lo.png'></image></navigator>   
  <view class='board-item'> {{inmls.inml0011}}</view>
 
  </view> 

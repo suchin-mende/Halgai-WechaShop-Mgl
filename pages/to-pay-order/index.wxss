@@ -84,7 +84,7 @@ form{
     /*justify-content: space-between;*/
     border-top: 1px solid #eee;
     /* padding: 30rpx 30rpx 30rpx 0; */
-    padding-top: 34rpx;
+    /* padding-top: 34rpx; */
 }
 .goods-list  .a-goods .img-box{
     width: 160rpx;
@@ -96,7 +96,8 @@ form{
 .goods-num{
   float: right;
   font-size: 32rpx;
-  margin-top: -82rpx
+  margin-top: -100rpx;
+  padding-right: 7rpx;
 }
 .goods-list .img-box .img{
     width: 160rpx;
@@ -115,7 +116,7 @@ form{
 .a-goods .text-box .arow .goods-name{
      width: 360rpx;
      font-size:26rpx;
-     height: 180rpx;
+     height: 175rpx;
      color:#000000;
      line-height: 1.6;
      overflow: hidden;
@@ -215,31 +216,26 @@ margin-top: 22rpx;
 }
 .jiesuan-box .to-pay-btn{
     width:9%;
-    text-align: center;
     height: 90%;
-    /* line-height: 100rpx; */
     background-color: #009f3c;
     font-size:32rpx;
     color:#ffffff;
     border-radius: 30rpx;
-    /* padding-top: 10rpx; */
-    margin-top: -8rpx;
-    /* margin-left: 110rpx; */
     writing-mode: vertical-lr;
     padding-left: 3rpx;
 
 }
 .jiesuan-box  .left-price{
     display: flex;
-    width: 500rpx;
+    width: 530rpx;
     justify-content:flex-end;
     /* line-height: 100rpx; */
     /* padding: 0 30rpx 0 0; */
     font-size:36rpx;
     box-sizing: border-box;
-    padding-top: 160rpx;
 }
 .jiesuan-box .total{
     color: #009f3c;
     text-align: right;
+    margin-top: 185rpx;
 }
