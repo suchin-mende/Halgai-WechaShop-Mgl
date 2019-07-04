@@ -16,7 +16,6 @@ page{
 .row-wrap{
     /* width: 60rpx; */
     height: 100%;
-    border-right: 1rpx solid #eee;
     display: flex;
     font-size: 28rpx;
     writing-mode: vertical-lr;
@@ -39,7 +38,7 @@ page{
     padding-top: 20rpx;
 }
 .row-wrap .label-right input{
-    width: 350rpx;
+    width: 900rpx;
     font-size: 28rpx;
     float: left;
     line-height: normal;
@@ -52,6 +51,7 @@ page{
     -o-transform: rotate(90deg) translate(0,-100%);
     -o-transform-origin: 0% 0%;
     white-space: nowrap;
+    border: 1rpx solid #eee;
 }
 .row-wrap .right-box{
     margin-right: 30rpx; 
@@ -138,7 +138,7 @@ picker {
 }
 .textarea{
       height: 60rpx;
-      width: 350rpx;
+      width: 900rpx;
       padding-left: 15rpx;
       float: left;
       line-height: normal;
@@ -151,4 +151,5 @@ picker {
       -o-transform: rotate(90deg) translate(0,-100%);
       -o-transform-origin: 0% 0%;
       white-space: nowrap;
+      border: 1rpx solid #eee;
 }

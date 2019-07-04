@@ -36,7 +36,7 @@ page{
 .row-wrap .label-right input{
     height: 60rpx;
     font-size: 28rpx;
-    width: 320rpx;
+    width: 900rpx;
     border: 1px solid #eee;
     float: left;
     line-height: normal;
