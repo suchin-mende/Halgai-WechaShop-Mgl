@@ -311,6 +311,7 @@ swiper-item image {
   float:left;
   margin-right:28rpx;
   margin-top: -8rpx;
+  font-size: 22rpx;
 }
 .btnImg {
   width: 55rpx;

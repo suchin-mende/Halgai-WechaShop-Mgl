@@ -1,6 +1,6 @@
 .container{
     background-color:#F2f2f2;
-    padding-bottom: 100rpx;
+    /* padding-bottom: 100rpx; */
 }
 .address-box{
     width: 100%;
@@ -59,7 +59,7 @@ box-sizing:border-box;
 padding:24rpx 0 24rpx 30rpx;
 border-bottom:1rpx solid #eee;
 font-size: 36rpx;
-padding-top: 350rpx;
+padding-top: 310rpx;
 }
 
 
@@ -174,7 +174,8 @@ margin-top: 22rpx;
 .peisong-way .right-text{
     font-size: 28rpx;
     color: #666;
-    padding-right: 30rpx;
+    /* padding-right: 30rpx; */
+    margin-right: 65rpx;
 }
 .peisong-way .liuyan{
     width: 510rpx;
@@ -216,16 +217,17 @@ margin-top: 22rpx;
 }
 .jiesuan-box .to-pay-btn{
     width:9%;
-    height: 90%;
+    height: 80%;
     background-color: #009f3c;
-    font-size:32rpx;
+    font-size:24rpx;
     color:#ffffff;
-    border-radius: 30rpx;
+    border-radius: 6rpx;
     writing-mode: vertical-lr;
-    padding-left: 3rpx;
+    padding-left: 9rpx;
 
 }
 .jiesuan-box  .left-price{
+  
     display: flex;
     width: 530rpx;
     justify-content:flex-end;
