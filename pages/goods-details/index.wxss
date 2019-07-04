@@ -262,7 +262,7 @@ swiper-item image {
   flex-direction: row;
   margin-left: 30rpx;
   border-bottom: 1px solid #eee;
-  padding-bottom: 30px;
+  padding-bottom: 22%;
 }
 .pop-img-box{
   width: 120rpx;
@@ -282,8 +282,9 @@ swiper-item image {
   font-size:16px;
   color:#000000;
   writing-mode: vertical-lr;
-  height:120px;
- 
+  height:80px;
+  position:absolute;
+  margin:28px auto;
 }
 .pop-goods-des{
   /* width:30%; */
@@ -295,11 +296,11 @@ swiper-item image {
   margin: 15px;
 }
 .pop-goods-close{
-  width: 60rpx;
-  height: 80rpx;
+  width: 50rpx;
+  height: 68rpx;
   flex: 1;
   background:url("https://cdn.it120.cc/images/weappshop/popup-close.png") no-repeat center center;
-  background-size: 46rpx auto;
+  background-size: 36rpx auto;
   align-self: flex-start;
   margin-left: auto;
 }
@@ -340,15 +341,18 @@ swiper-item image {
    /* margin-top: 30rpx; */
    align-items: center;
    writing-mode:vertical-lr;
+   padding-left:70px;
 }
 .num-label{ 
- font-size:40rpx;
-color:#000000;
+ /* font-size:35rpx; */
+color:#666;
 writing-mode:vertical-lr;
-padding-left:70%;
-height:100rpx;
-line-height:100rpx;
-margin-top: 6px;
+/* padding-left:45px; */
+height:34px;
+/* line-height:80rpx; */
+margin-top: 16px;
+padding-left:92px;
+font-size:20px;
 }
 /* .buy-num-box .num-box{
      display: flex;
@@ -372,13 +376,15 @@ margin-top: 6px;
   /* width: 100%; */
   /* height: 89rpx; */
   text-align: center;
-  line-height: 60rpx;
+  line-height: 32rpx;
   color:#ffffff;
   background-color: #009f3c;
   writing-mode: vertical-lr;
-  border-radius: 8px;  
+  border-radius: 6px;  
   float: right;
   font-size: 26px;
+  margin-right: 5px;
+  height:110px
 }
 
 .buy-num-box .num-box .hui{
@@ -473,7 +479,8 @@ text-indent: 20px;
 }
 
 .num-box{
-  margin-top:6px;
+ margin:-40px 110px auto;
+ position:absolute;
 }
 
  .buy-num-box .num-box .num-jia{
