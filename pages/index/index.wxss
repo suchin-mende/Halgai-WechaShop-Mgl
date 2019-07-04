@@ -290,7 +290,7 @@ swiper-item image {
   width: 230rpx;
   height: 55rpx;
   filter: drop-shadow(2px 2px 2px #398865);
-  padding-top: 22rpx;
+  padding-top: 16rpx;
 }
 .board{
   width: 19%;
@@ -301,7 +301,7 @@ swiper-item image {
   writing-mode:vertical-lr;
   margin-right: 1rpx;
   padding-top:25rpx;
-
+  margin-left: 366rpx;
 }
 .board-item {
   height:75rpx;
@@ -310,13 +310,13 @@ swiper-item image {
   padding-left:-34rpx;
   float:left;
   margin-right:28rpx;
+  margin-top: -8rpx;
 }
 .btnImg {
   width: 55rpx;
   height: 55rpx;
-  float:left;
-  padding-left: 380rpx;
-
+  /* float:left; */
+  margin-top: -9rpx;
 }
 .category-icon {
   float: left

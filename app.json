@@ -42,11 +42,11 @@
     "color": "#6e6d6b",
     "selectedColor": "#518413",
     "borderStyle": "white",
-    "backgroundColor": "#fff",
+    "backgroundColor": "#f0f0f0",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "images/nav/home-off.png",
+        "iconPath": "images/nav/home-on.png",
         "selectedIconPath": "images/nav/home-on.png",
         "text": ""
       },
