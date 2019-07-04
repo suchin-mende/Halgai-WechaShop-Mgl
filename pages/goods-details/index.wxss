@@ -81,11 +81,9 @@ swiper-item image {
 
 .goods-info-fx text {
   writing-mode: vertical-lr;
-  position: absolute;
-  display: flex;
-  z-index: 2;
+  line-height: 5px;
   float:left;
-  margin:50px 5px;
+  margin:0px 0px 0px 18px;
 }
 .goods-info .goods-title{
   /* box-sizing: border-box; */
@@ -101,9 +99,9 @@ swiper-item image {
   box-sizing: border-box;
   font-size: 36rpx;
   writing-mode: vertical-lr;
-  height:280px;
   float:left;
-  width:43px;
+  /* height:280px;
+  width:43px; */
   line-height-step:24px;
 }
 
@@ -131,10 +129,12 @@ swiper-item image {
   color:#009f3c;
 }
 .goods-des-info{
-  width: 100%;
+  width: 750rpx;
+  overflow-y: hidenn;
   box-sizing: border-box;
   background-color: #fff;
 }
+
 .label-title{
   font-size:38rpx;
   color:#000000;
@@ -148,9 +148,9 @@ swiper-item image {
 
 .goods-text{
   padding: 0 10rpx;
-  font-size:36rpx;
+  font-size:34rpx;
   color:#666666;
-  line-height: 60rpx;
+  line-height: 50rpx;
   margin-bottom: 30rpx;
 }
 .des-imgs{
@@ -255,15 +255,14 @@ swiper-item image {
   width:100%;
   background-color: #fff;
   z-index: 6;
-  height:260px;
+
 }
 .pop-goods-info{
   display: flex;
   flex-direction: row;
-  align-items: center;
   margin-left: 30rpx;
-  padding: 30rpx 0;
   border-bottom: 1px solid #eee;
+  padding-bottom: 30px;
 }
 .pop-img-box{
   width: 120rpx;
@@ -291,19 +290,16 @@ swiper-item image {
   float:left;
 }
 .pop-goods-price{
-  font-size:38rpx;
   color:#009f3c;
-  margin-top:-10px; 
-  width: 60px;
-  padding: 18px;
-  margin-top:0rpx
+  margin-top:0rpx;
+  margin: 15px;
 }
 .pop-goods-close{
-  width: 80rpx;
-  height: 90rpx;
+  width: 60rpx;
+  height: 80rpx;
   flex: 1;
   background:url("https://cdn.it120.cc/images/weappshop/popup-close.png") no-repeat center center;
-  background-size: 48rpx auto;
+  background-size: 46rpx auto;
   align-self: flex-start;
   margin-left: auto;
 }
@@ -344,16 +340,15 @@ swiper-item image {
    /* margin-top: 30rpx; */
    align-items: center;
    writing-mode:vertical-lr;
-   padding-left: 34px;
 }
-.num-label{
-  font-size:36rpx;
-  color:#000000;
-  writing-mode: vertical-lr;
-  width:136px;
-  height:40px;
-  text-align:center;
-  margin-top:9px;
+.num-label{ 
+ font-size:40rpx;
+color:#000000;
+writing-mode:vertical-lr;
+padding-left:70%;
+height:100rpx;
+line-height:100rpx;
+margin-top: 6px;
 }
 /* .buy-num-box .num-box{
      display: flex;
@@ -378,18 +373,14 @@ swiper-item image {
   /* height: 89rpx; */
   text-align: center;
   line-height: 60rpx;
-  font-size:45rpx;
   color:#ffffff;
   background-color: #009f3c;
   writing-mode: vertical-lr;
-  padding-left:0px;
-  float:right; 
   border-radius: 8px;  
-  margin:38px 0px 0px 315px;
-  position:absolute;
-  display:flex;
-  z-index:2;
+  float: right;
+  font-size: 26px;
 }
+
 .buy-num-box .num-box .hui{
   background-color: #f5f5f9;
 }
@@ -418,25 +409,26 @@ swiper-item image {
 }
 
 .goods-title-a{
-  writing-mode: vertical-lr;
-  font-size: 14px;
-  margin:54px 10px 0px auto;
-  padding:8px;
-  border-radius: 8px;
-  background-color: rgba(0,0,0,0.2);
-  position:absolute;
-  margin-left:64px;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  white-space:nowrap;
-  height:200px;
+writing-mode:vertical-lr;
+font-size:14px;
+border-radius:9px;
+background-color:rgba(0,0,0,0.2);
+position:absolute;
+overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap;
+height:100%;
+bottom:0px;
+right:0px;
+padding:0 10px;
+text-indent: 20px;
 }
 
 .goods-price-b{
   font-size:36rpx;
   writing-mode: vertical-lr;
-  width:80rpx;
-  height:160px;
+  /* width:80rpx;
+  height:160px; */
   float:left;
   line-height-step:24px;
 }
@@ -444,8 +436,8 @@ swiper-item image {
 .goods-price-c{
   font-size:36rpx;
    writing-mode: vertical-lr;
-   width:80rpx;
-   height:180px;
+   /* width:80rpx;
+   height:180px; */
    float:left;
    line-height-step:24px
 }
@@ -453,22 +445,22 @@ swiper-item image {
 .goods-price-d{
   padding-left:0rpx;
   writing-mode: vertical-lr;
-  height:270px;
   float:left;
   line-height-step:24px;
   font-size:36rpx;
-  width:43px;
+  /* width:43px;
+  height:270px; */
 }
 
 .row-arrow-a{
   writing-mode:vertical-lr;
-  font-size:28px;
+  font-size:32px;
   background-color:rgba(0,0,0,0.2);
   border-radius:8px;
   float:right;
   margin-top:400rpx;
   width:38px;
-  margin:206px 8px 0px 0px;
+  margin:200px 8px 0px 0px;
   line-height:42px;
 }
 
@@ -507,3 +499,6 @@ swiper-item image {
   border: 1px solid #eee;
   transform:rotate(90deg);
 }
+
+
+

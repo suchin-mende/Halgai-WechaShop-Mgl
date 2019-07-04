@@ -44,10 +44,10 @@
           <button open-type="share"> {{gomls.goml0011}}</button>
           <text>{{gomls.goml0012}}</text>
         </view>
-
-        <view wx:if="{{hasMoreSelect}}" class="row-arrow-a" bindtap="bindGuiGeTap"> {{selectSize}} </view>
       </view>
+      <view wx:if="{{hasMoreSelect}}" class="row-arrow-a" bindtap="bindGuiGeTap"> {{selectSize}} </view>
     </view>
+    
    <!-- <view wx:if="{{curGoodsKanjia}}" class="row-arrow" bindtap="goKanjia">
        {{gomls.goml0007}} ( <text style='color:#009f3c'>{{gomls.goml0008}}
        {{curGoodsKanjia.minPrice}} {{gomls.goml0009}}</text> )
@@ -86,7 +86,7 @@
              <view style="color: #B0B0B0;font-size:24rpx;writing-mode:vertical-lr;"> 
              {{item.goods.dateReputation}}</view>
           <view style="width:550rpx;float:left;margin-left:35rpx;border-bottom:1px solid #eee;">
-            <view style="writing-mode:vertical-lr;margin:-120px 120px 20px 0px;float:right;">
+            <view style="writing-mode:vertical-lr;float:right;font-size:18px;margin:-120px 120px 0px 0px;">
             {{item.goods.goodReputationRemark}}
           </view>
          </view>
@@ -98,7 +98,7 @@
         <view style='position:absolute;bottom:10rpx;margin-left:80rpx;'>  {{gomls.goml0020}} </view>
       </view>
       <view class="shop-cart-btn" bindtap="goShopCar">
-        <view style="margin-top:70rpx;font-size:24rpx;"> ({{shopNum}})</view>
+        <view style="margin-top:70rpx;font-size:24rpx;transform:rotate(90deg);"> ({{shopNum}})</view>
         <view  class="shop-num">  {{gomls.goml0021}}</view>
       </view> 
           <view wx:if="{{!goodsDetail.basicInfo.pingtuan}}" class="join-shop-cart" bindtap="toAddShopCar"> {{gomls.goml0022}}</view>
@@ -110,9 +110,13 @@
             <view class="popup-mask" bindtap="closePopupTap"></view>
             <view class="popup-contents">   
               <view class="pop-goods-close" bindtap="closePopupTap"></view>
+               <view class="popup-join-btn" data-shopType="{{shopType}}" wx:if="{{shopType =='tobuy' || shopType =='toPingtuan'}}" bindtap="buyNow"> 
+                {{gomls.goml0023}}
+              </view>
               <view class="pop-goods-info">
                 <view class="pop-img-box">
                   <image src="{{goodsDetail.basicInfo.pic}}" class="goods-thumbnail"/>
+                  
                 </view>
                 <view class="pop-goods-des">
                   <view class="pop-goods-title">{{goodsDetail.basicInfo.name}}
@@ -132,9 +136,6 @@
               </view>
               <view class="popup-join-btn" wx:if="{{shopType =='addShopCar'}}"  bindtap="addShopCar"> 
                 {{gomls.goml0022}}
-              </view>
-              <view class="popup-join-btn" data-shopType="{{shopType}}" wx:if="{{shopType =='tobuy' || shopType =='toPingtuan'}}" bindtap="buyNow"> 
-                {{gomls.goml0023}}
               </view>
             </view>
             <view class="pop-goods-des">                   
