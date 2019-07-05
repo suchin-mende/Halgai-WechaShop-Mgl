@@ -79,7 +79,7 @@ form{
 }
 .goods-list  .a-goods{
     width: 720rpx;
-    margin-left: 30rpx;
+    margin-left: 10rpx;
     display: flex;
     /*justify-content: space-between;*/
     border-top: 1px solid #eee;

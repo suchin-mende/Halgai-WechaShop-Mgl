@@ -1,7 +1,7 @@
 @import "/wxParse/wxParse.wxss";
 
 .notice {
-  width: 720rpx;
+  width: 100%;
   padding: 2rpx;
   font-size: 18px;
   writing-mode: vertical-lr;
