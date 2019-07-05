@@ -26,8 +26,7 @@
         <view class="goods-share" wx:if="{{goodsDetail.basicInfo.commissionType == 1}}">
           {{gomls.goml0001}} ( {{goodsDetail.basicInfo.commission}}{{ gomls.goml0002}} )
         </view>
-        <view wx:if="{{hasMoreSelect}}" class="row-arrow" style="margin-bottom:18rpx;background-size:0rpx auto;width:120rpx;height:80rpx;" >
-          ¥ {{selectSizePrice}}   
+        <view wx:if="{{hasMoreSelect}}" class="row-arrow"> ¥ {{selectSizePrice}}   
         </view>
         <view class="goods-price-b"> {{gomls.goml0003}} : {{goodsDetail.basicInfo.numberOrders}} {{gomls.goml0004}} 
         </view>
@@ -73,23 +72,24 @@
    
     <view class="goods-des-info">
         <view class="label-title"> {{gomls.goml0018}}</view>
-        <view class="goods-text"> <template is="wxParse" data="{{wxParseData:article.nodes}}"/></view>
+        <!-- <view class="goods-text"> <template is="wxParse" data="{{wxParseData:article.nodes}}"/></view> -->
     </view>
-    <view class="goods-des-info" style="margin-top:35rpx;" wx:if="{{reputation}}">
-        <view class="label-title-a" style="border-bottom:1px solid #eee;"> {{gomls.goml0019}}<text style="color:#009f3c;">（{{reputation.length}}）</text></view>
-        <view class="goods-text" style="margin-top:15rpx;" wx:for="{{reputation}}" wx:key="id">
-          <view style="width:100rpx;float:left;">
-            <image style="width: 100rpx; height: 100rpx;" src="{{item.user.avatarUrl}}"></image>
-            <view style="text-align:center;width:100rpx;writing-mode:vertical-lr"> {{item.goods.goodReputationStr}}</view>
+    <view class="goods-des-info" wx:if="{{reputation}}">
+        <view class="label-title-a"> {{gomls.goml0019}}<text class="label-title-a" style="color:#009f3c;">（{{reputation.length}}）</text></view>
+        <view class="discuss">
+        <view class="goods-text" wx:for="{{reputation}}" wx:key="id">
+    
+          <view class="picture">
+            <image  class="picture-k" src="{{item.user.avatarUrl}}"></image>
+            <view class="comment-a"> {{item.goods.goodReputationStr}}</view>
+             <view class="time-a">  {{item.goods.dateReputation}}</view>
           </view>
-           <view style="color: #B0B0B0;font-size:24rpx;writing-mode:vertical-lr;float:left;"> 
-           {{item.goods.property}} </view>
-             <view style="color: #B0B0B0;font-size:24rpx;writing-mode:vertical-lr;"> 
-             {{item.goods.dateReputation}}</view>
-          <view style="width:550rpx;float:left;margin-left:35rpx;border-bottom:1px solid #eee;">
-            <view style="writing-mode:vertical-lr;float:right;font-size:18px;margin:-120px 120px 0px 0px;">
-            {{item.goods.goodReputationRemark}}
-          </view>
+           <view class="comment-b">  {{item.goods.property}} </view>
+          <view class="comment-c">
+            <view class="comment-d"> {{item.goods.goodReputationRemark}} </view>
+             <view class="comment-d"> {{item.goods.goodReputationRemark}} </view>
+              <view class="comment-d"> {{item.goods.goodReputationRemark}} </view>
+              </view>
          </view>
        </view>
     </view>
@@ -123,7 +123,7 @@
                   <view class="pop-goods-title">{{goodsDetail.basicInfo.name}}
                 </view>
               </view>
-              <view class="size-label-box" style="margin-left:-4px">
+              <view class="size-label-box">
                 <block wx:for="{{goodsDetail.properties}}" wx:for-item="property" wx:for-index="idx" wx:key="id">
                   <view class="label">{{property.name}}</view> 
                   <view class="label-item-box">
