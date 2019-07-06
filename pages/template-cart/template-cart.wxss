@@ -191,10 +191,11 @@
 .jiesuan-box .to-pay-btn{
     width:240rpx;
     text-align: center;
-    line-height: 100rpx;
+    line-height: 245rpx;
     background-color: #009f3c;
     font-size:32rpx;
     color:#ffffff;
+    writing-mode: vertical-lr;
 }
 .jiesuan-box .to-pay-btn.no-select{
     background-color: #ccc;
@@ -214,6 +215,11 @@
     color:#000000;
     background: url(https://cdn.it120.cc/images/weappshop/gou.png) no-repeat 30rpx center;
     background-size: 40rpx auto; 
+    writing-mode:vertical-lr;
+    position:absolute;
+    line-height:48rpx;
+    text-align:center;
+
 }
 .jiesuan-box .all-selected.active{
     background: url(https://cdn.it120.cc/images/weappshop/gou-red.png) no-repeat 30rpx center;
@@ -221,9 +227,16 @@
 }
 .jiesuan-box .total{
     color: #009f3c;
+    /* writing-mode:vertical-lr; */
+    margin-left:250rpx;
+
 }
 
 .cart-box {
   display: flex;
   width: 95%;
+}
+.mareya{
+  writing-mode: vertical-lr;
+  padding-top: 15rpx;
 }
