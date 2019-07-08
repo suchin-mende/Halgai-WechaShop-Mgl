@@ -43,7 +43,6 @@ swiper-item image {
 .goods-info{
   background-color: #fff;
   padding: 35rpx 0;
-  margin-bottom: 24rpx;
   width: 100%;
   position: relative;
   height: 550rpx;
@@ -133,6 +132,7 @@ swiper-item image {
   overflow-y: hidenn;
   box-sizing: border-box;
   background-color: #fff;
+  margin-top:19px;
 }
 
 .label-title{
@@ -146,12 +146,17 @@ swiper-item image {
   margin:10px 0px 0px 8px;
 }
 
-.goods-text{
-  padding: 0 10rpx;
+.goods-text {
   font-size:34rpx;
   color:#666666;
   line-height: 50rpx;
-  margin-bottom: 30rpx;
+  margin-top:8px;
+  overflow-y:hidden;
+  height:300px;
+  border:2px solid#eee;
+  width:45%;
+  border-radius:9px;
+  float: left;
 }
 .des-imgs{
   width:100%;
@@ -262,7 +267,7 @@ swiper-item image {
   flex-direction: row;
   margin-left: 30rpx;
   border-bottom: 1px solid #eee;
-  padding-bottom: 30px;
+  padding-bottom: 22%;
 }
 .pop-img-box{
   width: 120rpx;
@@ -282,8 +287,9 @@ swiper-item image {
   font-size:16px;
   color:#000000;
   writing-mode: vertical-lr;
-  height:120px;
- 
+  height:80px;
+  position:absolute;
+  margin:28px auto;
 }
 .pop-goods-des{
   /* width:30%; */
@@ -295,11 +301,11 @@ swiper-item image {
   margin: 15px;
 }
 .pop-goods-close{
-  width: 60rpx;
-  height: 80rpx;
+  width: 50rpx;
+  height: 68rpx;
   flex: 1;
   background:url("https://cdn.it120.cc/images/weappshop/popup-close.png") no-repeat center center;
-  background-size: 46rpx auto;
+  background-size: 36rpx auto;
   align-self: flex-start;
   margin-left: auto;
 }
@@ -340,15 +346,18 @@ swiper-item image {
    /* margin-top: 30rpx; */
    align-items: center;
    writing-mode:vertical-lr;
+   padding-left:70px;
 }
 .num-label{ 
- font-size:40rpx;
-color:#000000;
+ /* font-size:35rpx; */
+color:#666;
 writing-mode:vertical-lr;
-padding-left:70%;
-height:100rpx;
-line-height:100rpx;
-margin-top: 6px;
+/* padding-left:45px; */
+height:34px;
+/* line-height:80rpx; */
+margin-top: 16px;
+padding-left:92px;
+font-size:20px;
 }
 /* .buy-num-box .num-box{
      display: flex;
@@ -372,13 +381,15 @@ margin-top: 6px;
   /* width: 100%; */
   /* height: 89rpx; */
   text-align: center;
-  line-height: 60rpx;
+  line-height: 32rpx;
   color:#ffffff;
   background-color: #009f3c;
   writing-mode: vertical-lr;
-  border-radius: 8px;  
+  border-radius: 6px;  
   float: right;
   font-size: 26px;
+  margin-right: 5px;
+  height:110px
 }
 
 .buy-num-box .num-box .hui{
@@ -460,7 +471,7 @@ text-indent: 20px;
   float:right;
   margin-top:400rpx;
   width:38px;
-  margin:200px 8px 0px 0px;
+  margin:192px 8px 0px 0px;
   line-height:42px;
 }
 
@@ -469,11 +480,11 @@ text-indent: 20px;
   color:#000000;
   padding:15rpx;
   writing-mode:vertical-lr;
-  float:left;
 }
 
 .num-box{
-  margin-top:6px;
+ margin:-40px 110px auto;
+ position:absolute;
 }
 
  .buy-num-box .num-box .num-jia{
@@ -500,5 +511,52 @@ text-indent: 20px;
   transform:rotate(90deg);
 }
 
+.comment-a {
+  text-align:center;
+  width:40rpx;
+  writing-mode:vertical-lr;
+}
+.comment-b {
+  color: #B0B0B0;
+  font-size:24rpx;
+  writing-mode:vertical-lr;
+  float:left;
+}
+.comment-c {
+  float:left;
+  margin-left:35rpx;
+  border-bottom:1px solid #eee;
+}
+.comment-d {
+  writing-mode:vertical-lr;
+  font-size:15px;
+  float:left;
+}
+.row-arrow {
+  margin-bottom:9px;
+background-size:0px auto;
+width:66px;
+height:44px;
+} 
+.size-label-box {
+  margin-left:-4px;
+}
 
+.time-a {
+  color:#B0B0B0;
+  font-size:24rpx;
+  writing-mode:vertical-lr;
+  float:right;
+  margin-top:-20px;
+}
+.picture {
+  width:55px;
+  float:left;
+}
+.picture-k {
+  width:55px;
+  height:55px;
+}
+ .discuss {
 
+ }
