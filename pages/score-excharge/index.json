@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "积分券兑换积分",
   "usingComponents": {
-    "showMask": "../../componets/showModal/modal"
+    "showMask": "../../componets/showModal/modal",
+    "customInput": "../../componets/vertical-input/input"
   }
 }

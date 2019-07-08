@@ -8,9 +8,11 @@ Page({
     pickerRegionRange: [],
     pickerSelect:[0, 0, 0],
     showRegionStr: HalgaiI18.adjs0001,
-    admls: HalgaiI18.admls,
+    admls: HalgaiI18.admls
   },
+  customInputFlickTimerId : null,
   initRegionPicker () {
+    var that = this;
     HalgaiAPI.province().then(res => {
       if (res.code === 0) {
         let _pickerRegionRange = []
@@ -20,7 +22,13 @@ Page({
         this.data.pickerRegionRange = _pickerRegionRange
         this.bindcolumnchange({ detail: { column: 0, value: 0 } })
       }
+
+      // var component = that.selectComponent('#modalComponent');
+      // component.showModal(component);
     })
+
+    // var component = that.selectComponent('#modalComponent');
+    // component.showModal(component);
   },
   async initRegionDB (pname, cname, dname) {
     this.data.showRegionStr = pname + cname + dname
@@ -132,7 +140,7 @@ Page({
     var mobile = e.detail.value.mobile;
     var code = e.detail.value.code;
     if (linkMan == ""){
-      getApp().showModal(this, {
+      getApp().showModal(that, {
         title: HalgaiI18.adjs0002,
         content: HalgaiI18.adjs0003,
         showCancel:false
@@ -202,7 +210,7 @@ Page({
       if (res.code != 0) {
         // 登录错误
         wx.hideLoading();
-        getApp().showModal(this, {
+        getApp().showModal(that, {
           title: HalgaiI18.adjs0008,
           content: res.msg,
           showCancel: false
@@ -214,6 +222,7 @@ Page({
     })
   },
   onLoad: function (e) {
+
     const _this = this
     _this.initRegionPicker() // 初始化省市区选择器
     if (e.id) { // 修改初始化数据库数据
@@ -224,10 +233,14 @@ Page({
             addressData: res.data,
             showRegionStr: res.data.provinceStr + res.data.cityStr + res.data.areaStr
           });
+
+          var component = _this.selectComponent('#customInput');
+          component.setValue(res.data.code + res.data.postalCode + '');
+
           _this.initRegionDB(res.data.provinceStr, res.data.cityStr, res.data.areaStr)
           return;
         } else {
-          getApp().showModal(this, {
+          getApp().showModal(_this, {
             title: HalgaiI18.adjs0002,
             content: HalgaiI18.adjs0009,
             showCancel: false
@@ -235,11 +248,14 @@ Page({
         }
       })
     }
+
+    this.createCustomInput();
+
   },
   deleteAddress: function (e) {
     var that = this;
     var id = e.currentTarget.dataset.id;
-    getApp().showModal(this, {
+    getApp().showModal(that, {
       title: HalgaiI18.adjs0002,
       content: HalgaiI18.adjs0010,
       success: function (res) {
@@ -264,5 +280,67 @@ Page({
         });
       }
     })
+  },
+  createCustomInput : function() {
+    // const query = wx.createSelectorQuery()
+    // query.select('#divTest').boundingClientRect()
+    // query.selectViewport().scrollOffset()
+    // query.exec(function (res) {
+    //   res[0].top       // #the-id节点的上边界坐标
+    //   res[1].scrollTop // 显示区域的竖直滚动位置
+    // })
+
+  },
+  onUnload : function() {
+    if (this.customInputFlickTimerId != null) {
+      clearInterval(this.customInputFlickTimerId);
+      this.customInputFlickTimerId = null;
+    }
+  },
+  onCustomInputTap : function(event) {
+    console.log(event.currentTarget)
+
+    this.setData({
+      isCustomInputOnFocus : true
+    });
+    
+    this.customInputFlick();
+  },
+  customInputFlick : function() {
+    if (!this.data.isCustomInputOnFocus)
+      return;
+
+    var that = this;
+    this.customInputFlickTimerId = setInterval(function() {
+      that.setData({
+        isCustomInputFlick : !that.isCustomInputFlick
+      });
+    }, 300);
+    
+  },
+  onCustomInputFocus : function(e) {
+    console.log(this.data.customInputValue)
+    console.log(e.detail.value)
+    console.log(this.data.customInputValueFake)
+    this.setData({
+      customInputValue : this.data.customInputValueFake
+    });
+  },
+  onCustomInputBlur : function() {
+    if (this.customInputFlickTimerId != null) {
+      clearInterval(this.customInputFlickTimerId);
+      this.customInputFlickTimerId = null;
+    }
+
+    this.setData({
+      isCustomInputOnFocus: false,
+      isCustomInputFlick : false
+    });
+  },
+  onCustomInputValueChanged : function(event) {
+    console.log(event.detail.value)
+    this.setData({
+      customInputValueFake: event.detail.value
+    });
   }
-})
+});

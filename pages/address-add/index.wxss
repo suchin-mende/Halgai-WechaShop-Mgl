@@ -42,14 +42,8 @@ page{
     font-size: 28rpx;
     float: left;
     line-height: normal;
-    -ms-transform: rotate(90deg) translate(0, -100%);
-    -ms-transform-origin: 0% 0%;
     -webkit-transform: rotate(90deg) translate(0, -100%);
     -webkit-transform-origin: 0% 0%;
-    -moz-transform: rotate(90deg) translate(0,-100%);
-    -moz-transform-origin: 0% 0%;
-    -o-transform: rotate(90deg) translate(0,-100%);
-    -o-transform-origin: 0% 0%;
     white-space: nowrap;
     border: 1rpx solid #eee;
 }
@@ -138,18 +132,30 @@ picker {
 }
 .textarea{
       height: 60rpx;
-      width: 900rpx;
+      width: 90rpx;
       padding-left: 15rpx;
       float: left;
       line-height: normal;
-      -ms-transform: rotate(90deg) translate(0, -100%);
-      -ms-transform-origin: 0% 0%;
-      -webkit-transform: rotate(90deg) translate(0, -100%);
-      -webkit-transform-origin: 0% 0%;
-      -moz-transform: rotate(90deg) translate(0,-100%);
-      -moz-transform-origin: 0% 0%;
-      -o-transform: rotate(90deg) translate(0,-100%);
-      -o-transform-origin: 0% 0%;
+      -webkit-transform: rotate(90deg) translate(50rpx, 20rpx);
+      -webkit-transform-origin: right top;
       white-space: nowrap;
       border: 1rpx solid #eee;
+      unicode-bidi: bidi-override;
+      direction: rtl;
+      word-break: keep-all;
+      letter-spacing: -0.015em;
 }
+#divTest {
+            width: 60rpx;
+            line-height: 60rpx;
+            height: 900rpx;
+            border: solid 1px #eee;
+            display: flex;
+            padding: 20rpx 0;
+            overflow-y: auto;
+            overflow-x: hidden;
+            writing-mode: vertical-lr;
+            text-orientation: sideways-right;
+            white-space: normal;
+            word-break: keep-all;
+        }
