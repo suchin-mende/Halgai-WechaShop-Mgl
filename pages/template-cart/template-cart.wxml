@@ -41,9 +41,10 @@
     </view>
     <view class="jiesuan-box">
         <view class="left-price">
+        <view class='icon-del'></view>
             <view class="all-selected  {{allSelect?'active':''}}" bindtap="bindAllSelect">{{temls.teml0007}}</view>
-            <view class="total" hidden="{{noSelect}}"> {{temls.teml0010}} ¥ {{totalPrice}} + </view>
-            <view class="mareya" hidden="{{noSelect}}"> {{totalScoreToPay}} {{temls.teml0008}}</view>
+            <view class="total" hidden="{{noSelect}}"> {{temls.teml0010}} ¥ {{totalPrice}} + {{totalScoreToPay}} {{temls.teml0008}}</view>
+            <!-- <view class="mareya" hidden="{{noSelect}}"> {{totalScoreToPay}} {{temls.teml0008}}</view> -->
         </view>
         <view class="to-pay-btn {{noSelect?'no-select':''}}" hidden="{{!saveHidden}}" bindtap="toPayOrder">{{temls.teml0009}}</view>
         <view class="to-pay-btn {{noSelect?'no-select':''}}" hidden="{{saveHidden}}" bindtap="deleteSelected">{{temls.teml0006}}</view>
