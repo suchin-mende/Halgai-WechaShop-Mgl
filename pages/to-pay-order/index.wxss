@@ -58,7 +58,7 @@ align-items:center;
 box-sizing:border-box;
 padding:24rpx 0 24rpx 30rpx;
 border-bottom:1rpx solid #eee;
-font-size: 36rpx;
+font-size: 30rpx;
 padding-top: 310rpx;
 }
 
@@ -153,7 +153,7 @@ justify-content:space-between;
 align-items:center;
 box-sizing:border-box;
 /* border-bottom:1rpx solid #eee; */
-font-size: 36rpx;
+font-size: 30rpx;
 margin-left: 30rpx;
 margin-top: 22rpx;
 
@@ -168,14 +168,14 @@ margin-top: 22rpx;
     border-bottom: 1rpx solid #eee;
 }
 .peisong-way .row-label{
-    font-size: 36rpx;
+    font-size: 30rpx;
     color: #000;
 }
 .peisong-way .right-text{
-    font-size: 28rpx;
+    font-size: 18rpx;
     color: #666;
     /* padding-right: 30rpx; */
-    margin-right: 65rpx;
+    margin-right: 25rpx;
 }
 .peisong-way .liuyan{
     width: 510rpx;
