@@ -208,7 +208,7 @@ margin-top: 22rpx;
     justify-content: space-between;
     width: 115%;
     height: 268rpx;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     left: 0;
     /* border-top:1px solid #eee;  */
@@ -224,7 +224,7 @@ margin-top: 22rpx;
     border-radius: 6rpx;
     writing-mode: vertical-lr;
     padding-left: 9rpx;
-
+    margin-top: 30rpx;
 }
 .jiesuan-box  .left-price{
   
