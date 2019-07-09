@@ -83,6 +83,7 @@ swiper-item image {
   line-height: 5px;
   float:left;
   margin:0px 0px 0px 18px;
+  font-size: 30rpx;
 }
 .goods-info .goods-title{
   /* box-sizing: border-box; */
@@ -132,12 +133,12 @@ swiper-item image {
   overflow-y: hidenn;
   box-sizing: border-box;
   background-color: #fff;
-  margin-top:15px;
-  margin-bottom: 15px;
+  margin-top:10px;
+  margin-bottom: 10px;
 }
 
 .label-title{
-  font-size:30rpx;
+  font-size:25rpx;
   color:#000000;
   padding: 14rpx;
   writing-mode: vertical-lr;
@@ -176,7 +177,7 @@ swiper-item image {
 }
 .footer-box .contact {
   position: relative;
-  width: 120rpx;
+  width: 120rpx;   static
   height: 100%;
   /* display: flex; */
   flex-direction: column;
@@ -212,29 +213,29 @@ swiper-item image {
   left: 85rpx;
   top:28rpx;
 }
-.footer-box .join-shop-cart{
+ .join-shop-cart{
   text-align: center;
-  width: 250rpx;
+  width: 12%;
   height: 100%;
-  line-height: 70rpx;
+  line-height: 40rpx; 
   background-color: #57ce71;
   color:#fff;
-  font-size: 36rpx;
   writing-mode: vertical-lr;
-  display:flex;
-  align-items:center;
+  padding-left: 160rpx;
+  font-size: 30rpx;
 }
-.footer-box .now-buy{
+ .now-buy{
   text-align: center;
   height: 100%;
-  width: 250rpx;
-  line-height: 70rpx;
+  width: 52px;
+  line-height: 40rpx;
   background-color: #009f3c;
   color:#fff;
-  font-size: 40rpx;
   writing-mode: vertical-lr;
-  display:flex;
-  align-items:center;
+  /* position:absolute; */
+  /* left:278px; */
+  padding-left:86px;
+  /* font-size: 40rpx; */
 }
 .show-popup{
   position: fixed;
@@ -280,16 +281,17 @@ swiper-item image {
   height: 120rpx;
 }
 .pop-goods-title{
-  width: 20px;
+  width: 78px;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   overflow: hidden;
   font-size:16px;
   color:#000000;
   writing-mode: vertical-lr;
-  height:80px;
+  height:70px;
   position:absolute;
   margin:28px auto;
+  right: 325px;
 }
 .pop-goods-des{
   /* width:30%; */
@@ -471,16 +473,17 @@ text-indent: 20px;
   border-radius:8px;
   float:right;
   margin-top:400rpx;
-  width:12px;
+  width:14px;
   margin:196px 10px 0px 0px;
   line-height:18px;
-  padding: 12px;
+  padding: 10px;
+  font-size: 34rpx;
 }
 
 .label-title-a{
   font-size:30rpx;
   color:#000000;
-  padding:15rpx;
+  padding:20rpx;
   writing-mode:vertical-lr;
 }
 
@@ -569,7 +572,9 @@ height:44px;
   border-radius: 6px;  
   float: right;
   height:100px;
-  margin-left:103px
+  position:absolute;
+  margin-left: 338px;
+  top: 43px;
 }
 .discuss {
  height:65%;
@@ -587,4 +592,6 @@ height:44px;
   display: flex;
   overflow-x: auto;
   background-color:#fff;
+  height: 268px;
 }
+
