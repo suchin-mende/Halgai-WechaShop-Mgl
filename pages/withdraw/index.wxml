@@ -4,7 +4,8 @@
         <view class="row-wrap">
             <view class="label">{{wimls.wiml0001}}</view>
             <view class="label-right">
-                <input name="amount" class="input" type="digit" placeholder-style="transform:rotate(270deg);" placeholder="{{wimls.wiml0002}}"/>
+                <customInput id='customInput-amount'></customInput>
+                <!-- <input name="amount" class="input" type="digit" placeholder-style="transform:rotate(270deg);" placeholder="{{wimls.wiml0002}}"/> -->
             </view>
         </view>
     </view>

@@ -6,7 +6,8 @@
         <view class="row-wrap">
             <view class="label"> {{remls.reml0001}}</view>
             <view class="label-right">
-                <input name="amount" class="input" placeholder-style="transform:rotate(270deg);" type="digit" value="{{amount}}" placeholder=" {{remls.reml0002}} {{recharge_amount_min}}  {{remls.reml0003}}" />
+                <customInput id='customInput-amount'></customInput>
+                <!-- <input name="amount" class="input" placeholder-style="transform:rotate(270deg);" type="digit" value="{{amount}}" placeholder=" {{remls.reml0002}} {{recharge_amount_min}}  {{remls.reml0003}}" /> -->
             </view>
         </view>
 

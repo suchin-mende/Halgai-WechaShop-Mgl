@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "在线充值",
   "usingComponents": {
-    "showMask":"../../componets/showModal/modal"
+    "showMask":"../../componets/showModal/modal",
+    "customInput": "../../componets/vertical-input/input"
   }
 }
