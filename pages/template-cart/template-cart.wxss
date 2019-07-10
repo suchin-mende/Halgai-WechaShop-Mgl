@@ -55,7 +55,7 @@
 .list-top .edit-btn{
     color: #666;
     height: 100%;
-    padding-top:955rpx;
+    padding-top:870rpx;
     margin-left:-52rpx;
     position: fixed;
     top: 0px;
@@ -107,13 +107,15 @@
 .goods-info .text-box .goods-title{
     font-size: 28rpx;
     color:#000;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    /* white-space: nowrap; */
     padding: 10rpx 20rpx 5rpx 0;
     writing-mode:vertical-lr;
     height:150rpx;
-
+    width: 100rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 .goods-info .text-box .goods-label{
     font-size: 26rpx;
@@ -210,7 +212,7 @@
     text-align: center;
     line-height: 230rpx;
     background-color: #009f3c;
-    font-size:32rpx;
+    font-size:28rpx;
     color:#ffffff;
     writing-mode: vertical-lr;
 }
@@ -236,24 +238,24 @@
     position:absolute;
     line-height:48rpx;
     text-align:center;
-
+    font-size: 25rpx;
 }
 .jiesuan-box .all-selected.active{
-    background: url(../../images/gou-red.png) no-repeat 30rpx center;
+    background: url(https://cdn.it120.cc/images/weappshop/gou-red.png) no-repeat 30rpx center;
     background-size: 40rpx auto; 
+
 }
 .jiesuan-box .total{
     color: #009f3c;
-    /* writing-mode:vertical-lr; */
     margin-left:250rpx;
 
 }
-
+.mariya{
+  writing-mode: vertical-lr;
+  margin-top:27rpx;
+  color: #009f3c;
+}
 .cart-box {
   display: flex;
   width: 95%;
 }
-/* .mareya{
-  writing-mode: vertical-lr;
-  padding-top: 15rpx;
-} */

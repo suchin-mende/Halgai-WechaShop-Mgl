@@ -58,8 +58,8 @@ align-items:center;
 box-sizing:border-box;
 padding:24rpx 0 24rpx 30rpx;
 border-bottom:1rpx solid #eee;
-font-size: 36rpx;
-padding-top: 310rpx;
+font-size: 30rpx;
+padding-top: 356rpx;
 }
 
 
@@ -153,10 +153,17 @@ justify-content:space-between;
 align-items:center;
 box-sizing:border-box;
 /* border-bottom:1rpx solid #eee; */
-font-size: 36rpx;
-margin-left: 30rpx;
-margin-top: 22rpx;
+font-size: 30rpx;
+margin-left: 102rpx;
+margin-top: 27rpx;
 
+}
+.btnImg{
+width: 40rpx;
+height: 40rpx;
+margin-left: 27rpx;
+margin-top: 28rpx;
+float: left;
 }
 .peisong-way .row-box{
     width: 720rpx;
@@ -168,18 +175,18 @@ margin-top: 22rpx;
     border-bottom: 1rpx solid #eee;
 }
 .peisong-way .row-label{
-    font-size: 36rpx;
+    font-size: 30rpx;
     color: #000;
 }
 .peisong-way .right-text{
-    font-size: 28rpx;
+    font-size: 18rpx;
     color: #666;
     /* padding-right: 30rpx; */
-    margin-right: 65rpx;
+    margin-right: 25rpx;
 }
 .peisong-way .liuyan{
     width: 510rpx;
-    font-size: 38rpx;
+    font-size: 28rpx;
     background-color: #eee;
     height: 60rpx;
     padding-left: 20rpx;
@@ -208,18 +215,18 @@ margin-top: 22rpx;
     justify-content: space-between;
     width: 115%;
     height: 268rpx;
-    /* position: fixed; */
+    position: fixed;
     bottom: 0;
     left: 0;
     /* border-top:1px solid #eee;  */
-    background-color: #fff;
+    background-color: #f8f8f8;
     z-index: 999;
 }
 .jiesuan-box .to-pay-btn{
     width:9%;
     height: 80%;
     background-color: #009f3c;
-    font-size:24rpx;
+    font-size:70%;
     color:#ffffff;
     border-radius: 6rpx;
     writing-mode: vertical-lr;

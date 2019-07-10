@@ -2,14 +2,18 @@ page{
   height: 100%;
 }
 .container{
-  background-color: #f5f5f9;
+  background-color: #eee;
   justify-content: initial;
 }
 .form-box{
-  width:750rpx;
-  height: 136rpx;
+  width:728px;
+  height: 168rpx;
   position: relative;
-  background-color: #009f3c;
+  background-color: #fff;
+  transform:rotate(90deg);
+  margin-top:318px;
+  margin-left:-582rpx;
+
 }
 .row-wrap{
   line-height: 88rpx;
@@ -21,9 +25,9 @@ page{
   width: 165rpx;
   height: 160rpx;
   font-size: 45rpx;
-  writing-mode: vertical-lr;
-  margin-left: 5rpx;
-  padding-top: 25rpx;
+  /* writing-mode: vertical-lr; */
+  margin-left: 34rpx;
+  padding-top: 45rpx;
   color: #333;
     
 }
@@ -33,12 +37,12 @@ page{
   line-height: 88rpx;
 }
 .row-wrap .label-right input{ 
-   width: 400rpx;
-  font-size: 30rpx; 
-  margin-top: 34rpx;
-  background-color: #fff;
-  padding: 10rpx 0rpx 10rpx 20rpx;
-  border-radius:10rpx;
+   width: 700rpx;
+  font-size: 35rpx; 
+  margin-top: 48rpx;
+  background-color: #eee;
+  padding: 16rpx 0rpx 10rpx 20rpx;
+  border-radius:6rpx;
 }
 .row-wrap .right-box{
    margin-right: 30rpx; 
@@ -60,14 +64,15 @@ page{
 .save-btn{
   background-color: #fff;
   color:#fff;
-  width: 17%;
-  height: 75rpx;
+  width: 11%;
+  height: 250rpx;
   font-size: 38rpx;   
-  line-height: 52rpx;
+  /* line-height: 52rpx; */
   writing-mode: vertical-lr;
-  position: absolute;
-  margin-left: 470rpx;
-  padding-left:13rpx; 
+  /* position: absolute; */
+  margin-left: 697rpx;
+  padding-left:12rpx; 
+  margin-top: 360rpx;
 }
 button[type="default"]{
   background-color: #ffffff;
