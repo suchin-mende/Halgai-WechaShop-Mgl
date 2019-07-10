@@ -19,6 +19,13 @@ Component({
     customInputValueFake: ''
   },
 
+
+  observers: {
+    'defaultValue': function (defaultValue) {
+      // 在 numberA 或者 numberB 被设置时，执行这个函数
+      console.log(defaultValue)
+    }
+  },
   /**
    * 组件的方法列表
    */

@@ -21,11 +21,7 @@ page{
     color: #000;
 }
 .row-wrap .label-right{
-    /* flex: 1;
-    height: 90rpx;
-    line-height: 88rpx;
-    padding-top: 10rpx;
-    margin-left: 30rpx; */
+    margin-left: 20rpx;
 }
 .row-wrap .label-right input{
     border: 1px solid #eee;
