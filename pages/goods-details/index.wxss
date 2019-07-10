@@ -153,11 +153,11 @@ swiper-item image {
   color:#666666;
   line-height: 50rpx;
   margin-top:8px;
-  height:240px;
+  height:90%;
   border:2px solid#eee;
   border-radius:9px;
   display: flex;
-  margin: 5px;
+  margin: 6px;
 }
 .des-imgs{
   width:100%;
@@ -215,27 +215,29 @@ swiper-item image {
 }
  .join-shop-cart{
   text-align: center;
-  width: 12%;
-  height: 100%;
-  line-height: 40rpx; 
   background-color: #57ce71;
   color:#fff;
   writing-mode: vertical-lr;
-  padding-left: 160rpx;
-  font-size: 30rpx;
+  width: 52px;
+  height: 100%;
+  line-height: 50rpx; 
+  font-size: 39rpx;
+  /* display: flex;
+  align-items: center; */
+  padding-left:156rpx;
 }
  .now-buy{
-  text-align: center;
-  height: 100%;
-  width: 52px;
-  line-height: 40rpx;
-  background-color: #009f3c;
-  color:#fff;
-  writing-mode: vertical-lr;
-  /* position:absolute; */
-  /* left:278px; */
-  padding-left:86px;
-  /* font-size: 40rpx; */
+   text-align: center;
+   writing-mode: vertical-lr;
+   background-color: #009f3c;
+   color:#fff;
+   height: 100%;
+   width: 52px;
+   line-height: 50rpx;
+   /* display: flex;
+   align-items: center; */
+   padding-left:86px;
+   font-size: 40rpx;
 }
 .show-popup{
   position: fixed;
@@ -481,7 +483,7 @@ text-indent: 20px;
 }
 
 .label-title-a{
-  font-size:30rpx;
+  font-size:28rpx;
   color:#000000;
   padding:20rpx;
   writing-mode:vertical-lr;
@@ -518,12 +520,13 @@ text-indent: 20px;
 
 .comment-a {
   text-align:center;
-  width:40rpx;
+  width:30rpx;
   writing-mode:vertical-lr;
+  font-size: 15px;
 }
 .comment-b {
   color: #B0B0B0;
-  font-size:24rpx;
+  font-size:18rpx;
   writing-mode:vertical-lr;
   float:left;
   padding-top:16px
@@ -535,15 +538,15 @@ text-indent: 20px;
 }
 .comment-d {
   writing-mode:vertical-lr;
-  font-size:15px;
+  font-size:24rpx;
   float:left;
   padding-top: 16px;
 }
 .row-arrow {
   margin-bottom:9px;
-background-size:0px auto;
-width:66px;
-height:44px;
+  background-size:0px auto;
+  width:66px;
+  height:52px;
 } 
 .size-label-box {
   margin-left:-4px;
@@ -551,13 +554,14 @@ height:44px;
 
 .time-a {
   color:#B0B0B0;
-  font-size:24rpx;
+  font-size:18rpx;
   writing-mode:vertical-lr;
   float:right;
-  margin-top:-20px;
+  margin-top:-15px;
+  width: 30px;
 }
 .picture {
-  width:55px;
+  width:35%;
   float:left;
 }
 .picture-k {
@@ -592,6 +596,7 @@ height:44px;
   display: flex;
   overflow-x: auto;
   background-color:#fff;
-  height: 268px;
+  height: 350rpx;
+  width: 100%;
 }
 
