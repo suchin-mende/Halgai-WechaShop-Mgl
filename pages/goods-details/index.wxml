@@ -99,10 +99,10 @@
   <view class="footer-box">
     <view class="contact">
       <contact-button style="opacity:0;position:absolute;" type="default-dark" session-from="weapp" size="27"></contact-button>
-      <view style='position:absolute;bottom:16rpx;margin-left:80rpx;font-size:15px;'> {{gomls.goml0020}} </view>
+      <view style='position:absolute;bottom:20rpx;margin-left:92rpx;font-size:12px;'> {{gomls.goml0020}} </view>
     </view>
     <view class="shop-cart-btn" bindtap="goShopCar">
-      <view style="margin-top:70rpx;font-size:24rpx;transform:rotate(267deg);"> ({{shopNum}})</view>
+      <view style="margin-top:60rpx;font-size:30rpx;transform:rotate(268deg);"> ({{shopNum}})</view>
       <view class="shop-num"> {{gomls.goml0021}}</view>
     </view>
     <view wx:if="{{!goodsDetail.basicInfo.pingtuan}}" class="join-shop-cart" bindtap="toAddShopCar"> {{gomls.goml0022}}</view>
