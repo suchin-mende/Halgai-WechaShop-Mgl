@@ -1,4 +1,5 @@
 <!--componets/vertical-input/input.wxml-->
-<view class="input-class">
-  <input placeholder=""></input>
+<view bindtap="onCustomInputTap" class='customInput'>
+  <view>{{customInputValueFake}}</view>
+  <input wx:if="{{isCustomInputOnFocus}}" style='width: 2rpx;' value="{{customInputValue}}" focus="{{isCustomInputOnFocus}}" bindfocus="onCustomInputFocus" bindblur="onCustomInputBlur" bindinput="onCustomInputValueChanged" />
 </view>
