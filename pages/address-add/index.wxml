@@ -12,7 +12,7 @@
         <view class="row-wrap">
             <view class="label">{{admls.adml0003}}</view>
             <view class="label-right">
-                <customInput id='customInput-mobile'></customInput>
+                <customInput id='customInput-mobile' defaultvalue="{{addressData.mobile}}{{wxaddress.telNumber}}"></customInput>
                 <!-- <input name="mobile" class="input" maxlength="11" type="number"  placeholder="{{admls.adml0010}}" value="{{addressData.mobile}}{{wxaddress.telNumber}}"/> -->
             </view>
         </view>
@@ -32,7 +32,7 @@
         <view class="row-wrap">
             <view class="label">{{admls.adml0006}}</view>
             <view class="label-right">
-                <customInput id='customInput-code'></customInput>
+                <customInput id='customInput-code' defaultvalue="{{customInputValue}}"></customInput>
                 <!--
                 <view contenteditable="true" bindtap="onCustomInputTap" id="divTest">
                   <view>{{customInputValueFake}}</view>
