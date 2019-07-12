@@ -20,7 +20,6 @@
         </view>
          <image class='btnImg' src='../../images/add-addr.png'></image>
        
-        
         <view class="title" bindtap="addAddress">{{tomls.toml0001}}</view>
      </view>
            
