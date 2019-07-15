@@ -483,11 +483,20 @@ text-indent: 20px;
 }
 
 .label-title-a{
-  font-size:28rpx;
-  color:#000000;
-  padding:20rpx;
+  font-size:34rpx;
+  padding:10rpx;
   writing-mode:vertical-lr;
-}
+  border-radius:9px;
+  color:#009f3c;
+  /* position:absolute; */
+  width:70rpx;
+  padding-top:20rpx;
+  padding-left:10rpx;
+  margin-top:18px;
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+}                                            
 
 .num-box{
  margin:-40px 110px auto;
@@ -591,6 +600,7 @@ text-indent: 20px;
 }
 .scroll-x-container {
   width: 100%;
+    position: relative;
 }
 .scroll-x-container-wrapper {
   display: flex;
@@ -598,5 +608,21 @@ text-indent: 20px;
   background-color:#fff;
   height: 350rpx;
   width: 100%;
+  padding-left:50rpx;
 }
 
+.dhsjh-a {
+height:55rpx;
+width:55rpx;
+float:left;
+margin-left:-120rpx;
+margin-top:24rpx;
+}
+
+.hfuhdus-jjk{
+ height:55rpx;
+width:55rpx;
+float:left;
+margin-left:-80rpx;
+margin-top:24rpx; 
+}
