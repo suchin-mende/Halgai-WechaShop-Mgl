@@ -5,7 +5,7 @@
         <view class="row-wrap">
             <view class="label">{{admls.adml0002}}</view>
             <view class="label-right">
-                <customInput id='customInput-linkMan'></customInput>
+                <customInput id='customInput-linkMan' defaultValue="{{addressData.linkMan}}{{wxaddress.userName}}"></customInput>
                 <!-- <input name="linkMan" class="input" type="text" placeholder="{{admls.adml0009}}"value="{{addressData.linkMan}}{{wxaddress.userName}}"/> -->
             </view>
         </view>

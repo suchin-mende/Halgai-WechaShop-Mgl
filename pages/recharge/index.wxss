@@ -32,6 +32,7 @@ page{
 .row-wrap .label-right{
     flex: 1;
     padding-top: 30rpx;
+    padding-left: 15rpx;
 }
 .row-wrap .label-right input{
     height: 60rpx;
