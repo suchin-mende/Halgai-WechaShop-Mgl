@@ -70,9 +70,9 @@ page{
   /* line-height: 52rpx; */
   writing-mode: vertical-lr;
   /* position: absolute; */
-  margin-left: 697rpx;
-  padding-left:12rpx; 
-  margin-top: 360rpx;
+  margin-left: 645rpx;
+  padding-left:3rpx; 
+  margin-top: 190rpx;
 }
 button[type="default"]{
   background-color: #ffffff;

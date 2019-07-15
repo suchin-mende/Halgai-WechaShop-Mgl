@@ -8,7 +8,7 @@
 
 .head-menu{
   display: flex;
-  height:84rpx;
+  height:66rpx;
 
 }
 
@@ -287,10 +287,10 @@ swiper-item image {
   position: relative;
 }
 .img {
-  width: 230rpx;
-  height: 55rpx;
+  width: 225rpx;
+  height: 50rpx;
   filter: drop-shadow(2px 2px 2px #398865);
-  padding-top: 16rpx;
+  padding-top: 11rpx;
 }
 .board{
   width: 19%;
@@ -310,14 +310,14 @@ swiper-item image {
   padding-left:-34rpx;
   float:left;
   margin-right:28rpx;
-  margin-top: -8rpx;
+  margin-top: -16rpx;
   font-size: 22rpx;
 }
 .btnImg {
   width: 55rpx;
   height: 55rpx;
   /* float:left; */
-  margin-top: -9rpx;
+  margin-top: -17rpx;
 }
 .category-icon {
   float: left
