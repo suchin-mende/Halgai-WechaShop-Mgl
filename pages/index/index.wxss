@@ -8,7 +8,7 @@
 
 .head-menu{
   display: flex;
-  height:66rpx;
+  height:70rpx;
 
 }
 
@@ -310,8 +310,8 @@ swiper-item image {
   padding-left:-34rpx;
   float:left;
   margin-right:28rpx;
-  margin-top: -16rpx;
-  font-size: 22rpx;
+  margin-top: -12rpx;
+  font-size: 20rpx;
 }
 .btnImg {
   width: 55rpx;

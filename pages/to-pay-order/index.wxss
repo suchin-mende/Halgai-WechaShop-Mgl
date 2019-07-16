@@ -214,8 +214,8 @@ float: left;
     display: flex;
     justify-content: space-between;
     width: 115%;
-    height: 268rpx;
-    position: fixed;
+    height: 230rpx;
+    /* position: fixed; */
     bottom: 0;
     left: 0;
     /* border-top:1px solid #eee;  */
@@ -224,14 +224,14 @@ float: left;
 }
 .jiesuan-box .to-pay-btn{
     width:9%;
-    height: 80%;
+    height: 75%;
     background-color: #009f3c;
     font-size:25rpx;
     color:#ffffff;
     border-radius: 6rpx;
     writing-mode: vertical-lr;
     padding-left: 10rpx;
-    margin-top: 30rpx;
+    margin-top: 20rpx;
 }
 .jiesuan-box  .left-price{
   
@@ -246,5 +246,5 @@ float: left;
 .jiesuan-box .total{
     color: #009f3c;
     text-align: right;
-    margin-top: 185rpx;
+    margin-top: 145rpx;
 }

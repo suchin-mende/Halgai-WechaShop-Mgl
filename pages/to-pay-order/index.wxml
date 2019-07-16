@@ -82,7 +82,7 @@
         <view class="left-price">
             <view class="total"> {{tomls.toml0014}} ¥ {{allGoodsAndYunPrice - youhuijine + totalScoreToPay}} {{tomls.toml0015}}</view>
         </view>
-        <button class="to-pay-btn" formType="submit"> ᠬᠠᠭᠤᠳᠠᠰᠤ ᠪᠡᠨ ᠳᠤᠰᠢᠶᠠᠬᠤ</button>
+        <button class="to-pay-btn" formType="submit"> ᠳᠤᠰᠢᠶᠠᠬᠤ</button>
     </view>
     </form>
     <showMask id='modalComponent'></showMask>
