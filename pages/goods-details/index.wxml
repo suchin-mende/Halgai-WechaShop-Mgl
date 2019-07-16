@@ -50,7 +50,7 @@
        {{gomls.goml0007}} ( <text style='color:#009f3c'>{{gomls.goml0008}}
        {{curGoodsKanjia.minPrice}} {{gomls.goml0009}}</text> )
    </view> -->
-  <view class="goods-des-info" style="margin-top:35rpx;" wx:if="{{pingtuanList}}">
+  <view class="goods-des-info-u" style="margin-top:35rpx;" wx:if="{{pingtuanList}}">
     <view class="label-title" style="border-bottom:1px solid #eee;"> {{pingtuanList.length}}{{gomls.goml0013}}
     </view>
     <view class="goods-text" style="margin-top:15rpx;border-bottom:1px solid #eee;" wx:for="{{pingtuanList}}" wx:key="id">
@@ -77,9 +77,10 @@
   <view class="scroll-x-container">
     <view class="scroll-x-container-wrapper">
       <view class="label-title-a"> {{gomls.goml0019}}
-        <text class="label-title-a" style="color:#009f3c;">（{{reputation.length}}）</text>
+        <text class="label-title-a" style="color:#009f3c;top:80rpx;font-size:25rpx;left:-32rpx;">
+          （{{reputation.length}}）         
+        </text>
       </view>
-
       <view class="goods-text" wx:for="{{reputation}}" wx:key="id">
           <view class="picture">
             <image  class="picture-k" src="{{item.user.avatarUrl}}"></image>
@@ -87,11 +88,9 @@
             <view class="time-a">  {{item.goods.dateReputation}}</view>
           </view>
           <view class="comment-b">  {{item.goods.property}} </view>
-         
             <view class="comment-d"> {{item.goods.goodReputationRemark}} </view>
             <view class="comment-d"> {{item.goods.goodReputationRemark}} </view>
             <view class="comment-d"> {{item.goods.goodReputationRemark}} </view>
-          
         </view>
     </view>
   </view>
@@ -102,13 +101,23 @@
       <view style='position:absolute;bottom:20rpx;margin-left:92rpx;font-size:12px;'> {{gomls.goml0020}} </view>
     </view>
     <view class="shop-cart-btn" bindtap="goShopCar">
-      <view style="margin-top:60rpx;font-size:30rpx;transform:rotate(268deg);"> ({{shopNum}})</view>
+      <view style="margin-top:60rpx;font-size:24rpx;transform:rotate(268deg);"> ({{shopNum}})</view>
       <view class="shop-num"> {{gomls.goml0021}}</view>
     </view>
-    <view wx:if="{{!goodsDetail.basicInfo.pingtuan}}" class="join-shop-cart" bindtap="toAddShopCar"> {{gomls.goml0022}}</view>
-    <view wx:if="{{!goodsDetail.basicInfo.pingtuan}}" class="now-buy" bindtap="tobuy"> {{gomls.goml0023}}</view>
-    <view wx:if="{{goodsDetail.basicInfo.pingtuan}}" class="join-shop-cart" bindtap="tobuy">{{gomls.goml0024}}</view>
-    <view wx:if="{{goodsDetail.basicInfo.pingtuan}}" class="now-buy" bindtap="toPingtuan">{{gomls.goml0025}}</view>
+    <view wx:if="{{!goodsDetail.basicInfo.pingtuan}}" class="join-shop-cart" bindtap="toAddShopCar">
+        {{gomls.goml0022}} 
+        <image class='dhsjh-a' src='../../images/qd.png'></image>
+    </view>    
+    <view wx:if="{{!goodsDetail.basicInfo.pingtuan}}"class="now-buy" bindtap="tobuy"><image                         class='hfuhdus-jjk' src='../../images/qd.png'></image>
+        {{gomls.goml0023}}
+    </view>
+    <view wx:if="{{goodsDetail.basicInfo.pingtuan}}" class="join-shop-cart" bindtap="tobuy">
+      <image class='dhsjh-a' src='../../images/qd.png'></image>
+       {{gomls.goml0024}}
+    </view>
+      <view wx:if="{{goodsDetail.basicInfo.pingtuan}}" class="now-buy" bindtap="toPingtuan">
+          <image class='dhsjh-a' src='../../images/qd.png'></image>
+         {{gomls.goml0025}}</view>
   </view>
   <view class="show-popup" hidden="{{hideShopPopup}}" catchtouchmove="true">
     <view class="popup-mask" bindtap="closePopupTap"></view>
@@ -120,7 +129,6 @@
       <view class="pop-goods-info">
         <view class="pop-img-box">
           <image src="{{goodsDetail.basicInfo.pic}}" class="goods-thumbnail" />
-
         </view>
         <view class="pop-goods-des">
           <view class="pop-goods-title">{{goodsDetail.basicInfo.name}}

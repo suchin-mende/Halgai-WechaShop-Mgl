@@ -27,6 +27,9 @@ Page({
       uid: wx.getStorageSync('uid'),
       recharge_amount_min: recharge_amount_min
     });
+
+    var component = _this.selectComponent('#customInput');
+    component.setValue(res.data.code + res.data.postalCode + '');
   },
 
   /**

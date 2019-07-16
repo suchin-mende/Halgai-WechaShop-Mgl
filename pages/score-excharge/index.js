@@ -15,6 +15,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    var component = _this.selectComponent('#customInput');
+    component.setValue(res.data.code + res.data.postalCode + '');
 
   },
 
