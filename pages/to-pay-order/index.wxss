@@ -226,11 +226,11 @@ float: left;
     width:9%;
     height: 80%;
     background-color: #009f3c;
-    font-size:70%;
+    font-size:25rpx;
     color:#ffffff;
     border-radius: 6rpx;
     writing-mode: vertical-lr;
-    padding-left: 9rpx;
+    padding-left: 10rpx;
     margin-top: 30rpx;
 }
 .jiesuan-box  .left-price{
