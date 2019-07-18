@@ -45,7 +45,7 @@ swiper-item image {
   padding: 35rpx 0;
   width: 100%;
   position: relative;
-  height: 550rpx;
+  height: 600rpx;
 }
 
 .goods-info-fx {
@@ -469,7 +469,7 @@ text-indent: 30rpx;
   padding: 18rpx;
   font-size: 34rpx;
   float:right;
-  margin:398rpx 10rpx 0rpx auto;
+  margin:448rpx 10rpx 0rpx auto;
 }
 
 .label-title-a{
