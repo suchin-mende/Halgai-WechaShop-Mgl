@@ -124,11 +124,11 @@
         {{gomls.goml0023}}
     </view>
     <view wx:if="{{goodsDetail.basicInfo.pingtuan}}" class="join-shop-cart" bindtap="tobuy">
-      <image class='dhsjh-a' style='margin-left:-90rpx;' src='../../images/qd.png'></image>
+      <image class='dhsjh-a'  src='../../images/qd.png'></image>
        {{gomls.goml0024}}
     </view>
      <view wx:if="{{goodsDetail.basicInfo.pingtuan}}" class="now-buy" bindtap="toPingtuan">
-      <image class='dhsjh-a' style='margin-left:-90rpx;' src='../../images/qd.png'></image>
+      <image class='dhsjh-a' src='../../images/qd.png'></image>
        {{gomls.goml0025}}</view>
   </view>
   <view class="show-popup" hidden="{{hideShopPopup}}" catchtouchmove="true">
