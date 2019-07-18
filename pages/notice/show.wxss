@@ -10,12 +10,12 @@
 .title {
   color:#009f3c;
   margin-bottom: 30rpx;
-  font-size: 35rpx;
+  font-size: 30rpx;
   position: absolute;
   width: 70rpx;
   /* background-color: #dddddd; */
   padding-top: 20rpx;
-  padding-left: 10rpx;
+  padding-left: 16rpx;
   border-radius: 10rpx;
   margin-top: 30rpx;
   height: 76%;
