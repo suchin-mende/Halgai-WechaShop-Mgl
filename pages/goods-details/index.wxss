@@ -50,7 +50,7 @@ swiper-item image {
 
 .goods-info-fx {
   position: absolute;
-  width: 45px;
+  width: 60rpx;
   height: 400rpx;
   right: 0;
   top: 0;
@@ -59,8 +59,8 @@ swiper-item image {
 .goods-info-fx button {
   /* position: absolute; */
   float:left;
-  width: 50px;
-  height: 60px;
+  width: 50rpx;
+  height: 96rpx;
   top: 0;
   left: 0;
   z-index: 2;
@@ -69,22 +69,22 @@ swiper-item image {
 
 .goods-info-fx image {
   float:left;
-  width: 30px;
-  height: 30px;
+  width: 55rpx;
+  height: 55rpx;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
-  margin: 10px 10px 0 5px;
+  margin: 20rpx 10rpx 0 -5rpx;
 }
 
 .goods-info-fx text {
   writing-mode: vertical-lr;
-  line-height: 5px;
-  float:left;
-  margin:0px 0px 0px 18px;
-  font-size: 30rpx;
-}
+  /* float:left; */
+  position:absolute;
+  left: -6rpx;
+  top: 100rpx;
+ }
 .goods-info .goods-title{
   /* box-sizing: border-box; */
   padding: 0 20rpx;
@@ -133,8 +133,8 @@ swiper-item image {
   overflow-y: hidenn;
   box-sizing: border-box;
   background-color: #fff;
-  margin-top:10px;
-  margin-bottom: 10px;
+  margin-top:10rpx;
+  margin-bottom: 10rpx;
 }
 
 .label-title{
@@ -144,20 +144,20 @@ swiper-item image {
   writing-mode: vertical-lr;
   float: left;
   background-color:rgba(0,0,0,0.2);
-  border-radius:8px;
-  margin:10px 0px 0px 8px;
+  border-radius:14rpx;
+  margin:10rpx 0rpx 0rpx 8rpx;
 }
 
 .goods-text {
-  font-size:34rpx;
+  font-size: 34rpx;
   color:#666666;
   line-height: 50rpx;
-  margin-top:8px;
-  height:90%;
-  border:2px solid#eee;
-  border-radius:9px;
+  margin-top: 10rpx;
+  height: 90%;
+  border: 2rpx solid#eee;
+  border-radius: 14rpx;
   display: flex;
-  margin: 6px;
+  margin: 10rpx;
 }
 .des-imgs{
   width:100%;
@@ -218,13 +218,13 @@ swiper-item image {
   background-color: #57ce71;
   color:#fff;
   writing-mode: vertical-lr;
-  width: 52px;
+  width: 30%;
   height: 100%;
   line-height: 50rpx; 
-  font-size: 39rpx;
-  /* display: flex;
-  align-items: center; */
+  font-size: 24rpx;
   padding-left:156rpx;
+  position:absolute;
+  left:250rpx;
 }
  .now-buy{
    text-align: center;
@@ -232,13 +232,13 @@ swiper-item image {
    background-color: #009f3c;
    color:#fff;
    height: 100%;
-   width: 52px;
+   width: 30%;
    line-height: 50rpx;
-   /* display: flex;
-   align-items: center; */
-   padding-left:86px;
-   font-size: 40rpx;
-}
+   padding-left:164rpx;
+   font-size: 24rpx;
+   position:absolute;
+   left:500rpx;
+  }
 .show-popup{
   position: fixed;
   top: 0;
@@ -270,7 +270,7 @@ swiper-item image {
   flex-direction: row;
   margin-left: 30rpx;
   border-bottom: 1px solid #eee;
-  padding-bottom: 22%;
+  padding-bottom: 100rpx;
 }
 .pop-img-box{
   width: 120rpx;
@@ -283,17 +283,16 @@ swiper-item image {
   height: 120rpx;
 }
 .pop-goods-title{
-  width: 78px;
+  width: 145rpx;
   text-overflow: ellipsis;
-  /* white-space: nowrap; */
   overflow: hidden;
-  font-size:16px;
+  font-size:28rpx;
   color:#000000;
   writing-mode: vertical-lr;
-  height:70px;
+  height:120rpx;
   position:absolute;
-  margin:28px auto;
-  right: 325px;
+  margin:55rpx auto;
+  right: 580rpx;
 }
 .pop-goods-des{
   /* width:30%; */
@@ -302,14 +301,14 @@ swiper-item image {
 .pop-goods-price{
   color:#009f3c;
   margin-top:0rpx;
-  margin: 15px;
+  margin: 28rpx;
 }
 .pop-goods-close{
-  width: 78rpx;
-  height: 70rpx;
+  width: 84rpx;
+  height: 90rpx;
   flex: 1;
   background:url("https://cdn.it120.cc/images/weappshop/popup-close.png") no-repeat center center;
-  background-size: 42rpx auto;
+  background-size: 50rpx auto;
   align-self: flex-start;
   margin-left: auto;
 }
@@ -353,15 +352,12 @@ swiper-item image {
    padding-left:70px;
 }
 .num-label{ 
- /* font-size:35rpx; */
 color:#666;
 writing-mode:vertical-lr;
-/* padding-left:45px; */
-height:34px;
-/* line-height:80rpx; */
-margin-top: 16px;
-padding-left:92px;
-font-size:20px;
+height:70rpx;
+position:absolute;
+top:440rpx;
+left:330rpx;
 }
 /* .buy-num-box .num-box{
      display: flex;
@@ -382,19 +378,15 @@ font-size:20px;
   height: 100%;
 }
 .popup-join-btn{
-  /* width: 100%; */
-  /* height: 89rpx; */
   text-align: center;
-  /* line-height: 32rpx; */
   color:#ffffff;
   background-color: #009f3c;
   writing-mode: vertical-lr;
-  border-radius: 6px;  
-  float: right;
-  /* font-size: 26px; */
-  height:100px;
-  margin-left: 104px;
-  margin: 5px;
+  border-radius: 12rpx;  
+  height:200rpx;
+  position: absolute;
+  left: 680rpx;
+  top:100rpx;
 }
 
 .buy-num-box .num-box .hui{
@@ -427,17 +419,17 @@ font-size:20px;
 .goods-title-a{
 writing-mode:vertical-lr;
 font-size:30rpx;
-border-radius:9px;
+border-radius:14rpx;
 background-color:rgba(0,0,0,0.2);
 position:absolute;
 overflow:hidden;
 text-overflow:ellipsis;
 white-space:nowrap;
 height:100%;
-bottom:0px;
-right:0px;
-padding:0 10px;
-text-indent: 20px;
+bottom:0rpx;
+right:0rpx;
+padding:0 14rpx;
+text-indent: 30rpx;
 }
 
 .goods-price-b{
@@ -446,7 +438,7 @@ text-indent: 20px;
   /* width:80rpx;
   height:160px; */
   float:left;
-  line-height-step:24px;
+  line-height-step:36rpx;
 }
 
 .goods-price-c{
@@ -455,14 +447,14 @@ text-indent: 20px;
    /* width:80rpx;
    height:180px; */
    float:left;
-   line-height-step:24px
+   line-height-step:36rpx;
 }
 
 .goods-price-d{
   padding-left:0rpx;
   writing-mode: vertical-lr;
   float:left;
-  line-height-step:24px;
+  line-height-step:36rpx;
   font-size:29rpx;
   /* width:43px;
   height:270px; */
@@ -470,37 +462,33 @@ text-indent: 20px;
 
 .row-arrow-a{
   writing-mode:vertical-lr;
-  /* font-size:32px; */
   background-color:rgba(0,0,0,0.2);
-  border-radius:8px;
-  float:right;
-  margin-top:400rpx;
-  width:14px;
-  margin:196px 10px 0px 0px;
-  line-height:18px;
-  padding: 10px;
+  border-radius:14rpx;
+  width:28rpx;
+  line-height:30rpx;
+  padding: 18rpx;
   font-size: 34rpx;
+  float:right;
+  margin:398rpx 10rpx 0rpx auto;
 }
 
 .label-title-a{
   font-size:34rpx;
-  padding:10rpx;
   writing-mode:vertical-lr;
-  border-radius:9px;
+  border-radius:18rpx;
   color:#009f3c;
-  /* position:absolute; */
   width:70rpx;
-  padding-top:20rpx;
   padding-left:10rpx;
-  margin-top:18px;
+  margin-top:38rpx;
   position: absolute;
   left: 0rpx;
   top: 0rpx;
 }                                            
 
 .num-box{
- margin:-40px 110px auto;
  position:absolute;
+ left:470rpx;
+ top:430rpx;
 }
 
  .buy-num-box .num-box .num-jia{
@@ -531,14 +519,14 @@ text-indent: 20px;
   text-align:center;
   width:30rpx;
   writing-mode:vertical-lr;
-  font-size: 15px;
+  font-size: 30rpx;
 }
 .comment-b {
   color: #B0B0B0;
-  font-size:18rpx;
+  font-size:20rpx;
   writing-mode:vertical-lr;
   float:left;
-  padding-top:16px
+  padding-top:32rpx
 }
 .comment-c {
   float:left;
@@ -549,13 +537,13 @@ text-indent: 20px;
   writing-mode:vertical-lr;
   font-size:24rpx;
   float:left;
-  padding-top: 16px;
+  padding-top: 30rpx;
 }
 .row-arrow {
-  margin-bottom:9px;
-  background-size:0px auto;
-  width:66px;
-  height:52px;
+  margin-bottom:9rpx;
+  background-size:0rpx auto;
+  width:66rpx;
+  height:70rpx;
 } 
 .size-label-box {
   margin-left:-4px;
@@ -566,8 +554,9 @@ text-indent: 20px;
   font-size:18rpx;
   writing-mode:vertical-lr;
   float:right;
-  margin-top:-15px;
-  width: 30px;
+  margin-top:-35rpx;
+  width: 45rpx;
+  margin-left: 40rpx;
 }
 .picture {
   width:35%;
@@ -582,12 +571,12 @@ text-indent: 20px;
   color:#ffffff;
   background-color: #009f3c;
   writing-mode: vertical-lr;
-  border-radius: 6px;  
+  border-radius: 12rpx;  
   float: right;
-  height:100px;
+  height:200rpx;
   position:absolute;
-  margin-left: 338px;
-  top: 43px;
+  left: 680rpx;
+  top: 100rpx;
 }
 .discuss {
  height:65%;
@@ -608,7 +597,7 @@ text-indent: 20px;
   background-color:#fff;
   height: 350rpx;
   width: 100%;
-  padding-left:50rpx;
+  padding-left:55rpx;
 }
 
 .dhsjh-a {
