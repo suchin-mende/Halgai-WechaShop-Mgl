@@ -1,9 +1,14 @@
 <view class="container">
-    <form bindsubmit="bindSave">
-    <image class="logo" src="/images/wx.png" mode="widthFix" />
+ <form bindsubmit="bindSave">
+     <view>
+        <image class="logo" src="/images/wx.png" mode="widthFix" />
+     </view>
     <view class="title">{{aumls.auml0001}}</view>
     <view class="profile">{{aumls.auml0002}}</view>
-    <button type="primary" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class="weui-btn mini-btn">{{aumls.auml0003}}</button>
-    </form>
+    <view>
+       <button type="primary" open-type="getUserInfo" 
+       bindgetuserinfo="bindGetUserInfo"  class="weui-btn mini-btn">{{aumls.auml0003}}</button>
+    </view>
+  </form>
     <showMask id='modalComponent'></showMask>
 </view>

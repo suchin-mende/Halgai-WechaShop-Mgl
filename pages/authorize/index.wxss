@@ -1,23 +1,42 @@
 form {
   width:750rpx;
 }
+
 .logo {
   width:200rpx;
-  margin-top:180rpx;
-  margin-left:275rpx;
+  position:absolute;
+  left:286rpx;
+  top:80rpx;
 }
+
 .title {
   text-align: center;
-  margin-top:70rpx;
+  writing-mode: vertical-lr;
+  font-size: 44rpx;
+  position:absolute;
+  left:288rpx;
+  top:400rpx;
 }
+
 .profile {
   text-align: center;
-  margin-top:30rpx;
-  font-size: 14px;
+  font-size: 23px;
   color:#888;
+  writing-mode: vertical-lr;
+  position:absolute;
+  left:410rpx;
+  top:400rpx;
 }
+
 .mini-btn{
-  margin-top: 50rpx;
-  margin-left: 50px;
-  margin-right: 50px;
+  writing-mode:vertical-lr;
+  height:320rpx;
+  color:#fff;
+  background-color:#009f3c;
+  font-size: 44rpx;
+  width:90rpx;
+  line-height: 42rpx;
+  top:820rpx;
+  position:absolute;
+  left:634rpx;
 }
