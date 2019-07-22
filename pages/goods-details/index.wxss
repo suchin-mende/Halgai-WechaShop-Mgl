@@ -239,7 +239,7 @@ swiper-item image {
   width: 30%;
   height: 100%;
   line-height: 50rpx; 
-  font-size: 40rpx;
+  font-size: 24rpx;
   padding-left: 156rpx;
   position: absolute;
   left: 250rpx;
@@ -254,7 +254,7 @@ swiper-item image {
    width: 30%;
    line-height: 50rpx;
    padding-left: 164rpx;
-   font-size: 40rpx;
+   font-size: 24rpx;
    position: absolute;
    left: 498rpx;
   }
