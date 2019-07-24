@@ -112,7 +112,7 @@
           {{gomls.goml0020}} </view>
     </view>
     <view class="shop-cart-btn" bindtap="goShopCar">
-      <view style="margin-top:60rpx;font-size:24rpx;transform:rotate(268deg);"> ({{shopNum}})</view>
+      <view style="margin-top:55rpx;font-size:24rpx;transform:rotate(268deg);"> ({{shopNum}})</view>
       <view class="shop-num"> {{gomls.goml0021}}</view>
     </view>
     <view wx:if="{{!goodsDetail.basicInfo.pingtuan}}"
