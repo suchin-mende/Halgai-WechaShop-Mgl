@@ -9,7 +9,7 @@
 }
 .address-list .a-address{
     width: 720rpx;
-    margin-left: 30rpx;
+    margin-left: 100rpx;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,6 +40,8 @@
     box-sizing: border-box;
     background: url(https://cdn.it120.cc/images/weappshop/addr-edit.png) no-repeat 43rpx center;
     background-size: 35rpx auto;
+    position: absolute;
+    left: 634rpx;
 }
 .bottom-box{
     position: fixed;

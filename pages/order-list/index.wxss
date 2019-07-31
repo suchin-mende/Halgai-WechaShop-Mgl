@@ -71,12 +71,14 @@
 }
 .order-list .a-order .order-date{
     padding: 0 30rpx;
-    height: 88rpx;
+    height: 170rpx;
     display: flex;
     justify-content: space-between;
     font-size:26rpx;
     color:#000000;
     align-items: center;
+    writing-mode: vertical-lr;
+    float: right;
 }
 .order-list .a-order .order-date .red{
     font-size:26rpx;
@@ -105,12 +107,12 @@
     height: 120rpx;
 }
 .goods-info  .goods-des{
-    width: 540rpx;
-    height: 78rpx;
-    line-height: 39rpx;
-    font-size:26rpx;
-    color:#000000;
-    overflow: hidden;
+  width:117rpx;
+  height:145rpx; 
+  font-size:26rpx;
+  writing-mode:vertical-lr;
+  margin-left:470rpx;
+  margin-top:-245rpx;
 }
 .goods-img-container{
     height: 180rpx;
