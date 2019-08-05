@@ -4,17 +4,21 @@
 .address-list{
     width: 100%;
     background-color: #fff;
-    margin-top: 20rpx;
+    /* margin-top: 20rpx; */
     padding-bottom: 100rpx;
+    /* overflow-x:hidden; */
+    /* height: 500rpx;  */
 }
 .address-list .a-address{
     width: 720rpx;
-    margin-left: 100rpx;
+    margin-left: 110rpx;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30rpx 0;
     border-bottom: 1rpx solid #eee;
+    overflow-x: hidden;
+    height: 150rpx;
 }
 .a-address .left-text{
     width: 610rpx;
@@ -40,6 +44,7 @@
     box-sizing: border-box;
     background: url(https://cdn.it120.cc/images/weappshop/addr-edit.png) no-repeat 43rpx center;
     background-size: 35rpx auto;
+    margin-right: 70rpx;
     position: absolute;
     left: 634rpx;
 }
@@ -52,6 +57,7 @@
     height:100%;
     line-height: 100rpx;
     background: #fff url(../../images/arrow-down.png) no-repeat 30rpx;
+    background-color: #ddd;
 }
 .bottom-box .add-btn{
     margin-top: 30rpx;
