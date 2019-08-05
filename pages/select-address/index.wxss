@@ -45,6 +45,8 @@
     background: url(https://cdn.it120.cc/images/weappshop/addr-edit.png) no-repeat 43rpx center;
     background-size: 35rpx auto;
     margin-right: 70rpx;
+    position: absolute;
+    left: 634rpx;
 }
 .bottom-box{
     position: fixed;

@@ -91,6 +91,9 @@ swiper-item image {
   position: absolute;
   left: -6rpx;
   top: 100rpx;
+  border:3rpx solid#eee;
+  border-radius:14rpx;
+
  }
 
 .goods-info .goods-title {
