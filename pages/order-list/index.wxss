@@ -90,19 +90,21 @@
   font-size: 26rpx;
   color: #000000;
   align-items: center;
-  writing-mode: vertical-lr;
-  /* float: right;
-  margin:0rpx 90rpx 0rpx 0rpx; */
-  margin-top: 20rpx;
   margin-left: -30rpx;
 }
 
 .goods-a {
   margin-top: 20rpx;
+  font-size: 21rpx;
+}
+
+.good-b {
+  font-size:30rpx; 
 }
 
  .hfhhf {
    margin-top: 20rpx;
+   font-size: 21rpx;
  }
 
 .order-list .a-order .order-date .red{
@@ -125,8 +127,8 @@
   width: 141rpx;
   height: 141rpx;
   overflow: hidden;
-  margin-right: 30rpx;
   background-color: #f7f7f7;
+  margin-left: 40rpx;
 }
 
 .goods-info .img-box .goods-img,
@@ -144,21 +146,29 @@
   /* margin-top:-252rpx; */
 }
  .by-boox {
-   transform: rotate(270deg);
-   position:absolute;
    top:80rpx;
    left:25rpx;
+   writing-mode:vertical-lr;
+   font-size:28rpx;
+   margin-top: -42rpx;
  }
+
+.date-box {
+  font-size: 30rpx;
+}
+
 
  .total-price {
-   position:absolute;
-   top:82px;
- }
+   /* position:absolute; */
+  margin-top: -42rpx;
+   writing-mode:vertical-lr;
+}
 
 .goods-img-container{
-  height: 155rpx;
+  height: 260rpx;
   box-sizing: border-box;
   white-space: nowrap;
+  margin-left: 45rpx;
 }
 
 .goods-img-container .img-box{
@@ -225,28 +235,21 @@
 .btncancel-btn {
   writing-mode: vertical-lr;
   font-size: 28rpx;
-  width: 100rpx;
-  color: #ffffff;
-  background-color: #009f3c;
+  width: 45rpx;
   padding: 30rpx;
   border-radius: 12rpx;
-  line-height: 100rpx;
-  position: absolute;
-  top: 5rpx;
-  right: 290rpx;
-  height: 30rpx;
+  line-height: 50rpx;
+  border:1px solid #009f3c;
 }
  .btntopay-btn {
    writing-mode: vertical-lr;
    font-size: 28rpx;
-   width: 100rpx;
-   color: #ffffff;
-   background-color: #009f3c;
+   width: 45rpx;
    padding:30rpx;
    border-radius: 12rpx;
-   line-height: 100rpx;
+   line-height: 50rpx;
    position: absolute;
-   top: 5rpx;
-   right: 100rpx;
-   height: 30rpx;
+   right: 112rpx;
+   height: 130rpx;
+   border:1px solid #009f3c;
  }
