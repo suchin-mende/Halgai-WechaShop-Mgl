@@ -19,7 +19,7 @@
                     </view>
                 <view class="goods-des">
                    <view>{{orlmls.orlml0003}} : </view>
-                   <view class='baori' >{{item.orderNumber}}</view>
+                   <view class='goods-a' >{{item.orderNumber}}</view>
                    <view wx:if="{{item.remark && item.remark != ''}}">
                    {{orlmls.orlml0004}} ：{{item.remark}}</view>
                 </view>
@@ -35,10 +35,11 @@
          <scroll-view class="goods-img-container" scroll-x="true">
              <view class='boy-box'>
                <view class="total-price" wx:if="{{item.score <= 0}}">
-                {{orlmls.orlml0005}}：¥ {{item.amountReal}}</view>
-                <view class="total-price" wx:if="{{item.score > 0}}">
+                {{orlmls.orlml0005}}：</view>
+                <view class='by-boox'>¥ {{item.amountReal}}</view>
+                <!-- <view class="total-price" wx:if="{{item.score > 0}}">
                 {{orlmls.orlml0006}}：¥ {{item.amountReal}} + 
-                {{item.score}}{{orlmls.orlml0007}} </view>
+                {{item.score}}{{orlmls.orlml0007}} </view> -->
                 </view>
                 <view class="btncancel-btn" 
                  text="{{item.status==0? false : true}}" bindtap="cancelOrderTap"  

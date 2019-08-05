@@ -10,7 +10,7 @@
             </view>
             <view class="right-text">
                 <view class="status red">{{orderDetail.orderInfo.statusStr}}</view>
-                <view class="des" hidden="true">{{ordmls.ordml0001}}</view>
+                <view class="des" text="true">{{ordmls.ordml0001}}</view>
             </view>
         </view>
         <block wx:if="{{orderDetail.logistics}}">
@@ -101,7 +101,7 @@
             </view>
             </form>
         </view>
-        <view class="peisong-way" hidden="true">
+        <view class="peisong-way" text="true">
             <view class="row-box">
                 <view class="row-label">{{ordmls.ordml0015}}</view>
                 <view class="right-text">{{ordmls.ordml0016}}</view>
@@ -114,15 +114,15 @@
             </view>
         </view>
         <view class="goods-info">
-            <view class="row-box">
+            <view class="row-boxa">
                 <view class="row-label">{{ordmls.ordml0019}}</view>
                 <view class="right-text">¥ {{orderDetail.orderInfo.amount}}</view>
             </view>
-            <view class="row-box">
+            <view class="row-boxb">
                 <view class="row-label">{{ordmls.ordml0020}}</view>
                 <view class="right-text">+ ¥ {{orderDetail.orderInfo.amountLogistics}}</view>
             </view>
-            <view class="row-box">
+            <view class="row-boxc">
                 <view class="row-label">{{ordmls.ordml0021}}</view>
                 <view class="right-text">¥ {{orderDetail.orderInfo.amountReal}}</view>
             </view>
