@@ -17,33 +17,39 @@
             <view class="img-box" wx:for-items="{{goodsMap[item.id]}}" wx:key="{{index}}">
                         <image src="{{item.pic}}" class="goods-img"></image>
                     </view>
-                <view class="goods-des">
-                   <view>{{orlmls.orlml0003}} : </view>
+                     <view class="total-price" wx:if="{{item.score <= 0}}">
+                {{orlmls.orlml0005}} : </view>
+                <view class='by-boox'>¥ {{item.amountReal}}</view>
+            </view>
+            <view class="btncancel-btn" style=''
+                 text="{{item.status==0? false : true}}" bindtap="cancelOrderTap"  
+                 data-id="{{item.id}}">{{orlmls.orlml0008}}</view>
+
+      <view > 
+         <scroll-view class="goods-img-container" scroll-x="true">
+             <view class='boy-box'>
+               <view class="goods-des">
+                  
                    <view class='goods-a' >{{item.orderNumber}}</view>
+                    <view class="good-b">{{orlmls.orlml0003}} : </view>
                    <view wx:if="{{item.remark && item.remark != ''}}">
                    {{orlmls.orlml0004}} ：{{item.remark}}</view>
                 </view>
                  <view class="order-date">
-                <view class="date-box">{{orlmls.orlml0002}} :</view>
+               
                 <view class='hfhhf'> {{item.dateAdd}}</view>
+                 <view class="date-box">{{orlmls.orlml0002}} :</view>
                 <view class="status {{(item.status==-1 || item.status==4) ? '':'red'}}">
                    {{item.statusStr}}</view>
             </view>
-            </view>
-      
-      <view > 
-         <scroll-view class="goods-img-container" scroll-x="true">
-             <view class='boy-box'>
-               <view class="total-price" wx:if="{{item.score <= 0}}">
-                {{orlmls.orlml0005}}：</view>
-                <view class='by-boox'>¥ {{item.amountReal}}</view>
+
+
+
                 <!-- <view class="total-price" wx:if="{{item.score > 0}}">
                 {{orlmls.orlml0006}}：¥ {{item.amountReal}} + 
                 {{item.score}}{{orlmls.orlml0007}} </view> -->
                 </view>
-                <view class="btncancel-btn" 
-                 text="{{item.status==0? false : true}}" bindtap="cancelOrderTap"  
-                 data-id="{{item.id}}">{{orlmls.orlml0008}}</view>
+                
             <view class="btntopay-btn"
                  text="{{item.status==0? false : true}}" bindtap="toPayTap" 
                  data-id="{{item.id}}" data-money="{{item.amountReal}}"
