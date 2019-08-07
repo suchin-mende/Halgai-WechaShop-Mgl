@@ -56,10 +56,10 @@
     color: #666;
     height: 100%;
     padding-top:870rpx;
-    margin-left:-52rpx;
+    /* margin-left:-52rpx; */
     position: fixed;
     top: 0px;
-    left: 80rpx;
+    /* left: 80rpx; */
 }
 .goodsList{
     width: 100%;
@@ -254,7 +254,7 @@
   writing-mode: vertical-lr;
   margin-top:30rpx;
   color: #009f3c;
-  font-size: 25rpx;
+  
 }
 .cart-box {
   display: flex;
