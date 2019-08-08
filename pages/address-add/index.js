@@ -135,10 +135,16 @@ Page({
       formId: e.detail.formId
     })
     var that = this;
-    var linkMan = e.detail.value.linkMan;
-    var address = e.detail.value.address;
-    var mobile = e.detail.value.mobile;
-    var code = e.detail.value.code;
+
+    var userNameComponent = that.selectComponent('#customInput-linkMan');
+    var mobileComponent = that.selectComponent('#customInput-mobile');
+    var addressComponent = that.selectComponent('#customInput-address')
+    var codeComponent = that.selectComponent('#customInput-code')
+    var linkMan = userNameComponent.getValue();
+    var address = addressComponent.getValue();
+    var mobile = mobileComponent.getValue();;
+    var code = codeComponent.getValue();
+    console.log(linkMan)
     if (linkMan == ""){
       getApp().showModal(that, {
         title: HalgaiI18.adjs0002,
@@ -207,6 +213,7 @@ Page({
       })
     }
     apiResult.then(function (res) {
+      console.log(res)
       if (res.code != 0) {
         // 登录错误
         wx.hideLoading();
