@@ -6,10 +6,11 @@ page{
   min-height: 100%;
   overflow: hidden;
   overflow-y: hidden;
+  background-color:#fff;
+
 }
 .sec-wrap{
-    background-color: #fff;
-    margin-top: 20rpx;
+  background-color: #fff;
 }
 .bottom-fiexd{
   position: fixed;
@@ -19,38 +20,61 @@ page{
 .sec-wrap .order-status{
     width: 720rpx;
     margin-left: 30rpx;
-    border-bottom: 1rpx solid #eee;
     height: 140rpx;
     display: flex;
     align-items: center;
 }
 .order-status .icon-box{
-    width: 80rpx;
     height: 80rpx;
     overflow: hidden;
-    margin-right: 30rpx;
 }
 .order-status .icon-box .icon{
-    width: 80rpx;
-    height: 80rpx;
+    width: 40rpx;
+    height: 40rpx;
+}
+.icon{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: -18rpx;
+}
+.des{
+  width:720rpx;
+  /* display:flex; */
+  align-items:center;
+  box-sizing:border-box;
+  padding:24rpx 0;
+  /* border-bottom:1rpx solid #eee; */
+  margin-left: -20rpx;
+
+}
+.list-title{
+  width:720rpx;
+  display:flex;
+  align-items:center;
+  box-sizing:border-box;
+  font-size: 30rpx;
+  margin-top: 14rpx;
+  margin-left: 7rpx;
+}
+.zen-zeng{
+  transform: rotate(90deg);
+  height:715rpx;
+  width:100%;
+  margin-right: 850rpx;
+  margin-top: -97rpx;
 }
 .order-status .right-text{
-    width: 580rpx;
     overflow: hidden;
 }
 .order-status .right-text .status{
     font-size:28rpx;
     color:#000; 
-    margin-bottom: 10rpx;
 }
 .order-status .right-text .red{
     color:#009f3c;
 }
 .order-status .right-text .des{
    font-size:28rpx;
-   color:#999; 
-   writing-mode:vertical-lr;
-   height:65rpx;
 }
 .address-sec{
     width: 720rpx;
@@ -132,16 +156,18 @@ page{
     background-color: #fff;
     margin-bottom: 20rpx;
     margin-top: 20rpx;
+    border-bottom:1rpx solid #eee;
+
 }
 .goods-list .list-title{
     font-size: 28rpx;
     color: #000;
     padding: 30rpx 0 25rpx 30rpx;
-    writing-mode: vertical-lr;
+    /* writing-mode: vertical-lr; */
 }
 .goods-list  .a-goods{
     width: 720rpx;
-    margin-left: 30rpx;
+    margin-left: 20rpx;
     display: flex;
     /*justify-content: space-between;*/
     border-top: 1px solid #eee;
@@ -162,7 +188,7 @@ page{
 .goods-list  .a-goods .text-box{
     width: 510rpx;
     box-sizing: border-box;
-    padding-top: 10rpx;
+    padding-top: 40rpx;
 }
 .goods-list  .btn-row{
     width: 720rpx;
@@ -171,7 +197,7 @@ page{
 }
 .confirm-btn{
     background:#ffffff;
-    border:1rpx solid #009f3c;
+    /* border:1rpx solid #009f3c; */
     border-radius:6rpx;
     width:164rpx;
     height:60rpx;
@@ -185,6 +211,7 @@ page{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: -40rpx;
  }
 
 .a-goods .text-box .arow .goods-name{
@@ -202,20 +229,22 @@ page{
 .a-goods .text-box .arow01{
     margin-bottom: 30rpx;
 }
-
+.goods-name{
+  writing-mode: vertical-lr;
+}
 .a-goods .text-box .arow .goods-price{
-  font-size:26rpx;
+  font-size:30rpx;
   color:#000000;
   /* align-self: flex-start; */
   position:absolute;
-  left:70rpx;
-  margin:100rpx 0;
+  left:23rpx;
+  margin:105rpx 0;
 }
 
 .a-goods .text-box .arow .goods-label{
     font-size: 26rpx;
     color: #999;
-    margin-left: 190rpx;
+    margin-left: 410rpx;
 }
 .a-goods .text-box .arow .goods-num{
     font-size: 26rpx;
@@ -224,7 +253,7 @@ page{
 .peisong-way{
     width: 100%;
     background-color: #fff;
-    margin-bottom: 20rpx;
+    /* margin-bottom: 20rpx; */
 }
 .peisong-way .row-box{
     width: 720rpx;
@@ -234,7 +263,8 @@ page{
     box-sizing: border-box;
     padding: 24rpx 0;
     border-bottom: 1rpx solid #eee;
-    margin-left: 30rpx;
+    margin-left: 71rpx;
+    line-height: 40rpx;
 }
 .peisong-way .row-label{
     font-size: 28rpx;
@@ -243,29 +273,38 @@ page{
 .peisong-way .right-text{
     font-size: 28rpx;
     color: #666;
-    padding-right: 30rpx;
+    padding-right: 79rpx;
 }
 .peisong-way .liuyan{
-    width: 510rpx;
+    /* width: 510rpx; */
     font-size: 28rpx;
+    padding-right: 196rpx;
 }
 .goods-info{
     width: 100%;
     background-color: #fff;
     margin-bottom: 120rpx;
     padding-bottom: 24rpx;
+    display: flex;
+    /* text-align: center; */
 }
-
+.right-text{
+  text-align: center;
+}
+.xiao-bye{
+  margin-top: 40rpx;
+}
 .goods-info .row-boxa {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   box-sizing: border-box;
-  padding: 24rpx 30rpx 12rpx 30rpx;
+  padding: 16rpx 30rpx 12rpx 30rpx;
   font-size: 28rpx;
   color: #000;
-  writing-mode:vertical-lr;
+  border-bottom:1rpx solid #eee;
+
 }
 
 .goods-info .row-boxb {
@@ -274,22 +313,32 @@ page{
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding: 24rpx 30rpx 12rpx 30rpx;
+  padding: 10rpx 30rpx 26rpx 30rpx;
   font-size: 28rpx;
   color: #000;
-  writing-mode:vertical-lr;
+  border-bottom:1rpx solid #eee;
 }
-
+.song-gorry{
+  writing-mode: vertical-lr;
+  margin-left: 20rpx;
+}
+.boy-gest{
+  writing-mode: vertical-lr;
+  height: 130rpx;
+}
+.jeck-toolis{
+  writing-mode: vertical-lr;
+}
 .goods-info .row-boxc {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding: 24rpx 30rpx 12rpx 30rpx;
+  padding: 6rpx 30rpx 26rpx 30rpx;
   font-size: 28rpx;
   color: #000;
-  writing-mode:vertical-lr;
+  border-bottom:1rpx solid #eee;
 }
 
 .goods-info .row-box .right-text{

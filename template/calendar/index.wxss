@@ -136,6 +136,7 @@
 .todo-text {
   font-size: 22rpx;
   color: #c2c2c2;
+  writing-mode: vertical-lr;
 }
 
 .day-with-dot {
