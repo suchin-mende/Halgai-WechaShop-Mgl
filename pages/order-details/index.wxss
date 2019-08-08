@@ -35,14 +35,16 @@ page{
 .icon{
   width: 40rpx;
   height: 40rpx;
+  margin-left: -18rpx;
 }
 .des{
   width:720rpx;
-  display:flex;
+  /* display:flex; */
   align-items:center;
   box-sizing:border-box;
   padding:24rpx 0;
-  border-bottom:1rpx solid #eee;
+  /* border-bottom:1rpx solid #eee; */
+  margin-left: -20rpx;
 
 }
 .list-title{
@@ -58,7 +60,7 @@ page{
   transform: rotate(90deg);
   height:715rpx;
   width:100%;
-  margin-right: 751rpx;
+  margin-right: 850rpx;
   margin-top: -97rpx;
 }
 .order-status .right-text{
@@ -261,7 +263,7 @@ page{
     box-sizing: border-box;
     padding: 24rpx 0;
     border-bottom: 1rpx solid #eee;
-    margin-left: 35rpx;
+    margin-left: 71rpx;
     line-height: 40rpx;
 }
 .peisong-way .row-label{

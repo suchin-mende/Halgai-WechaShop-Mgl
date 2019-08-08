@@ -13,6 +13,8 @@
                 <view class="right-text">¥ {{orderDetail.orderInfo.amountReal}}</view>
             </view>
         </view>
+        <image  class="icon" src="/images/order-details/icon-jycg.png"></image>
+         <image class="icon" src="/images/order-details/icon-ddfh.png"></image>
 <view class='zen-zeng'>
 <view class="peisong-way" text="true">
 <view class="row-box">
@@ -35,10 +37,11 @@
                 <image wx:elif="{{orderDetail.orderInfo.status==1}}" class="icon" src="/images/order-details/icon-ddfh.png"></image>
                 <image wx:elif="{{orderDetail.orderInfo.status==2}}" class="icon" src="/images/order-details/icon-ddsh.png"></image>
                 <image wx:elif="{{orderDetail.orderInfo.status==3 || orderDetail.orderInfo.status==4}}" class="icon" src="/images/order-details/icon-jycg.png"></image>
-                 <image class="icon" src="/images/order-details/icon-ddfk.png"></image>
-                 <image class="icon" src="/images/order-details/icon-ddfh.png"></image>
-                  <image  class="icon" src="/images/order-details/icon-jycg.png"></image>
+                
+                
+                 
             </view>
+             <image class="icon" src="/images/order-details/icon-ddfk.png"></image>
             <view class="right-text">
             <view class="des" text="true">{{ordmls.ordml0001}}</view>
                 <view class="status red">{{orderDetail.orderInfo.statusStr}}</view>
@@ -120,8 +123,8 @@
                       <label style="margin-right:35rpx;"><radio value="0"/>{{ordmls.ordml0009}}</label>
                     </radio-group>
                   </view>
-                   <image class="icon" src="/images/order-details/icon-ddfh.png"></image>
-                  <view class="row-box" style="margin-top:35rpx">
+                   
+                  <view class="row-box" style="margin-top:35rpx"> 
                       <view class="row-label">{{ordmls.ordml0010}}</view>
                       <input name="orderGoodsId{{index}}" value="{{item.id}}" style="display:none;"/>
                       <textarea name="goodReputationRemark{{index}}" style="margin-top:35rpx;width:100%;" value="{{ordmls.ordml0011}}！"/>
