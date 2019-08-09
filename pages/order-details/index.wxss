@@ -17,12 +17,19 @@ page{
   bottom: 0;
   left: 0;
 }
+.category-icon{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: -43rpx;
+  margin-top: 20rpx;
+  position: absolute;
+}
 .sec-wrap .order-status{
     width: 720rpx;
-    margin-left: 30rpx;
+    margin-left: 80rpx;
     height: 140rpx;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 .order-status .icon-box{
     height: 80rpx;
@@ -35,7 +42,7 @@ page{
 .icon{
   width: 40rpx;
   height: 40rpx;
-  margin-left: -18rpx;
+  margin-left: 50rpx;
 }
 .des{
   width:720rpx;
@@ -60,8 +67,8 @@ page{
   transform: rotate(90deg);
   height:715rpx;
   width:100%;
-  margin-right: 850rpx;
-  margin-top: -97rpx;
+  margin-right: 1017rpx;
+  /* margin-top: -79rpx; */
 }
 .order-status .right-text{
     overflow: hidden;
@@ -75,6 +82,12 @@ page{
 }
 .order-status .right-text .des{
    font-size:28rpx;
+}
+.huhu-icon{
+  width:40rpx;
+  height:40rpx;
+  margin-left:50rpx;
+
 }
 .address-sec{
     width: 720rpx;
@@ -154,8 +167,8 @@ page{
 .goods-list{
     width:100%;
     background-color: #fff;
-    margin-bottom: 20rpx;
-    margin-top: 20rpx;
+    margin-bottom: 100rpx;
+    margin-top: 65rpx;
     border-bottom:1rpx solid #eee;
 
 }
@@ -254,42 +267,65 @@ page{
     width: 100%;
     background-color: #fff;
     /* margin-bottom: 20rpx; */
+    padding: 20rpx 0;
 }
-.peisong-way .row-box{
+.row-box{
     width: 720rpx;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
     padding: 24rpx 0;
-    border-bottom: 1rpx solid #eee;
-    margin-left: 71rpx;
-    line-height: 40rpx;
+    /* border-bottom: 1rpx solid #eee; */
+    margin-left: -7rpx;
+    /* line-height: 40rpx; */
 }
-.peisong-way .row-label{
+.row-label{
+  font-size:28rpx;
+  margin-left:72rpx;
+
+}
+.row-boy{
     font-size: 28rpx;
     color: #000;
+    margin-left: 74rpx;
+    margin-top: 27rpx;
+
 }
-.peisong-way .right-text{
+.rightjjh{
     font-size: 28rpx;
-    color: #666;
-    padding-right: 79rpx;
+    margin-top: -19rpx;
+    margin-left: 35rpx;
 }
-.peisong-way .liuyan{
+/* .goo-too{
+  height: 200rpx;
+} */
+.liuyan{
     /* width: 510rpx; */
     font-size: 28rpx;
     padding-right: 196rpx;
+    position: absolute;
+    margin-left: 162rpx;
+    margin-top: -48rpx;
 }
 .goods-info{
     width: 100%;
     background-color: #fff;
-    margin-bottom: 120rpx;
+    /* margin-bottom: 120rpx; */
     padding-bottom: 24rpx;
     display: flex;
     /* text-align: center; */
 }
-.right-text{
+.boloon{
+  /* margin-top: 20rpx; */
+  margin-left: -123rpx;
+}
+.bingoo{
+  margin-right: 345rpx;
+}
+.gungu{
   text-align: center;
+  font-size: 28rpx;
 }
 .xiao-bye{
   margin-top: 40rpx;

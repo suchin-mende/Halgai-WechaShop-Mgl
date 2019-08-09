@@ -13,22 +13,28 @@
                 <view class="right-text">¥ {{orderDetail.orderInfo.amountReal}}</view>
             </view>
         </view>
-        <image  class="icon" src="/images/order-details/icon-jycg.png"></image>
-         <image class="icon" src="/images/order-details/icon-ddfh.png"></image>
+       
+          
 <view class='zen-zeng'>
-<view class="peisong-way" text="true">
-<view class="row-box">
-                <view class="row-label">{{ordmls.ordml0017}}</view>
-                <view class="right-text">
-                    <input name="remark" type="text" class="liuyan" placeholder="{{ordmls.ordml0018}}" />
-                </view>
-            </view>
-            <view class="row-box">
+<view class="category-icon">
+ <image class="icon" src="/images/order-details/icon-ddfh.png"></image>
+ </view>             
+          <view class="row-boy">
+          <view class='goo-too'>{{ordmls.ordml0017}}</view>
+          <view class='kangsamida'><input name="remark" type="text" class="liuyan" placeholder="{{ordmls.ordml0018}}" /> 
+              </view>
+              </view>
+            <view class='category-icon'>
+        <image  class="icon" src="/images/order-details/icon-jycg.png"></image>
+        </view>   
+            <view class="row-box">                 
+                <!-- <view class='bingoo'> -->
                 <view class="row-label">{{ordmls.ordml0015}}</view>
-                <view class="right-text">{{ordmls.ordml0016}}</view>
+                <view class="gungu">{{ordmls.ordml0016}}</view>
             </view>
             
-        </view>
+            
+       
     <view class="sec-wrap">
         <view class="order-status">
             <view class="icon-box">
@@ -37,18 +43,16 @@
                 <image wx:elif="{{orderDetail.orderInfo.status==1}}" class="icon" src="/images/order-details/icon-ddfh.png"></image>
                 <image wx:elif="{{orderDetail.orderInfo.status==2}}" class="icon" src="/images/order-details/icon-ddsh.png"></image>
                 <image wx:elif="{{orderDetail.orderInfo.status==3 || orderDetail.orderInfo.status==4}}" class="icon" src="/images/order-details/icon-jycg.png"></image>
-                
-                
-                 
+     
             </view>
-             <image class="icon" src="/images/order-details/icon-ddfk.png"></image>
-            <view class="right-text">
+            <view class='boloon'>
+             <image class="huhu-icon" src="/images/order-details/icon-ddfk.png"></image>
+             </view>
+            <view class="rightjjh">
             <view class="des" text="true">{{ordmls.ordml0001}}</view>
                 <view class="status red">{{orderDetail.orderInfo.statusStr}}</view>
-                
                   <!-- <view class="list-title">{{ordmls.ordml0005}}</view> -->
-            </view>
-           
+            </view> 
         </view>
         </view>
         
