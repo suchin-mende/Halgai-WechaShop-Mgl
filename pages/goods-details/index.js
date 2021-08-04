@@ -20,7 +20,6 @@ Page({
     buyNumber: 0,
     buyNumMin: 1,
     buyNumMax: 0,
-
     propertyChildIds: "",
     propertyChildNames: "",
     canSubmit: false, //  选中规格尺寸时候是否允许加入购物车
@@ -97,7 +96,7 @@ Page({
   tobuy: function () {
     this.setData({
       shopType: "tobuy",
-      selectSizePrice: this.data.goodsDetail.basicInfo.minPrice
+      selectSizePrice: this.data.goodsDetail.basicInfo.minPrice,
     });
     this.bindGuiGeTap();
   },
@@ -128,24 +127,6 @@ Page({
     this.setData({
       hideShopPopup: true
     })
-  },
-  numJianTap: function () {
-    if (this.data.buyNumber > this.data.buyNumMin) {
-      var currentNum = this.data.buyNumber;
-      currentNum--;
-      this.setData({
-        buyNumber: currentNum
-      })
-    }
-  },
-  numJiaTap: function () {
-    if (this.data.buyNumber < this.data.buyNumMax) {
-      var currentNum = this.data.buyNumber;
-      currentNum++;
-      this.setData({
-        buyNumber: currentNum
-      })
-    }
   },
   /**
    * 选择商品规格
@@ -512,5 +493,34 @@ Page({
     wx.switchTab({
       url: '/pages/index/index',
     });
+  },
+  addCount: function (e) {
+    var num = this.data.buyNumber;
+    // 总数量-1  
+    if (num < this.data.buyNumMax) {
+      this.data.buyNumber++;
+    }
+    // 将数值与状态写回  
+    this.setData({
+      buyNumber: this.data.buyNumber
+    });
+  },
+  /* 减数 */
+  delCount: function (e) {
+    var num = this.data.buyNumber;
+    // 商品总数量-1
+    if (num > 1) {
+      this.data.buyNumber--;
+    }
+    // 将数值与状态写回  
+    this.setData({
+      buyNumber: this.data.buyNumber
+    });
+  }, 
+  getCount: function (e) {
+    var num = this.data.buyNumber;
+    wx.showToast({
+      title: "数量：" + num + "",
+    })
   }
 })
