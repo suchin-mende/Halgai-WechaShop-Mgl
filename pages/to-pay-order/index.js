@@ -259,7 +259,7 @@ Page({
   },
   addAddress: function () {
     wx.navigateTo({
-      url: "/pages/address-add/index"
+      url: "/pages/select-address/index"
     })
   },
   selectAddress: function () {

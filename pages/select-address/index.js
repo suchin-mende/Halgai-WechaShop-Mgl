@@ -4,9 +4,19 @@ const app = getApp()
 Page({
   data: {
     semls: HalgaiI18.semls,
-    addressList: []
+    addressList: [],
   },
+  radioChange(e) {
+    console.log(e)
+    console.log('radio发生change事件，携带value值为：', e.detail.value)
 
+  },
+  onShareAppMessage() {
+    return {
+      title: 'radio',
+      path: 'page/component/pages/radio/radio'
+    }
+  },
   selectTap: function(e) {
     var id = e.currentTarget.dataset.id;
     HalgaiAPI.updateAddress({
@@ -51,6 +61,9 @@ Page({
       });
       }
     })
+  },
+  editTap: function (){
+    console.log("hhhh")
   }
 
 })
