@@ -15,9 +15,9 @@
     <view class="page-section">
         <view class="weui-cells weui-cells_after-title">
             <radio-group bindchange="radioChange">
-                <label class="weui-cell weui-check__label" wx:for-items="{{addressList}}" wx:key="{{index}}">
+                <label class="weui-cell weui-check__label" wx:for-items="{{addressList}}" wx:key="{{item.id}}">
                     <view class="weui-cell__hd">
-                        <radio value="{{item.id}}" checked="true" />
+                        <radio value="{{item.id}}" checked="{{item.checked}}" />
                     </view>
                     <view class="weui-cell__bd">{{item.linkMan}}</view>
                     <view class="addressEdit" bindtap="editTap">
