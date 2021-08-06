@@ -1,5 +1,5 @@
 <view class="container">
-    <view class="address-list">
+    <!-- <view class="address-list">
         <view class="a-address"  wx:for-items="{{addressList}}" wx:key="{{index}}">
              <view class="left-text {{item.isDefault? 'active':''}}" bindtap="selectTap" data-id="{{item.id}}">
                  <view class="name-tel">
@@ -7,9 +7,30 @@
                  </view>
                  <view class="address-box">
                     {{item.address}}
-                 </view>     
-             </view>   
+                 </view>
+             </view>
              <view class="right-edit" bindtap="editAddess" data-id="{{item.id}}"></view> 
+        </view>
+    </view> -->
+    <view class="page-section">
+        <view class="weui-cells weui-cells_after-title">
+            <radio-group bindchange="radioChange">
+                <label class="weui-cell weui-check__label" wx:for-items="{{addressList}}" wx:key="{{index}}">
+                    <view class="weui-cell__hd">
+                        <radio value="{{item.id}}" checked="true" />
+                    </view>
+                    <view class="weui-cell__bd">{{item.linkMan}}</view>
+                    <view class="addressEdit" bindtap="editTap">
+                     ᠵᠠᠰᠠᠬᠤ
+                    </view>
+                </label>
+            </radio-group>
+        </view>
+        <view class="btn-area" id="buttonContainer">
+            <button bindtap="addAddess" type="default">+ ᠱᠢᠨ᠎ᠡ ᠪᠠᠷ ᠨᠡᠮᠡᠬᠦ᠌</button>
+        </view>
+        <view class="btn-area2" >
+            <button bindtap="saveAddressManager" type="primary">ᠬᠠᠳᠠᠭᠠᠯᠠᠬᠤ</button>
         </view>
     </view>
     <view class="bottom-box">
