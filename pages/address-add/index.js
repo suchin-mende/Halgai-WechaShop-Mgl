@@ -209,7 +209,7 @@ Page({
         address: address,
         mobile: mobile,
         code: code,
-        isDefault: 'true'
+        isDefault: 1
       })
     }
     apiResult.then(function (res) {

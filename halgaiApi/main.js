@@ -193,6 +193,9 @@ module.exports = {
   updateAddress: (data) => {
     return request('/user/shipping-address/update', true, 'post', data)
   },
+  saveDefaultAddress: (data) => {
+    return request('/user/shipping-address/saveDefault', true, 'post', data)
+  },
   deleteAddress: (id, token) => {
     return request('/user/shipping-address/delete', true, 'post', {
       id,

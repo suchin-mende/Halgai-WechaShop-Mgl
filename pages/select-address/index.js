@@ -7,8 +7,13 @@ Page({
     addressList: [],
   },
   radioChange(e) {
-    console.log(e)
-    console.log('radio发生change事件，携带value值为：', e.detail.value)
+    const items = this.data.addressList
+    for (let i = 0, len = items.length; i < len; ++i) {
+      items[i].checked = items[i].id === e.detail.value
+    }
+    this.setData({
+      items:this.data.addressList
+    })
 
   },
   onShareAppMessage() {
@@ -52,8 +57,12 @@ Page({
     var that = this;
     HalgaiAPI.queryAddress(wx.getStorageSync('token')).then(function(res) {
     if (res.code == 0) {
+      const listItems = res.data
+      for (let i = 0, len = listItems.length; i < len; ++i) {
+        listItems[i].checked = listItems[i].isDefault === "1"
+      }
       that.setData({
-      addressList: res.data
+      addressList: listItems
       });
   } else if (res.code == 700) {
       that.setData({
@@ -61,9 +70,25 @@ Page({
       });
       }
     })
+    
   },
   editTap: function (){
     console.log("hhhh")
+  },
+  saveAddressManager: function (){
+    const items = this.data.addressList
+    for (let i = 0, len = items.length; i < len; ++i) {
+      if(items[i].checked){
+        HalgaiAPI.saveDefaultAddress(items[i]).then(function(res) {
+          if (res.code == 0) {
+            wx.showToast({
+              title: '保存成功',
+              icon: 'success',
+              duration: 2000
+            })
+          }
+        })
+      }
+    }
   }
-
 })
