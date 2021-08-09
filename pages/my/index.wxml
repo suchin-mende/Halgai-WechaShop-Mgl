@@ -5,45 +5,67 @@
 		<text class="userinfo-nickname">{{ userInfo.nickName }}</text>
 
     <view class="asset">
-    <view class='item' bindtap='goAsset'>
-      <view class='text'>{{mymls.myml0001}}</view>
-      <view>{{balance}}</view>
+      <view class='item' bindtap='goAsset'>
+        <view class='text'>{{mymls.myml0001}}</view>
+        <view class="text">{{balance}}</view>
+        <view class="text">{{mymls.myml00011}}</view>
+      </view>
+      <view class='item right' bindtap='goScore'>
+        <view class='text'>{{mymls.myml0002}}</view>
+        <view class="text">{{score}}</view>
+        <view class='text'>{{mymls.myml00021}}</view>
+      </view>
     </view>
-    <view class='item right' bindtap='goScore'>
-      <view class='text'>{{mymls.myml0002}}</view>
-      <view>{{score}}</view>
-    </view>
-  </view>
 
 	</view>
 
   <!-- <view style="height:10rpx;background: #eee;width:100%;"></view> -->
-  <view class="my-item-total">
-    <navigator url="/pages/order-list/index" hover-class="navigator-hover">{{mymls.myml0003}}</navigator>
-  </view>
-  <view class='t-order'>
-  <view class='order-shortcut'>
-    <view class='item' bindtap='goOrder' data-type="0">
-      <image class="icon" src="/images/order/topay.png" background-size="cover"></image>
-      <view class='text'>{{mymls.myml0004}}</view>
+  <view id="my-profile">
+    <view class="my-item-total">
+      <navigator url="/pages/order-list/index" hover-class="navigator-hover">{{mymls.myml0003}}</navigator>
     </view>
-    <view class='item' bindtap='goOrder' data-type="1">
-      <image class="icon" src="/images/order/fahuo.png" background-size="cover"></image>
-      <view class='text'>{{mymls.myml0005}}</view>
+    <view class='t-order'>
+      <view class='order-shortcut'>
+        <view class='item' bindtap='goOrder' data-type="0">
+          <image class="icon" src="/images/order/topay.png" background-size="cover"></image>
+          <view class='text'>{{mymls.myml0004}}</view>
+        </view>
+        <view class='item' bindtap='goOrder' data-type="1">
+          <image class="icon" src="/images/order/fahuo.png" background-size="cover"></image>
+          <view class='text'>{{mymls.myml0005}}</view>
+        </view>
+      </view>
+
+      <view class='order-shortcut'>
+        <view class='item' bindtap='goOrder' data-type="2">
+          <image class="icon" src="/images/order/shouhuo.png" background-size="cover"></image>
+          <view class='text'>{{mymls.myml0018}}</view>
+        </view>
+        <view class='item' bindtap='goOrder' data-type="3">
+          <image class="icon" src="/images/order/pj.png" background-size="cover"></image>
+          <view class='text'>{{mymls.myml0006}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view id="my-shop">
+    <view class="my-item-total">
+      <navigator url="/pages/order-list/index" hover-class="navigator-hover">{{mymls.myml0020}}</navigator>
+    </view>
+    <view class='t-order'>
+      <view class='order-shortcut'>
+        <view class='item' bindtap='goOrder' data-type="0">
+          <image class="icon" src="/images/order/topay.png" background-size="cover"></image>
+          <view class='text'>{{mymls.myml0021}}</view>
+        </view>
+        <view class='item' bindtap='goOrder' data-type="1">
+          <image class="icon" src="/images/order/fahuo.png" background-size="cover"></image>
+          <view class='text'>{{mymls.myml0024}}</view>
+        </view>
+      </view>
     </view>
   </view>
 
-  <view class='order-shortcut'>
-    <view class='item' bindtap='goOrder' data-type="2">
-      <image class="icon" src="/images/order/shouhuo.png" background-size="cover"></image>
-      <view class='text'>{{mymls.myml0018}}</view>
-    </view>
-    <view class='item' bindtap='goOrder' data-type="3">
-      <image class="icon" src="/images/order/pj.png" background-size="cover"></image>
-      <view class='text'>{{mymls.myml0006}}</view>
-    </view>
-  </view>
-</view>
 </view>
 
 <view class='t-item'>
@@ -66,8 +88,6 @@
   <view class="my-item" wx:if="{{vipLevel > 0}}">
     <navigator url="/pages/maidan/index" hover-class="navigator-hover">{{mymls.myml0010}}</navigator>
   </view>
-
-
 
   <view class="my-item">
     <navigator url="/pages/asset/index" hover-class="navigator-hover">{{mymls.myml0011}}</navigator>

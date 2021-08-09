@@ -11,6 +11,17 @@
   padding-bottom: 50rpx;
 }
 
+/* #my-profile {
+  height: 100%;
+  float: left;
+  flex-direction: column;
+}
+
+#my-shop {
+  float: right;
+  flex-direction: column;
+} */
+
 .userinfo {
 	display: flex;
 	flex-direction: column;
@@ -28,9 +39,9 @@
 
 .asset {
   display: flex;
-  padding-top: 20rpx;
-  padding-bottom: 20rpx;
-  margin-top: 130rpx;
+  /* padding-top: 20rpx;
+  padding-bottom: 20rpx; */
+  margin-top: 10rpx;
 }
 .asset .item {
   display: flex;
