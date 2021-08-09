@@ -134,13 +134,12 @@ Page({
    */
   labelItemTap: function (e) {
     var that = this;
-    /*
     console.log(e)
     console.log(e.currentTarget.dataset.propertyid)
     console.log(e.currentTarget.dataset.propertyname)
     console.log(e.currentTarget.dataset.propertychildid)
     console.log(e.currentTarget.dataset.propertychildname)
-    */
+
     // 取消该分类下的子栏目所有的选中状态
     var childs = that.data.goodsDetail.properties[e.currentTarget.dataset.propertyindex].childsCurGoods;
     for (var i = 0; i < childs.length; i++) {
@@ -149,21 +148,36 @@ Page({
     // 设置当前选中状态
     that.data.goodsDetail.properties[e.currentTarget.dataset.propertyindex].childsCurGoods[e.currentTarget.dataset.propertychildindex].active = true;
     // 获取所有的选中规格尺寸数据
-    var needSelectNum = that.data.goodsDetail.properties.length;
+    var needSelectNum = this.JSONLength(that.data.goodsDetail.properties);
     var curSelectNum = 0;
     var propertyChildIds = "";
     var propertyChildNames = "";
-    for (var i = 0; i < that.data.goodsDetail.properties.length; i++) {
-      childs = that.data.goodsDetail.properties[i].childsCurGoods;
+    for(var index in that.data.goodsDetail.properties){
+      childs = that.data.goodsDetail.properties[index].childsCurGoods;
       for (var j = 0; j < childs.length; j++) {
         if (childs[j].active) {
           curSelectNum++;
-          propertyChildIds = propertyChildIds + that.data.goodsDetail.properties[i].id + ":" + childs[j].id + ",";
-          propertyChildNames = propertyChildNames + that.data.goodsDetail.properties[i].name + ":" + childs[j].name + "  ";
+          propertyChildIds = propertyChildIds + that.data.goodsDetail.properties[index].id + ":" + childs[j].id + ",";
+          propertyChildNames = propertyChildNames + that.data.goodsDetail.properties[index].name + ":" + childs[j].name + "  ";
         }
       }
     }
+    // for (var i = 0; i < this.JSONLength(that.data.goodsDetail.properties); i++) {
+    //   console.log("for first")
+    //   childs = that.data.goodsDetail.properties[i].childsCurGoods;
+    //   for (var j = 0; j < childs.length; j++) {
+    //     console.log("for second")
+    //     if (childs[j].active) {
+    //       curSelectNum++;
+    //       console.log('curSelectNum in for',curSelectNum)
+    //       propertyChildIds = propertyChildIds + that.data.goodsDetail.properties[i].id + ":" + childs[j].id + ",";
+    //       propertyChildNames = propertyChildNames + that.data.goodsDetail.properties[i].name + ":" + childs[j].name + "  ";
+    //     }
+    //   }
+    // }
     var canSubmit = false;
+    console.log('propertyChildIds',propertyChildIds)
+    console.log('propertyChildNames',propertyChildNames)
     if (needSelectNum == curSelectNum) {
       canSubmit = true;
     }
@@ -522,5 +536,15 @@ Page({
     wx.showToast({
       title: "数量：" + num + "",
     })
-  }
+  },
+  JSONLength: function (obj) {
+    var size = 0;
+    var key;
+    for (key in obj) {   //obj中存在几个关键字
+        if (obj.hasOwnProperty(key)) 
+        size++;
+    }
+    return size;
+}
+
 })
