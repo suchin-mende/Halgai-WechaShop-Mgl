@@ -29,7 +29,10 @@
     "pages/fx/apply-status",
     "pages/fx/members",
     "pages/fx/commisionLog",
-    "pages/board/board"
+    "pages/board/board",
+    "pages/33",
+    "pages/open-shop/index",
+    "pages/shop-type/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

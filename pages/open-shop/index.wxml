@@ -1,0 +1,34 @@
+<!--pages/open-shop/index.wxml-->
+<scroll-view scroll-x="true" class="content">
+  <view class="page-body">
+    <view class="title">ᠳᠡᠯᠭᠡᠭᠦᠷ  ᠨᠡᠭᠡᠭᠡᠬᠦ᠌</view>
+    <form catchsubmit="formSubmit" catchreset="formReset">
+      
+      <view class="section">
+      <view class="page-section">
+        <view class="page-section-title">ᠳᠡᠯᠭᠡᠭᠦᠷ᠎ ᠦᠨ ᠨᠡᠷ᠎ᠡ</view>
+        <input  />
+      </view>
+      <view class="page-section">
+        <view class="page-section-title">ᠳᠡᠯᠭᠡᠬᠦᠷ ᠎ᠦᠨ  ᠬᠠᠮᠢᠶᠠᠷᠤᠭᠴᠢ</view>
+        <input  />
+      </view>
+      <view class="page-section">
+        <view class="page-section-title"> ᠬᠠᠮᠢᠶᠠᠷᠤᠭᠴᠢ ᠎ᠶᠢᠨ  ᠪᠡᠶ᠎ᠡ ᠎ᠶᠢᠨ  ᠦᠨᠡᠮᠯᠡᠯ</view>
+        <input  />
+      </view>
+      <view class="page-section">
+        <view class="page-section-title"> ᠬᠠᠮᠢᠶᠠᠷᠤᠭᠴᠢ ᠎ᠶᠢᠨ  ᠤᠲᠠᠰᠤ</view>
+        <input  />
+      </view>
+      <view class="page-section">
+        <view class="page-section-title"> ᠱᠢᠯᠭᠠᠨ  ᠨᠤᠲᠠᠯᠠᠬᠤ  ᠨᠤᠮᠧᠷ</view>
+        <input  />
+      </view>
+      <view class="btn-area">
+        <button style="" type="primary" formType="submit"> ᠳᠤᠱᠢᠶᠠᠬᠤ</button>
+      </view>
+    </view>
+    </form>
+  </view>
+</scroll-view>
