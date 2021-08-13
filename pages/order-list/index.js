@@ -11,10 +11,12 @@ Page({
   },
   statusTap: function(e) {
     const curType = e.currentTarget.dataset.index;
+    console.log(e)
     this.data.currentType = curType
     this.setData({
     currentType: curType
     });
+    console.log('this',this)
     this.onShow();
   },
   orderDetail: function(e) {
@@ -150,19 +152,38 @@ Page({
   },
   onShow: function() {
     // 获取订单列表
+    console.log('thisOrder',this.data.orderList)
     var that = this;
     var postData = {
       token: wx.getStorageSync('token')
     };
     postData.status = that.data.currentType;
+    console.log('postData',postData)
     this.getOrderStatistics();
     HalgaiAPI.orderList(postData).then(function(res) {
+      console.log('res',res)
       if (res.code == 0) {
+        let newOrderList=[];
+        //遍历orderList 如果that.data.currentType==res.data.oderList里面的status 便赋值
+        for (let i = 0, len = res.data.orderList.length; i < len; ++i) {
+          if(res.data.orderList[i].status == that.data.currentType){
+            newOrderList.push(res.data.orderList[i]); 
+          }
+        }
+        console.log('newOrderList',newOrderList)
+        
         that.setData({
-          orderList: res.data.orderList,
+          orderList: newOrderList,
           logisticsMap: res.data.logisticsMap,
           goodsMap: res.data.goodsMap
         });
+        if(newOrderList.length<1){
+            that.setData({
+            orderList: null,
+            logisticsMap: {},
+            goodsMap: {}
+          })
+        }
       } else {
         that.setData({
           orderList: null,
@@ -171,6 +192,7 @@ Page({
         });
       }
     })
+
   },
   onHide: function() {
     // 生命周期函数--监听页面隐藏

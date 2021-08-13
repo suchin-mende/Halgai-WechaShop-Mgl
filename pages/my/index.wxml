@@ -54,7 +54,7 @@
     </view>
     <view class='t-order'>
       <view class='order-shortcut'>
-        <view class='item' bindtap='goOrder' data-type="0">
+        <view class='item' bindtap='goOpenShop' data-type="0">
           <image class="icon" src="/images/order/topay.png" background-size="cover"></image>
           <view class='text'>{{mymls.myml0021}}</view>
         </view>

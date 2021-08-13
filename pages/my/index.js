@@ -112,5 +112,10 @@ Page({
     wx.navigateTo({
       url: "/pages/order-list/index?type=" + e.currentTarget.dataset.type
     })
+  },
+  goOpenShop: function(){
+    wx.navigateTo({
+      url: '/pages/open-shop/index',
+    })
   }
 })

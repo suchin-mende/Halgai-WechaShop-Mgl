@@ -1,0 +1,54 @@
+/* pages/open-shop/index.wxss */
+page {
+  height: 100%;
+}
+.content{
+  background-color: #F2f2f2;
+  height: 100%;
+  width: auto;
+}
+.page-body {
+  height: 100%;
+  display: flex;
+}
+.section {
+  display: flex;
+  height: 100%;
+  margin: 63rpx;
+  padding: 50rpx;
+  background: white;
+  border-radius: 25rpx;
+}
+.page-section {
+  display: flex;
+  width: 150rpx;
+  position: relative;
+}
+.page-section-title {
+  writing-mode: vertical-lr;
+}
+input {
+  transform-origin: left bottom;
+  transform: rotate(90deg);
+  width: 45vh;
+  left: 65rpx;
+  position: absolute;
+    padding: 10rpx;
+    outline-style: none ;
+    border: 1px solid #ccc; 
+    border-radius: 3px;
+}
+button {
+  width: 65rpx;
+  line-height: 20rpx;
+  height: 150rpx;
+  writing-mode: vertical-lr;
+  margin: 0px;
+  margin-top: 490rpx;
+  margin-left: 50rpx;
+}
+.title {
+  writing-mode: vertical-lr;
+  margin-top: 8%;
+  font-size: 52rpx;
+}

@@ -1,0 +1,6 @@
+<!--pages/open-shop/index.wxml-->
+<scroll-view scroll-x="true" class="content">
+  <view class="page-body">
+    <view class="title"> ᠳᠡᠯᠭᠡᠭᠦᠷ ᠎ᠦᠨ  ᠲᠥᠷᠦᠯ  ᠵᠦᠢᠯ</view>
+  </view>
+</scroll-view>
