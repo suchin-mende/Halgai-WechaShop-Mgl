@@ -1,0 +1,47 @@
+<!--pages/open-shop/index.wxml-->
+<view class="content">
+  <view wx:if="{{registType==0}}" class="page-body">
+    <form style="width: 100%;" catchsubmit="formSubmit" catchreset="formReset">
+      <view class="section">
+        <view class="page-section">
+          <view class="page-section-title"> ᠵᠢᠩᠭᠨᠢ ᠨᠡᠷ᠎ᠡ ᠄</view>
+          <input />
+        </view>
+        <view class="page-section">
+          <view class="page-section-title"> ᠪᠡᠶ᠎ᠡ ᠎ᠶᠢᠨ  ᠦᠨᠡᠮᠯᠡᠯ ᠄</view>
+          <input />
+        </view>
+        <view class="btn-area">
+          <button style="" type="primary" formType="submit">  ᠵᠢᠩᠭᠢᠨᠢ  ᠨᠡᠷ᠎ᠡ ᠎ᠶᠢᠨ  ᠬᠢᠨᠠᠯᠲᠠ  ᠬᠢᠬᠦ᠌ </button>
+        </view>
+      </view>
+    </form>
+  </view>
+  <view wx:if="{{registType==1}}" class="page-body">
+    <form style="width: 100%;" catchsubmit="formSubmit" catchreset="formReset">
+      <view class="section">
+        <view class="page-section">
+          <view class="page-section-title">  ᠺᠤᠮᠫᠠᠨᠢ ᠎ᠶᠢᠨ  ᠦᠨᠡᠮᠯᠡᠯ ᠄</view>
+          <input />
+        </view>
+        <view class="page-section">
+          <view class="page-section-title">  ᠬᠠᠷᠢᠭᠤᠴᠠᠭᠴᠢ ᠄</view>
+          <input />
+        </view>
+        <view class="page-section">
+          <view class="page-section-title">  ᠬᠠᠷᠢᠯᠴᠠᠬᠤ  ᠠᠷᠭ᠎ᠠ ᠄</view>
+          <input />
+        </view>
+        <view style="flex-direction: column;" class="page-section">
+          <label class="checkbox">
+            <checkbox value="cb" checked="true" />
+          </label>
+          <view class="page-section-detail" bindtap="goDetail">ᠭᠡᠷ᠎ᠡ （  ᠡᠨᠳᠡ  ᠳᠤᠶᠠᠵᠤ  ᠪᠤᠳᠠᠲᠠᠢ  ᠠᠭᠤᠯᠭ᠎ᠠ ᠎ᠶᠢ  ᠦᠵᠡᠭᠡᠷᠡᠢ ）</view>
+        </view>
+        <view class="btn-area">
+          <button style="" type="primary" formType="submit">   ᠳᠡᠯᠭᠡᠭᠦᠷ  ᠨᠡᠭᠡᠭᠡᠬᠦ᠌ </button>
+        </view>
+      </view>
+    </form>
+  </view>
+</view>

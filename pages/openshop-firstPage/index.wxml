@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="page-section" style="background: greenyellow;">
+    <view class="button-view">
+      <button bindtap="openShop">ᠳᠡᠯᠭᠡᠭᠦᠷ ᠨᠡᠭᠡᠭᠡᠬᠦ᠌</button>
+    </view>
+  </view>
+  <view class="page-section" style="background: hotpink;display: flex;justify-content: space-evenly;">
+    <view class="text-box" wx:for="{{text}}" wx:key="index" >
+      <text>{{item}}</text>
+    </view>
+  </view>
+</view>
