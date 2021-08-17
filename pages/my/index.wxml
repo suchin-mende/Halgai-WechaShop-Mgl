@@ -58,7 +58,7 @@
           <image class="icon" src="/images/order/topay.png" background-size="cover"></image>
           <view class='text'>{{mymls.myml0021}}</view>
         </view>
-        <view class='item' bindtap='goOrder' data-type="1">
+        <view class='item' bindtap='goMyshop' data-type="1">
           <image class="icon" src="/images/order/fahuo.png" background-size="cover"></image>
           <view class='text'>{{mymls.myml0024}}</view>
         </view>

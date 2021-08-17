@@ -35,7 +35,8 @@
     "pages/openshop-firstPage/index",
     "pages/openshop-secondPage/index",
     "pages/openshop-detailPage/index",
-    "pages/openshop-finalPage/index"
+    "pages/openshop-finalPage/index",
+    "pages/myshop/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

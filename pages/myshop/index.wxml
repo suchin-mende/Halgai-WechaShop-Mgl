@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="page-section" style="position: relative;">
+    <view class="title">ᠲᠠᠸᠠᠷ ᠎ᠤᠨ  ᠵᠢᠷᠤᠭ</view>
+    <view hidden="{{tempFilePaths}}" class="button-view" bindtap="openCamera">
+    <image src="/images/camera.svg"></image>
+    </view>
+  </view>
+  <view class="page-section" style="background: hotpink;display: flex;justify-content: space-evenly;">
+    <view class="text-box" wx:for="{{text}}" wx:key="index" >
+      <text>{{item}}</text>
+    </view>
+  </view>
+</view>

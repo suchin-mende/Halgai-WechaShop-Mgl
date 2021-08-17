@@ -1,0 +1,43 @@
+/* pages/openshop-firstPage/index.wxss */
+page {
+  height: 100%;
+}
+.page-section {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+.button-view {
+  writing-mode: vertical-lr;
+  margin: auto;
+  width: 70%;
+  height: 70%;
+  border: black 2px dashed;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: center;
+}
+.button-view > image {
+  width: 100%;
+}
+button {
+  height: 100rpx;
+  width: 200rpx;
+  display: flex;
+  align-items: center;
+}
+text {
+  writing-mode: vertical-lr;
+}
+.text-box {
+  margin: auto;
+  margin-top: 20rpx;
+}
+.photo-box {
+}
+.title {
+  writing-mode: vertical-lr;
+  position: absolute;
+  font-size: 60rpx;
+  top: 30%;
+}
