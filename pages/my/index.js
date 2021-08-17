@@ -115,7 +115,7 @@ Page({
   },
   goOpenShop: function(){
     wx.navigateTo({
-      url: '/pages/open-shop/index',
+      url: '/pages/openshop-firstPage/index',
     })
   }
 })

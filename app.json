@@ -30,9 +30,12 @@
     "pages/fx/members",
     "pages/fx/commisionLog",
     "pages/board/board",
-    "pages/33",
     "pages/open-shop/index",
-    "pages/shop-type/index"
+    "pages/shop-type/index",
+    "pages/openshop-firstPage/index",
+    "pages/openshop-secondPage/index",
+    "pages/openshop-detailPage/index",
+    "pages/openshop-finalPage/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

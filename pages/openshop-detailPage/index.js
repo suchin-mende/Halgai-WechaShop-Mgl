@@ -1,4 +1,4 @@
-// pages/shop-type/index.js
+// pages/openshop-detailPage/index.js
 Page({
 
   /**
@@ -63,10 +63,4 @@ Page({
   onShareAppMessage: function () {
 
   },
-  payMoney: function(){
-    
-  },
-  choseOne: function(e){
-    console.log(e);
-  }
 })

@@ -1,4 +1,4 @@
-// pages/shop-type/index.js
+// pages/openshop-finalPage/index.js
 Page({
 
   /**
@@ -12,7 +12,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      registType:options.registType
+    })
   },
 
   /**
@@ -63,10 +65,17 @@ Page({
   onShareAppMessage: function () {
 
   },
-  payMoney: function(){
-    
+  formSubmit(e) {
+
+    // console.log('form发生了submit事件，携带数据为：', e.detail.value)
+    // wx.navigateTo({
+    //   url: '/pages/shop-type/index',
+    // })
+    this.goChoseShopType()
   },
-  choseOne: function(e){
-    console.log(e);
+  goChoseShopType:function (){
+    wx.navigateTo({
+      url: '/pages/shop-type/index',
+    })
   }
 })

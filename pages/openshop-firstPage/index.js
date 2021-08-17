@@ -1,11 +1,14 @@
-// pages/33.js
+// pages/openshop-firstPage/index.js
+// const texts = ["1.ᠲᠥᠯᠥᠪᠦᠷᠢ  ᠦᠭᠡᠢ  ᠳᠡᠯᠭᠡᠭᠦᠷ  ᠨᠡᠭᠡᠭᠡᠬᠦ᠌","2.40 ᠲᠦᠮᠡᠨ  ᠬᠡᠷᠡᠭᠯᠡᠭᠴᠢ ᠵᠠᠷ  ᠲᠠᠢ","3.ᠱᠢᠨ᠎ᠡ  ᠳᠡᠯᠭᠡᠭᠦᠷ  ᠬᠢᠮᠳᠠᠷᠠᠯ  ᠲᠠᠢ"],
+
 Page({
+  
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    text: ["1. ᠲᠥᠯᠥᠪᠦᠷᠢ  ᠦᠭᠡᠢ  ᠳᠡᠯᠭᠡᠭᠦᠷ  ᠨᠡᠭᠡᠭᠡᠬᠦ᠌ ","2. 40 ᠲᠦᠮᠡᠨ  ᠬᠡᠷᠡᠭᠯᠡᠭᠴᠢ ᠵᠠᠷ  ᠲᠠᠢ","3.  ᠱᠢᠨ᠎ᠡ  ᠳᠡᠯᠭᠡᠭᠦᠷ  ᠬᠢᠮᠳᠠᠷᠠᠯ  ᠲᠠᠢ"],
   },
 
   /**
@@ -62,5 +65,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  openShop: function () {
+    wx.navigateTo({
+      url: '/pages/openshop-secondPage/index',
+    })
   }
 })

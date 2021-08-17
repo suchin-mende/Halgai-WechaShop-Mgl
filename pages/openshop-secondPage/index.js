@@ -1,4 +1,4 @@
-// pages/shop-type/index.js
+// pages/openshop-secondPage/index.js
 Page({
 
   /**
@@ -63,10 +63,20 @@ Page({
   onShareAppMessage: function () {
 
   },
-  payMoney: function(){
-    
+  goDetail: function () {
+    wx.navigateTo({
+      url: '/pages/openshop-detailPage/index',
+    })
   },
-  choseOne: function(e){
-    console.log(e);
+  goPerson:function () {
+    
+    wx.navigateTo({
+      url: '/pages/open-shop/index?registType=0',
+    })
+  },
+  goCompany: function () {
+    wx.navigateTo({
+      url: '/pages/open-shop/index?registType=1',
+    })
   }
 })

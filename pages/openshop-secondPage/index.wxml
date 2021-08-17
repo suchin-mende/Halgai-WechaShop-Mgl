@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="page-section" style="background: rgb(209, 245, 155);">
+    <view class="button-view">
+      <button bindtap="goPerson"> ᠬᠤᠪᠢ  ᠬᠦᠮᠦᠨ</button>
+      <button bindtap="goCompany">  ᠺᠤᠮᠫᠠᠨᠢ </button>
+      <text class="detailText" bindtap="goDetail">  ᠳᠡᠯᠭᠡᠭᠦᠷ  ᠨᠡᠭᠡᠭᠡᠬᠦ᠌  ᠨᠠᠷᠢᠨ  ᠠᠯᠬᠤᠮ  ᠳᠠᠷᠠᠭ᠎ᠠ</text>
+    </view>
+  </view>
+  <view class="page-section" style="background: rgb(255, 161, 208);">
+   <text class="jarText"> ᠵᠠᠷ </text>
+  </view>
+</view>

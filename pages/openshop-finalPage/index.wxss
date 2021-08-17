@@ -38,7 +38,7 @@ input {
 button {
   width: 65rpx;
   line-height: 20rpx;
-  height: 150rpx;
+  height: 260rpx;
   writing-mode: vertical-lr;
   margin: 0px;
   margin-top: 490rpx;

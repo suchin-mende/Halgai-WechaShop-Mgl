@@ -1,0 +1,26 @@
+/* pages/openshop-firstPage/index.wxss */
+page {
+  height: 100%;
+}
+.page-section {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+.button-view {
+  writing-mode: vertical-lr;
+  margin: auto;
+}
+button {
+  height: 100rpx;
+  width: 200rpx;
+  display: flex;
+  align-items: center;
+}
+text {
+  writing-mode: vertical-lr;
+}
+.text-box {
+  margin: auto;
+  margin-top: 20rpx;
+}
