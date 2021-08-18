@@ -1,13 +1,26 @@
 <view class="container">
-  <view class="page-section" style="position: relative;">
-    <view class="title">ᠲᠠᠸᠠᠷ ᠎ᠤᠨ  ᠵᠢᠷᠤᠭ</view>
-    <view hidden="{{tempFilePaths}}" class="button-view" bindtap="openCamera">
-    <image src="/images/camera.svg"></image>
+  <view hidden="{{tempFilePaths.length>0}}" class="page-section" style="position: relative;">
+    <view class="title">ᠲᠠᠸᠠᠷ ᠎ᠤᠨ ᠵᠢᠷᠤᠭ</view>
+    <view class="button-view" bindtap="openCamera">
+      <image src="/images/camera.svg"></image>
     </view>
   </view>
+  <view hidden="{{!tempFilePaths.length>0}}" class="page-section" style="position: relative;">
+    <view class="page-image">
+      <view style="position: relative;" wx:for="{{tempFilePaths}}" wx:key='index'>
+        <image class="img" src="{{item}}"></image>
+        <image bindtap="delImage" data-smile="{{index}}" class="del-img" src="/images/del-white.svg"></image>
+      </view>
+      <view hidden="{{tempFilePaths.length>=9}}" class="img-add" bindtap="openCamera">
+        <image src="/images/add.svg"></image>
+      </view>
+    </view>
+  </view>
+
   <view class="page-section" style="background: hotpink;display: flex;justify-content: space-evenly;">
-    <view class="text-box" wx:for="{{text}}" wx:key="index" >
-      <text>{{item}}</text>
+    <view class="section">
+      <button bindtap="showpicker">自定义picker</button>
+      <custom-picker id="custom-picker" list="{{typeList}}" bind:lefttap='_lefttap' bind:righttap='_righttap' bindcancel="_cancel"/>
     </view>
   </view>
 </view>

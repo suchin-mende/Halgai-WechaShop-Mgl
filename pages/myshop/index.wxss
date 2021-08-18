@@ -41,3 +41,33 @@ text {
   font-size: 60rpx;
   top: 30%;
 }
+.img , .img-add {
+  width: 200rpx;
+  height: 150rpx;
+  margin: 20rpx 14rpx;
+}
+.page-image {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: baseline;
+  width: 90%;
+  margin: auto;
+}
+.img-add {
+  display: flex;
+  border: 2px #707070 dashed;
+  width: 190rpx;
+  border-radius: 20rpx;
+}
+.img-add > image {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+.del-img {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 15rpx;
+  top: 22rpx;
+}
