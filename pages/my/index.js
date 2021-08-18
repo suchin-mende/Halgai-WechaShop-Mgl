@@ -117,5 +117,10 @@ Page({
     wx.navigateTo({
       url: '/pages/openshop-firstPage/index',
     })
+  },
+  goMyshop: function () {
+    wx.navigateTo({
+      url: '/pages/myshop/index',
+    })
   }
 })
