@@ -1,4 +1,4 @@
-<view class="container">
+<view hidden="{{show}}" class="container">
   <view hidden="{{tempFilePaths.length>0}}" class="page-section" style="position: relative;">
     <view class="title">ᠲᠠᠸᠠᠷ ᠎ᠤᠨ ᠵᠢᠷᠤᠭ</view>
     <view class="button-view" bindtap="openCamera">
@@ -17,10 +17,24 @@
     </view>
   </view>
 
-  <view class="page-section" style="background: hotpink;display: flex;justify-content: space-evenly;">
+  <view class="page-section" style="border-top: solid 1px #707070;display: flex;justify-content: space-evenly;">
     <view class="section">
-      <button bindtap="showpicker">自定义picker</button>
-      <custom-picker id="custom-picker" list="{{typeList}}" bind:lefttap='_lefttap' bind:righttap='_righttap' bindcancel="_cancel"/>
+      <view class="typetitle">ᠲᠠᠸᠠᠷ ᠎ᠤᠨ ᠲᠥᠷᠦᠯ ᠵᠦᠢᠯ ：
+        <input bindtap="showpicker" placeholder=" ᠰᠥᠩᠭᠤᠬᠤ" value="{{type}}"></input>
+      </view>
+      <custom-picker id="custom-picker" list="{{typeList}}" bind:lefttap='_lefttap' bind:righttap='_righttap'
+        bindcancel="_cancel" />
+      <view class="contentPart">
+        <view class="contentTitle"> ᠲᠠᠢᠯᠪᠤᠷᠢ ᠄</view>
+        <view bindtap="editContent" data-position="center" class="content">{{textContent}}</view>
+        <button class="confirm"> ᠲᠤᠱᠢᠶᠠᠬᠤ</button>
+      </view>
     </view>
   </view>
+</view>
+<view hidden="{{!show}}">
+<view>
+  <textarea bindblur="textAreaUnfocus"></textarea>
+  <button class="exitButton" bindtap="exit"> ᠪᠤᠴᠠᠬᠤ</button>
+</view>
 </view>

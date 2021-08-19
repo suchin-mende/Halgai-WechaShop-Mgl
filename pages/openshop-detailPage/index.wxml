@@ -1,2 +1,8 @@
-<!--pages/openshop-detailPage/index.wxml-->
-<text>pages/openshop-detailPage/index.wxml</text>
+<view hidden="{{resultType=='0'?false:true}}" class="opsResultpage">
+<view class="title"> ᠬᠢᠨᠠᠯᠲᠠ᠎ᠶᠢᠨ ᠳᠤᠨᠢᠭ ᠵᠠ ᠲᠦᠷ ᠬᠦᠯᠢᠶᠡᠭᠡᠷᠡᠢ ！</view>
+<button class="" bindtap="backPer"> ᠪᠤᠴᠠᠬᠤ</button>
+</view>
+<view hidden="{{resultType=='1'?false:true}}" class="opsResultpage">
+<view class="title">  ᠭᠡᠷ᠎ᠡ ᠵᠢᠨ ᠠᠭᠤᠯᠭ᠎ᠠ</view>
+<button class="" bindtap="backPer"> ᠪᠤᠴᠠᠬᠤ</button>
+</view>
