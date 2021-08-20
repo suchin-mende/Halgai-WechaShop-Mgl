@@ -22,7 +22,6 @@ Component({
     value: [0],
     typeList: [],
     type:'',
-    current: 1900,
     dialogh: 0
   },
   attached: function () {
@@ -64,29 +63,14 @@ Component({
   methods: {
     bindChange: function (e) {
       const val = e.detail.value
-      console.log(val)
       that.setData({
-        year: this.data.years[val[0]]
+        type: this.data.typeList[val[0]]
       })
     },
     showDialog(typeList){
-      console.log("先到这里啦",typeList)
-
       that.setData({
         isShow: true
       })
-      var currentindex = 0
-      that.data.typeList.forEach(function(v,i,s){
-        if(current == v){
-          currentindex = i
-        }
-      })
-      that.setData({
-        [`value[0]`] : currentindex,
-        year: that.data.years[currentindex],
-        typeList: typeList
-      })
-
       that.animation.translateY(that.data.dialogh).translateY(0).step()
       that.setData({animation: that.animation.export()})
     },
@@ -109,7 +93,7 @@ Component({
     },
     righttap(){
       this.triggerEvent("righttap",{
-        year: that.data.year
+        type: that.data.type
       })
       that.dimsss()
     }

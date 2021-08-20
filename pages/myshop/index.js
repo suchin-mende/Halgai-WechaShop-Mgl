@@ -6,6 +6,7 @@ Page({
    */
   data: { 
     typeList:["ᠥᠮᠦᠳᠦ"," ᠳᠡᠪᠡᠯ"," ᠱᠠᠬᠠᠢ"," ᠮᠠᠯᠠᠭᠠᠢ"," ᠬᠦᠵᠦᠭᠦᠪᠴᠢ"],
+    show:false,
   },
 
   /**
@@ -26,7 +27,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
   },
 
   /**
@@ -105,26 +105,32 @@ Page({
     that.picker.showDialog(that.data.typeList)
   },
   _lefttap(){
-    wx.showToast({
-      title: '左边按钮被点击',
-      icon: 'none'
+    this.setData({
+      type:''
     })
   },
   _righttap(e){
     var that = this
-    var year = e.detail.year
-    wx.showToast({
-      title: '右边按钮被点击,选择的值为：'+year,
-      icon: 'none'
-    })
-    that.setData({
-      current:year
-    })
+    var type = e.detail.type
+   this.setData({
+     type:type
+   })
   },
   _cancel(){
-    wx.showToast({
-      title: 'picker被取消',
-      icon: 'none'
+  },
+  editContent:function (){
+    this.setData({
+      show:true
+    })
+  },
+  exit:function (){
+    this.setData({
+      show:false
+    })
+  },
+  textAreaUnfocus:function(e){
+    this.setData({
+      textContent:e.detail.value
     })
   }
 })
