@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    chosen:1,
   },
 
   /**
@@ -26,7 +26,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.setData({
+      chosen:chosen
+    })
   },
 
   /**
@@ -64,9 +66,29 @@ Page({
 
   },
   payMoney: function(){
-    
+    wx.navigateBack()
   },
   choseOne: function(e){
     console.log(e);
-  }
+  },
+  baiyin: function(){
+    this.setData({
+      chosen:1
+    })
+  },
+  huangjin: function(){
+    this.setData({
+      chosen:2
+    })
+  },
+  bojin: function(){
+    this.setData({
+      chosen:3
+    })
+  },
+  zuanshi: function(){
+    this.setData({
+      chosen:4
+    })
+  },
 })

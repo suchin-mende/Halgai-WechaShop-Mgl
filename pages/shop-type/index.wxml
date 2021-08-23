@@ -1,8 +1,8 @@
 <!--pages/open-shop/index.wxml-->
 <view class="content">
   <view class="page-body">
-    <view class="title"> ᠳᠡᠯᠭᠡᠭᠦᠷ ᠎ᠦᠨ ᠲᠥᠷᠦᠯ ᠵᠦᠢᠯ</view>
-    <view class="content-right">
+    <!-- <view class="title"> ᠳᠡᠯᠭᠡᠭᠦᠷ ᠎ᠦᠨ ᠲᠥᠷᠦᠯ ᠵᠦᠢᠯ</view> -->
+    <!-- <view class="content-right">
       <radio-group name="radio">
       <label class="shopCard" bindtap="choseOne">
         <radio style="margin: 20rpx;" value="radio1"/>
@@ -17,11 +17,96 @@
         <view class="shopTypecon" style="background: green;"></view>
       </label>
     </radio-group>
+    </view> -->
+    <view class="content-leftall">
+      <view class="navtitle">
+        <view class="nav" bindtap="baiyin" style="background: {{chosen==1?'white':'unset'}};">白银</view>
+        <view class="nav" bindtap="huangjin" style="background: {{chosen===2?'white':'unset'}};">黄金</view>
+        <view class="nav" bindtap="bojin" style="background: {{chosen===3?'white':'unset'}};">铂金</view>
+        <view class="nav" bindtap="zuanshi" style="background: {{chosen===4?'white':'unset'}};">钻石</view>
+      </view>
+      <view class="content-leftl" style=""></view>
+      <view class="content-leftr" style=""></view>
+    </view>
+
+    <view class="content-right1" style="background: white;">
+      <view class="content-right" hidden="{{chosen!=1}}">
+      <view class="discription">ᠡᠨᠡ ᠪᠣᠯ ᠳᠤᠳᠤᠷᠬᠠᠢᠯᠠᠬᠤ ᠲᠠᠢᠯᠪᠤᠷᠢ᠎ᠶ ᠎ᠢ ᠢᠯᠡᠷᠡᠭᠦᠯᠬᠦ᠌ ᠭᠠᠵᠠᠷ ᠪᠤᠯᠤᠨ᠎ᠠ ᠡᠨᠡ ᠪᠣᠯ ᠳᠤᠳᠤᠷᠬᠠᠢᠯᠠᠬᠤ ᠲᠠᠢᠯᠪᠤᠷᠢ᠎ᠶ ᠎ᠢ ᠢᠯᠡᠷᠡᠭᠦᠯᠬᠦ᠌ ᠭᠠᠵᠠᠷ ᠪᠤᠯᠤᠨ᠎ᠠ ᠡᠨᠡ ᠪᠣᠯ ᠳᠤᠳᠤᠷᠬᠠᠢᠯᠠᠬᠤ ᠲᠠᠢᠯᠪᠤᠷᠢ᠎ᠶ ᠎ᠢ ᠢᠯᠡᠷᠡᠭᠦᠯᠬᠦ᠌ ᠭᠠᠵᠠᠷ ᠪᠤᠯᠤᠨ᠎ᠠ</view>
+        <radio-group name="radio">
+          <label class="shopCard" bindtap="choseOne">
+            <radio style="margin: 20rpx;" value="radio1" />
+            <view class="shopTypecon" style="background: green;"></view>
+          </label>
+          <label class="shopCard" bindtap="choseOne">
+            <radio style="margin: 20rpx;" value="radio1" />
+            <view class="shopTypecon" style="background: green;"></view>
+          </label>
+          <label class="shopCard" bindtap="choseOne">
+            <radio style="margin: 20rpx;" value="radio1" />
+            <view class="shopTypecon" style="background: green;"></view>
+          </label>
+        </radio-group>
+      </view>
+
+      <view class="content-right" hidden="{{chosen!=2}}">
+      <view class="discription">ᠡᠨᠡ ᠪᠣᠯ ᠳᠤᠳᠤᠷᠬᠠᠢᠯᠠᠬᠤ ᠲᠠᠢᠯᠪᠤᠷᠢ᠎ᠶ ᠎ᠢ ᠢᠯᠡᠷᠡᠭᠦᠯᠬᠦ᠌ ᠭᠠᠵᠠᠷ ᠪᠤᠯᠤᠨ᠎ᠠ ᠡᠨᠡ ᠪᠣᠯ ᠳᠤᠳᠤᠷᠬᠠᠢᠯᠠᠬᠤ ᠲᠠᠢᠯᠪᠤᠷᠢ᠎ᠶ ᠎ᠢ ᠢᠯᠡᠷᠡᠭᠦᠯᠬᠦ᠌ ᠭᠠᠵᠠᠷ ᠪᠤᠯᠤᠨ᠎ᠠ ᠡᠨᠡ ᠪᠣᠯ ᠳᠤᠳᠤᠷᠬᠠᠢᠯᠠᠬᠤ ᠲᠠᠢᠯᠪᠤᠷᠢ᠎ᠶ ᠎ᠢ ᠢᠯᠡᠷᠡᠭᠦᠯᠬᠦ᠌ ᠭᠠᠵᠠᠷ ᠪᠤᠯᠤᠨ᠎ᠠ</view>
+        <radio-group name="radio">
+          <label class="shopCard" bindtap="choseOne">
+            <radio style="margin: 20rpx;" value="radio1" />
+            <view class="shopTypecon" style="background: blue;"></view>
+          </label>
+          <label class="shopCard" bindtap="choseOne">
+            <radio style="margin: 20rpx;" value="radio1" />
+            <view class="shopTypecon" style="background: blue;"></view>
+          </label>
+          <label class="shopCard" bindtap="choseOne">
+            <radio style="margin: 20rpx;" value="radio1" />
+            <view class="shopTypecon" style="background: blue;"></view>
+          </label>
+        </radio-group>
+      </view>
+
+      <view class="content-right" hidden="{{chosen!=3}}">
+      <view class="discription">ᠡᠨᠡ ᠪᠣᠯ ᠳᠤᠳᠤᠷᠬᠠᠢᠯᠠᠬᠤ ᠲᠠᠢᠯᠪᠤᠷᠢ᠎ᠶ ᠎ᠢ ᠢᠯᠡᠷᠡᠭᠦᠯᠬᠦ᠌ ᠭᠠᠵᠠᠷ ᠪᠤᠯᠤᠨ᠎ᠠ ᠡᠨᠡ ᠪᠣᠯ ᠳᠤᠳᠤᠷᠬᠠᠢᠯᠠᠬᠤ ᠲᠠᠢᠯᠪᠤᠷᠢ᠎ᠶ ᠎ᠢ ᠢᠯᠡᠷᠡᠭᠦᠯᠬᠦ᠌ ᠭᠠᠵᠠᠷ ᠪᠤᠯᠤᠨ᠎ᠠ ᠡᠨᠡ ᠪᠣᠯ ᠳᠤᠳᠤᠷᠬᠠᠢᠯᠠᠬᠤ ᠲᠠᠢᠯᠪᠤᠷᠢ᠎ᠶ ᠎ᠢ ᠢᠯᠡᠷᠡᠭᠦᠯᠬᠦ᠌ ᠭᠠᠵᠠᠷ ᠪᠤᠯᠤᠨ᠎ᠠ</view>
+        <radio-group name="radio">
+          <label class="shopCard" bindtap="choseOne">
+            <radio style="margin: 20rpx;" value="radio1" />
+            <view class="shopTypecon" style="background: red;"></view>
+          </label>
+          <label class="shopCard" bindtap="choseOne">
+            <radio style="margin: 20rpx;" value="radio1" />
+            <view class="shopTypecon" style="background: red;"></view>
+          </label>
+          <label class="shopCard" bindtap="choseOne">
+            <radio style="margin: 20rpx;" value="radio1" />
+            <view class="shopTypecon" style="background: red;"></view>
+          </label>
+        </radio-group>
+      </view>
+
+      <view class="content-right" hidden="{{chosen!=4}}">
+      <view class="discription">ᠡᠨᠡ ᠪᠣᠯ ᠳᠤᠳᠤᠷᠬᠠᠢᠯᠠᠬᠤ ᠲᠠᠢᠯᠪᠤᠷᠢ᠎ᠶ ᠎ᠢ ᠢᠯᠡᠷᠡᠭᠦᠯᠬᠦ᠌ ᠭᠠᠵᠠᠷ ᠪᠤᠯᠤᠨ᠎ᠠ ᠡᠨᠡ ᠪᠣᠯ ᠳᠤᠳᠤᠷᠬᠠᠢᠯᠠᠬᠤ ᠲᠠᠢᠯᠪᠤᠷᠢ᠎ᠶ ᠎ᠢ ᠢᠯᠡᠷᠡᠭᠦᠯᠬᠦ᠌ ᠭᠠᠵᠠᠷ ᠪᠤᠯᠤᠨ᠎ᠠ ᠡᠨᠡ ᠪᠣᠯ ᠳᠤᠳᠤᠷᠬᠠᠢᠯᠠᠬᠤ ᠲᠠᠢᠯᠪᠤᠷᠢ᠎ᠶ ᠎ᠢ ᠢᠯᠡᠷᠡᠭᠦᠯᠬᠦ᠌ ᠭᠠᠵᠠᠷ ᠪᠤᠯᠤᠨ᠎ᠠ</view>
+        <radio-group name="radio">
+          <label class="shopCard" bindtap="choseOne">
+            <radio style="margin: 20rpx;" value="radio1" />
+            <view class="shopTypecon" style="background: pink;"></view>
+          </label>
+          <label class="shopCard" bindtap="choseOne">
+            <radio style="margin: 20rpx;" value="radio1" />
+            <view class="shopTypecon" style="background: pink;"></view>
+          </label>
+          <label class="shopCard" bindtap="choseOne">
+            <radio style="margin: 20rpx;" value="radio1" />
+            <view class="shopTypecon" style="background: pink;"></view>
+          </label>
+        </radio-group>
+      </view>
+
     </view>
   </view>
   <view class="footer-box">
     <view class="paybuttom" bindtap="payMoney">
-    ᠵᠤᠭᠤᠰ ᠎ᠢᠶᠠᠨ  ᠳᠤᠱᠢᠶᠠᠬᠤ
+      ᠵᠤᠭᠤᠰ ᠎ᠢᠶᠠᠨ ᠳᠤᠱᠢᠶᠠᠬᠤ
     </view>
   </view>
 

@@ -57,3 +57,14 @@ button {
   margin-left: 42rpx;
   writing-mode: vertical-lr;
 }
+.photo-box {
+  width: 100%;
+  height: 20%;
+  margin: 25rpx;
+  border: 1px black dashed;
+  border-radius: 25rpx;
+}
+.photo-box > image {
+  width: 100%;
+  height: 100%;
+}
