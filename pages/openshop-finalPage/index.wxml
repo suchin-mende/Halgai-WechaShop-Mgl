@@ -11,6 +11,10 @@
           <view class="page-section-title"> ᠪᠡᠶ᠎ᠡ ᠎ᠶᠢᠨ  ᠦᠨᠡᠮᠯᠡᠯ ᠄</view>
           <input />
         </view>
+        <view class="page-section" style="width: 300rpx;display: flex;flex-direction: column;">
+          <view class="photo-box"><image src="/images/camera.svg"></image></view>
+          <view class="photo-box"><image src="/images/camera.svg"></image></view>
+        </view>
         <view class="btn-area">
           <button style="" type="primary" formType="submit">  ᠵᠢᠩᠭᠢᠨᠢ  ᠨᠡᠷ᠎ᠡ ᠎ᠶᠢᠨ  ᠬᠢᠨᠠᠯᠲᠠ  ᠬᠢᠬᠦ᠌ </button>
         </view>

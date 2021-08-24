@@ -9,11 +9,13 @@ Page({
 
   data: {
     pickerHidden: true,
-    chosen: ''
+    chosen: '',
+    des:'',
   },
   onLoad:function (e) {
     this.setData({
-      registType:e.registType
+      registType:e.registType,
+      des:" 从这里选会员"
     })
   },
   pickerConfirm(e) {
@@ -60,6 +62,11 @@ Page({
   goFinal:function () {
     wx.navigateTo({
       url: '/pages/openshop-finalPage/index?registType='+this.data.registType,
+    })
+  },
+  goChoise:function () {
+    wx.navigateTo({
+      url: '/pages/shop-type/index',
     })
   }
 })

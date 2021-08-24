@@ -10,7 +10,7 @@ Page({
     score_sign_continuous:0,
     mymls: HalgaiI18.mymls,
     //1 未登记店铺 0 已登记店铺
-    shopStatus:0
+    shopStatus:1
   },
 	onLoad() {
 

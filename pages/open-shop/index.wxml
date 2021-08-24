@@ -9,8 +9,8 @@
           <input />
         </view>
         <view class="page-section">
-          <view class="page-section-title"> ᠬᠠᠷᠢᠯᠴᠠᠬᠤ ᠠᠷᠭ᠎ᠠ ᠄</view>
-          <input />
+          <view class="page-section-title"> ᠬᠡᠩᠱᠢᠭᠦᠨ ᠎ ᠰᠤᠩᠭᠤᠬᠤ᠄</view>
+          <view class="des" bindtap="goChoise">{{des}}</view>
         </view>
         <view style="flex-direction: column;" class="page-section">
           <label class="checkbox">

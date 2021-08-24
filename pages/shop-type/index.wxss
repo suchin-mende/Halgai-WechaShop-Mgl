@@ -21,7 +21,7 @@ page {
 }
 .shopCard {
   width: 100%;
-  height: 400rpx;
+  height: 300rpx;
   background-color: white;
   margin: 20rpx;
   border-radius: 20rpx;
@@ -52,4 +52,41 @@ page {
   color: white;
   writing-mode: vertical-lr;
   margin-top: 20rpx;
+}
+/* ------------------------- */
+.content-leftl,.content-leftr {
+  width: 50%;
+  height: 100%;
+}
+.content-right1 {
+  width: 80%;
+}
+.content-leftall {
+  width: 20%;
+  display: flex;
+  position: relative;
+}
+.navtitle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-lr;
+  width: 100%;
+  height: 20%;
+}
+.discription {
+  width: 100%;
+  height: 300rpx;
+  display: flex;
+  writing-mode: vertical-lr;
+  align-items: center;
+  justify-content: center;
+  margin: 35rpx;
+  padding: 15rpx;
+  border: 1px black solid;
 }

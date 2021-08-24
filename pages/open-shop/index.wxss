@@ -57,3 +57,6 @@ button {
   margin-left: 42rpx;
   writing-mode: vertical-lr;
 }
+.des {
+  width: 50%;
+}
