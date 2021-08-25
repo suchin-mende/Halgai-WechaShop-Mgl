@@ -67,7 +67,7 @@ Page({
   backPer: function () {
     if (this.data.resultType==0) {
     wx.navigateBack({
-      delta: 0,
+      delta: 5,
     })
     }
   }

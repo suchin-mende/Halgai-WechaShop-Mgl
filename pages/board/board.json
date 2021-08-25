@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "showMask": "../../componets/showModal/modal"
+  }
 }

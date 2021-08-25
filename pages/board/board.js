@@ -30,7 +30,12 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    let that = this;
+    let userInfo = wx.getStorageSync('userInfo')
+    if (!userInfo) {
+      // app.goLoginPageTimeOut()
+      this.popUserLogin()
+    }
   },
 
   /**
@@ -66,5 +71,21 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  popUserLogin: function (){
+    getApp().showModal(this, {
+      title: '',
+      content: '* ᠲᠤᠰ ᠴᠢᠳᠠᠮᠵᠢ᠎ᠶᠢ ᠵᠠᠷᠤᠬᠤ᠎ ᠎ᠳᠦ wechat᠎ ᠲᠤ ᠨᠡᠪᠲᠡᠷᠡᠵᠤ ᠤᠷᠠᠬᠤ ᠴᠢᠬᠤᠯᠠ ᠲᠠᠢ ᠂ ᠲᠠ ᠡᠭᠦᠨ᠎ ᠡᠴᠡ wechat᠎ ᠲᠤ ᠨᠡᠪᠲᠡᠷᠡᠵᠤ ᠤᠷᠠᠬᠤ ᠦᠦ ？',
+      showCancel:true,
+    })
+    console.log('this',this)
+  },
+  confirmLogin: function () {
+    app.goLoginPageTimeOut()
+  },
+  cancelLogin: function () {
+    wx.switchTab({
+      url: '/pages/index/index'
+    })
   }
 })

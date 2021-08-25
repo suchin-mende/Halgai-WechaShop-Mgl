@@ -10,7 +10,7 @@
         <view class="text">{{orlmls.orlml0001}}</view>
     </view>
     <view class="order-list" hidden="{{orderList ? false : true}}">
-        <view class="a-order" wx:for-items="{{orderList}}" wx:key="{{index}}">
+        <view class="a-order" wx:for-items="{{orderList}}" wx:key="index">
             <view class="goods-info" style='margin-left:25rpx' bindtap="orderDetail" data-id="{{item.id}}">
                 <view class="img-box" wx:for-items="{{goodsMap[item.id]}}" wx:key="{{index}}">
                     <image src="{{item.pic}}" class="goods-img"></image>

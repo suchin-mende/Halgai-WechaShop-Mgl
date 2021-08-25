@@ -75,7 +75,7 @@ Page({
   },
   goChoseShopType:function (){
     wx.navigateTo({
-      url: '/pages/shop-type/index',
+      url: '/pages/openshop-detailPage/index?resultType=0',
     })
   }
 })
