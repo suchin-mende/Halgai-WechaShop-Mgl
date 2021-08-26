@@ -1,9 +1,13 @@
 
-<view class="navbar" style="{{'height: ' + navigationBarHeight}}">
-  <view style="{{'height: ' + statusBarHeight}}"></view>
+<view class="navbar" >
+  <view ></view>
   <view class='title-container'>
   <image class='maitlue' src='../../images/ico-add-addr.png'></image> 
   </view>
    <view class='title'>ᠳᠡᠯᠭᠡᠭᠦᠷ ᠨᠡᠭᠡᠭᠡᠬᠦ</view>
 </view>
 <!-- <view style="{{'height: ' + navigationBarHeight}};background: white;"></view> -->
+<showMask id='modalComponent' bindconfirm='confirmLogin' bindcancel='cancelLogin'></showMask>
+  <!-- <view style="height:20rpx;background: #eee;width:100%;"></view>
+  <view class="version">Powered by HALGAI v {{version}}</view>
+  <view style="height:20rpx;background: #eee;width:100%;"></view> -->

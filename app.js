@@ -65,6 +65,7 @@ App({
     HalgaiAPI.queryConfig({
       key: 'mallName'
     }).then(function(res) {
+      console.log('mallname',res)
       if (res.code == 0) {
         wx.setStorageSync('mallName', res.data.value);
       }
@@ -91,22 +92,22 @@ App({
       }
     })
     // 判断是否登录
-    let token = wx.getStorageSync('token');
-    if (!token) {
-      that.goLoginPageTimeOut()
-      return
-    }
-    HalgaiAPI.checkToken(token).then(function(res) {
-      if (res.code != 0) {
-        wx.removeStorageSync('token')
-        that.goLoginPageTimeOut()
-      }
-    })
+    // let token = wx.getStorageSync('token');
+    // if (!token) {
+    //   that.goLoginPageTimeOut()
+    //   return
+    // }
+    // HalgaiAPI.checkToken(token).then(function(res) {
+    //   if (res.code != 0) {
+    //     wx.removeStorageSync('token')
+    //     that.goLoginPageTimeOut()
+    //   }
+    // })
   },
   goLoginPageTimeOut: function() {
-    if (this.navigateToLogin){
-      return
-    }
+    // if (this.navigateToLogin){
+    //   return
+    // }
     wx.removeStorageSync('token')
     this.navigateToLogin = true
     setTimeout(function() {
@@ -137,5 +138,5 @@ App({
   showModal(caller,o){
     var component = caller.selectComponent('#modalComponent');
     component.showModal(o);
-  }
+  },
 })

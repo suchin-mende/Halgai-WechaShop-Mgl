@@ -10,7 +10,7 @@ Page({
     score_sign_continuous:0,
     mymls: HalgaiI18.mymls,
     //1 未登记店铺 0 已登记店铺
-    shopStatus:1
+    shopStatus:0
   },
 	onLoad() {
 
@@ -19,7 +19,8 @@ Page({
     let that = this;
     let userInfo = wx.getStorageSync('userInfo')
     if (!userInfo) {
-      app.goLoginPageTimeOut()
+      // app.goLoginPageTimeOut()
+      this.popUserLogin()
     } else {
       that.setData({
         userInfo: userInfo,
@@ -129,6 +130,22 @@ Page({
   goMyshop: function () {
     wx.navigateTo({
       url: '/pages/myshop/index',
+    })
+  },
+  popUserLogin: function (){
+    getApp().showModal(this, {
+      title: '',
+      content: '* ᠲᠤᠰ ᠴᠢᠳᠠᠮᠵᠢ᠎ᠶᠢ ᠵᠠᠷᠤᠬᠤ᠎ ᠎ᠳᠦ wechat᠎ ᠲᠤ ᠨᠡᠪᠲᠡᠷᠡᠵᠤ ᠤᠷᠠᠬᠤ ᠴᠢᠬᠤᠯᠠ ᠲᠠᠢ ᠂ ᠲᠠ ᠡᠭᠦᠨ᠎ ᠡᠴᠡ wechat᠎ ᠲᠤ ᠨᠡᠪᠲᠡᠷᠡᠵᠤ ᠤᠷᠠᠬᠤ ᠦᠦ ？',
+      showCancel:true,
+    })
+    console.log('this',this)
+  },
+  confirmLogin: function () {
+    app.goLoginPageTimeOut()
+  },
+  cancelLogin: function () {
+    wx.switchTab({
+      url: '/pages/index/index'
     })
   }
 })
