@@ -122,9 +122,10 @@ Page({
         url: '/pages/openshop-detailPage/index?resultType=0',
       })
     }else if(this.data.shopStatus==2) {
-    wx.navigateTo({
-      url: '/pages/openshop-firstPage/index',
-    })
+      getApp().globalData.globalSubDomain = 'nr'
+      wx.reLaunch({
+        url: '/pages/index/index',
+      })
   }else {
 
   }

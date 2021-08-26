@@ -1,9 +1,19 @@
 const CONFIG = require('./config.js')
 const API_BASE_URL = 'https://halgai.com/api/index.php'
-
 const request = (url, needSubDomain, method, data) => {
-  let _url = API_BASE_URL + (needSubDomain ? '/' + CONFIG.subDomain : '') + url + '?app_id=' + CONFIG.appid
+  let _url
+  let app
+  if(getApp()){
+    app = getApp().globalData.globalSubDomain
+  } 
+  if (app) {
+     _url = API_BASE_URL + (needSubDomain ? '/' + app : '') + url + '?app_id=' + CONFIG.appid
+  }else{
+     _url = API_BASE_URL + (needSubDomain ? '/' + CONFIG.subDomain : '') + url + '?app_id=' + CONFIG.appid
+  }
   let _dataToken = '' 
+  console.log('ss',_url)
+  console.log('ww',app)
   if (url == '/user/check-token') { _dataToken = data.token}
   return new Promise((resolve, reject) => {
     wx.request({
@@ -15,7 +25,6 @@ const request = (url, needSubDomain, method, data) => {
         'HALGAI-API-KEY':CONFIG.appid,
         'HalgaiAPIToken': wx.getStorageSync('token'),
         'APP_LANG':CONFIG.lang
-        
       },
       success(request) {
         resolve(request.data)
@@ -325,5 +334,5 @@ module.exports = {
   },
   fxCommisionLog: (data) => {
     return request('/saleDistribution/commision/log', true, 'post', data)
-  }
+  },
 }

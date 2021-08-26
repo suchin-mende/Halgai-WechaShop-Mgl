@@ -72,8 +72,8 @@ Page({
   onLoad: function() {
     var that = this
     wx.setNavigationBarTitle({
-      // title: wx.getStorageSync('mallName')
-      title: HalgaiI18.injs0001
+      title: wx.getStorageSync('mallName')
+      // title: HalgaiI18.injs0001
     })
     /**
      * 表示例：
