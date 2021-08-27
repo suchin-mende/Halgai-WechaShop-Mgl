@@ -5,6 +5,7 @@ App({
   navigateToLogin: false,
   onLaunch: function() {
     const that = this;
+    that.globalData.globalSubDomain = ''
     // 检测新版本
     const updateManager = wx.getUpdateManager()
     updateManager.onUpdateReady(function () {
@@ -65,7 +66,6 @@ App({
     HalgaiAPI.queryConfig({
       key: 'mallName'
     }).then(function(res) {
-      console.log('mallname',res)
       if (res.code == 0) {
         wx.setStorageSync('mallName', res.data.value);
       }

@@ -56,10 +56,11 @@
       <view class='order-shortcut'>
         <view class='item'  bindtap='goOpenShop' data-type="0">
           <image class="icon" src="/images/order/topay.png" background-size="cover"></image>
-          <view hidden="{{shopStatus==0}}" class='text'>{{mymls.myml0021}}</view>
-          <view hidden="{{shopStatus==1}}" class='text'>ᠳᠡᠯᠭᠡᠬᠦᠷ ᠬᠢᠨᠠᠯᠲᠠ᠎ᠳᠤ ᠪᠠᠢᠨ᠎ᠠ</view>
+          <view hidden="{{shopStatus!=0}}" class='text'>{{mymls.myml0021}}</view>
+          <view hidden="{{shopStatus!=1}}" class='text'>ᠳᠡᠯᠭᠡᠬᠦᠷ ᠬᠢᠨᠠᠯᠲᠠ᠎ᠳᠤ ᠪᠠᠢᠨ᠎ᠠ</view>
+          <view hidden="{{shopStatus!=2}}" class='text'>ᠮᠢᠨᠤ  ᠳᠡᠯᠭᠡᠭᠦᠷ</view>
         </view>
-        <view hidden="{{shopStatus==1}}">
+        <view hidden="{{shopStatus!=2}}">
         <view class='item' bindtap='goMyshop' data-type="1">
           <image class="icon" src="/images/order/fahuo.png" background-size="cover"></image>
           <view class='text'>{{mymls.myml0024}}</view>

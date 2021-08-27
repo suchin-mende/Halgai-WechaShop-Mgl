@@ -9,8 +9,8 @@ Page({
     score:0,
     score_sign_continuous:0,
     mymls: HalgaiI18.mymls,
-    //1 未登记店铺 0 已登记店铺
-    shopStatus:0
+    //0 未登记店铺 1 已登记店铺 2 已完成开店
+    shopStatus:2
   },
 	onLoad() {
 
@@ -117,14 +117,17 @@ Page({
     })
   },
   goOpenShop: function(){
-    if(this.data.shopStatus==0){
+    if(this.data.shopStatus==1){
       wx.navigateTo({
         url: '/pages/openshop-detailPage/index?resultType=0',
       })
-    }else{
-    wx.navigateTo({
-      url: '/pages/openshop-firstPage/index',
-    })
+    }else if(this.data.shopStatus==2) {
+      getApp().globalData.globalSubDomain = 'nr'
+      wx.reLaunch({
+        url: '/pages/index/index',
+      })
+  }else {
+
   }
   },
   goMyshop: function () {
