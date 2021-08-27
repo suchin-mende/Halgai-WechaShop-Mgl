@@ -330,7 +330,11 @@ swiper-item image {
   overflow: hidden;
   height: 190rpx;
   padding-top: 20rpx;
-
-
-
+}
+.editButtom {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  right: 35%;
+  bottom: -130%;
 }

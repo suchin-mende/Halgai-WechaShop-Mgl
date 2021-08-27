@@ -28,7 +28,8 @@ Page({
     pageSize: 20,
     cateScrollTop: 0,
     //i18
-    inmls: HalgaiI18.inmls
+    inmls: HalgaiI18.inmls,
+    isOwner:false
   },
 
   tabClick: function(e) {
@@ -69,8 +70,11 @@ Page({
       selectCurrent: e.index
     })
   },
-  onLoad: function() {
+  onLoad: function(option) {
     var that = this
+    this.setData({
+      isOwner:option.isOwner
+    })
     wx.setNavigationBarTitle({
       title: wx.getStorageSync('mallName')
       // title: HalgaiI18.injs0001
@@ -279,6 +283,13 @@ Page({
     });
     this.getGoodsList(this.data.activeCategoryId)
   },
+  edit: function (option) {
+    
+    var data = JSON.stringify(option.currentTarget.dataset.banner);
+    wx.navigateTo({
+      url: '/pages/userShop/editBanner/index?data='+data,
+    })
+  }
   
 })
 
