@@ -1,5 +1,19 @@
 <view class="container">
-  <view></view>
-  <view></view>
-  <view></view>
+  <view class="img-box">
+    <image class="img" hidden="{{banners}}" src="{{banners[0].picUrl}}"></image>
+    <image class="img" hidden="{{!banners}}" src="/images/camera.svg"></image>
+  </view>
+  <view class="other">
+    <view class="typeButtom">
+      <view>ᠲᠥᠷᠦᠯ ᠵᠦᠢᠯ᠎ ᠢᠶᠡᠨ ᠰᠤᠭ᠌ᠭᠤᠬᠤ</view>
+      <image src="/images/add.svg"></image>
+    </view>
+    <view class="goodButtom">
+      <view>ᠲᠠᠸᠠᠷ ᠎ᠢᠶᠠᠨ  ᠤᠷᠤᠭᠤᠯᠬᠤ</view>
+      <image src="/images/add.svg"></image>
+    </view>
+  </view>
+  <view class="other">
+    <button > ᠲᠤᠱᠢᠶᠠᠬᠤ</button>
+  </view>
 </view>
