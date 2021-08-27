@@ -38,7 +38,8 @@
         <view class="dots">  
             <block wx:for="{{banners}}" wx:key="unique">  
                 <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>  
-            </block>  
+            </block>
+            <image hidden="{{!isOwner}}" bindtap="edit" data-banner="{{banners}}" class="editButtom" src="/images/edit.svg"></image>  
         </view>  
    </view>
    <!-- <view class="search-view" style="background:{{ scrollTop === 0 ?'-webkit-linear-gradient(top, rgba(105,195,170, 1), rgba(105,195,170, 0.3))' :( scrollTop<200 ? 'rgba(105,195,170,'+(scrollTop/400+0.3) +')' : 'rgba(105,195,170,1)')  }} ">

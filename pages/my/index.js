@@ -118,16 +118,20 @@ Page({
   },
   goOpenShop: function(){
     if(this.data.shopStatus==1){
+      //等待实名认证
       wx.navigateTo({
         url: '/pages/openshop-detailPage/index?resultType=0',
       })
     }else if(this.data.shopStatus==2) {
+      //进入我的店铺
       getApp().globalData.globalSubDomain = 'nr'
       wx.reLaunch({
-        url: '/pages/index/index',
+        url: '/pages/index/index?isOwner=true',
       })
   }else {
-
+    wx.navigateTo({
+      url: '/pages/openshop-firstPage/index',
+    })
   }
   },
   goMyshop: function () {

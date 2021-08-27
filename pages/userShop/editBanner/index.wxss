@@ -1,0 +1,46 @@
+page {
+  height: 100%;
+  width: 100%;
+}
+.img-box {
+  height: 40%;
+  width: 100%;
+}
+.other {
+  height: 30%;
+  width: 100%;
+  display: flex;
+}
+.typeButtom,.goodButtom {
+  height: 100%;
+  width: 50%;
+}
+.img {
+  margin: 0rpx auto;
+  height: 90%;
+  width: 90%;
+  display: flex;
+}
+.img:last-child {
+  border: 1rpx black solid;
+}
+.typeButtom > image,.goodButtom > image {
+  width: 40%;
+  height: 40%;
+  margin: 0rpx auto;
+  display: flex;
+}
+.typeButtom > view,.goodButtom > view {
+  writing-mode: vertical-lr;
+  height: 30%;
+  margin: auto;
+}
+button {
+  writing-mode: vertical-lr;
+  color: #fff;
+  background: #009f3c;
+  border-radius: 6px;
+  height: 300rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
