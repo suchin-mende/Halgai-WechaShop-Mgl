@@ -12,10 +12,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log('banner',options.data)
+    // banners = JSON.parse(options.data)
+    var data = JSON.parse(options.data)
     this.setData({
-      banners:options.data
+      banners:data
     })
+    console.log('this',this)
   },
 
   /**
