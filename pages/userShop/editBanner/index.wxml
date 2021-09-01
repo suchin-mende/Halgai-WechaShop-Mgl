@@ -1,19 +1,21 @@
 <view class="container">
   <view class="img-box">
     <image class="img" hidden="{{banners}}" src="{{banners[0].picUrl}}"></image>
-    <image class="img" hidden="{{!banners}}" src="/images/camera.svg"></image>
+    <image class="img" bindtap="openCamera" hidden="{{!banners}}" src="/images/camera.svg"></image>
   </view>
   <view class="other">
-    <view class="typeButtom">
+    <view class="typeButtom" bindtap="showpicker">
       <view>ᠲᠥᠷᠦᠯ ᠵᠦᠢᠯ᠎ ᠢᠶᠡᠨ ᠰᠤᠭ᠌ᠭᠤᠬᠤ</view>
       <image src="/images/add.svg"></image>
     </view>
-    <view class="goodButtom">
-      <view>ᠲᠠᠸᠠᠷ ᠎ᠢᠶᠠᠨ  ᠤᠷᠤᠭᠤᠯᠬᠤ</view>
+    <view class="goodButtom" bindtap="popup" data-position="right">
+      <view>ᠲᠠᠸᠠᠷ ᠎ᠢᠶᠠᠨ ᠤᠷᠤᠭᠤᠯᠬᠤ</view>
       <image src="/images/add.svg"></image>
     </view>
   </view>
   <view class="other">
-    <button > ᠲᠤᠱᠢᠶᠠᠬᠤ</button>
+    <button> ᠲᠤᠱᠢᠶᠠᠬᠤ</button>
   </view>
 </view>
+<custom-picker id="custom-picker" Flist="{{FtypeList}}" Slist="{{StypeList}}" bind:lefttap='_lefttap'
+  bind:righttap='_righttap' bindcancel="_cancel" />

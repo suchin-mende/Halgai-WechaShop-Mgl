@@ -4,7 +4,11 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    list: {
+    Flist: {
+      type: Array,
+      value: []
+    },
+    Slist: {
       type: Array,
       value: []
     },
@@ -20,7 +24,8 @@ Component({
   data: {
     isShow: false,
     value: [0],
-    typeList: [],
+    FtypeList: [],
+    StypeList: [],
     type:'',
     dialogh: 0
   },
@@ -43,9 +48,10 @@ Component({
     //组件所在的页面被展示时执行 最低版本2.2.3
     show: function () {
       console.log('ohyeye',this)
-      console.log('页面show',that.properties.list)
+      console.log('页面show',that.properties.Flist)
       this.setData({
-        typeList:that.properties.list
+        FtypeList:that.properties.Flist,
+        StypeList:that.properties.Slist
       })
     },
     //组件所在的页面被隐藏时执行 最低版本2.2.3
@@ -62,14 +68,39 @@ Component({
    */
   methods: {
     bindChange: function (e) {
+      var that = this
       const val = e.detail.value
+      console.log('e',e.detail.value)
+      var flistelement = that.data.FtypeList[val[0]].id
+      console.log('firstPor',that.data.FtypeList[val[0]].name)
+      var StypeList = that.data.StypeList
+      console.log("StypeList",StypeList)
+      var slist = []
+      for (let i = 0; i < StypeList.length; i++) {
+        const element = StypeList[i];
+        if(element.parent_id==flistelement){
+          slist.push(element)
+        }
+      }
+      console.log('secondPor',slist[val[1]].name)
+      console.log("slist",slist)
       that.setData({
-        type: this.data.typeList[val[0]]
+        NStypeList: slist,
+        type:that.data.FtypeList[val[0]].name+slist[val[1]].name
       })
+      
     },
     showDialog(typeList){
+      var initList = []
+      for (let i = 0; i < typeList.length; i++) {
+        const element = typeList[i];
+        if (element.parent_id==101) {
+          initList.push(element)
+        }
+      }
       that.setData({
-        isShow: true
+        isShow: true,
+        NStypeList:initList
       })
       that.animation.translateY(that.data.dialogh).translateY(0).step()
       that.setData({animation: that.animation.export()})

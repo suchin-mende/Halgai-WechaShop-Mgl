@@ -22,7 +22,8 @@ page {
   display: flex;
 }
 .img:last-child {
-  border: 1rpx black solid;
+  border: 2px black dashed;
+  border-radius: 20rpx;
 }
 .typeButtom > image,.goodButtom > image {
   width: 40%;
