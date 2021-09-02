@@ -22,7 +22,7 @@
       <view class="typetitle">ᠲᠠᠸᠠᠷ ᠎ᠤᠨ ᠲᠥᠷᠦᠯ ᠵᠦᠢᠯ ：
         <input bindtap="showpicker" placeholder=" ᠰᠥᠩᠭᠤᠬᠤ" value="{{type}}"></input>
       </view>
-      <custom-picker id="custom-picker" list="{{typeList}}" bind:lefttap='_lefttap' bind:righttap='_righttap'
+      <custom-picker id="custom-picker" Flist="{{FtypeList}}" Slist="{{StypeList}}" bind:lefttap='_lefttap' bind:righttap='_righttap'
         bindcancel="_cancel" />
       <view class="contentPart">
         <view class="contentTitle"> ᠲᠠᠢᠯᠪᠤᠷᠢ ᠄</view>
