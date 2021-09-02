@@ -36,7 +36,7 @@
     "showES6CompileOption": false
   },
   "compileType": "miniprogram",
-  "libVersion": "2.4.3",
+  "libVersion": "2.19.2",
   "appid": "wx01d4f674b090a26e",
   "projectname": "halgai-wechatShop-mgl",
   "scripts": {},

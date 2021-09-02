@@ -4,13 +4,26 @@
     <image class="img" bindtap="openCamera" hidden="{{!banners}}" src="/images/camera.svg"></image>
   </view>
   <view class="other">
-    <view class="typeButtom" bindtap="showpicker">
+    <view hidden="{{isShow}}" class="typeButtom" bindtap="showpicker">
       <view>ᠲᠥᠷᠦᠯ ᠵᠦᠢᠯ᠎ ᠢᠶᠡᠨ ᠰᠤᠭ᠌ᠭᠤᠬᠤ</view>
       <image src="/images/add.svg"></image>
     </view>
-    <view class="goodButtom" bindtap="popup" data-position="right">
+    <view hidden="{{isShow}}" class="goodButtom" bindtap="popup" data-position="center">
       <view>ᠲᠠᠸᠠᠷ ᠎ᠢᠶᠠᠨ ᠤᠷᠤᠭᠤᠯᠬᠤ</view>
       <image src="/images/add.svg"></image>
+    </view>
+    <view class="area" hidden="{{!isShow}}">
+    <image  bindtap="cancel" class="cancel" src="/images/del.svg"></image>
+      <text hidden="{{type==''}}">{{type}}</text>
+      <view class="goods-box" hidden="{{!good}}">
+        <view class="img-box">
+        <image src="{{good.pic}}"></image>
+        </view>
+        <view class="goods-title">{{good.name}}</view>
+        <view>
+          <view class="goods-price">¥ {{good.minPrice}}</view>
+        </view>
+      </view>
     </view>
   </view>
   <view class="other">
@@ -19,3 +32,38 @@
 </view>
 <custom-picker id="custom-picker" Flist="{{FtypeList}}" Slist="{{StypeList}}" bind:lefttap='_lefttap'
   bind:righttap='_righttap' bindcancel="_cancel" />
+
+<page-container 
+  show="{{show}}"
+  round="{{round}}"
+  overlay="{{overlay}}"
+  duration="{{duration}}"
+  position="{{position}}"
+  close-on-slide-down="{{false}}"
+  bindbeforeenter="onBeforeEnter"
+  bindenter="onEnter"
+  bindafterenter="onAfterEnter"
+  bindbeforeleave="onBeforeLeave"
+  bindleave="onLeave"
+  bindafterleave="onAfterLeave"
+  bindclickoverlay="onClickOverlay"
+  custom-style="{{customStyle}}"
+  overlay-style="{{overlayStyle}}"
+>
+  <view class="detail-page">
+  <view class="title">ᠲᠡᠷᠢᠭᠦᠨ ᠨᠢᠭᠤᠷ᠎ᠲᠤ ᠬᠤᠯᠪᠤᠬᠤ ᠪᠠᠷᠠᠭ᠎ᠠ᠎᠎ᠪᠠᠨ ᠰᠤᠨᠭ᠌ᠭᠤᠭᠠᠷᠠᠢ</view>
+    <view class="goods-container">
+        <view class="goods-box" wx:for-items="{{goods}}" wx:key="index" bindtap="toDetailsTap" data-id="{{item.id}}">
+           <view class="img-box">
+           <image src="{{item.pic}}_m" class="image" mode="aspectFill" lazy-load="true"/>
+           </view>
+           <view class="goods-title">{{item.name}}</view>
+           <view style='display:flex;'>
+           <view class="goods-price">¥ {{item.minPrice}}</view>
+           <view wx:if="{{item.originalPrice && item.originalPrice > 0}}" class="goods-price" style='color:#aaa;text-decoration:line-through'>¥ {{item.originalPrice}}</view>
+           </view>           
+        </view>
+    </view>
+    <!-- <button type="primary" bindtap="exit">推出</button> -->
+  </view>
+</page-container>

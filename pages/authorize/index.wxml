@@ -6,8 +6,7 @@
     <view class="title">{{aumls.auml0001}}</view>
     <view class="profile">{{aumls.auml0002}}</view>
     <view>
-       <button type="primary" open-type="getUserInfo" 
-       bindgetuserinfo="bindGetUserInfo"  class="weui-btn mini-btn">{{aumls.auml0003}}</button>
+       <button type="primary" bindtap="getUserProfile"  class="weui-btn mini-btn">{{aumls.auml0003}}</button>
     </view>
   </form>
     <showMask id='modalComponent'></showMask>
