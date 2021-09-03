@@ -12,7 +12,11 @@
   flex-direction: column;
   justify-content: flex-end;
  }
-
+.picker-viewclass{
+  padding: 10px;
+  height: 120px;
+  margin: auto;
+}
  .content {
   display: flex;
   flex-direction: column;
@@ -50,7 +54,7 @@
 }
 
 .top-right-color {
-  color: #1296DB;
+  color: #009f3c;
 }
 
 .top-right-color-hover {

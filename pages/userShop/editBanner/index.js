@@ -1,4 +1,3 @@
-// pages/userShop/editBanner/index.js
 Page({
 
   /**
@@ -387,7 +386,15 @@ Page({
       "parent_id": 112
     }],
     FtypeList: ["ᠥᠮᠦᠳᠦ", " ᠳᠡᠪᠡᠯ", " ᠱᠠᠬᠠᠢ", " ᠮᠠᠯᠠᠭᠠᠢ", " ᠬᠦᠵᠦᠭᠦᠪᠴᠢ"],
-    StypeList: ["ᠥᠮᠦᠳᠦ", " ᠳᠡᠪᠡᠯ", " ᠱᠠᠬᠠᠢ", " ᠮᠠᠯᠠᠭᠠᠢ", " ᠬᠦᠵᠦᠭᠦᠪᠴᠢ"], 
+    StypeList: ["ᠥᠮᠦᠳᠦ", " ᠳᠡᠪᠡᠯ", " ᠱᠠᠬᠠᠢ", " ᠮᠠᠯᠠᠭᠠᠢ", " ᠬᠦᠵᠦᠭᠦᠪᠴᠢ"],
+    show: false,
+    duration: 300,
+    position: 'center',
+    round: false,
+    overlay: true,
+    customStyle: '',
+    overlayStyle: '',
+    isShow:false,
   },
 
   /**
@@ -509,20 +516,22 @@ Page({
   },
   _lefttap() {
     this.setData({
-      type: ''
+      type: '',
+      isShow:false
     })
   },
   _righttap(e) {
     var that = this
     var type = e.detail.type
     this.setData({
-      type: type
+      type: type,
+      isShow:true
     })
   },
   _cancel() {},
   editContent: function () {
     this.setData({
-      show: true
+      show: true,
     })
   },
   exit: function () {
@@ -534,5 +543,92 @@ Page({
     this.setData({
       textContent: e.detail.value
     })
+  },
+  popup(e) {
+    
+    const position = e.currentTarget.dataset.position
+    let customStyle = ''
+    let duration = this.data.duration
+    switch(position) {
+      case 'top':
+      case 'bottom': 
+        customStyle = 'height: 30%;'
+        break
+      case 'right':
+        break
+    }
+    this.setData({
+      position,
+      show: true,
+      customStyle,
+      duration
+    })
+    this.getGoodsList(0)
+  },
+  toDetailsTap: function(e) {
+    var goods = this.data.goods
+    for (let i = 0; i < goods.length; i++) {
+      const element = goods[i];
+      if(element.id==e.currentTarget.dataset.id){
+        this.setData({
+          good:element
+        })
+      }
+    }
+    console.log('THIS',this)
+    // wx.navigateTo({
+    //   url: "/pages/goods-details/index?id=" + e.currentTarget.dataset.id
+    // })
+    this.setData({
+      chosenId:e.currentTarget.dataset.id,
+      isShow:true
+    })
+    this.exit()
+  },
+  getGoodsList: function(categoryId, append) {
+    const HalgaiAPI = require('../../../halgaiApi/main')
+    if (categoryId == 0) {
+      categoryId = "";
+    }
+    var that = this;
+    wx.showLoading({
+      "mask": true
+    })
+    HalgaiAPI.goods({
+      categoryId: categoryId,
+      nameLike: that.data.searchInput,
+      page: this.data.curPage,
+      pageSize: this.data.pageSize
+    }).then(function(res) {
+      wx.hideLoading()
+      if (res.code == 404 || res.code == 700) {
+        let newData = {
+          loadingMoreHidden: false
+        }
+        if (!append) {
+          newData.goods = []
+        }
+        that.setData(newData);
+        return
+      }
+      let goods = [];
+      if (append) {
+        goods = that.data.goods
+      }
+      for (var i = 0; i < res.data.length; i++) {
+        goods.push(res.data[i]);
+      }
+      that.setData({
+        loadingMoreHidden: true,
+        goods: goods,
+      });
+    })
+  },
+  cancel:function (){
+   this.setData({
+     isShow:false,
+     type:'',
+     good:null
+   })
   },
 })
