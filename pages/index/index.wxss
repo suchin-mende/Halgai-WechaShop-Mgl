@@ -9,6 +9,8 @@
 .head-menu{
   display: flex;
   height:70rpx;
+  background: white;
+  margin-bottom: 12rpx;
 
 }
 
@@ -67,8 +69,10 @@ swiper-item image {
   box-sizing: content-box;
   font-size: 35rpx;
   line-height: 50rpx;
-  display: inline-block;
-  overflow: hidden;
+  display: inline-flex;
+  position: relative;
+
+
   /* vertical-align:middle; */
   /* margin-top:8px; */
   writing-mode: vertical-lr;
@@ -79,7 +83,15 @@ swiper-item image {
   /* padding-top: 10px; */
 }
 .type-item-on{
-  border-bottom: 2rpx solid #009f3c;
+  color: #009f3c;
+  /* border-bottom: 2rpx solid #009f3c; */
+}
+.activeImg {
+  width: 75rpx;
+  height: 45rpx;
+  position: absolute;
+  bottom: -28px;
+  left: -7px;
 }
 .goods-container{
   display: flex;
@@ -164,7 +176,7 @@ swiper-item image {
 .notice_swiper{
   padding-top: 50rpx;
   padding-bottom: 15rpx;
-  height: 380rpx;
+  height: 315rpx;
   line-height: 50rpx;
   width: 635rpx;
 }
@@ -204,26 +216,53 @@ swiper-item image {
   overflow: hidden;
   /* height: 210rpx; */
 }
+.moneybox {
+  font-size: 16px;
+  padding-right: 40rpx;
+}
 .coupons-scroll{
   white-space: nowrap;
   width: 100%;
+  background: white;
+  margin-top: 15rpx;
 }
 .coupons-item{
-  width:260rpx;
-  height: 210rpx;
-  margin: 10rpx;
-  padding-top: 8rpx;
-  /* padding-left: 15rpx; */
-  background-color: #009f3c;
-  box-sizing: content-box;
-  font-size: 25rpx;
-  line-height: 66rpx;
-  color: #fff;
-  display: inline-block;
+  width: 160px;
+  height: 100px;
+  position: relative;
+  background: radial-gradient(circle at right top, transparent 10px,  #009f3c 0) top left / 60px 51% no-repeat,
+  radial-gradient(circle at right bottom, transparent 10px,  #009f3c 0) bottom left /60px 51% no-repeat,
+  radial-gradient(circle at left top, transparent 10px, #eeeeee 0) top right /100px 51% no-repeat,
+  radial-gradient(circle at left bottom, transparent 10px, #eeeeee 0) bottom right /100px 51% no-repeat;
+  filter: drop-shadow(3px 3px 3px rgba(0,0,0,.3));
+  display: inline-grid;
+  margin: 15rpx;
+  font-size: 10px;
+  justify-content: end;
+  align-items: end;
   writing-mode: vertical-lr;
-  border-radius: 12rpx;
-  overflow: hidden;
 
+}
+.coupons-item::before {
+  content: '';
+  height: 80px;
+  border: 1px dashed #fff;
+  position: absolute;
+  left: 60px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.coupons-item::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width:5px;
+  top: 0;
+  right: -5px;
+  background-image: linear-gradient(to bottom, #eeeeee 5px, transparent 5px, transparent),
+  radial-gradient(10px circle at 5px 10px, transparent 5px, #eeeeee 5px);
+  background-size: 5px 15px;
 }
 .mxboos{
   overflow: hidden;
@@ -293,6 +332,7 @@ swiper-item image {
   height: 50rpx;
   /* filter: drop-shadow(2px 2px 2px #398865); */
   padding-top: 11rpx;
+  margin-left: 18rpx;
 }
 .board{
   width: auto;
