@@ -289,6 +289,11 @@ Page({
     wx.navigateTo({
       url: '/pages/userShop/editBanner/index?data='+data,
     })
+  },
+  openShop:function (){
+    wx.navigateTo({
+      url: '/pages/openshop-firstPage/index',
+    })
   }
   
 })

@@ -13,19 +13,21 @@
 }
 
 .swiper-container{
-  width: 750rpx;
+  width: 666rpx;
   position: relative;  
 }
 .swiper_box {
   width: 100%;
-  height:500rpx;
+  height:400rpx;
 }
 
 swiper-item image {
-  width: 100%;
+  width: 95%;
   display: inline-block;
   overflow: hidden;
-  height:500rpx;
+  height:100%;
+  margin-left: 18rpx;
+  border-radius: 15rpx;
 }
 .swiper-container .dots{  
   position: absolute;  
@@ -149,7 +151,7 @@ swiper-item image {
   display: flex;
   justify-content: space-between;  
   flex-wrap:wrap;
-  height: 500rpx;
+  height: 400rpx;
   line-height: 80rpx;
   width: 80rpx;
   /* top: 60rpx; */
@@ -182,7 +184,7 @@ swiper-item image {
   font-size: 24rpx;
   color: #009f3c;
   width: 50rpx;
-  height: 300rpx;
+  height: 265rpx;
   line-height: 58rpx;
   margin-top: 15px;
   writing-mode: vertical-lr;
@@ -289,29 +291,29 @@ swiper-item image {
 .img {
   width: 225rpx;
   height: 50rpx;
-  filter: drop-shadow(2px 2px 2px #398865);
+  /* filter: drop-shadow(2px 2px 2px #398865); */
   padding-top: 11rpx;
 }
 .board{
-  width: 19%;
-  height: 100rpx;
+  width: auto;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
   color: #000000;
   font-size: 27rpx;
   /* padding-left: 161rpx; */
   writing-mode:vertical-lr;
-  margin-right: 1rpx;
-  padding-top:25rpx;
-  margin-left: 366rpx;
+  margin-left: auto;
+}
+.board-shop-img {
+  height: 100%;
+  width: 55rpx;
 }
 .board-item {
-  height:75rpx;
+  height:50rpx;
   line-height:40rpx;
-  padding-right:69rpx;
-  padding-left:-34rpx;
-  float:left;
-  margin-right:28rpx;
-  margin-top: -12rpx;
   font-size: 20rpx;
+  padding-top: 20rpx;
 }
 .btnImg {
   width: 55rpx;
