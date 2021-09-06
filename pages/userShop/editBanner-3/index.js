@@ -635,14 +635,15 @@ Page({
    })
   },
   newpage:function (){
-    var pageOnedata = []
-    pageOnedata.push(this.data.banners[0].picUrl)
-    pageOnedata.push(this.data.type)
-    pageOnedata.push(this.data.good)
-    wx.setStorageSync('pageOne', pageOnedata)
+    var pageThreedata = []
+    pageThreedata.push(this.data.banners[2].picUrl)
+    pageThreedata.push(this.data.type)
+    pageThreedata.push(this.data.good)
+    wx.setStorageSync('pageThree', pageThreedata)
     wx.setStorageSync('banners', this.data.banners)
-    wx.navigateTo({
-      url: '/pages/userShop/editBanner-2/index',
-    })
+    this.commitData()
+  },
+  commitData:function(){
+    //HalgaiApi.commit 将数据提交到数据库
   }
 })

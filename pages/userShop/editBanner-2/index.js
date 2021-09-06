@@ -635,14 +635,14 @@ Page({
    })
   },
   newpage:function (){
-    var pageOnedata = []
-    pageOnedata.push(this.data.banners[0].picUrl)
-    pageOnedata.push(this.data.type)
-    pageOnedata.push(this.data.good)
-    wx.setStorageSync('pageOne', pageOnedata)
+    var pageTwodata = []
+    pageTwodata.push(this.data.banners[1].picUrl)
+    pageTwodata.push(this.data.type)
+    pageTwodata.push(this.data.good)
+    wx.setStorageSync('pageTwo', pageTwodata)
     wx.setStorageSync('banners', this.data.banners)
     wx.navigateTo({
-      url: '/pages/userShop/editBanner-2/index',
+      url: '/pages/userShop/editBanner-3/index',
     })
   }
 })

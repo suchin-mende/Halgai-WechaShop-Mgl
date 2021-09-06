@@ -283,9 +283,10 @@ Page({
   },
   edit: function (option) {
     
-    var data = JSON.stringify(option.currentTarget.dataset.banner);
+    // var data = JSON.stringify(option.currentTarget.dataset.banner);
+    wx.setStorageSync('banners', option.currentTarget.dataset.banner)
     wx.navigateTo({
-      url: '/pages/userShop/editBanner/index?data='+data,
+      url: '/pages/userShop/editBanner/index'
     })
   },
   openShop:function (){
