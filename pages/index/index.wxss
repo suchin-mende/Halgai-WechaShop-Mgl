@@ -9,23 +9,27 @@
 .head-menu{
   display: flex;
   height:70rpx;
+  background: white;
+  margin-bottom: 12rpx;
 
 }
 
 .swiper-container{
-  width: 750rpx;
+  width: 666rpx;
   position: relative;  
 }
 .swiper_box {
   width: 100%;
-  height:500rpx;
+  height:400rpx;
 }
 
 swiper-item image {
-  width: 100%;
+  width: 95%;
   display: inline-block;
   overflow: hidden;
-  height:500rpx;
+  height:100%;
+  margin-left: 18rpx;
+  border-radius: 15rpx;
 }
 .swiper-container .dots{  
   position: absolute;  
@@ -65,19 +69,21 @@ swiper-item image {
   box-sizing: content-box;
   font-size: 35rpx;
   line-height: 50rpx;
-  display: inline-block;
-  overflow: hidden;
-  /* vertical-align:middle; */
-  /* margin-top:8px; */
+  display: inline-flex;
   writing-mode: vertical-lr;
 }
 .type-navbar-item{
   border-bottom: 4rpx solid #fff;
   padding-right: 48rpx;
-  /* padding-top: 10px; */
 }
 .type-item-on{
-  border-bottom: 2rpx solid #009f3c;
+  color: #009f3c;
+}
+.activeImg {
+  width: 50rpx;
+  height: 30rpx;
+  position: absolute;
+  bottom: 32px;
 }
 .goods-container{
   display: flex;
@@ -88,10 +94,11 @@ swiper-item image {
 }
 .goods-box{
   width: 339rpx;
-  height: 472rpx;
+  height: 392rpx;
   background-color: #fff;
   overflow: hidden;
   margin-bottom: 24rpx;
+  border-radius: 25rpx;
 }
 .goods-box .img-box{
   width: 339rpx;
@@ -149,7 +156,7 @@ swiper-item image {
   display: flex;
   justify-content: space-between;  
   flex-wrap:wrap;
-  height: 500rpx;
+  height: 400rpx;
   line-height: 80rpx;
   width: 80rpx;
   /* top: 60rpx; */
@@ -162,7 +169,7 @@ swiper-item image {
 .notice_swiper{
   padding-top: 50rpx;
   padding-bottom: 15rpx;
-  height: 380rpx;
+  height: 315rpx;
   line-height: 50rpx;
   width: 635rpx;
 }
@@ -182,7 +189,7 @@ swiper-item image {
   font-size: 24rpx;
   color: #009f3c;
   width: 50rpx;
-  height: 300rpx;
+  height: 265rpx;
   line-height: 58rpx;
   margin-top: 15px;
   writing-mode: vertical-lr;
@@ -202,26 +209,53 @@ swiper-item image {
   overflow: hidden;
   /* height: 210rpx; */
 }
+.moneybox {
+  font-size: 16px;
+  padding-right: 40rpx;
+}
 .coupons-scroll{
   white-space: nowrap;
   width: 100%;
+  background: white;
+  margin-top: 15rpx;
 }
 .coupons-item{
-  width:260rpx;
-  height: 210rpx;
-  margin: 10rpx;
-  padding-top: 8rpx;
-  /* padding-left: 15rpx; */
-  background-color: #009f3c;
-  box-sizing: content-box;
-  font-size: 25rpx;
-  line-height: 66rpx;
-  color: #fff;
-  display: inline-block;
+  width: 160px;
+  height: 100px;
+  position: relative;
+  background: radial-gradient(circle at right top, transparent 10px,  #009f3c 0) top left / 60px 51% no-repeat,
+  radial-gradient(circle at right bottom, transparent 10px,  #009f3c 0) bottom left /60px 51% no-repeat,
+  radial-gradient(circle at left top, transparent 10px, #eeeeee 0) top right /100px 51% no-repeat,
+  radial-gradient(circle at left bottom, transparent 10px, #eeeeee 0) bottom right /100px 51% no-repeat;
+  filter: drop-shadow(3px 3px 3px rgba(0,0,0,.3));
+  display: inline-grid;
+  margin: 15rpx;
+  font-size: 10px;
+  justify-content: end;
+  align-items: end;
   writing-mode: vertical-lr;
-  border-radius: 12rpx;
-  overflow: hidden;
 
+}
+.coupons-item::before {
+  content: '';
+  height: 80px;
+  border: 1px dashed #fff;
+  position: absolute;
+  left: 60px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.coupons-item::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width:5px;
+  top: 0;
+  right: -5px;
+  background-image: linear-gradient(to bottom, #eeeeee 5px, transparent 5px, transparent),
+  radial-gradient(10px circle at 5px 10px, transparent 5px, #eeeeee 5px);
+  background-size: 5px 15px;
 }
 .mxboos{
   overflow: hidden;
@@ -289,29 +323,30 @@ swiper-item image {
 .img {
   width: 225rpx;
   height: 50rpx;
-  filter: drop-shadow(2px 2px 2px #398865);
+  /* filter: drop-shadow(2px 2px 2px #398865); */
   padding-top: 11rpx;
+  margin-left: 18rpx;
 }
 .board{
-  width: 19%;
-  height: 100rpx;
+  width: auto;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
   color: #000000;
   font-size: 27rpx;
   /* padding-left: 161rpx; */
   writing-mode:vertical-lr;
-  margin-right: 1rpx;
-  padding-top:25rpx;
-  margin-left: 366rpx;
+  margin-left: auto;
+}
+.board-shop-img {
+  height: 100%;
+  width: 55rpx;
 }
 .board-item {
-  height:75rpx;
+  height:50rpx;
   line-height:40rpx;
-  padding-right:69rpx;
-  padding-left:-34rpx;
-  float:left;
-  margin-right:28rpx;
-  margin-top: -12rpx;
   font-size: 20rpx;
+  padding-top: 20rpx;
 }
 .btnImg {
   width: 55rpx;

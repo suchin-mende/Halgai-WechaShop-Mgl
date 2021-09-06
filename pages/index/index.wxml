@@ -6,10 +6,11 @@
   <view class='head-menu'>
     <image src='../../images/logo.jpg' class='img'> </image>
 
-    <view class='board'>
-      <navigator url='/pages/board/board' hover-class="none">
+    <view class='board' bindtap="openShop">
+      <!-- <navigator url='/pages/board/board' hover-class="none">
         <image class='btnImg' src='../../images/jaja-lo.png'></image>
-      </navigator>
+      </navigator> -->
+      <image class="board-shop-img" src="/images/shop.svg"></image>
       <view class='board-item'> {{inmls.inml0011}}</view>
 
     </view>
@@ -68,8 +69,8 @@
     <scroll-view class="coupons-scroll" scroll-x="true">
       <view class="coupons-item" wx:for-items="{{coupons}}" wx:for-index="idx" wx:key="id" bindtap="gitCoupon"
         data-id="{{item.id}}" data-pwd="{{item.pwd}}">
-        <view style="font-size: 25rpx" wx:if="{{item.moneyMin == item.moneyMax}}"> ￥ {{item.moneyMax}} </view>
-        <view style="font-size: 25rpx" wx:else> ￥ {{item.moneyMin}} - {{item.moneyMax}} </view>
+        <view class="moneybox" wx:if="{{item.moneyMin == item.moneyMax}}" style="color: white;"> ￥ {{item.moneyMax}} </view>
+        <view class="moneybox" style="color: white;" wx:else> ￥ {{item.moneyMin}} - {{item.moneyMax}} </view>
         <view> {{item.name}} </view>
         <view class='mxboos'> {{inmls.inml0003}} {{item.moneyHreshold}} {{inmls.inml0004}}</view>
         <view wx:if="{{item.dateEndType == 0}}"> {{item.dateEnd}} {{inmls.inml0006}} </view>
@@ -83,13 +84,12 @@
       <view class="type-box" wx:for-items="{{categories}}" wx:key="id">
         <view id="{{item.id}}" class="type-navbar-item {{activeCategoryId == item.id ? 'type-item-on' : ''}}"
           bindtap="tabClick">
-
           <view class="category-icon">
             <image src="{{item.icon}}" class="search-icon" />
           </view>
           <view class='category-text'>{{item.name}}</view>
-
         </view>
+        <image class="activeImg" wx:if="{{activeCategoryId == item.id}}" src="/images/activeBack.png"></image>
       </view>
     </scroll-view>
   </view>
@@ -101,7 +101,7 @@
       </view>
       <view class="goods-title">{{item.name}}</view>
       <view style='display:flex;'>
-        <view class="goods-price">¥ {{item.minPrice}}</view>
+        <view class="goods-price" >¥ {{item.minPrice}}</view>
         <view wx:if="{{item.originalPrice && item.originalPrice > 0}}" class="goods-price"
           style='color:#aaa;text-decoration:line-through'>¥ {{item.originalPrice}}</view>
       </view>

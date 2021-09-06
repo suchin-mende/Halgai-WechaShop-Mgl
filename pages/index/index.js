@@ -1,4 +1,3 @@
-
 const HalgaiAPI = require('../../halgaiApi/main')
 const CONFIG = require('../../config.js')
 const HalgaiI18 = require('../../language/mn')
@@ -31,7 +30,6 @@ Page({
     inmls: HalgaiI18.inmls,
     isOwner:false
   },
-
   tabClick: function(e) {
     let offset = e.currentTarget.offsetLeft;
     if (offset > 150) {
@@ -289,7 +287,11 @@ Page({
     wx.navigateTo({
       url: '/pages/userShop/editBanner/index?data='+data,
     })
+  },
+  openShop:function (){
+    wx.navigateTo({
+      url: '/pages/openshop-firstPage/index',
+    })
   }
-  
 })
 
