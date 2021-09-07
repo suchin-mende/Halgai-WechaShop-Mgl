@@ -84,9 +84,13 @@ Component({
       }
       console.log('secondPor',slist[val[1]].name)
       console.log("slist",slist)
+      var chosenList = []
+      chosenList.push(that.data.FtypeList[val[0]])
+      chosenList.push(slist[val[1]])
       that.setData({
         NStypeList: slist,
-        type:that.data.FtypeList[val[0]].name+slist[val[1]].name
+        // type:that.data.FtypeList[val[0]].name+slist[val[1]].name
+        type:chosenList
       })
       
     },

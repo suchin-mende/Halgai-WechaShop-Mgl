@@ -1,6 +1,6 @@
 <view class="container">
   <view class="img-box">
-    <image class="img" hidden="{{!banners}}" src="{{banners[0].picUrl}}"></image>
+    <image class="img" hidden="{{!banners}}" src="{{banners[2].picUrl}}"></image>
     <image class="img" bindtap="openCamera" hidden="{{banners}}" src="/images/camera.svg"></image>
   </view>
   <view class="other">
@@ -27,7 +27,7 @@
     </view>
   </view>
   <view class="other">
-    <button bindtap="newpage"> ᠲᠤᠱᠢᠶᠠᠬᠤ</button>
+    <button> ᠲᠤᠱᠢᠶᠠᠬᠤ</button>
   </view>
 </view>
 <custom-picker id="custom-picker" Flist="{{FtypeList}}" Slist="{{StypeList}}" bind:lefttap='_lefttap'
